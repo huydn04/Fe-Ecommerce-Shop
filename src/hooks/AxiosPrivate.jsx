@@ -1,11 +1,11 @@
 import React from 'react'
 
-export const AxiosPrivate = () => {
+const AxiosPrivate = () => {
   return (
     <div>AxiosPrivate</div>
   )
 }
-
+export default AxiosPrivate
 
 
 

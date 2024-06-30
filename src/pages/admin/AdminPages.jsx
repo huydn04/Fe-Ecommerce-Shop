@@ -1,35 +1,19 @@
-import React from 'react'
-import { SideBarAdmin } from '../../components/admin/sidebar/SideBarAdmin'
-import { NavbarAdmin } from '../../components/admin/dashboard/navbar/NavbarAdmin'
-import { Outlet } from 'react-router-dom'
+import NavbarAdmin from "../../components/admin/dashboard/navbar/NavbarAdmin";
+import Sidebar from "../../components/admin/sidebar/Sidebar";
 
-export const AdminPages = () => {
+const AdminPages = () => {
   return (
     <div>
       <div className="">
-        <SideBarAdmin/>
-       
+        <Sidebar />
       </div>
       <div className="">
         <div className="">
-          <NavbarAdmin/>
-        </div>
-        <div className="">
-          <Outlet/>
+          <NavbarAdmin />
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-
-
-
-
-
-
-
-
-
-
-
+export default AdminPages;

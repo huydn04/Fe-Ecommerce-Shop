@@ -1,7 +1,9 @@
 import React from 'react'
 
-export const DashboardAdmin = () => {
+const DashboardAdmin = () => {
   return (
     <div>DashboardAdmin</div>
   )
 }
+
+export default DashboardAdmin
