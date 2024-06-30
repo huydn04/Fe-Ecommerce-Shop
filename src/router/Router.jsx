@@ -4,15 +4,13 @@ import MainLayout from "../layout/MainLayout";
 import ErrorBoundary from "../components/ErrorBoundary";
 import Pages404 from "../pages/404/Page404";
 
-const LoadingPages = lazy(() => import("../components/loading/LoadingPages"));
+
 const LandingPage = lazy(() => import("../pages/LandingPage"));
 const AdminPages = lazy(() => import("../pages/admin/AdminPages"));
 
 export default function AppRoutes() {
   return (
     <div className="">
-      <ErrorBoundary>
-        <Suspense fallback={<LoadingPages loading={true} />}>
           <Routes>
             <Route index path="/" element={<LandingPage />} />
 
@@ -26,10 +24,7 @@ export default function AppRoutes() {
               <Route errorElement={<Pages404 />} />
               <Route path="*" element={<Pages404 />} />
             </Route>
-            
           </Routes>
-        </Suspense>
-      </ErrorBoundary>
     </div>
   );
 }
