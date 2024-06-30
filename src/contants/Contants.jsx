@@ -1,7 +1,9 @@
 import React from 'react'
 
-export const Contants = () => {
+const Contants = () => {
   return (
     <div>Contants</div>
   )
 }
+
+export default Contants

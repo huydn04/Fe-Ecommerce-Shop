@@ -1,7 +1,7 @@
-import React from 'react'
-
-export const UsersPages = () => {
+const UsersPages = () => {
   return (
     <div>UsersPages</div>
   )
 }
+
+export default UsersPages
