@@ -1,7 +1,9 @@
-import React from 'react'
-
-export const NavbarAdmin = () => {
+const NavbarAdmin = () => {
   return (
-    <div>NavbarAdmin</div>
+    <div>
+      navbar
+    </div>
   )
 }
+
+export default NavbarAdmin
