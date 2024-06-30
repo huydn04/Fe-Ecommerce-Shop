@@ -26,6 +26,7 @@ export default function AppRoutes() {
               <Route errorElement={<Pages404 />} />
               <Route path="*" element={<Pages404 />} />
             </Route>
+            
           </Routes>
         </Suspense>
       </ErrorBoundary>
