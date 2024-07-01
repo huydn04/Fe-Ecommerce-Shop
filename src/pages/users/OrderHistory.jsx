@@ -14,12 +14,12 @@ const OrderHistory = () => {
               <label className="mb-3 ml-4 mt-3 text-2xl">Đường Dẫn</label>
             </div>
   
-            <div className="h-16 flex items-center pl-4 text-lg text-gray-500 hover:bg-gray-200 hover:text-black hover:border-l-4 hover:border-solid hover:border-[#00B207]"><a href="">Trang Chủ</a></div>
-            <div className="h-16 flex items-center pl-4 text-lg text-gray-500 hover:bg-gray-200 hover:text-black hover:border-l-4 hover:border-solid hover:border-[#00B207]"><a href="">Lịch Sử Đặt Hàng</a></div>
-            <div className="h-16 flex items-center pl-4 text-lg text-gray-500 hover:bg-gray-200 hover:text-black hover:border-l-4 hover:border-solid hover:border-[#00B207]"><a href="">Danh Sách Ước</a></div>
-            <div className="h-16 flex items-center pl-4 text-lg text-gray-500 hover:bg-gray-200 hover:text-black hover:border-l-4 hover:border-solid hover:border-[#00B207]" ><a href="">Giỏ Hàng</a></div>
-            <div className="h-16 flex items-center pl-4 text-lg text-gray-500 hover:bg-gray-200 hover:text-black hover:border-l-4 hover:border-solid hover:border-[#00B207]" ><a href="">Cài Đặt</a></div>
-            <div className="h-16 flex items-center pl-4 text-lg text-gray-500 hover:bg-gray-200 hover:text-black hover:border-l-4 hover:border-solid hover:border-[#00B207]" ><a href="">Đăng Xuất</a></div>
+            <div className="h-16 flex items-center pl-4 text-lg text-gray-500 hover:bg-gray-200 hover:text-black hover:border-l-4 hover:border-solid hover:border-[#00B207]"><img className="mr-2" src="src\assets\img\nav_1.png" alt="" /> <a href="">Trang Chủ</a></div>
+            <div className="h-16 flex items-center pl-4 text-lg text-gray-500 hover:bg-gray-200 hover:text-black hover:border-l-4 hover:border-solid hover:border-[#00B207]"><img className="mr-2" src="src\assets\img\nav_2.png" alt="" /> <a href="">Lịch Sử Đặt Hàng</a></div>
+            <div className="h-16 flex items-center pl-4 text-lg text-gray-500 hover:bg-gray-200 hover:text-black hover:border-l-4 hover:border-solid hover:border-[#00B207]"><img className="mr-2" src="src\assets\img\nav_3.png" alt="" /> <a href="">Danh Sách Ước</a></div>
+            <div className="h-16 flex items-center pl-4 text-lg text-gray-500 hover:bg-gray-200 hover:text-black hover:border-l-4 hover:border-solid hover:border-[#00B207]"><img className="mr-2" src="src\assets\img\nav_4.png" alt="" /> <a href="">Giỏ Hàng</a></div>
+            <div className="h-16 flex items-center pl-4 text-lg text-gray-500 hover:bg-gray-200 hover:text-black hover:border-l-4 hover:border-solid hover:border-[#00B207]"><img className="mr-2" src="src\assets\img\nav_5.png" alt="" /> <a href="">Cài Đặt</a></div>
+            <div className="h-16 flex items-center pl-4 text-lg text-gray-500 hover:bg-gray-200 hover:text-black hover:border-l-4 hover:border-solid hover:border-[#00B207]"><img className="mr-2" src="src\assets\img\nav_6.png" alt="" /> <a href="">Đăng Xuất</a></div>
           </div>
         </div>
         {/* end nav */}
@@ -63,11 +63,11 @@ const OrderHistory = () => {
 
                 {/* button change page */}
                 <div className="w-full h-10 flex flex-row justify-center items-center mb-10" >
-                    <a href="" className="w-10 h-10  rounded-full mr-2 bg-gray-200 flex justify-center items-center"></a>
+                    <a href="" className="w-10 h-10  rounded-full mr-2 bg-gray-200 flex justify-center items-center"><img src="src\assets\img\order_move1.png" alt="" /></a>
                     <a href="" className="w-10 h-10  text-white rounded-full bg-[#00B207] flex justify-center items-center">1</a>
                     <a href="" className="w-10 h-10  rounded-full flex justify-center items-center">2</a>
                     <a href="" className="w-10 h-10  rounded-full flex justify-center items-center">3</a>
-                    <a href="" className="w-10 h-10  rounded-full ml-2 bg-gray-200 flex justify-center items-center"></a>
+                    <a href="" className="w-10 h-10  rounded-full ml-2 bg-gray-200 flex justify-center items-center"><img src="src\assets\img\order_move2.png" alt="" /></a>
                 </div>  
 
             </div>  
