@@ -5,6 +5,7 @@ import MainLayout from "../layout/MainLayout";
 const LandingPage = lazy(() => import("../pages/LandingPage"));
 const AdminPages = lazy(() => import("../pages/admin/AdminPages"));
 const Pages404 = lazy(() => import("../pages/404/Page404"));
+const Setting = lazy(() => import("../pages/users/Setting"));
 
 export default function AppRoutes() {
   return (
@@ -22,6 +23,11 @@ export default function AppRoutes() {
         <Route element={<MainLayout />}>
           <Route errorElement={<Pages404 />} />
           <Route path="*" element={<Pages404 />} />
+        </Route>
+
+        {/* setting Page  */}
+        <Route element={<MainLayout />}>
+          <Route path="/Setting" element={<Setting />} />
         </Route>
       </Routes>
     </div>
