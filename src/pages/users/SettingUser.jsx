@@ -1,13 +1,13 @@
 import React from "react";
 
-const Setting = () => {
+const SettingUser = () => {
   return (
   
     <div className="h-full w-full relative flex flex-row justify-center	mt-10 ">
       
       
       {/* navigation */}
-      <div className="mr-7 w-1/6 border-solid border-gray-400">
+      <div className="mr-7 w-[300px] border-solid border-gray-400">
         <div className="border-solid border-gray-400 border w-full mr-20 flex flex-col justify-evenly ">
           <div className="border-solid border-gray-400 border-b pl-4 pb-3 pt-3">
             <label className="mb-3 ml-4 mt-3 text-2xl">Đường Dẫn</label>
@@ -24,7 +24,7 @@ const Setting = () => {
       {/* end nav */}
 
       {/* start setting */}
-      <div className=" w-1/2" >
+      <div className=" w-[1300px]" >
 
       {/* 1st box */} 
       <div className="border-solid border-gray-400 border w-full flex flex-row justify-between	">
@@ -32,8 +32,8 @@ const Setting = () => {
         
         <div className="border-solid mt-2 border-red-300 w-full ">
           
-          <div className="border-solid border-gray-400 border-b pl-4 pb-4">
-            <label className="text-2xl font-bold">Cài Đặt Tài Khoản</label>
+          <div className="border-solid border-gray-400 border-b pb-2 pl-4 pt-2">
+            <label className="text-2xl font-bold ">Cài Đặt Tài Khoản</label>
             </div>
            
           
@@ -85,7 +85,7 @@ const Setting = () => {
         
         <div className="border-solid mt-2 ">
           
-          <div className="border-solid border-gray-400 border-b pl-4 pb-4">
+          <div className="border-solid border-gray-400 border-b pb-2 pl-4 pt-2">
             <label className="text-2xl font-bold">Địa Chỉ Người Nhận</label>
             </div>
            
@@ -94,24 +94,24 @@ const Setting = () => {
             <form action="" method="post">
 
             {/* 1st location */}
-            <div className="flex flex-row w-full justify-between ">
+            <div className="flex flex-row w-full ">
             <div className="ml-4">
             <label>Tên</label> 
             <br/>
-            <input className="mt-1 mr-2 mb-7 border-solid border rounded w-[255px] h-9 pl-2 focus:outline-none focus:border-[#00B207]" type="text"  />
+            <input className="mt-1 mr-2 mb-7 border-solid border rounded w-[285px] h-9 pl-2 focus:outline-none focus:border-[#00B207]" type="text"  />
             </div>
 
 
             <div className="ml-4 ">     
             <label className="">Họ</label> 
             <br/>
-            <input className="mt-1 mr-2 mb-7 border-solid border rounded w-[255px] h-9 pl-2 focus:outline-none focus:border-[#00B207]" type="text"   />
+            <input className="mt-1 mr-2 mb-7 border-solid border rounded w-[285px] h-9 pl-2 focus:outline-none focus:border-[#00B207]" type="text"   />
             </div>
 
             <div className="ml-4  ">     
             <label className="">Công Ty</label> 
             <br/>
-            <input className="w-full mt-1 mr-2 mb-7 border-solid border rounded w-[255px] h-9 pl-2 focus:outline-none focus:border-[#00B207]" type="text"   />
+            <input className="w-full mt-1 mr-2 mb-7 border-solid border rounded w-[285px] h-9 pl-2 focus:outline-none focus:border-[#00B207]" type="text"   />
             </div>
 
             </div>
@@ -124,11 +124,11 @@ const Setting = () => {
             </div>
 
             {/* 3rd location */}
-            <div className="flex flex-row w-full justify-between ">
+            <div className="flex flex-row w-full ">
             <div className="ml-4">
             <label>Quốc Tịch / Region</label> 
             <br/>
-            <select className="mt-1 mr-2 mb-7 border-solid border rounded w-[255px] h-9 pl-2 focus:outline-none focus:border-[#00B207]">
+            <select className="mt-1 mr-2 mb-7 border-solid border rounded w-[285px] h-9 pl-2 focus:outline-none focus:border-[#00B207]">
                 <option value="Việt Nam">Việt Nam</option>
                 <option value="United States">United States</option>
                 <option value="Korea">Korea</option>
@@ -140,7 +140,7 @@ const Setting = () => {
             <div className="ml-4 ">     
             <label className="">Tỉnh</label> 
             <br/>
-            <select className="mt-1 mr-2 mb-7 border-solid border rounded w-[255px] h-9 pl-2 focus:outline-none focus:border-[#00B207]">
+            <select className="mt-1 mr-2 mb-7 border-solid border rounded w-[285px] h-9 pl-2 focus:outline-none focus:border-[#00B207]">
                 <option value="Đồng Nai">Đồng Nai</option>
                 <option value="Hồ Chí Minh">Hồ Chí Minh</option>
                 <option value="Hà Nội">Hà Nội</option>
@@ -151,7 +151,7 @@ const Setting = () => {
             <div className="ml-4  ">     
             <label className="">Zip Code</label> 
             <br/>
-            <input className="w-full mt-1 mr-2 mb-7 border-solid border rounded w-[255px] h-9 pl-2 focus:outline-none focus:border-[#00B207]" type="text"   />
+            <input className="w-full mt-1 mr-2 mb-7 border-solid border rounded w-[285px] h-9 pl-2 focus:outline-none focus:border-[#00B207]" type="text"   />
             </div>
 
             </div>
@@ -187,7 +187,7 @@ const Setting = () => {
         
         <div className="border-solid mt-2 border-red-300 w-full ">
           
-          <div className="border-solid border-gray-400 border-b pl-4 pb-4 ">
+          <div className="border-solid border-gray-400 border-b pb-2 pl-4 pt-2 ">
             <label className="text-2xl font-bold">Thay Đổi Mật Khẩu</label>
             </div>
            
@@ -233,4 +233,4 @@ const Setting = () => {
   );
 };
 
-export default Setting;
+export default SettingUser;
