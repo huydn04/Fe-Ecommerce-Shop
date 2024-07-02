@@ -5,7 +5,9 @@ import MainLayout from "../layout/MainLayout";
 const LandingPage = lazy(() => import("../pages/LandingPage"));
 const AdminPages = lazy(() => import("../pages/admin/AdminPages"));
 const Pages404 = lazy(() => import("../pages/404/Page404"));
-const SettingUser = lazy(() => import("../pages/users/SettingUser"));
+const UsersPages = lazy(() => import("../pages/users/UsersPages"));
+const Setting = lazy(() => import("../pages/users/SettingUser"));
+
 const OrderHistory = lazy(() => import("../pages/users/OrderHistory"));
 const WishList = lazy(() => import("../pages/users/WishList"));
 
@@ -21,6 +23,10 @@ export default function AppRoutes() {
           <Route path="/admin" element={<AdminPages />} />
         </Route>
 
+        {/* User Pages */}
+
+        <Route path="/user" element={<UsersPages />} />
+
         {/* Page 404 */}
         <Route element={<MainLayout />}>
           <Route errorElement={<Pages404 />} />
@@ -29,17 +35,17 @@ export default function AppRoutes() {
 
         {/* setting Page  */}
         <Route element={<MainLayout />}>
-          <Route path="/SettingUser" element={<SettingUser />} />
+          <Route path="/setting" element={<Setting />} />
         </Route>
 
         {/* oder History Page  */}
            <Route element={<MainLayout />}>
-          <Route path="/OrderHistory" element={<OrderHistory />} />
+          <Route path="/order-history" element={<OrderHistory />} />
         </Route>
 
         {/* Wish List page  */}
               <Route element={<MainLayout />}>
-          <Route path="/WishList" element={<WishList />} />
+          <Route path="/wish-list" element={<WishList />} />
         </Route>
         
       </Routes>
