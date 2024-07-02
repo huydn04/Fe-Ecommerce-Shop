@@ -6,7 +6,10 @@ const LandingPage = lazy(() => import("../pages/LandingPage"));
 const AdminPages = lazy(() => import("../pages/admin/AdminPages"));
 const Pages404 = lazy(() => import("../pages/404/Page404"));
 const UsersPages = lazy(() => import("../pages/users/UsersPages"));
-const Setting = lazy(() => import("../pages/users/Setting"));
+const Setting = lazy(() => import("../pages/users/SettingUser"));
+
+const OrderHistory = lazy(() => import("../pages/users/OrderHistory"));
+const WishList = lazy(() => import("../pages/users/WishList"));
 
 export default function AppRoutes() {
   return (
@@ -34,6 +37,17 @@ export default function AppRoutes() {
         <Route element={<MainLayout />}>
           <Route path="/setting" element={<Setting />} />
         </Route>
+
+        {/* oder History Page  */}
+           <Route element={<MainLayout />}>
+          <Route path="/order-history" element={<OrderHistory />} />
+        </Route>
+
+        {/* Wish List page  */}
+              <Route element={<MainLayout />}>
+          <Route path="/wish-list" element={<WishList />} />
+        </Route>
+        
       </Routes>
     </div>
   );
