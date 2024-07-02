@@ -7,7 +7,7 @@ const AdminPages = lazy(() => import("../pages/admin/AdminPages"));
 const Pages404 = lazy(() => import("../pages/404/Page404"));
 const SettingUser = lazy(() => import("../pages/users/SettingUser"));
 const OrderHistory = lazy(() => import("../pages/users/OrderHistory"));
-
+const WishList = lazy(() => import("../pages/users/WishList"));
 
 export default function AppRoutes() {
   return (
@@ -35,6 +35,11 @@ export default function AppRoutes() {
         {/* oder History Page  */}
            <Route element={<MainLayout />}>
           <Route path="/OrderHistory" element={<OrderHistory />} />
+        </Route>
+
+        {/* Wish List page  */}
+              <Route element={<MainLayout />}>
+          <Route path="/WishList" element={<WishList />} />
         </Route>
         
       </Routes>
