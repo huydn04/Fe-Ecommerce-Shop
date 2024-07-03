@@ -5,9 +5,11 @@ import MainLayout from "../layout/MainLayout";
 const LandingPage = lazy(() => import("../pages/LandingPage"));
 const AdminPages = lazy(() => import("../pages/admin/AdminPages"));
 const Pages404 = lazy(() => import("../pages/404/Page404"));
+
+const Cart = lazy(() => import("../pages/Shopping-cart/Cart"));
+const Checkout = lazy(()=> import("../pages/Shopping-cart/Checkout"));
 const UsersPages = lazy(() => import("../pages/users/UsersPages"));
 const Setting = lazy(() => import("../pages/users/SettingUser"));
-
 const OrderHistory = lazy(() => import("../pages/users/OrderHistory"));
 const WishList = lazy(() => import("../pages/users/WishList"));
 
@@ -35,6 +37,12 @@ export default function AppRoutes() {
           <Route path="*" element={<Pages404 />} />
         </Route>
 
+        <Route element={<MainLayout />}>
+          <Route path="/cart" element={<Cart />} />
+        </Route>
+        <Route element={<MainLayout />}>
+          <Route path="/checkout" element={<Checkout />} />
+        </Route>
         {/* setting Page  */}
         <Route element={<MainLayout />}>
           <Route path="/setting" element={<Setting />} />
@@ -49,7 +57,6 @@ export default function AppRoutes() {
               <Route element={<MainLayout />}>
           <Route path="/wish-list" element={<WishList />} />
         </Route>
-        
       </Routes>
     </div>
   );
