@@ -3,9 +3,6 @@
 import React, { useState } from 'react'
 import './Checkout'
 import './shopping.css'
-import logo from './img/Blue_and_Orange_Simple_Ilustration_Supermarket_Logo__1_-removebg-preview 2 (1).png';
-import facebook from './img/fb.png';
-import pay from './img/pay.png';
 
 const Checkout = () => {
     const [selectedOption, setSelectedOption] = useState('option1');
@@ -144,15 +141,8 @@ const Checkout = () => {
                     <div className='mt-10 w-[300px] h-[40px] outline flex justify-center items-center m-auto rounded-[25px] bg-[#00B207] text-white cursor-pointer'>
                         <button>Đặt Hàng</button>
                     </div>
-                    <div></div>
-
-
-
                 </div>
-
             </div>
-
-
             {/* Body */}
 
         </div>
