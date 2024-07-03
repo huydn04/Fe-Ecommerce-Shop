@@ -15,7 +15,7 @@ class ErrorBoundary extends Component {
 
   render() {
     if (this.state.hasError) {
-      return <div>Lỗi rồi! Thử lại đê</div>;
+      return <div>Lỗi rồi! bạn là gay</div>;
     }
 
     // eslint-disable-next-line react/prop-types

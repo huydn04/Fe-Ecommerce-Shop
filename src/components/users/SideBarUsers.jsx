@@ -10,7 +10,7 @@ import {
 import { SlLogout } from "react-icons/sl";
 import { Link } from "react-router-dom";
 
-const UsersPages = () => {
+const Sidebar = () => {
   const [active, setActive] = useState("Bảng Điều Khiển");
   const UsersPage = [
    
@@ -61,4 +61,4 @@ const UsersPages = () => {
   );
 };
 
-export default UsersPages;
+export default Sidebar;
