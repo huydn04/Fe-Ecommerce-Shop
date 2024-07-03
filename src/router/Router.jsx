@@ -11,6 +11,7 @@ const Setting = lazy(() => import("../pages/users/SettingUser"));
 const OrderHistory = lazy(() => import("../pages/users/OrderHistory"));
 const WishList = lazy(() => import("../pages/users/WishList"));
 
+8
 export default function AppRoutes() {
   return (
     <div className="">
@@ -18,14 +19,15 @@ export default function AppRoutes() {
         {/* Landing Page  */}
         <Route index path="/" element={<LandingPage />} />
 
-        {/* Amin Page  */}
-        <Route element={<MainLayout />}>
-          <Route path="/admin" element={<AdminPages />} />
-        </Route>
+        {/* Admin Page  */}
 
+          <Route path="/admin" element={<AdminPages />} />
+        
         {/* User Pages */}
 
         <Route path="/user" element={<UsersPages />} />
+
+   
 
         {/* Page 404 */}
         <Route element={<MainLayout />}>

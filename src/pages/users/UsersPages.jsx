@@ -10,7 +10,7 @@ import {
 import { SlLogout } from "react-icons/sl";
 import { Link } from "react-router-dom";
 import { Avatar } from "../../assets";
-import { FaArrowRight } from "react-icons/fa";
+
 import { IoMdArrowForward } from "react-icons/io";
 const UsersPages = () => {
   const [active, setActive] = useState("Bảng Điều Khiển");
@@ -106,7 +106,7 @@ const UsersPages = () => {
                   <span>Thời Gian</span>
                   <span>Tất Cả</span>
                   <span>Trạng Thái</span>
-                  <span/>
+                  <span />
                 </Table.Head>
 
                 <Table.Body>
