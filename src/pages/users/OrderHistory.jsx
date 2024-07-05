@@ -1,38 +1,196 @@
-import React from "react";
+import React, { useState } from "react";
+import { Menu, Table } from "react-daisyui";
+import { CiHeart } from "react-icons/ci";
+import { IoSettingsOutline } from "react-icons/io5";
+import {
+  MdHistory,
+  MdOutlineDashboard,
+  MdOutlineShoppingBag,
+} from "react-icons/md";
+import { SlLogout } from "react-icons/sl";
+import { Link } from "react-router-dom";
+import { Avatar } from "../../assets";
 
+import { IoMdArrowForward } from "react-icons/io";
 const OrderHistory = () => {
+  const [active, setActive] = useState("Bảng Điều Khiển");
+  const UsersPage = [
+    {
+      name: "Bảng Điều Khiển",
+      icon: MdOutlineDashboard,
+      link: "/setting",
+    },
+    { name: "Lịch sử đặt hàng", icon: MdHistory },
+    { name: "Danh sách yêu thích", icon: CiHeart },
+    { name: "Giỏ hàng", icon: MdOutlineShoppingBag },
+    { name: "Settings", icon: IoSettingsOutline },
+    { name: "Đăng xuất", icon: SlLogout },
+  ];
+
     return (
 
-        <div className="h-full w-full relative flex flex-row justify-center	mt-10 ">
+        <div className="flex justify-center pt-10">
+
+
+        {/* Sidebar */}
+        <div className="w-[300px] h-[400px]  ml-2 border border-solid border-gray-300 rounded">
+          <p className=" pt-10 ml-9 font-bold text-2xl">Navigation</p>
+          <Menu className="flex-grow mt-3 ">
+            {UsersPage.map((item, index) => {
+              const Icon = item.icon;
+              return (
+                <Menu.Item key={index} className="relative ">
+                  <Link
+                    to={item.link}
+                    className={`btn flex  items-center justify-start rounded-none shadow-white hover:bg-gray-100 hover:text-primary hover:border-l-4 hover:border-y-0 hover:border-r-0 hover:border-solid hover:border-[#00B207] hover:font-bold  ${
+                      active === item.name
+                        ? "  font-bold text-primary hover:border-none bg-gray-200"
+                        : "bg-transparent font-light "
+                    } relative pl-4`}
+                    onClick={() => setActive(item.name)}
+                  >
+                    <div
+                      className={`${
+                        active === item.name
+                          ? "absolute left-0 top-0 h-full w-1 bg-primary"
+                          : ""
+                      }`}
+                    />
+                    <Icon className={"ml-2 mr-2 h-5 w-5"} />
+                    {item.name}
+                  </Link>
+                </Menu.Item>
+              );
+            })}
+          </Menu>
       
       
-        {/* navigation */}
-        <div className="mr-8 w-[300px] border-solid border-gray-400">
-          <div className="border-solid border-gray-400 border w-full mr-20 flex flex-col justify-evenly ">
-           
-            <div className="border-solid border-gray-400 border-b pl-4 pb-3 pt-3">
-              <label className="mb-3 ml-4 mt-3 text-2xl">Đường Dẫn</label>
-            </div>
   
-            <div className="h-16 flex items-center pl-4 text-lg text-gray-500 hover:bg-gray-200 hover:text-black hover:border-l-4 hover:border-solid hover:border-[#00B207]"><img className="mr-2" src="src\assets\img\nav_1.png" alt="" /> <a href="">Trang Chủ</a></div>
-            <div className="h-16 flex items-center pl-4 text-lg text-gray-500 hover:bg-gray-200 hover:text-black hover:border-l-4 hover:border-solid hover:border-[#00B207]"><img className="mr-2" src="src\assets\img\nav_2.png" alt="" /> <a href="">Lịch Sử Đặt Hàng</a></div>
-            <div className="h-16 flex items-center pl-4 text-lg text-gray-500 hover:bg-gray-200 hover:text-black hover:border-l-4 hover:border-solid hover:border-[#00B207]"><img className="mr-2" src="src\assets\img\nav_3.png" alt="" /> <a href="">Danh Sách Ước</a></div>
-            <div className="h-16 flex items-center pl-4 text-lg text-gray-500 hover:bg-gray-200 hover:text-black hover:border-l-4 hover:border-solid hover:border-[#00B207]"><img className="mr-2" src="src\assets\img\nav_4.png" alt="" /> <a href="">Giỏ Hàng</a></div>
-            <div className="h-16 flex items-center pl-4 text-lg text-gray-500 hover:bg-gray-200 hover:text-black hover:border-l-4 hover:border-solid hover:border-[#00B207]"><img className="mr-2" src="src\assets\img\nav_5.png" alt="" /> <a href="">Cài Đặt</a></div>
-            <div className="h-16 flex items-center pl-4 text-lg text-gray-500 hover:bg-gray-200 hover:text-black hover:border-l-4 hover:border-solid hover:border-[#00B207]"><img className="mr-2" src="src\assets\img\nav_6.png" alt="" /> <a href="">Đăng Xuất</a></div>
-          </div>
-        </div>
-        {/* end nav */}
   
         {/* start OrderHistory */}
         
-            <div className=" w-[1311px] " >
+            
+        </div>
+        <div className=" w-[833px] " >
 
                 <div className=" w-full border-solid border border-gray-400 h-[900px] flex flex-col justify-between">
           
+                <div className="">
+            <div className="overflow-x-auto">
+              <Table>
+                <Table.Head className="text-lg">
+                  <span>Lịch sử đặt hàng</span>
+                  <span />
+                  <span />
+                  <span />       
+                  <span />
+                </Table.Head>
+                <Table.Head className="bg-gray-200">
+                  {/* <span /> */}
+                  <span>Mã Đơn</span>
+                  <span>Thời Gian</span>
+                  <span>Tất Cả</span>
+                  <span>Trạng Thái</span>
+                  <span />
+                </Table.Head>
+
+                <Table.Body>
+                  <Table.Row>
+                    <span>#113</span>
+                    <span>15/08/2024</span>
+                    <span>
+                      <div className="flex gap-1">
+                        <p className="font-semibold">$100.000</p>
+                        <p>(5 Sản Phẩm)</p>
+                      </div>
+                    </span>
+                    <span>Xử lý</span>
+                    <span className="text-primary font-semibold">
+                      Xem chi tiết
+                    </span>
+                  </Table.Row>
+
+                  <Table.Row>
+                    <span>#113</span>
+                    <span>15/08/2024</span>
+                    <span>
+                      <div className="flex gap-1">
+                        <p className="font-semibold">$100.000</p>
+                        <p>(5 Sản Phẩm)</p>
+                      </div>
+                    </span>
+                    <span>Trên Đường Đi</span>
+                    <span className="text-primary font-semibold">
+                      Xem chi tiết
+                    </span>
+                  </Table.Row>
+
+                  <Table.Row>
+                    <span>#113</span>
+                    <span>15/08/2024</span>
+                    <span>
+                      <div className="flex gap-1">
+                        <p className="font-semibold">$100.000</p>
+                        <p>(5 Sản Phẩm)</p>
+                      </div>
+                    </span>
+                    <span>Hoàn thành</span>
+                    <span className="text-primary font-semibold">
+                      Xem chi tiết
+                    </span>
+                  </Table.Row>
+
+                  <Table.Row>
+                    <span>#113</span>
+                    <span>15/08/2024</span>
+                    <span>
+                      <div className="flex gap-1">
+                        <p className="font-semibold">$100.000</p>
+                        <p>(5 Sản Phẩm)</p>
+                      </div>
+                    </span>
+                    <span>Hoàn thành</span>
+                    <span className="text-primary font-semibold">
+                      Xem chi tiết
+                    </span>
+                  </Table.Row>
+
+                  <Table.Row>
+                    <span>#113</span>
+                    <span>15/08/2024</span>
+                    <span>
+                      <div className="flex gap-1">
+                        <p className="font-semibold">$100.000</p>
+                        <p>(5 Sản Phẩm)</p>
+                      </div>
+                    </span>
+                    <span>Hoàn thành</span>
+                    <span className="text-primary font-semibold">
+                      Xem chi tiết
+                    </span>
+                  </Table.Row>
+
+                  <Table.Row>
+                    <span>#113</span>
+                    <span>15/08/2024</span>
+                    <span>
+                      <div className="flex gap-1">
+                        <p className="font-semibold">$100.000</p>
+                        <p>(5 Sản Phẩm)</p>
+                      </div>
+                    </span>
+                    <span>Hoàn thành</span>
+                    <span className="text-primary font-semibold">
+                      Xem chi tiết
+                    </span>
+                  </Table.Row>
+                </Table.Body>
+              </Table>
+            </div>
+          </div>
                 
 
-                <div className="w-full ">
+                {/* <div className="w-full ">
                     <div className="border-solid border-gray-400 border-b pl-4 pt-3 h-14 ">
                     <label className="text-2xl font-bold">Lịch Sử Đặt Hàng</label></div>
 
@@ -59,7 +217,7 @@ const OrderHistory = () => {
                             <td className="w-1/5 text-center h-12"><a href="" className="text-[#00B207]">Xem Chi Tiết</a></td>
                         </tr>
                     </table>
-                </div>
+                </div> */}
 
                 {/* button change page */}
                 <div className="w-full h-10 flex flex-row justify-center items-center mb-10" >
@@ -73,7 +231,6 @@ const OrderHistory = () => {
             </div>  
         </div>
         
-
         </div>
     );
 };
