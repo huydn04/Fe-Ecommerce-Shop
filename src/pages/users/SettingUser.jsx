@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 
 const SettingUser = () => {
   return (
@@ -111,7 +111,7 @@ const SettingUser = () => {
             <div className="ml-4  ">     
             <label className="">Công Ty</label> 
             <br/>
-            <input className="w-full mt-1 mr-2 mb-7 border-solid border rounded w-[285px] h-9 pl-2 focus:outline-none focus:border-[#00B207]" type="text"   />
+            <input className=" mt-1 mr-2 mb-7 border-solid border rounded w-[285px] h-9 pl-2 focus:outline-none focus:border-[#00B207]" type="text"   />
             </div>
 
             </div>
@@ -151,7 +151,7 @@ const SettingUser = () => {
             <div className="ml-4  ">     
             <label className="">Zip Code</label> 
             <br/>
-            <input className="w-full mt-1 mr-2 mb-7 border-solid border rounded w-[285px] h-9 pl-2 focus:outline-none focus:border-[#00B207]" type="text"   />
+            <input className=" mt-1 mr-2 mb-7 border-solid border rounded w-[285px] h-9 pl-2 focus:outline-none focus:border-[#00B207]" type="text"   />
             </div>
 
             </div>

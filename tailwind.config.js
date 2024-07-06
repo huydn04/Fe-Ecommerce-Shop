@@ -8,9 +8,7 @@ export default {
     "node_modules/react-daisyui/dist/**/*.js",
   ],
   theme: {
-    extend: {
-     
-    },
+    extend: {},
   },
   plugins: [
     require("daisyui"),
@@ -22,7 +20,7 @@ export default {
     themes: [
       {
         mytheme: {
-         primary: "#00B207"
+          primary: "#00B207",
         },
       },
     ],
