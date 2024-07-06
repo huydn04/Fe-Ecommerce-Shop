@@ -13,13 +13,10 @@ const Setting = lazy(() => import("../pages/users/SettingUser"));
 const OrderHistory = lazy(() => import("../pages/users/OrderHistory"));
 const WishList = lazy(() => import("../pages/users/WishList"));
 
-<<<<<<< HEAD
 const MenuDetail = lazy(() => import("../pages/product-detail/MenuDetail"));
 
-=======
 
 8
->>>>>>> 73d8066134f2baba27b284d00b892c990fb89eea
 export default function AppRoutes() {
   return (
     <div className="">
@@ -64,18 +61,15 @@ export default function AppRoutes() {
         {/* Wish List page  */}
               
           <Route path="/wish-list" element={<WishList />} />
-<<<<<<< HEAD
-        </Route>
+      
 
         {/*Menu Detail Page*/}
         <Route element={<MainLayout />}>
           <Route path="/product-detail" element={<MenuDetail />} />
         </Route>
         
-=======
        
 
->>>>>>> 73d8066134f2baba27b284d00b892c990fb89eea
       </Routes>
 
 
