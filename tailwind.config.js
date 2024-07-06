@@ -8,7 +8,11 @@ export default {
     "node_modules/react-daisyui/dist/**/*.js",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        customColor: '2C742F',
+      }
+    },
   },
   plugins: [
     require("daisyui"),
