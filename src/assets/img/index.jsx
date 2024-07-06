@@ -1,0 +1,1 @@
+import {default as anh1} from 'src\assets\img\order_move1.png'
