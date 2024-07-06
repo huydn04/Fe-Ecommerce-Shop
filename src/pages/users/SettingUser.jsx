@@ -1,6 +1,6 @@
 // import React from "react";
-import React, { useState } from "react";
-import { Menu, Table } from "react-daisyui";
+import { useState } from "react";
+import { Menu} from "react-daisyui";
 import { CiHeart } from "react-icons/ci";
 import { IoSettingsOutline } from "react-icons/io5";
 import {
@@ -10,9 +10,9 @@ import {
 } from "react-icons/md";
 import { SlLogout } from "react-icons/sl";
 import { Link } from "react-router-dom";
-import { Avatar } from "../../assets";
 
-import { IoMdArrowForward } from "react-icons/io";
+
+
 const SettingUser = () => {
   const [active, setActive] = useState("Bảng Điều Khiển");
   const UsersPage = [
