@@ -1,34 +1,20 @@
-import { lazy } from 'react'
-import { Route, Routes } from 'react-router-dom'
-import MainLayout from '../layout/MainLayout'
+import { lazy } from "react";
+import { Route, Routes } from "react-router-dom";
+import MainLayout from "../layout/MainLayout";
 
-const LandingPage = lazy(() => import('../pages/LandingPage'))
-const AdminPages = lazy(() => import('../pages/admin/AdminPages'))
-const Pages404 = lazy(() => import('../pages/404/Page404'))
-const Homepages = lazy(() => import('../pages/main/home'))
-
-
-const Cart = lazy(() => import('../pages/Shopping-cart/Cart'))
-const Checkout = lazy(() => import('../pages/Shopping-cart/Checkout'))
-const UsersPages = lazy(() => import('../pages/users/UsersPages'))
-const Setting = lazy(() => import('../pages/users/SettingUser'))
-const OrderHistory = lazy(() => import('../pages/users/OrderHistory'))
-const WishList = lazy(() => import('../pages/users/WishList'))
-
-const MenuDetail = lazy(() => import('../pages/product-detail/MenuDetail'))
-
+const LandingPage = lazy(() => import("../pages/LandingPage"));
+const AdminPages = lazy(() => import("../pages/admin/AdminPages"));
+const Pages404 = lazy(() => import("../pages/404/Page404"));
+const Homepages = lazy(() => import("../pages/main/home"));
 
 const Cart = lazy(() => import("../pages/Shopping-cart/Cart"));
-const Checkout = lazy(()=> import("../pages/Shopping-cart/Checkout"));
+const Checkout = lazy(() => import("../pages/Shopping-cart/Checkout"));
 const UsersPages = lazy(() => import("../pages/users/UsersPages"));
 const Setting = lazy(() => import("../pages/users/SettingUser"));
 const OrderHistory = lazy(() => import("../pages/users/OrderHistory"));
 const WishList = lazy(() => import("../pages/users/WishList"));
-// const CartPop = lazy(() => import("../pages/users/cartPop"));
-
 
 const MenuDetail = lazy(() => import("../pages/product-detail/MenuDetail"));
-
 
 
 
@@ -47,25 +33,18 @@ export default function AppRoutes() {
 
         <Route path="/user" element={<UsersPages />} />
 
-
         {/* Page 404 */}
-        <Route element={<MainLayout />}>
-          <Route errorElement={<Pages404 />} />
-          <Route path="*" element={<Pages404 />} />
-        </Route>
+
+        <Route errorElement={<Pages404 />} />
+        <Route path="*" element={<Pages404 />} />
 
         {/*Home*/}
-        <Route element={<MainLayout />}>
-          <Route path="/home-pages" element={<Homepages />}></Route>
-        </Route>
 
-        <Route element={<MainLayout />}>
-          <Route path="/cart" element={<Cart />} />
-        </Route>
+        <Route path="/home-pages" element={<Homepages />} />
 
-        <Route element={<MainLayout />}>
-          <Route path="/checkout" element={<Checkout />} />
-        </Route>
+        <Route path="/cart" element={<Cart />} />
+
+        <Route path="/checkout" element={<Checkout />} />
 
         {/* setting Page  */}
 
@@ -77,19 +56,15 @@ export default function AppRoutes() {
 
         {/* Wish List page  */}
 
-
         <Route path="/wish-list" element={<WishList />} />
 
-              
-          <Route path="/wish-list" element={<WishList />} />
-
+   
 
         {/*Menu Detail Page*/}
         <Route element={<MainLayout />}>
           <Route path="/product-detail" element={<MenuDetail />} />
         </Route>
-
       </Routes>
     </div>
-  )
+  );
 }
