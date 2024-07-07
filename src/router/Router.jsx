@@ -19,7 +19,6 @@ const MenuDetail = lazy(() => import("../pages/product-detail/MenuDetail"));
 
 
 
-
 export default function AppRoutes() {
   return (
     <div className="">
@@ -66,14 +65,12 @@ export default function AppRoutes() {
           <Route path="/wish-list" element={<WishList />} />
 
 
-          <Route path="/cart-pop" element={<CartPop />} />
-
-
         {/*Menu Detail Page*/}
         <Route element={<MainLayout />}>
           <Route path="/product-detail" element={<MenuDetail />} />
         </Route>
         
+
       </Routes>
 
 
