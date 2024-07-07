@@ -93,7 +93,7 @@ const MenuDetail = () => {
 					</div>
 					<div className="content mt-2">
 						Đây là loại rau được cho là thực phẩm dưỡng sinh, ăn vào có thể lợi trường vị, thanh nhiệt, lợi tiểu tiện và ngừa bệnh ngoài da. Cải thìa có tác dụng chống scorbut, tạng khớp và làm tan sưng. <br />
-						Sản phẩm đạt tiêu chuẩn, không chứa các hóa chất, chất kích thích tăng trưởng gây hại, đảm bảo an toàn cho sức khỏe người tiêu dùng. 
+						Sản phẩm đạt tiêu chuẩn, không chứa các hóa chất, chất kích thích tăng trưởng gây hại, đảm bảo an toàn cho sức khỏe người tiêu dùng.
 					</div>
 					<div className='border-b border-gray-300 border-solid mt-6'></div>
 					<div className="add flex flex-row mt-5">
@@ -125,8 +125,8 @@ const MenuDetail = () => {
 				<div className='border-b border-gray-300 border-solid mb-6'></div>
 				<div className='mota1'>
 					<div className="text-gray-500">
-					Nếu bạn đang tìm một loại rau dễ ăn, hình dáng đẹp, giá trị dinh dưỡng cao thì hẳn Cải thìa là loại rau đáp ứng đủ các tiêu chí ấy. <br />
-					Cải thìa được gọi với cái tên khác là cải chíp, cải muỗng. Bởi lẽ từng bẹ lá uốn cong trông như cái muỗng. Cải có màu xanh đẹp mắt ở phần lá, thân mập, hơi lùn nhưng bẹ to, phần gốc bẹ có màu trắng.
+					Nếu bạn đang tìm một loại rau dễ ăn, hình dáng đẹp, giá trị dinh dưỡng cao thì hẳn Cải thìa là loại rau đáp ứng đủ các tiêu chí ấy. <br />
+					Cải thìa được gọi với cái tên khác là cải chíp, cải muỗng. Bởi lẽ từng bẹ lá uốn cong trông như cái muỗng. Cải có màu xanh đẹp mắt ở phần lá, thân mập, hơi lùn nhưng bẹ to, phần gốc bẹ có màu trắng.
 					<div className='flex flex-row'>
 						<img className='w-[30px] h-[20px] mt-2.5 mr-1' src={Tick} alt="" />
 						<div className='mt-1.5 text-gray-500'>Hàng xuất sứ từ Việt Nam</div>
@@ -143,7 +143,7 @@ const MenuDetail = () => {
 						<img className='w-[30px] h-[20px] mt-2.5 mr-1' src={Tick} alt="" />
 						<div className='mt-1.5 text-gray-500'>Đúng mô tả của sản phẩm</div><br />
 					</div>
-					<div className='mb-48'>Cải Thìa là một loại rau dễ ăn, có hình dáng và màu sắc đẹp, giàu dinh dưỡng và xuất hiện trong nhiều công thức nấu ăn.</div>
+					<div className='mb-48'>Cải Thìa là một loại rau dễ ăn, có hình dáng và màu sắc đẹp, giàu dinh dưỡng và xuất hiện trong nhiều công thức nấu ăn.</div>
 					</div>
 				</div>
 				<div className='themthongtin1 hidden'>
