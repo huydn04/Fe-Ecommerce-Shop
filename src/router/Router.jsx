@@ -1,10 +1,11 @@
-import { lazy } from "react";
-import { Route, Routes } from "react-router-dom";
-import MainLayout from "../layout/MainLayout";
+import { lazy } from 'react'
+import { Route, Routes } from 'react-router-dom'
+import MainLayout from '../layout/MainLayout'
 
-const LandingPage = lazy(() => import("../pages/LandingPage"));
-const AdminPages = lazy(() => import("../pages/admin/AdminPages"));
-const Pages404 = lazy(() => import("../pages/404/Page404"));
+const LandingPage = lazy(() => import('../pages/LandingPage'))
+const AdminPages = lazy(() => import('../pages/admin/AdminPages'))
+const Pages404 = lazy(() => import('../pages/404/Page404'))
+const Homepages = lazy(() => import('../pages/main/home'))
 
 export default function AppRoutes() {
   return (
@@ -23,7 +24,12 @@ export default function AppRoutes() {
           <Route errorElement={<Pages404 />} />
           <Route path="*" element={<Pages404 />} />
         </Route>
+
+        {/*Home*/}
+        <Route element={<MainLayout />}>
+          <Route path="/home-pages" element={<Homepages />}></Route>
+        </Route>
       </Routes>
     </div>
-  );
+  )
 }
