@@ -7,6 +7,20 @@ const AdminPages = lazy(() => import('../pages/admin/AdminPages'))
 const Pages404 = lazy(() => import('../pages/404/Page404'))
 const Homepages = lazy(() => import('../pages/main/home'))
 
+const Cart = lazy(() => import("../pages/Shopping-cart/Cart"));
+const Checkout = lazy(()=> import("../pages/Shopping-cart/Checkout"));
+const UsersPages = lazy(() => import("../pages/users/UsersPages"));
+const Setting = lazy(() => import("../pages/users/SettingUser"));
+const OrderHistory = lazy(() => import("../pages/users/OrderHistory"));
+const WishList = lazy(() => import("../pages/users/WishList"));
+
+
+const MenuDetail = lazy(() => import("../pages/product-detail/MenuDetail"));
+
+
+
+
+
 export default function AppRoutes() {
   return (
     <div className="">
@@ -14,10 +28,15 @@ export default function AppRoutes() {
         {/* Landing Page  */}
         <Route index path="/" element={<LandingPage />} />
 
-        {/* Amin Page  */}
-        <Route element={<MainLayout />}>
+        {/* Admin Page  */}
+
           <Route path="/admin" element={<AdminPages />} />
-        </Route>
+        
+        {/* User Pages */}
+
+        <Route path="/user" element={<UsersPages />} />
+
+   
 
         {/* Page 404 */}
         <Route element={<MainLayout />}>
@@ -25,11 +44,47 @@ export default function AppRoutes() {
           <Route path="*" element={<Pages404 />} />
         </Route>
 
+
         {/*Home*/}
         <Route element={<MainLayout />}>
           <Route path="/home-pages" element={<Homepages />}></Route>
         </Route>
+=======
+        <Route element={<MainLayout />}>
+          <Route path="/cart" element={<Cart />} />
+        </Route>
+
+        <Route element={<MainLayout />}>
+          <Route path="/checkout" element={<Checkout />} />
+        </Route>
+
+        {/* setting Page  */}
+        
+          <Route path="/setting" element={<Setting />} />
+     
+
+        {/* oder History Page  */}
+     
+          <Route path="/order-history" element={<OrderHistory />} />
+      
+
+        {/* Wish List page  */}
+              
+          <Route path="/wish-list" element={<WishList />} />
+        </Route>
+
+        {/*Menu Detail Page*/}
+        <Route element={<MainLayout />}>
+          <Route path="/product-detail" element={<MenuDetail />} />
+        </Route>
+        
+
+       
+
+
       </Routes>
+
+
     </div>
   )
 }
