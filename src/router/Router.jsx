@@ -12,7 +12,7 @@ const UsersPages = lazy(() => import("../pages/users/UsersPages"));
 const Setting = lazy(() => import("../pages/users/SettingUser"));
 const OrderHistory = lazy(() => import("../pages/users/OrderHistory"));
 const WishList = lazy(() => import("../pages/users/WishList"));
-const CartPop = lazy(() => import("../pages/users/cartPop"));
+// const CartPop = lazy(() => import("../pages/users/cartPop"));
 
 
 const MenuDetail = lazy(() => import("../pages/product-detail/MenuDetail"));
