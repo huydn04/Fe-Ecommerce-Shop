@@ -1,4 +1,4 @@
-import React from 'react'
+// import React from 'react'
 import { CaiThiaC} from '../../assets/img-product'
 import { CaiThia1 } from '../../assets/img-product'
 import { CaiThia2 } from '../../assets/img-product'
@@ -126,7 +126,7 @@ const MenuDetail = () => {
 				<div className='mota1'>
 					<div className="text-gray-500">
 					Nếu bạn đang tìm một loại rau dễ ăn, hình dáng đẹp, giá trị dinh dưỡng cao thì hẳn Cải thìa là loại rau đáp ứng đủ các tiêu chí ấy. <br />
-					Cải thìa được gọi với cái tên khác là cải chíp, cải muỗng. Bởi lẽ từng bẹ lá uốn cong trông như cái muỗng. Cải có màu xanh đẹp mắt ở phần lá, thân mập, hơi lùn nhưng bẹ to, phần gốc bẹ có màu trắng.
+					Cải thìa được gọi với cái tên khác là cải chíp, cải muỗng. Bởi lẽ từng bẹ lá uốn cong trông như cái muỗng. Cải có màu xanh đẹp mắt ở phần lá, thân mập, hơi lùn nhưng bẹ to, phần gốc bẹ có màu trắng.
 					<div className='flex flex-row'>
 						<img className='w-[30px] h-[20px] mt-2.5 mr-1' src={Tick} alt="" />
 						<div className='mt-1.5 text-gray-500'>Hàng xuất sứ từ Việt Nam</div>

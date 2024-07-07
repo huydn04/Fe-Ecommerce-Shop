@@ -64,7 +64,6 @@ export default function AppRoutes() {
               
           <Route path="/wish-list" element={<WishList />} />
 
-
         {/*Menu Detail Page*/}
         <Route element={<MainLayout />}>
           <Route path="/product-detail" element={<MenuDetail />} />
