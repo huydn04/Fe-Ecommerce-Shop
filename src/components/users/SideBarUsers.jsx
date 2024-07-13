@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import  { useState } from "react";
 import { Menu } from "react-daisyui";
 import { CiHeart } from "react-icons/ci";
 import { IoSettingsOutline } from "react-icons/io5";
@@ -33,10 +33,10 @@ const Sidebar = () => {
         {UsersPage.map((item, index) => {
           const Icon = item.icon;
           return (
-            <Menu.Item key={index} className="relative ">
+            <Menu.Item key={index} className="relative text-gray-500 ">
               <Link
                 to={item.link}
-                className={`btn flex  items-center justify-start rounded-none shadow-white hover:bg-gray-100 hover:text-primary hover:border-l-4 hover:border-y-0 hover:border-r-0 hover:border-solid hover:border-[#00B207] hover:font-bold  ${
+                className={`btn flex  items-center justify-start font-semibold  rounded-none shadow-white hover:bg-gray-100 hover:text-primary hover:border-l-4 hover:border-y-0 hover:border-r-0 hover:border-solid hover:border-[#00B207] hover:font-bold  ${
                   active === item.name
                     ? "  font-bold text-primary hover:border-none bg-gray-200"
                     : "bg-transparent font-light "

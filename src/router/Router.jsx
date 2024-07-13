@@ -1,6 +1,8 @@
 import { lazy } from "react";
 import { Route, Routes } from "react-router-dom";
 import MainLayout from "../layout/MainLayout";
+import CreateAccount from "../pages/users/CreateAccount";
+import LoginUser from "../pages/users/LoginUser";
 
 const LandingPage = lazy(() => import("../pages/LandingPage"));
 const AdminPages = lazy(() => import("../pages/admin/AdminPages"));
@@ -61,10 +63,17 @@ export default function AppRoutes() {
           <Route path="/wish-list" element={<WishList />} />
 
         {/*Menu Detail Page*/}
-        <Route element={<MainLayout />}>
+
           <Route path="/menu-detail" element={<MenuDetail />} />
-        </Route>
         
+        {/*Create Account page*/}
+
+          <Route path="/create-account" element={<CreateAccount />} />
+
+        {/*Login User Page*/}
+
+          <Route path="/login-user" element={<LoginUser />} />
+
       </Routes>
 
 
