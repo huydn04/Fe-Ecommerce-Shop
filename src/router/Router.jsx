@@ -16,7 +16,7 @@ const WishList = lazy(() => import("../pages/users/WishList"));
 
 const MenuDetail = lazy(() => import("../pages/product-detail/MenuDetail"));
 
-
+const CartPop = lazy(() => import("../pages/users/cartPop"))
 
 export default function AppRoutes() {
   return (
@@ -58,7 +58,9 @@ export default function AppRoutes() {
 
         <Route path="/wish-list" element={<WishList />} />
 
-   
+        {/* CartPop */}
+         
+          <Route path="/cart-pop" element={<CartPop/>}/>
 
         {/*Menu Detail Page*/}
         <Route element={<MainLayout />}>
