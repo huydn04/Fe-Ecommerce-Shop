@@ -11,7 +11,17 @@ export default {
     extend: {
       colors: {
         customColor: '2C742F',
+      },
+
+      container: {
+        center: true,
+        padding: "1.5rem",
+      },
+
+      boxShadow: {
+        custom: "0px 0px 21px rgb(0 0 0 / 20%)",
       }
+
     },
   },
   plugins: [
