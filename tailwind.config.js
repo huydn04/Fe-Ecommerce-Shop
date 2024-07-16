@@ -24,7 +24,7 @@ export default {
     themes: [
       {
         mytheme: {
-         primary: "#00B207"
+          primary: "#00B207",
         },
       },
     ],

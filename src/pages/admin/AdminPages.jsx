@@ -1,73 +1,170 @@
-import React, { useState } from "react";
-import { Menu } from "react-daisyui";
-import { BiCommentDetail } from "react-icons/bi";
-import { FaChartBar, FaUserCog, FaUserEdit } from "react-icons/fa";
-import { FaBoxesPacking } from "react-icons/fa6";
-import { IoHomeOutline } from "react-icons/io5";
-import { LuUserCog } from "react-icons/lu";
-import { MdSystemUpdateAlt } from "react-icons/md";
-import { RiBillLine } from "react-icons/ri";
-import { VscListFlat } from "react-icons/vsc";
+// import React from "react";
 
-import { Link } from "react-router-dom";
-
+import { Navbar, Select } from "react-daisyui";
+import SidebarAdminPages from "../../components/admin/sidebar/SidebarAdmin";
+import { useState } from "react";
+import { BsCalendarDate } from "react-icons/bs";
+import { LuClipboardList } from "react-icons/lu";
+import { FaUsers } from "react-icons/fa";
+import { TfiBarChart } from "react-icons/tfi";
+import { GoArchive } from "react-icons/go";
+import { FaArrowUpWideShort } from "react-icons/fa6";
+// import { IoMdArrowUp } from "react-icons/io";
+import BarCharts from "../../components/admin/chart/BarChartWithMultiXAxis";
+import BarChartNoPadding from "../../components/admin/chart/BarChartNoPadding";
+import SameDataComposedChart from "../../components/admin/chart/SameDataComposedChart";
+import AreaChartFillByValue from "../../components/admin/chart/AreaChartFillByValue";
 
 const AdminPages = () => {
-  const [active, setActive] = useState("Bảng Điều Khiển");
-  const UsersPage = [
-    {
-      name: "Trang chủ",
-      icon: IoHomeOutline,
-      link: "/setting",
-    },
-    { name: "Tất cả sản phẩm", icon: VscListFlat
-    },
-    { name: "Quản lí đơn hàng", icon: RiBillLine },
-    { name: "Thống kê doanh thu", icon: FaChartBar  },
-    { name: "Cập nhật sản phẩm", icon:  MdSystemUpdateAlt },
-    { name: " Quản lí người dùng", icon: LuUserCog  },
-    { name: " Quản lí người dùng", icon:  FaUserEdit},
-    { name: "Nhập - Xuất Hàng", icon: FaBoxesPacking  },
-    { name: " Đánh giá", icon: BiCommentDetail  },
-  ];
-
+  const [value, setValue] = useState("default");
   return (
+    <div className=" h-full   ">
+      <div className=" flex justify-center h-full  ">
+        <div className="">
+          {/* Side Bar */}
+          <SidebarAdminPages />
+        </div>
 
-    
-   <div className="bg-gray-200">
-     <div className="w-[250px]  bg-white  h-screen ">
-      <p className="p-5 text-primary font-bold text-3xl">FPT TEAM</p>
-      <p className=" pt-10 ml-9 font-bold text-2xl">Navigation</p>
-      <Menu className="flex-grow mt-3 ">
-        {UsersPage.map((item, index) => {
-          const Icon = item.icon;
-          return (
-            <Menu.Item key={index} className="relative ">
-              <Link
-                to={item.link}
-                className={`btn flex  items-center justify-start rounded-none shadow-white hover:bg-gray-100 hover:text-primary hover:border-l-4 hover:border-y-0 hover:border-r-0 hover:border-solid hover:border-[#00B207] hover:font-bold  ${
-                  active === item.name
-                    ? "  font-bold text-primary hover:border-none bg-gray-200"
-                    : "bg-transparent font-light "
-                } relative pl-4`}
-                onClick={() => setActive(item.name)}
-              >
-                <div
-                  className={`${
-                    active === item.name
-                      ? "absolute left-0 top-0 h-full w-1 bg-primary"
-                      : ""
-                  }`}
-                />
-                <Icon className={"ml-2 mr-2 h-5 w-5"} />
-                {item.name}
-              </Link>
-            </Menu.Item>
-          );
-        })}
-      </Menu>
+        <div className="w-full px-5 py-3 ml-64 h-full bg-gray-100 ">
+          <Navbar className="flex justify-between items-center">
+            <div className="">
+              <div className="">
+                <p className="font-bold text-3xl">Trang Chủ</p>
+
+                <div className="text-gray-500">
+                  <p>Trang Thống kê tổng hợp</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="flex-none ">
+              <div className="flex w-full  p-4 items-center justify-center gap-2 ">
+                <BsCalendarDate className="text-2xl" />
+                <Select /*className="w-[200px]"*/
+                  value={value}
+                  bordered="false"
+                  onChange={(event) => setValue(event.target.value)}
+                  className=" bg-gray-200 focus:bg-white"
+                >
+                  <option value={"default"} disabled>
+                    Lọc theo năm
+                  </option>
+                  <option value={"Date1"}>15/08/2004</option>
+                  <option value={"Date2"}>15/08/2004</option>
+                  <option value={"Date3"}>15/08/2004</option>
+                  <option value={"Date4"}>15/08/2004</option>
+                  <option value={"Date5"}>15/08/2004</option>
+                </Select>
+              </div>
+            </div>
+          </Navbar>
+
+          <div className="grid-cols-4 grid gap-7 h-[150px]  ">
+            <div className="bg-white rounded-xl shadow-md font-medium shadow-gray-300 gap-3 flex items-center justify-center">
+              <div className="  flex items-center justify-center gap-3">
+                <LuClipboardList className="text-6xl text-primary border rounded-xl  p-1 bg-gray-100 hover:bg-gray-300" />
+
+                <div className="">
+                  <p>100</p>
+                  <p>Đơn Hàng</p>
+                  <div className="flex items-center gap-2  ">
+                    <FaArrowUpWideShort className="text-primary border rounded-xl text-xl p-1 bg-gray-100 hover:bg-gray-300" />
+                    {/* <IoArrowUpCircleOutline className="text-primary border rounded-xl text-2xl p-1 bg-green-100" />
+                    <IoMdArrowUp className="text-primary border rounded-xl text-xl p-1 bg-green-100"/> */}
+                    <p className="text-xs font-normal text-gray-600">
+                      4%(30 Days)
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-white   flex items-center justify-center rounded-xl shadow-md shadow-gray-300 gap-3">
+              <GoArchive className="text-6xl text-primary border rounded-xl  p-1 bg-gray-100 hover:bg-gray-300" />
+              <div className="">
+                <p>200</p>
+                <p>Sản Phẩm</p>
+                <div className="flex items-center gap-2  ">
+                  <FaArrowUpWideShort className="text-primary border rounded-xl text-xl p-1 bg-gray-100 hover:bg-gray-300" />
+                  {/* <IoArrowUpCircleOutline className="text-primary border rounded-xl text-2xl p-1 bg-green-100" />
+                    <IoMdArrowUp className="text-primary border rounded-xl text-xl p-1 bg-green-100"/> */}
+                  <p className="text-xs font-normal text-gray-600">
+                    4%(30 Days)
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="bg-white   flex items-center justify-center rounded-xl shadow-md shadow-gray-300 gap-3">
+              <FaUsers className="text-6xl text-primary border rounded-xl  p-1 bg-gray-100 hover:bg-gray-300" />
+              <div className="">
+                <p>300</p>
+                <p>Tổng số Tài Khoản</p>
+                <div className="flex items-center gap-2  ">
+                  <FaArrowUpWideShort className="text-primary border rounded-xl text-xl p-1 bg-gray-100 hover:bg-gray-300" />
+                  {/* <IoArrowUpCircleOutline className="text-primary border rounded-xl text-2xl p-1 bg-green-100" />
+                    <IoMdArrowUp className="text-primary border rounded-xl text-xl p-1 bg-green-100"/> */}
+                  <p className="text-xs font-normal text-gray-600">
+                    4%(30 Days)
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="bg-white   flex items-center justify-center rounded-xl shadow-md shadow-gray-300 gap-3">
+              <TfiBarChart className="text-6xl text-primary border rounded-xl  p-1 bg-gray-100 hover:bg-gray-300" />
+              <div className="">
+                <p>400</p>
+                <p>Tổng Doanh Thu</p>
+                <div className="flex items-center gap-2  ">
+                  <FaArrowUpWideShort className="text-primary border rounded-xl text-xl p-1 bg-gray-100 hover:bg-gray-300" />
+                  {/* <IoArrowUpCircleOutline className="text-primary border rounded-xl text-2xl p-1 bg-green-100" />
+                    <IoMdArrowUp className="text-primary border rounded-xl text-xl p-1 bg-green-100"/> */}
+                  <p className="text-xs font-normal text-gray-600">
+                    4%(30 Days)
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="">
+            <div className="grid-cols-2 grid w-full  gap-7 mt-10">
+              <div className="bg-white rounded-xl shadow-md">
+                <div className="mt-10 mx-10 font-semibold text-xl">
+                  <p>Tổng Doanh thu 12 Tháng</p>
+                </div>
+                <div className="  py-10 px-7  w-full h-[350px] ">
+                  <BarCharts />
+                </div>
+              </div>
+              <div className="bg-white rounded-xl shadow-md">
+                <div className="mt-10 mx-10 font-semibold text-xl">
+                  <p>Tổng Sản Phẩm</p>
+                </div>
+                <div className="  py-10 px-7  w-full h-[350px] ">
+                  <BarChartNoPadding />
+                </div>
+              </div>
+              <div className="bg-white rounded-xl shadow-md">
+                <div className="mt-10 mx-10 font-semibold text-xl">
+                  <p>Tổng Đơn Hàng</p>
+                </div>
+                <div className="  py-10 px-7  w-full h-[350px] ">
+                  <SameDataComposedChart />
+                </div>
+              </div>
+              <div className="bg-white rounded-xl shadow-md">
+                <div className="mt-10 mx-10 font-semibold text-xl">
+                  <p>Tổng Số gì đó chưa biết</p>
+                </div>
+                <div className="  py-10 px-7  w-full h-[350px] ">
+                  <AreaChartFillByValue />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-   </div>
   );
 };
 
