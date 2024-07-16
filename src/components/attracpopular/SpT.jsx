@@ -20,7 +20,7 @@ const SpT = ({ className = "", image, chaniseCabbage }) => {
           </div>
           <div className="flex flex-row items-start justify-start py-0 pr-5 pl-0 gap-[2px] text-base text-gray-scale-gray-900">
             <div className="relative leading-[150%] font-medium inline-block min-w-[51px] whitespace-nowrap">
-              $14.99
+              $15
             </div>
             <div className="relative leading-[150%] text-gray-scale-gray-400 inline-block min-w-[53px] whitespace-nowrap">
               $20.99

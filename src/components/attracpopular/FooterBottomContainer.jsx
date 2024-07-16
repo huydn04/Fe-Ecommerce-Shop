@@ -21,12 +21,12 @@ const FooterBottomContainer = ({ className = "" }) => {
           <img
             className="h-10 w-10 relative rounded-481xl min-h-[40px]"
             alt=""
-            src="/social-media-2.svg"
+            src="/Fe-Ecommerce-Shop/src/assets/attracpopular/social-media-2.svg"
           />
           <img
             className="h-10 w-10 relative rounded-481xl min-h-[40px]"
             alt=""
-            src="/social-media-3.svg"
+            src="/Fe-Ecommerce-Shop/src/assets/attracpopular/social-media-3.svg"
           />
         </div>
         <div className="flex flex-col items-start justify-start pt-[9.5px] px-0 pb-0 box-border max-w-full">
@@ -40,23 +40,23 @@ const FooterBottomContainer = ({ className = "" }) => {
               className="self-stretch w-[45px] relative max-h-full object-cover min-h-[32px]"
               loading="lazy"
               alt=""
-              src="/methodapplepay@2x.png"
+              src="/Fe-Ecommerce-Shop/src/assets/attracpopular/methodapplepay@2x.png"
             />
             <img
               className="self-stretch w-[45px] relative max-h-full object-cover min-h-[32px]"
               loading="lazy"
               alt=""
-              src="/methodvisa@2x.png"
+              src="/Fe-Ecommerce-Shop/src/assets/attracpopular/methodvisa@2x.png"
             />
             <img
               className="self-stretch w-[45px] relative max-h-full object-cover min-h-[32px]"
               alt=""
-              src="/methoddiscover@2x.png"
+              src="/Fe-Ecommerce-Shop/src/assets/attracpopular/methoddiscover@2x.png"
             />
             <img
               className="self-stretch w-[45px] relative max-h-full object-cover min-h-[32px]"
               alt=""
-              src="/methodmastercard1@2x.png"
+              src="/Fe-Ecommerce-Shop/src/assets/attracpopular/methodmastercard1@2x.png"
             />
             <div className="w-[65px] rounded-[5.29px] bg-gray-scale-gray-900 box-border flex flex-col items-start justify-start py-0.5 px-0 gap-[1px] border-[1px] border-solid border-gray-scale-gray-800">
               <div className="self-stretch h-8 relative rounded-[5.29px] bg-gray-scale-gray-900 box-border hidden border-[1px] border-solid border-gray-scale-gray-800" />
@@ -65,7 +65,7 @@ const FooterBottomContainer = ({ className = "" }) => {
                   <img
                     className="h-[11px] w-[11px] relative overflow-hidden shrink-0 min-h-[11px] z-[1]"
                     alt=""
-                    src="/lock-1.svg"
+                    src="/Fe-Ecommerce-Shop/src/assets/attracpopular/lock-1.svg"
                   />
                   <div className="relative leading-[100%] inline-block min-w-[38px] z-[1]">
                     Secure

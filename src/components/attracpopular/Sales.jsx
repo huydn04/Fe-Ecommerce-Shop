@@ -35,7 +35,7 @@ const Sales = ({ className = "" }) => {
                 className="h-[30px] w-[30px] object-contain"
                 loading="lazy"
                 alt=""
-                src="/aoorw.svg"
+                src="/Fe-Ecommerce-Shop/src/assets/attracpopular/aoorw.svg"
               />
             </button>
             <button
@@ -45,7 +45,7 @@ const Sales = ({ className = "" }) => {
               <img
                 className="h-[30px] w-[30px]"
                 alt=""
-                src="/aoorw-1.svg"
+                src="/Fe-Ecommerce-Shop/src/assets/attracpopular/aoorw-1.svg"
               />
             </button>
           </div>
@@ -58,7 +58,7 @@ const Sales = ({ className = "" }) => {
                   <img
                     className="self-stretch flex-1 relative max-w-full overflow-hidden max-h-full object-cover"
                     alt=""
-                    src="/public/táo xanh.png"
+                    src="/Fe-Ecommerce-Shop/src/assets/attracpopular/táo xanh.png"
                   />
                 </div>
                 <div className="self-stretch flex flex-row items-start justify-start py-0 pr-[21px] pl-5">
@@ -76,13 +76,13 @@ const Sales = ({ className = "" }) => {
                         className="w-12 h-12 relative"
                         loading="lazy"
                         alt=""
-                        src="/add-to-wishlist1.svg"
+                        src="/Fe-Ecommerce-Shop/src/assets/attracpopular/add-to-wishlist1.svg"
                       />
                       <img
                         className="w-12 h-12 relative"
                         loading="lazy"
                         alt=""
-                        src="/quick-view1.svg"
+                        src="/Fe-Ecommerce-Shop/src/assets/attracpopular/quick-view1.svg"
                       />
                     </div>
                   </div>
@@ -110,74 +110,74 @@ const Sales = ({ className = "" }) => {
                     <img
                       className="h-[18px] w-[18px] relative overflow-hidden shrink-0 min-h-[18px]"
                       alt=""
-                      src="/star-11.svg"
+                      src="/Fe-Ecommerce-Shop/src/assets/attracpopular/star-11.svg"
                     />
                     <img
                       className="h-[18px] w-[18px] relative overflow-hidden shrink-0 min-h-[18px]"
                       alt=""
-                      src="/star-11.svg"
+                      src="/Fe-Ecommerce-Shop/src/assets/attracpopular/star-11.svg"
                     />
                     <img
                       className="h-[18px] w-[18px] relative overflow-hidden shrink-0 min-h-[18px]"
                       alt=""
-                      src="/star-11.svg"
+                      src="/Fe-Ecommerce-Shop/src/assets/attracpopular/star-11.svg"
                     />
                     <img
                       className="h-[18px] w-[18px] relative overflow-hidden shrink-0 min-h-[18px]"
                       alt=""
-                      src="/star-11.svg"
+                      src="/Fe-Ecommerce-Shop/src/assets/attracpopular/star-11.svg"
                     />
                     <img
                       className="h-[18px] w-[18px] relative overflow-hidden shrink-0 min-h-[18px]"
                       alt=""
-                      src="/star-51.svg"
+                      src="/Fe-Ecommerce-Shop/src/assets/attracpopular/star-51.svg"
                     />
                   </div>
                 </div>
               </div>
               <SalesSp
-                image="/public/đào.png"
+                image="/Fe-Ecommerce-Shop/src/assets/attracpopular/đào.png"
                 surjapurMango="Đào"
-                bag="/bag-2.svg"
-                star5="/star-51.svg"
+                bag="/Fe-Ecommerce-Shop/src/assets/attracpopular/bag-2.svg"
+                star5="/Fe-Ecommerce-Shop/src/assets/attracpopular/star-51.svg"
               />
               <SalesSp
-                image="/public/cà chua.png"
+                image="/Fe-Ecommerce-Shop/src/assets/attracpopular/cà chua.png"
                 surjapurMango="Cà Chua"
-                bag="/bag-2.svg"
-                star5="/star-51.svg"
+                bag="/Fe-Ecommerce-Shop/src/assets/attracpopular/bag-2.svg"
+                star5="/Fe-Ecommerce-Shop/src/assets/attracpopular/star-51.svg"
               />
               <ImgSales
-                image="/public/bông cải.png"
+                image="/Fe-Ecommerce-Shop/src/assets/attracpopular/bông cải.png"
                 freshCauliflower="Bông Cải Trắng"
-                bag="/bag-2.svg"
-                star5="/star-51.svg"
+                bag="/Fe-Ecommerce-Shop/src/assets/attracpopular/bag-2.svg"
+                star5="/Fe-Ecommerce-Shop/src/assets/attracpopular/star-51.svg"
               />
             </div>
             <div className="self-stretch grid flex-row items-start justify-start grid-cols-[repeat(4,_minmax(248px,_1fr))] max-w-full lg:[grid-row-gap:20px] lg:grid-cols-[repeat(2,_minmax(248px,_430px))] lg:justify-center mq450:grid-cols-[minmax(248px,_1fr)]">
               <SalesSp
-                image="/public/xalasch.png"
+                image="/Fe-Ecommerce-Shop/src/assets/attracpopular/xalasch.png"
                 surjapurMango="Xà Lách"
-                bag="/bag-2.svg"
-                star5="/star-51.svg"
+                bag="/Fe-Ecommerce-Shop/src/assets/attracpopular/bag-2.svg"
+                star5="/Fe-Ecommerce-Shop/src/assets/attracpopular/star-51.svg"
               />
               <ImgSales
-                image="/public/ớt chuông.png"
+                image="/Fe-Ecommerce-Shop/src/assets/attracpopular/ớt chuông.png"
                 freshCauliflower="Ớt Chuông"
-                bag="/bag-2.svg"
-                star5="/star-51.svg"
+                bag="/Fe-Ecommerce-Shop/src/assets/attracpopular/bag-2.svg"
+                star5="/Fe-Ecommerce-Shop/src/assets/attracpopular/star-51.svg"
               />
               <SalesSp
-                image="/public/ớt xanh.png"
+                image="/Fe-Ecommerce-Shop/src/assets/attracpopular/ớt xanh.png"
                 surjapurMango="Ớt Xanh"
-                bag="/bag-2.svg"
-                star5="/star-51.svg"
+                bag="/Fe-Ecommerce-Shop/src/assets/attracpopular/bag-2.svg"
+                star5="/Fe-Ecommerce-Shop/src/assets/attracpopular/star-51.svg"
               />
               <SalesSp
-                image="/public/cả tím.png"
+                image="/Fe-Ecommerce-Shop/src/assets/attracpopular/cả tím.png"
                 surjapurMango="Cà Tím"
-                bag="/bag-2.svg"
-                star5="/star-51.svg"
+                bag="/Fe-Ecommerce-Shop/src/assets/attracpopular/bag-2.svg"
+                star5="/Fe-Ecommerce-Shop/src/assets/attracpopular/star-51.svg"
               />
             </div>
           </div>
