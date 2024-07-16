@@ -1,6 +1,7 @@
 import { lazy } from "react";
 import { Route, Routes } from "react-router-dom";
 import MainLayout from "../layout/MainLayout";
+import CreateUser from "../pages/users/CreateUser";
 import CreateAccount from "../pages/users/CreateAccount";
 import LoginUser from "../pages/users/LoginUser";
 
@@ -80,6 +81,14 @@ export default function AppRoutes() {
         {/* CartPop */}
          
           <Route path="/cart-pop" element={<CartPop/>}/>
+        
+        {/* Create Account page */}
+         
+        <Route path="/create-user" element={<CreateUser />} />
+
+        {/* Login User page */}
+         
+        <Route path="/login-user" element={<LoginUser />} />
 
         {/*Menu Detail Page*/}
         <Route element={<MainLayout />}>
