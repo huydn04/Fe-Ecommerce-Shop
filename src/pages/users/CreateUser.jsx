@@ -71,6 +71,8 @@ const CreateUser = () => {
 
     console.log(formError);
 
+//Giao diện
+
 return (
     <div className="re-page flex justify-center items-center w-auto h-[100vh]">
         <div className='w-[600px] border border-solid border-gray-300 shadow-custom bg-white pt-5 mt-5 mb-5'>
