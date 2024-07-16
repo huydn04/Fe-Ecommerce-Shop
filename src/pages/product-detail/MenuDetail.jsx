@@ -38,7 +38,7 @@ const MenuDetail = () => {
 
 	
 	return (
-		<div className='products w-[1320px] '> 
+		<div className='products w-[1320px]'> 
 			<div className='ml-40 mr-40 w-[1220px] h-[558px] flex flex-row justify-center items-center gap-7'>
 				<div className='product-imgs basis-1/2 flex flex-row'>
 					<div className='product-imgs-small basis-1/4 flex flex-col gap-1 justify-center'>

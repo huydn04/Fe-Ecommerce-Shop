@@ -1,6 +1,9 @@
 import { lazy } from "react";
 import { Route, Routes } from "react-router-dom";
 import MainLayout from "../layout/MainLayout";
+import CreateUser from "../pages/users/CreateUser";
+import CreateAccount from "../pages/users/CreateAccount";
+import LoginUser from "../pages/users/LoginUser";
 
 const LandingPage = lazy(() => import("../pages/LandingPage"));
 const AdminPages = lazy(() => import("../pages/admin/AdminPages"));
@@ -16,7 +19,9 @@ const WishList = lazy(() => import("../pages/users/WishList"));
 
 const MenuDetail = lazy(() => import("../pages/product-detail/MenuDetail"));
 
+
 const CartPop = lazy(() => import("../pages/users/cartPop"));
+
 
 export default function AppRoutes() {
   return (
@@ -56,11 +61,36 @@ export default function AppRoutes() {
 
         {/* Wish List page  */}
 
+              
+          <Route path="/wish-list" element={<WishList />} />
+
+        {/*Menu Detail Page*/}
+
+          <Route path="/menu-detail" element={<MenuDetail />} />
+        
+        {/*Create Account page*/}
+
+          <Route path="/create-account" element={<CreateAccount />} />
+
+        {/*Login User Page*/}
+
+          <Route path="/login-user" element={<LoginUser />} />
+
+
         <Route path="/wish-list" element={<WishList />} />
 
         {/* CartPop */}
 
-        <Route path="/cart-pop" element={<CartPop />} />
+          <Route path="/cart-pop" element={<CartPop/>}/>
+        
+        {/* Create Account page */}
+         
+        <Route path="/create-user" element={<CreateUser />} />
+
+        {/* Login User page */}
+         
+        <Route path="/login-user" element={<LoginUser />} />
+
 
         {/*Menu Detail Page*/}
         <Route element={<MainLayout />}>

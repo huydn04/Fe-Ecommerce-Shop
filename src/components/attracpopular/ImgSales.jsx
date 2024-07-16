@@ -33,22 +33,22 @@ const ImgSales = ({ className = "", image, freshCauliflower, bag, star5 }) => {
           <img
             className="h-[18px] w-[18px] relative overflow-hidden shrink-0 min-h-[18px]"
             alt=""
-            src="/star-11.svg"
+            src="/Fe-Ecommerce-Shop/src/assets/attracpopular/star-11.svg"
           />
           <img
             className="h-[18px] w-[18px] relative overflow-hidden shrink-0 min-h-[18px]"
             alt=""
-            src="/star-11.svg"
+            src="/Fe-Ecommerce-Shop/src/assets/attracpopular/star-11.svg"
           />
           <img
             className="h-[18px] w-[18px] relative overflow-hidden shrink-0 min-h-[18px]"
             alt=""
-            src="/star-11.svg"
+            src="/Fe-Ecommerce-Shop/src/assets/attracpopular/star-11.svg"
           />
           <img
             className="h-[18px] w-[18px] relative overflow-hidden shrink-0 min-h-[18px]"
             alt=""
-            src="/star-11.svg"
+            src="/Fe-Ecommerce-Shop/src/assets/attracpopular/star-11.svg"
           />
           <img
             className="h-[18px] w-[18px] relative overflow-hidden shrink-0 min-h-[18px]"
