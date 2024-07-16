@@ -66,21 +66,10 @@ export default function AppRoutes() {
         {/*Menu Detail Page*/}
 
           <Route path="/menu-detail" element={<MenuDetail />} />
-        
-        {/*Create Account page*/}
-
-          <Route path="/create-account" element={<CreateAccount />} />
-
-        {/*Login User Page*/}
-
-          <Route path="/login-user" element={<LoginUser />} />
-
-
-        <Route path="/wish-list" element={<WishList />} />
 
         {/* CartPop */}
          
-          <Route path="/cart-pop" element={<CartPop/>}/>
+        <Route path="/cart-pop" element={<CartPop/>}/>
         
         {/* Create Account page */}
          
@@ -90,10 +79,6 @@ export default function AppRoutes() {
          
         <Route path="/login-user" element={<LoginUser />} />
 
-        {/*Menu Detail Page*/}
-        <Route element={<MainLayout />}>
-          <Route path="/product-detail" element={<MenuDetail />} />
-        </Route>
       </Routes>
     </div>
   );
