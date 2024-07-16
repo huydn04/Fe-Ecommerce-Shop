@@ -3,27 +3,72 @@ import React from 'react'
 const LoginUser = () => {
 
 return (
-    <div className=''>
-        <div className="flex justify-center">
-            <div className='w-[600px] h-[300px] rounded-md border border-solid border-gray-300 mt-9 '>
-                <p className='text-center mt-3 text-2xl font-bold'>Đăng Nhập</p>
-                <div className='mt-3 pl-36'>
-                    <input className='w-[300px] h-[35px] pl-5 rounded-md border border-solid border-gray-300' type="email" placeholder='Nhập email' /> <br />
-                    <input className='w-[300px] h-[35px] pl-5 rounded-md border border-solid border-gray-300 mt-3' type="password" placeholder='Mật khẩu' /> <br />
-                    <div className='flex flex-row gap-16 mt-2 mb-2'>
-                        <div className='flex flex-row gap-1'>
-                            <input className='w-[15px] h-[15px] mt-3' type="checkbox" name="" id="" /> <br />
-                            <p className='mt-1.5 text-gray-700'>Lưu mật khẩu</p>
-                        </div>
-                        <p className='mt-1.5 text-gray-700'>Quên mật khẩu?</p>
+    <div className="re-page flex justify-center items-center w-auto h-[100vh]">
+        <div className='w-[600px] border border-solid border-gray-300 shadow-custom bg-white pt-5 mt-5 mb-5'>
+            <h1 className='text-center font-bold text-2xl mt-3'>Tạo tài khoản</h1>
+            <form onSubmit={handleSubmit} className='flex flex-col items-center mb-5'>
+                <div className=''>
+                    <input 
+                        className='w-[350px] h-[35px] pl-4 mt-3 border border-solid border-gray-300 rounded-md hover:border-green-700 '
+                        type="text"
+                        id="e-mail"
+                        name="email"
+                        placeholder='Nhập email'
+                        value={formValue.email}
+                        onChange={handleChange}
+                    />
+                    {formError.email && (
+                        <div className='text-red-500 text-xs ml-1 mt-1'>{formError.email}</div>
+                    )}
+                </div>
+                <div>
+                    <div className='relative flex items-center gap-2'>
+                        <input 
+                            className='w-[350px] h-[35px] pl-4 mt-3 border border-solid border-gray-300 rounded-md hover:border-green-700 '
+                            type="password"
+                            name="password"
+                            id="password" 
+                            placeholder='Mật khẩu'
+                            value={formValue.password}
+                            onChange={handleChange}
+                        />
+                        <FaEye className='w-[15px] h-[15px] absolute ml-80 mt-3'/>
                     </div>
-                    <button className='w-[300px] h-[35px] pl-5 mt-2 rounded-full bg-green-500 text-white' type="submit">Đăng nhập</button>
+                    {formError.password && (
+                        <div className='text-red-500 text-xs ml-1 mt-1'>{formError.password}</div>
+                    )}
                 </div>
-                <div className='flex flex-row gap-1 justify-center mt-3 mb-2 text-gray-700'>
-                    <p>Bạn chưa có tài khoản?</p>
-                    <p className='font-semibold hover:font-bold cursor-pointer'>Đăng ký</p>
+                <div>
+                    <div className='relative flex items-center gap-2'>
+                        <input 
+                            className='w-[350px] h-[35px] pl-4 mt-3 border border-solid border-gray-300 rounded-md hover:border-green-700 '
+                            type="password" 
+                            name="confirmPassword" 
+                            id="confirm-Password" 
+                            placeholder='Xác nhận mật khẩu'
+                            value={formValue.confirmPassword}
+                            onChange={handleChange}
+                        />
+                        <FaEye className='w-[15px] h-[15px] absolute ml-80 mt-3'/>
+                    </div>
+                    {formError.confirmPassword && (
+                        <div className='text-red-500 text-xs ml-1 mt-1'>{formError.confirmPassword}</div>
+                    )}
                 </div>
-            </div>
+                <input 
+                        className='mt-3 mr-[338px]'
+                        type="checkbox"
+                        name="" 
+                        id=""
+                />
+                <button type="submit" className='w-[350px] h-[30px] mt-3 font-semibold border border-solid border-gray-300 rounded-full bg-green-500 text-white hover:bg-green-600 hover:duration-300'>
+                    Đăng ký 
+                </button>
+                <div className='flex flex-row gap-1 mt-2 text-sm text-gray-800'>
+                    <p>Bạn đã có tài khoản?</p>
+                    <p className='font-semibold hover:text-green-700 hover:font-bold cursor-pointer'>Đăng nhập</p>
+                </div>
+            </form>
         </div>
     </div>
  )
