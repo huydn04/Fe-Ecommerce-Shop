@@ -20,7 +20,8 @@ const WishList = lazy(() => import("../pages/users/WishList"));
 const MenuDetail = lazy(() => import("../pages/product-detail/MenuDetail"));
 
 
-const CartPop = lazy(() => import("../pages/users/cartPop"))
+const CartPop = lazy(() => import("../pages/users/cartPop"));
+
 
 export default function AppRoutes() {
   return (
@@ -70,6 +71,7 @@ export default function AppRoutes() {
         {/* CartPop */}
          
         <Route path="/cart-pop" element={<CartPop/>}/>
+
         
         {/* Create Account page */}
          
@@ -79,7 +81,12 @@ export default function AppRoutes() {
          
         <Route path="/login-user" element={<LoginUser />} />
 
-      </Routes>
+        {/*Menu Detail Page*/}
+        <Route element={<MainLayout />}>
+          <Route path="/product-detail" element={<MenuDetail />} />
+        </Route>
+
+</Routes>
     </div>
   );
 }

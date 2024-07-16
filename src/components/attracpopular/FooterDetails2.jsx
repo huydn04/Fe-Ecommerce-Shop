@@ -100,7 +100,7 @@ const FooterDetails2 = ({ className = "" }) => {
               <img
                 className="h-7 w-7 relative overflow-hidden shrink-0"
                 alt=""
-                src="/applenegative-1.svg"
+                src="/Fe-Ecommerce-Shop/src/assets/attracpopular/applenegative-1.svg"
               />
               <div className="flex-1 flex flex-col items-start justify-start">
                 <div className="relative leading-[130%] inline-block min-w-[100px]">
@@ -115,7 +115,7 @@ const FooterDetails2 = ({ className = "" }) => {
               <img
                 className="h-6 w-6 relative overflow-hidden shrink-0"
                 alt=""
-                src="/icongoogleplay-1.svg"
+                src="/Fe-Ecommerce-Shop/src/assets/attracpopular/icongoogleplay-1.svg"
               />
               <div className="flex flex-col items-start justify-start">
                 <div className="relative leading-[130%] inline-block min-w-[100px]">
