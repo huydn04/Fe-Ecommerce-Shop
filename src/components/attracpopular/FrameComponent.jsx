@@ -32,7 +32,7 @@ const BackGroup1 = ({ className = "" }) => {
                           <img
                             className="w-[15px] h-3 relative"
                             alt=""
-                            src="/group-2.svg"
+                            src="/Fe-Ecommerce-Shop/src/assets/attracpopular/group-2.svg"
                           />
                         </div>
                       </button>
@@ -45,7 +45,7 @@ const BackGroup1 = ({ className = "" }) => {
                   className="h-full w-full z-[1] object-contain absolute left-[0px] top-[9px] [transform:scale(1.09)] mq1400:flex-1"
                   loading="lazy"
                   alt=""
-                  src="/public/giỏ trái cây.png"
+                  src="/Fe-Ecommerce-Shop/src/assets/attracpopular/giỏ trái cây.png"
                 />
               </div>
             </div>
@@ -64,7 +64,7 @@ const BackGroup1 = ({ className = "" }) => {
               className="h-10 w-10 relative overflow-hidden shrink-0"
               loading="lazy"
               alt=""
-              src="/deliverytruck-1.svg"
+              src="/Fe-Ecommerce-Shop/src/assets/attracpopular/deliverytruck-1.svg"
             />
             <div className="flex-1 flex flex-col items-start justify-center gap-[5px]">
               <div className="self-stretch relative leading-[120%] font-semibold">
@@ -77,23 +77,23 @@ const BackGroup1 = ({ className = "" }) => {
             <img
               className="h-12 w-12 relative overflow-hidden shrink-0 hidden"
               alt=""
-              src="/shipping.svg"
+              src="/Fe-Ecommerce-Shop/src/assets/attracpopular/shipping.svg"
             />
             <img
               className="h-10 w-10 relative overflow-hidden shrink-0 hidden"
               alt=""
-              src="/sucure.svg"
+              src="/Fe-Ecommerce-Shop/src/assets/attracpopular/sucure.svg"
             />
             <img
               className="h-10 w-10 relative overflow-hidden shrink-0 hidden"
               alt=""
-              src="/box.svg"
+              src="/Fe-Ecommerce-Shop/src/assets/attracpopular/box.svg"
             />
             <img
               className="h-10 w-10 relative overflow-hidden shrink-0"
               loading="lazy"
               alt=""
-              src="/headphones-1.svg"
+              src="/Fe-Ecommerce-Shop/src/assets/attracpopular/headphones-1.svg"
             />
             <div className="flex-1 flex flex-col items-start justify-center gap-[5px]">
               <div className="self-stretch relative leading-[120%] font-semibold">
@@ -108,7 +108,7 @@ const BackGroup1 = ({ className = "" }) => {
             <img
               className="h-12 w-12 relative overflow-hidden shrink-0 hidden"
               alt=""
-              src="/shipping.svg"
+              src="/Fe-Ecommerce-Shop/src/assets/attracpopular/shipping.svg"
             />
             <img
               className="h-11 w-11 relative overflow-hidden shrink-0 hidden"
@@ -118,13 +118,13 @@ const BackGroup1 = ({ className = "" }) => {
             <img
               className="h-10 w-10 relative overflow-hidden shrink-0 hidden"
               alt=""
-              src="/box.svg"
+              src="/Fe-Ecommerce-Shop/src/assets/attracpopular/box.svg"
             />
             <img
               className="h-10 w-10 relative overflow-hidden shrink-0"
               loading="lazy"
               alt=""
-              src="/shoppingbag.svg"
+              src="/Fe-Ecommerce-Shop/src/assets/attracpopular/shoppingbag.svg"
             />
             <div className="flex-1 flex flex-col items-start justify-center gap-[5px]">
               <div className="self-stretch relative leading-[120%] font-semibold">
@@ -139,23 +139,23 @@ const BackGroup1 = ({ className = "" }) => {
             <img
               className="h-12 w-12 relative overflow-hidden shrink-0 hidden"
               alt=""
-              src="/shipping.svg"
+              src="/Fe-Ecommerce-Shop/src/assets/attracpopular/shipping.svg"
             />
             <img
               className="h-11 w-11 relative overflow-hidden shrink-0 hidden"
               alt=""
-              src="/247.svg"
+              src="/Fe-Ecommerce-Shop/src/assets/attracpopular/247.svg"
             />
             <img
               className="h-10 w-10 relative overflow-hidden shrink-0 hidden"
               alt=""
-              src="/sucure.svg"
+              src="/Fe-Ecommerce-Shop/src/assets/attracpopular/sucure.svg"
             />
             <img
               className="h-10 w-10 relative overflow-hidden shrink-0"
               loading="lazy"
               alt=""
-              src="/package.svg"
+              src="/Fe-Ecommerce-Shop/src/assets/attracpopular/package.svg"
             />
             <div className="flex-1 flex flex-col items-start justify-center gap-[5px]">
               <div className="self-stretch relative leading-[120%] font-semibold">

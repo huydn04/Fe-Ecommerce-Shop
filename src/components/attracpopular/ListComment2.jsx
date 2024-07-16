@@ -10,7 +10,7 @@ const ListComment2 = ({ className = "" }) => {
           <img
             className="w-8 h-[26px] relative"
             alt=""
-            src="/testimonial-content.svg"
+            src="/Fe-Ecommerce-Shop/src/assets/attracpopular/testimonial-content.svg"
           />
           <div className="self-stretch relative leading-[150%]">
             Pellentesque eu nibh eget mauris congue mattis mattis nec tellus.
@@ -22,7 +22,7 @@ const ListComment2 = ({ className = "" }) => {
               <img
                 className="h-14 w-14 relative rounded-[50%] object-cover"
                 alt=""
-                src="/image-21@2x.png"
+                src="/Fe-Ecommerce-Shop/src/assets/attracpopular/image-21@2x.png"
               />
               <div className="flex flex-col items-start justify-start">
                 <div className="relative leading-[150%] font-medium inline-block min-w-[84px]">
@@ -37,27 +37,27 @@ const ListComment2 = ({ className = "" }) => {
               <img
                 className="h-5 w-5 relative overflow-hidden shrink-0 min-h-[20px]"
                 alt=""
-                src="/star-6.svg"
+                src="/Fe-Ecommerce-Shop/src/assets/attracpopular/star-6.svg"
               />
               <img
                 className="h-5 w-5 relative overflow-hidden shrink-0 min-h-[20px]"
                 alt=""
-                src="/star-6.svg"
+                src="/Fe-Ecommerce-Shop/src/assets/attracpopular/star-6.svg"
               />
               <img
                 className="h-5 w-5 relative overflow-hidden shrink-0 min-h-[20px]"
                 alt=""
-                src="/star-6.svg"
+                src="/Fe-Ecommerce-Shop/src/assets/attracpopular/star-6.svg"
               />
               <img
                 className="h-5 w-5 relative overflow-hidden shrink-0 min-h-[20px]"
                 alt=""
-                src="/star-6.svg"
+                src="/Fe-Ecommerce-Shop/src/assets/attracpopular/star-6.svg"
               />
               <img
                 className="h-5 w-5 relative overflow-hidden shrink-0 min-h-[20px]"
                 alt=""
-                src="/star-6.svg"
+                src="/Fe-Ecommerce-Shop/src/assets/attracpopular/star-6.svg"
               />
             </div>
           </div>
@@ -66,7 +66,7 @@ const ListComment2 = ({ className = "" }) => {
           <img
             className="w-8 h-[26px] relative"
             alt=""
-            src="/testimonial-content.svg"
+            src="/Fe-Ecommerce-Shop/src/assets/attracpopular/testimonial-content.svg"
           />
           <div className="self-stretch relative leading-[150%]">
             Pellentesque eu nibh eget mauris congue mattis mattis nec tellus.
@@ -78,7 +78,7 @@ const ListComment2 = ({ className = "" }) => {
               <img
                 className="h-14 w-14 relative rounded-[50%] object-cover shrink-0"
                 alt=""
-                src="/image-22@2x.png"
+                src="/Fe-Ecommerce-Shop/src/assets/attracpopular/image-22@2x.png"
               />
               <div className="flex flex-col items-start justify-start">
                 <div className="relative leading-[150%] font-medium inline-block min-w-[118px]">
@@ -93,27 +93,27 @@ const ListComment2 = ({ className = "" }) => {
               <img
                 className="h-5 w-5 relative overflow-hidden shrink-0 min-h-[20px]"
                 alt=""
-                src="/star-6.svg"
+                src="/Fe-Ecommerce-Shop/src/assets/attracpopular/star-6.svg"
               />
               <img
                 className="h-5 w-5 relative overflow-hidden shrink-0 min-h-[20px]"
                 alt=""
-                src="/star-6.svg"
+                src="/Fe-Ecommerce-Shop/src/assets/attracpopular/star-6.svg"
               />
               <img
                 className="h-5 w-5 relative overflow-hidden shrink-0 min-h-[20px]"
                 alt=""
-                src="/star-6.svg"
+                src="/Fe-Ecommerce-Shop/src/assets/attracpopular/star-6.svg"
               />
               <img
                 className="h-5 w-5 relative overflow-hidden shrink-0 min-h-[20px]"
                 alt=""
-                src="/star-6.svg"
+                src="/Fe-Ecommerce-Shop/src/assets/attracpopular/star-6.svg"
               />
               <img
                 className="h-5 w-5 relative overflow-hidden shrink-0 min-h-[20px]"
                 alt=""
-                src="/star-6.svg"
+                src="/Fe-Ecommerce-Shop/src/assets/attracpopular/star-6.svg"
               />
             </div>
           </div>
@@ -122,7 +122,7 @@ const ListComment2 = ({ className = "" }) => {
           <img
             className="w-8 h-[26px] relative"
             alt=""
-            src="/testimonial-content.svg"
+            src="/Fe-Ecommerce-Shop/src/assets/attracpopular/testimonial-content.svg"
           />
           <div className="self-stretch relative leading-[150%]">
             Pellentesque eu nibh eget mauris congue mattis mattis nec tellus.
@@ -134,7 +134,7 @@ const ListComment2 = ({ className = "" }) => {
               <img
                 className="h-14 w-14 relative rounded-[50%] object-cover"
                 alt=""
-                src="/image-23@2x.png"
+                src="/Fe-Ecommerce-Shop/src/assets/attracpopular/image-23@2x.png"
               />
               <div className="flex flex-col items-start justify-start">
                 <div className="relative leading-[150%] font-medium inline-block min-w-[105px]">
@@ -149,27 +149,27 @@ const ListComment2 = ({ className = "" }) => {
               <img
                 className="h-5 w-5 relative overflow-hidden shrink-0 min-h-[20px]"
                 alt=""
-                src="/star-6.svg"
+                src="/Fe-Ecommerce-Shop/src/assets/attracpopular/star-6.svg"
               />
               <img
                 className="h-5 w-5 relative overflow-hidden shrink-0 min-h-[20px]"
                 alt=""
-                src="/star-6.svg"
+                src="/Fe-Ecommerce-Shop/src/assets/attracpopular/star-6.svg"
               />
               <img
                 className="h-5 w-5 relative overflow-hidden shrink-0 min-h-[20px]"
                 alt=""
-                src="/star-6.svg"
+                src="/Fe-Ecommerce-Shop/src/assets/attracpopular/star-6.svg"
               />
               <img
                 className="h-5 w-5 relative overflow-hidden shrink-0 min-h-[20px]"
                 alt=""
-                src="/star-6.svg"
+                src="/Fe-Ecommerce-Shop/src/assets/attracpopular/star-6.svg"
               />
               <img
                 className="h-5 w-5 relative overflow-hidden shrink-0 min-h-[20px]"
                 alt=""
-                src="/star-6.svg"
+                src="/Fe-Ecommerce-Shop/src/assets/attracpopular/star-6.svg"
               />
             </div>
           </div>

@@ -13,7 +13,7 @@ const MainHeader = ({ className = "" }) => {
             <img
               className="h-[18px] w-[15px] relative min-h-[18px]"
               alt=""
-              src="/map-pin.svg"
+              src="/Fe-Ecommerce-Shop/src/assets/attracpopular/map-pin.svg"
             />
             <div className="flex flex-col items-start justify-start pt-px px-0 pb-0">
               <div className="relative leading-[16px] whitespace-nowrap">
@@ -32,7 +32,7 @@ const MainHeader = ({ className = "" }) => {
                   <img
                     className="w-[7px] h-[3.5px] relative"
                     alt=""
-                    src="/group.svg"
+                    src="/Fe-Ecommerce-Shop/src/assets/attracpopular/group.svg"
                   />
                 </div>
               </div>
@@ -61,7 +61,7 @@ const MainHeader = ({ className = "" }) => {
               <img
                 className="h-4 w-4 relative overflow-hidden shrink-0 object-contain"
                 alt=""
-                src="/chevron-down-1.svg"
+                src="/Fe-Ecommerce-Shop/src/assets/attracpopular/chevron-down-1.svg"
               />
             </button>
             <div className="flex flex-row items-center justify-start gap-[4px]">
@@ -71,7 +71,7 @@ const MainHeader = ({ className = "" }) => {
               <img
                 className="h-4 w-4 relative overflow-hidden shrink-0 object-contain"
                 alt=""
-                src="/chevron-down-1.svg"
+                src="/Fe-Ecommerce-Shop/src/assets/attracpopular/chevron-down-1.svg"
               />
             </div>
             <div className="h-[21px] w-16 flex flex-row items-center justify-start gap-[4px]">
@@ -81,7 +81,7 @@ const MainHeader = ({ className = "" }) => {
               <img
                 className="h-4 w-4 relative overflow-hidden shrink-0 object-contain"
                 alt=""
-                src="/chevron-down-1.svg"
+                src="/Fe-Ecommerce-Shop/src/assets/attracpopular/chevron-down-1.svg"
               />
             </div>
             <div className="flex flex-row items-center justify-start gap-[4px]">
@@ -91,7 +91,7 @@ const MainHeader = ({ className = "" }) => {
               <img
                 className="h-4 w-4 relative overflow-hidden shrink-0 object-contain"
                 alt=""
-                src="/chevron-down-1.svg"
+                src="/Fe-Ecommerce-Shop/src/assets/attracpopular/chevron-down-1.svg"
               />
             </div>
             <div className="flex flex-row items-center justify-start gap-[4px]">
@@ -101,7 +101,7 @@ const MainHeader = ({ className = "" }) => {
               <img
                 className="h-4 w-4 relative overflow-hidden shrink-0 object-contain hidden"
                 alt=""
-                src="/chevron-down.svg"
+                src="/Fe-Ecommerce-Shop/src/assets/attracpopular/chevron-down.svg"
               />
             </div>
             <div className="flex flex-row items-center justify-start gap-[4px]">
@@ -111,7 +111,7 @@ const MainHeader = ({ className = "" }) => {
               <img
                 className="h-4 w-4 relative overflow-hidden shrink-0 object-contain hidden"
                 alt=""
-                src="/chevron-down.svg"
+                src="//Fe-Ecommerce-Shop/src/assets/attracpopular/chevron-down.svg"
               />
             </div>
           </div>
@@ -120,7 +120,7 @@ const MainHeader = ({ className = "" }) => {
               className="h-7 w-7 relative overflow-hidden shrink-0"
               loading="lazy"
               alt=""
-              src="/phonecall-1.svg"
+              src="/Fe-Ecommerce-Shop/src/assets/attracpopular/phonecall-1.svg"
             />
             <div className="relative leading-[150%] font-medium inline-block min-w-[103px] whitespace-nowrap">
               (219) 555-0114
