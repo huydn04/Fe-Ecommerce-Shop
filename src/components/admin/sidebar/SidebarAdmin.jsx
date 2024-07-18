@@ -72,3 +72,15 @@ const SidebarAdminPages = () => {
 };
 
 export default SidebarAdminPages;
+
+
+import React from 'react'
+
+export const SidebarAdmin = () => {
+
+  
+  return (
+    <div>SidebarAdmin</div>
+  )
+}
+
