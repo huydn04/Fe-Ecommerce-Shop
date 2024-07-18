@@ -17,7 +17,7 @@ const OrderHistory = lazy(() => import("../pages/users/OrderHistory"));
 const WishList = lazy(() => import("../pages/users/WishList"));
 const MenuDetail = lazy(() => import("../pages/product-detail/MenuDetail"));
 const AttractiveOffers = lazy(() => import("../pages/AttractiveOffers"));
-const CartPop = lazy(() => import("../pages/users/cartPop"));
+const CartPop = lazy(() => import("../pages/users/CartPop"));
 
 export default function AppRoutes() {
   return (
