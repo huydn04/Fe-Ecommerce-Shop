@@ -9,14 +9,12 @@ const LandingPage = lazy(() => import("../pages/LandingPage"));
 const AdminPages = lazy(() => import("../pages/admin/AdminPages"));
 const Pages404 = lazy(() => import("../pages/404/Page404"));
 const Homepages = lazy(() => import("../pages/main/home"));
-
 const Cart = lazy(() => import("../pages/Shopping-cart/Cart"));
 const Checkout = lazy(() => import("../pages/Shopping-cart/Checkout"));
 const UsersPages = lazy(() => import("../pages/users/UsersPages"));
 const Setting = lazy(() => import("../pages/users/SettingUser"));
 const OrderHistory = lazy(() => import("../pages/users/OrderHistory"));
 const WishList = lazy(() => import("../pages/users/WishList"));
-
 const MenuDetail = lazy(() => import("../pages/product-detail/MenuDetail"));
 const AttractiveOffers = lazy(() => import("../pages/AttractiveOffers"));
 const CartPop = lazy(() => import("../pages/users/cartPop"));
