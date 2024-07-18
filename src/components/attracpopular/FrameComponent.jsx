@@ -113,7 +113,7 @@ const BackGroup1 = ({ className = "" }) => {
             <img
               className="h-11 w-11 relative overflow-hidden shrink-0 hidden"
               alt=""
-              src="/247.svg"
+              src="/Fe-Ecommerce-Shop/src/assets/attracpopular/247.svg"
             />
             <img
               className="h-10 w-10 relative overflow-hidden shrink-0 hidden"

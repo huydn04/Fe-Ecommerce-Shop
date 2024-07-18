@@ -1,13 +1,14 @@
 import { Button } from "@mui/material";
 import ImgSpPopular from "./componentsImgSpPopular";
 import SpHotSellerTop from "./SpHotSellerTop";
-import SpT from "/src/components/SpT"; 
+import SpT from "./SpT"; 
 import PropTypes from "prop-types";
 import React, { useState } from 'react';  
 
 
 const SPpopular = ({ className = "" }) => {
   const [isHovered, setIsHovered] = useState(false);
+
   return (
     <div
       className={`w-[1320px] max-w-full flex flex-col items-start justify-start gap-[50px] leading-[normal] tracking-[normal] text-left text-21xl text-gray-scale-gray-900 font-heading-05-heading-05-600 mq725:gap-[25px] ${className}`}

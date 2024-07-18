@@ -1,4 +1,4 @@
-import { lazy } from "react";
+import { lazy, Suspense } from "react";
 import { Route, Routes } from "react-router-dom";
 import MainLayout from "../layout/MainLayout";
 import CreateUser from "../pages/users/CreateUser";
@@ -18,83 +18,66 @@ const OrderHistory = lazy(() => import("../pages/users/OrderHistory"));
 const WishList = lazy(() => import("../pages/users/WishList"));
 
 const MenuDetail = lazy(() => import("../pages/product-detail/MenuDetail"));
-
-
-const CartPop = lazy(() => import("../pages/users/cartPop"))
+const AttractiveOffers = lazy(() => import("../pages/AttractiveOffers"));
+const CartPop = lazy(() => import("../pages/users/cartPop"));
 
 export default function AppRoutes() {
   return (
-    <div className="">
+    <Suspense fallback={<div>Loading...</div>}>
       <Routes>
-        {/* Landing Page  */}
+        {/* Landing Page */}
         <Route index path="/" element={<LandingPage />} />
 
-        {/* Admin Page  */}
-
+        {/* Admin Page */}
         <Route path="/admin" element={<AdminPages />} />
 
         {/* User Pages */}
-
         <Route path="/user" element={<UsersPages />} />
 
         {/* Page 404 */}
-
-        <Route errorElement={<Pages404 />} />
         <Route path="*" element={<Pages404 />} />
 
-        {/*Home*/}
-
+        {/* Home */}
         <Route path="/home-pages" element={<Homepages />} />
 
+        {/* Cart */}
         <Route path="/cart" element={<Cart />} />
 
+        {/* Checkout */}
         <Route path="/checkout" element={<Checkout />} />
 
-        {/* setting Page  */}
-
+        {/* Setting Page */}
         <Route path="/setting" element={<Setting />} />
 
-        {/* oder History Page  */}
-
+        {/* Order History Page */}
         <Route path="/order-history" element={<OrderHistory />} />
 
-        {/* Wish List page  */}
-
-              
-          <Route path="/wish-list" element={<WishList />} />
-
-        {/*Menu Detail Page*/}
-
-          <Route path="/menu-detail" element={<MenuDetail />} />
-        
-        {/*Create Account page*/}
-
-          <Route path="/create-account" element={<CreateAccount />} />
-
-        {/*Login User Page*/}
-
-          <Route path="/login-user" element={<LoginUser />} />
-
-
+        {/* Wish List Page */}
         <Route path="/wish-list" element={<WishList />} />
 
-        {/* CartPop */}
-         
-          <Route path="/cart-pop" element={<CartPop/>}/>
-        
-        {/* Create Account page */}
-         
-        <Route path="/create-user" element={<CreateUser />} />
+        {/* Menu Detail Page */}
+        <Route path="/menu-detail" element={<MenuDetail />} />
 
-        {/* Login User page */}
-         
+        {/* Attractive Offers Page */}
+        <Route path="/attractive-offers" element={<AttractiveOffers />} />
+
+        {/* Create Account Page */}
+        <Route path="/create-account" element={<CreateAccount />} />
+
+        {/* Login User Page */}
         <Route path="/login-user" element={<LoginUser />} />
 
-        {/*Menu Detail Page*/}
+        {/* CartPop */}
+        <Route path="/cart-pop" element={<CartPop />} />
+
+        {/* Create User Page */}
+        <Route path="/create-user" element={<CreateUser />} />
+
+        {/* MainLayout with nested routes */}
         <Route element={<MainLayout />}>
           <Route path="/product-detail" element={<MenuDetail />} />
         </Route>
       </Routes>
-    </div>
+    </Suspense>
   );
 }
