@@ -9,7 +9,7 @@ const TagBar1 = ({ className = "" }) => {
         <img
           className="h-8 w-8 relative overflow-hidden shrink-0"
           alt=""
-          src="/Fe-Ecommerce-Shop/src/assets/attracpopular/plant-1.svg"
+          src="/src/assets/attracpopular/plant-1.svg"
         />
       </div>
       <div className="w-[514px] rounded-md box-border flex flex-row items-start justify-center [row-gap:20px] max-w-full text-mini text-gray-scale-gray-500 border-[1px] border-solid border-gray-scale-gray-100 mq825:flex-wrap">
@@ -18,7 +18,7 @@ const TagBar1 = ({ className = "" }) => {
     className="h-5 w-5 relative overflow-hidden shrink-0"
     loading="lazy"
     alt=""
-    src="/Fe-Ecommerce-Shop/src/assets/attracpopular/search.svg"
+    src="/src/assets/attracpopular/search.svg"
   />
   <input
     type="text"
@@ -40,7 +40,7 @@ const TagBar1 = ({ className = "" }) => {
               className="w-8 h-8 relative"
               loading="lazy"
               alt=""
-              src="/Fe-Ecommerce-Shop/src/assets/attracpopular/heart.svg"
+              src="/src/assets/attracpopular/heart.svg"
             />
           </div>
           <div className="h-[29px] flex flex-col items-start justify-start pt-[5px] px-0 pb-0 box-border">
@@ -52,7 +52,7 @@ const TagBar1 = ({ className = "" }) => {
                 className="h-full w-full absolute !m-[0] top-[0px] right-[0px] bottom-[0px] left-[0px] max-w-full overflow-hidden max-h-full"
                 loading="lazy"
                 alt=""
-                src="/Fe-Ecommerce-Shop/src/assets/attracpopular/bag.svg"
+                src="/src/assets/attracpopular/bag.svg"
               />
               <div className="h-5 flex-1 rounded-2xl bg-branding-success-dark box-border overflow-hidden flex flex-row items-start justify-start pt-[3.5px] px-1.5 pb-[4.5px] z-[1] border-[1px] border-solid border-gray-scale-white">
                 <a className="[text-decoration:none] relative leading-[10px] font-medium text-[inherit] inline-block min-w-[6px]">

@@ -1,10 +1,12 @@
+import React from 'react';
+
 import MainHeader from "../components/attracpopular/MainHeader";
 import BackGroup1 from "../components/attracpopular/FrameComponent";
 import Sales from "../components/attracpopular/Sales";
 import ListComment2 from "../components/attracpopular/ListComment2";
 import FooterDetails2 from "../components/attracpopular/FooterDetails2";
 import FooterBottomContainer from "../components/attracpopular/FooterBottomContainer";
-import React from 'react';
+
 
 const AttractiveOffers = () => {
   return (
@@ -27,7 +29,7 @@ const AttractiveOffers = () => {
                     <img
                       className="self-stretch flex-1 relative max-w-full overflow-hidden max-h-full object-cover"
                       alt=""
-                      src="/public/táo xanh.png"
+                      src="/src/assets/attracpopular/táo xanh.png"
                     />
                   </div>
                   <div className="absolute top-[16px] left-[16px] rounded bg-branding-error flex flex-row items-start justify-start py-[3px] px-2 gap-[4px] z-[1]">
@@ -57,34 +59,34 @@ const AttractiveOffers = () => {
                     <img
                       className="h-3 w-3 relative overflow-hidden shrink-0 min-h-[12px]"
                       alt=""
-                      src="/star-1.svg"
+                      src="/src/assets/attracpopular/star-1.svg"
                     />
                     <img
                       className="h-3 w-3 relative overflow-hidden shrink-0 min-h-[12px]"
                       alt=""
-                      src="/star-1.svg"
+                      src="/src/assets/attracpopular/star-1.svg"
                     />
                     <img
                       className="h-3 w-3 relative overflow-hidden shrink-0 min-h-[12px]"
                       alt=""
-                      src="/star-1.svg"
+                      src="/src/assets/attracpopular/star-1.svg"
                     />
                     <img
                       className="h-3 w-3 relative overflow-hidden shrink-0 min-h-[12px]"
                       alt=""
-                      src="/star-1.svg"
+                      src="/src/assets/attracpopular/star-1.svg"
                     />
                     <img
                       className="h-3 w-3 relative overflow-hidden shrink-0 min-h-[12px]"
                       alt=""
-                      src="/star-5.svg"
+                      src="/src/assets/attracpopular/star-5.svg"
                     />
                   </div>
                   <img
                     className="w-10 h-10 absolute !m-[0] top-[23px] right-[16px] z-[1]"
                     loading="lazy"
                     alt=""
-                    src="/add-to-cart-6.svg"
+                    src="/src/assets/attracpopular/add-to-cart-6.svg"
                   />
                 </div>
               </div>
@@ -93,7 +95,7 @@ const AttractiveOffers = () => {
                   <img
                     className="self-stretch flex-1 relative max-w-full overflow-hidden max-h-full object-cover"
                     alt=""
-                    src="/public/cam.png"
+                    src="/src/assets/attracpopular/cam.png"
                   />
                 </div>
                 <div className="self-stretch flex flex-col items-start justify-center p-3 relative gap-[6px] shrink-0">
@@ -111,33 +113,33 @@ const AttractiveOffers = () => {
                     <img
                       className="h-3 w-3 relative overflow-hidden shrink-0 min-h-[12px]"
                       alt=""
-                      src="/star-1.svg"
+                      src="/src/assets/attracpopular/star-1.svg"
                     />
                     <img
                       className="h-3 w-3 relative overflow-hidden shrink-0 min-h-[12px]"
                       alt=""
-                      src="/star-1.svg"
+                      src="/src/assets/attracpopular/star-1.svg"
                     />
                     <img
                       className="h-3 w-3 relative overflow-hidden shrink-0 min-h-[12px]"
                       alt=""
-                      src="/star-1.svg"
+                      src="/src/assets/attracpopular/star-1.svg"
                     />
                     <img
                       className="h-3 w-3 relative overflow-hidden shrink-0 min-h-[12px]"
                       alt=""
-                      src="/star-1.svg"
+                      src="/src/assets/attracpopular/star-1.svg"
                     />
                     <img
                       className="h-3 w-3 relative overflow-hidden shrink-0 min-h-[12px]"
                       alt=""
-                      src="/star-5.svg"
+                      src="/src/assets/attracpopular/star-5.svg"
                     />
                   </div>
                   <img
                     className="w-10 h-10 absolute !m-[0] top-[23px] right-[16px] z-[1]"
                     alt=""
-                    src="/add-to-cart-7.svg"
+                    src="/src/assets/attracpopular/add-to-cart-7.svg"
                   />
                 </div>
               </div>
@@ -146,18 +148,18 @@ const AttractiveOffers = () => {
                   <img
                     className="self-stretch flex-1 relative max-w-full overflow-hidden max-h-full object-cover"
                     alt=""
-                    src="/public/cải .png"
+                    src="/src/assets/attracpopular/cải .png"
                   />
                   <div className="!m-[0] absolute top-[16px] right-[16px] flex flex-col items-start justify-start gap-[6px]">
                     <img
                       className="w-10 h-10 relative z-[1]"
                       alt=""
-                      src="/add-to-wishlist.svg"
+                      src="/src/assets/attracpopular/add-to-wishlist.svg"
                     />
                     <img
                       className="w-10 h-10 relative z-[1]"
                       alt=""
-                      src="/quick-view.svg"
+                      src="/src/assets/attracpopular/quick-view.svg"
                     />
                   </div>
                 </div>
@@ -176,33 +178,33 @@ const AttractiveOffers = () => {
                     <img
                       className="h-3 w-3 relative overflow-hidden shrink-0 min-h-[12px]"
                       alt=""
-                      src="/star-1.svg"
+                      src="/src/assets/attracpopular/star-1.svg"
                     />
                     <img
                       className="h-3 w-3 relative overflow-hidden shrink-0 min-h-[12px]"
                       alt=""
-                      src="/star-1.svg"
+                      src="/src/assets/attracpopular/star-1.svg"
                     />
                     <img
                       className="h-3 w-3 relative overflow-hidden shrink-0 min-h-[12px]"
                       alt=""
-                      src="/star-1.svg"
+                      src="/src/assets/attracpopular/star-1.svg"
                     />
                     <img
                       className="h-3 w-3 relative overflow-hidden shrink-0 min-h-[12px]"
                       alt=""
-                      src="/star-1.svg"
+                      src="/src/assets/attracpopular/star-1.svg"
                     />
                     <img
                       className="h-3 w-3 relative overflow-hidden shrink-0 min-h-[12px]"
                       alt=""
-                      src="/star-5.svg"
+                      src="/src/assets/attracpopular/star-5.svg"
                     />
                   </div>
                   <img
                     className="w-10 h-10 absolute !m-[0] top-[23px] right-[16px] z-[1]"
                     alt=""
-                    src="/add-to-cart-8.svg"
+                    src="/src/assets/attracpopular/add-to-cart-8.svg"
                   />
                 </div>
               </div>
@@ -211,7 +213,7 @@ const AttractiveOffers = () => {
                   <img
                     className="self-stretch flex-1 relative max-w-full overflow-hidden max-h-full object-cover"
                     alt=""
-                    src="/public/xalasch.png"
+                    src="/src/assets/attracpopular/xalasch.png"
                   />
                 </div>
                 <div className="self-stretch flex flex-col items-start justify-center p-3 relative gap-[6px] shrink-0">
@@ -229,33 +231,33 @@ const AttractiveOffers = () => {
                     <img
                       className="h-3 w-3 relative overflow-hidden shrink-0 min-h-[12px]"
                       alt=""
-                      src="/star-1.svg"
+                      src="/src/assets/attracpopular/star-1.svg"
                     />
                     <img
                       className="h-3 w-3 relative overflow-hidden shrink-0 min-h-[12px]"
                       alt=""
-                      src="/star-1.svg"
+                      src="/src/assets/attracpopular/star-1.svg"
                     />
                     <img
                       className="h-3 w-3 relative overflow-hidden shrink-0 min-h-[12px]"
                       alt=""
-                      src="/star-1.svg"
+                      src="/src/assets/attracpopular/star-1.svg"
                     />
                     <img
                       className="h-3 w-3 relative overflow-hidden shrink-0 min-h-[12px]"
                       alt=""
-                      src="/star-1.svg"
+                      src="/src/assets/attracpopular/star-1.svg"
                     />
                     <img
                       className="h-3 w-3 relative overflow-hidden shrink-0 min-h-[12px]"
                       alt=""
-                      src="/star-5.svg"
+                      src="/src/assets/attracpopular/star-5.svg"
                     />
                   </div>
                   <img
                     className="w-10 h-10 absolute !m-[0] top-[23px] right-[16px] z-[1]"
                     alt=""
-                    src="/add-to-cart-7.svg"
+                    src="/src/assets/attracpopular/add-to-cart-7.svg"
                   />
                 </div>
               </div>
@@ -264,7 +266,7 @@ const AttractiveOffers = () => {
                   <img
                     className="self-stretch flex-1 relative max-w-full overflow-hidden max-h-full object-cover"
                     alt=""
-                    src="/public/cà tím.png"
+                    src="/src/assets/attracpopular/cà tím.png"
                   />
                 </div>
                 <div className="self-stretch flex flex-col items-start justify-center p-3 relative gap-[6px] shrink-0">
@@ -282,33 +284,33 @@ const AttractiveOffers = () => {
                     <img
                       className="h-3 w-3 relative overflow-hidden shrink-0 min-h-[12px]"
                       alt=""
-                      src="/star-1.svg"
+                      src="/src/assets/attracpopular/star-1.svg"
                     />
                     <img
                       className="h-3 w-3 relative overflow-hidden shrink-0 min-h-[12px]"
                       alt=""
-                      src="/star-1.svg"
+                      src="/src/assets/attracpopular/star-1.svg"
                     />
                     <img
                       className="h-3 w-3 relative overflow-hidden shrink-0 min-h-[12px]"
                       alt=""
-                      src="/star-1.svg"
+                      src="/src/assets/attracpopular/star-1.svg"
                     />
                     <img
                       className="h-3 w-3 relative overflow-hidden shrink-0 min-h-[12px]"
                       alt=""
-                      src="/star-1.svg"
+                      src="/src/assets/attracpopular/star-1.svg"
                     />
                     <img
                       className="h-3 w-3 relative overflow-hidden shrink-0 min-h-[12px]"
                       alt=""
-                      src="/star-5.svg"
+                      src="/src/assets/attracpopular/star-5.svg"
                     />
                   </div>
                   <img
                     className="w-10 h-10 absolute !m-[0] top-[23px] right-[16px] z-[1]"
                     alt=""
-                    src="/add-to-cart-7.svg"
+                    src="/src/assets/attracpopular/add-to-cart-7.svg"
                   />
                 </div>
               </div>
@@ -319,7 +321,7 @@ const AttractiveOffers = () => {
               <img
                 className="w-full h-full absolute !m-[0] top-[0px] right-[0px] bottom-[0px] left-[0px] rounded-lg max-w-full overflow-hidden max-h-full object-cover"
                 alt=""
-                src="/banner-shape@2x.png"
+                src="/src/assets/attracpopular/banner-shape@2x.png"
               />
               <div className="self-stretch relative tracking-[0.03em] leading-[100%] uppercase font-medium z-[1]">
                 deal hot
@@ -391,7 +393,7 @@ const AttractiveOffers = () => {
                     <img
                       className="w-[15px] h-3 relative"
                       alt=""
-                      src="/group-3.svg"
+                      src="/src/assets/attracpopular/group-3.svg"
                     />
                   </div>
                 </button>
@@ -401,7 +403,7 @@ const AttractiveOffers = () => {
               <img
                 className="w-full h-full absolute !m-[0] top-[0px] right-[0px] bottom-[0px] left-[0px] rounded-xl max-w-full overflow-hidden max-h-full object-cover"
                 alt=""
-                src="/public/thịt.png"
+                src="/src/assets/attracpopular/thịt.png"
               />
               <div className="self-stretch flex flex-col items-end justify-start gap-[12.5px]">
                 <div className="self-stretch flex flex-col items-start justify-start gap-[16px]">
@@ -434,7 +436,7 @@ const AttractiveOffers = () => {
                     <img
                       className="w-[15px] h-3 relative"
                       alt=""
-                      src="/group-3.svg"
+                      src="/src/assets/attracpopular/group-3.svg"
                     />
                   </div>
                 </button>
@@ -444,7 +446,7 @@ const AttractiveOffers = () => {
               <img
                 className="w-full h-full absolute !m-[0] top-[0px] right-[0px] bottom-[0px] left-[0px] rounded-xl max-w-full overflow-hidden max-h-full object-cover"
                 alt=""
-                src="/public/foodall.png"
+                src="/src/assets/attracpopular/foodall.png"
               />
               <div className="self-stretch flex flex-col items-start justify-start gap-[18px]">
                 <div className="self-stretch relative tracking-[0.03em] leading-[100%] uppercase font-medium z-[1]">
@@ -477,7 +479,7 @@ const AttractiveOffers = () => {
                     <img
                       className="w-[15px] h-3 relative"
                       alt=""
-                      src="/group-3.svg"
+                      src="/src/assets/attracpopular/group-3.svg"
                     />
                   </div>
                 </button>
@@ -504,12 +506,12 @@ const AttractiveOffers = () => {
                 <img
                   className="h-[45px] w-[45px] relative object-contain min-h-[45px]"
                   alt=""
-                  src="/aoorw.svg"
+                  src="/src/assets/attracpopular/aoorw.svg"
                 />
                 <img
                   className="h-[45px] w-[45px] relative min-h-[45px]"
                   alt=""
-                  src="/aoorw-1.svg"
+                  src="/src/assets/attracpopular/aoorw-1.svg"
                 />
               </div>
             </div>
@@ -554,7 +556,7 @@ const AttractiveOffers = () => {
           <img
             className="h-[233px] w-[326px] absolute !m-[0] bottom-[-45px] left-[100px] object-cover z-[2]"
             alt=""
-            src="/blue-and-orange-simple-ilustration-supermarket-logo--1-removebgpreview-1-1@2x.png"
+            src="/src/assets/attracpopular/blue-and-orange-simple-ilustration-supermarket-logo--1-removebgpreview-1-1@2x.png"
           />
         </div>
         <FooterDetails2 />

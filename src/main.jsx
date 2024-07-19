@@ -1,6 +1,6 @@
 import React, { Suspense } from "react";
 import ReactDOM from "react-dom/client";
-import App from "./App.jsx";
+import App from "./App";
 import "./index.css";
 import { BrowserRouter } from "react-router-dom";
 import ErrorBoundary from "./components/ErrorBoundary.jsx";
@@ -17,3 +17,4 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     </BrowserRouter>
   </React.StrictMode>
 );
+reportWebVitals();

@@ -28,27 +28,27 @@ const ImgSpPopular = ({ className = "", image, greenApple }) => {
           <img
             className="h-3 w-3 relative overflow-hidden shrink-0 min-h-[12px]"
             alt=""
-            src="/Fe-Ecommerce-Shop/src/assets/attracpopular/star-1.svg"
+            src="/src/assets/attracpopular/star-1.svg"
           />
           <img
             className="h-3 w-3 relative overflow-hidden shrink-0 min-h-[12px]"
             alt=""
-            src="/Fe-Ecommerce-Shop/src/assets/attracpopular/star-1.svg"
+            src="/src/assets/attracpopular/star-1.svg"
           />
           <img
             className="h-3 w-3 relative overflow-hidden shrink-0 min-h-[12px]"
             alt=""
-            src="/Fe-Ecommerce-Shop/src/assets/attracpopular/star-1.svg"
+            src="/src/assets/attracpopular/star-1.svg"
           />
           <img
             className="h-3 w-3 relative overflow-hidden shrink-0 min-h-[12px]"
             alt=""
-            src="/Fe-Ecommerce-Shop/src/assets/attracpopular/star-1.svg"
+            src="/src/assets/attracpopular/star-1.svg"
           />
           <img
             className="h-3 w-3 relative overflow-hidden shrink-0 min-h-[12px]"
             alt=""
-            src="/Fe-Ecommerce-Shop/src/assets/attracpopular/star-1.svg"
+            src="/src/assets/attracpopular/star-1.svg"
           />
         </div>
       </div>
