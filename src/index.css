@@ -2,10 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+
+* {
+  overflow-x: hidden;
+  scrollbar-width: none;
+}
 *{
     margin:0;
     border:0;
     box-sizing: border-box;
     padding: 0;
    
+
 }
