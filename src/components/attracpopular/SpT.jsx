@@ -1,5 +1,7 @@
 import PropTypes from "prop-types";
 
+
+
 const SpT = ({ className = "", image, chaniseCabbage }) => {
   return (
     <div
