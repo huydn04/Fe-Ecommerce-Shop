@@ -21,6 +21,11 @@ const AttractiveOffers = lazy(() => import("../pages/AttractiveOffers"));
 const CartPop = lazy(() => import("../pages/users/cartPop"));
 
 
+<<<<<<< HEAD
+=======
+const CartPop = lazy(() => import("../pages/users/cartPop"));
+
+>>>>>>> 93b2c39a6918cd7e4818f4ac6e20b82c3a196aca
 
 export default function AppRoutes() {
   return (
@@ -53,12 +58,32 @@ export default function AppRoutes() {
         {/* Order History Page */}
         <Route path="/order-history" element={<OrderHistory />} />
 
+<<<<<<< HEAD
 
         {/* Wish List Page */}
         <Route path="/wish-list" element={<WishList />} />
 
         {/* Menu Detail Page */}
         <Route path="/menu-detail" element={<MenuDetail />} />
+=======
+        {/* Wish List page  */}
+
+              
+          <Route path="/wish-list" element={<WishList />} />
+
+        {/*Menu Detail Page*/}
+
+          <Route path="/menu-detail" element={<MenuDetail />} />
+
+        {/* CartPop */}
+         
+        <Route path="/cart-pop" element={<CartPop/>}/>
+
+        
+        {/* Create Account page */}
+         
+        <Route path="/create-user" element={<CreateUser />} />
+>>>>>>> 93b2c39a6918cd7e4818f4ac6e20b82c3a196aca
 
         {/* Attractive Offers Page */}
         <Route path="/attractive-offers" element={<AttractiveOffers />} />
@@ -82,9 +107,14 @@ export default function AppRoutes() {
           <Route path="/product-detail" element={<MenuDetail />} />
         </Route>
 
+<<<<<<< HEAD
       </Routes>
     </Suspense>
 
 
+=======
+</Routes>
+    </div>
+>>>>>>> 93b2c39a6918cd7e4818f4ac6e20b82c3a196aca
   );
 }
