@@ -86,7 +86,7 @@ const MenuDetail = () => {
 							</button>
 						</div>
 						<div>
-
+							<div> test</div>
 						</div>
 						<div>
 
