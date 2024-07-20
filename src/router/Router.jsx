@@ -16,8 +16,11 @@ const Setting = lazy(() => import("../pages/users/SettingUser"));
 const OrderHistory = lazy(() => import("../pages/users/OrderHistory"));
 const WishList = lazy(() => import("../pages/users/WishList"));
 const MenuDetail = lazy(() => import("../pages/product-detail/MenuDetail"));
+
 const AttractiveOffers = lazy(() => import("../pages/AttractiveOffers"));
 const CartPop = lazy(() => import("../pages/users/cartPop"));
+
+
 
 export default function AppRoutes() {
   return (
@@ -50,6 +53,7 @@ export default function AppRoutes() {
         {/* Order History Page */}
         <Route path="/order-history" element={<OrderHistory />} />
 
+
         {/* Wish List Page */}
         <Route path="/wish-list" element={<WishList />} />
 
@@ -68,6 +72,8 @@ export default function AppRoutes() {
         {/* CartPop */}
         <Route path="/cart-pop" element={<CartPop />} />
 
+       
+
         {/* Create User Page */}
         <Route path="/create-user" element={<CreateUser />} />
 
@@ -75,7 +81,10 @@ export default function AppRoutes() {
         <Route element={<MainLayout />}>
           <Route path="/product-detail" element={<MenuDetail />} />
         </Route>
+
       </Routes>
     </Suspense>
+
+
   );
 }
