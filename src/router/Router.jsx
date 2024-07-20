@@ -19,6 +19,7 @@ const MenuDetail = lazy(() => import("../pages/product-detail/MenuDetail"));
 
 const AttractiveOffers = lazy(() => import("../pages/AttractiveOffers"));
 const CartPop = lazy(() => import("../pages/users/cartPop"));
+<<<<<<< HEAD
 
 
 <<<<<<< HEAD
@@ -26,6 +27,11 @@ const CartPop = lazy(() => import("../pages/users/cartPop"));
 const CartPop = lazy(() => import("../pages/users/cartPop"));
 
 >>>>>>> 93b2c39a6918cd7e4818f4ac6e20b82c3a196aca
+=======
+=======
+
+
+>>>>>>> 34c831751e2aeec217880a710e449d6a70834d62
 
 export default function AppRoutes() {
   return (
@@ -59,6 +65,7 @@ export default function AppRoutes() {
         <Route path="/order-history" element={<OrderHistory />} />
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
         {/* Wish List Page */}
         <Route path="/wish-list" element={<WishList />} />
@@ -84,6 +91,14 @@ export default function AppRoutes() {
          
         <Route path="/create-user" element={<CreateUser />} />
 >>>>>>> 93b2c39a6918cd7e4818f4ac6e20b82c3a196aca
+=======
+
+        {/* Wish List Page */}
+        <Route path="/wish-list" element={<WishList />} />
+
+        {/* Menu Detail Page */}
+        <Route path="/menu-detail" element={<MenuDetail />} />
+>>>>>>> 34c831751e2aeec217880a710e449d6a70834d62
 
         {/* Attractive Offers Page */}
         <Route path="/attractive-offers" element={<AttractiveOffers />} />
@@ -108,13 +123,19 @@ export default function AppRoutes() {
         </Route>
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 34c831751e2aeec217880a710e449d6a70834d62
       </Routes>
     </Suspense>
 
 
+<<<<<<< HEAD
 =======
 </Routes>
     </div>
 >>>>>>> 93b2c39a6918cd7e4818f4ac6e20b82c3a196aca
+=======
+>>>>>>> 34c831751e2aeec217880a710e449d6a70834d62
   );
 }
