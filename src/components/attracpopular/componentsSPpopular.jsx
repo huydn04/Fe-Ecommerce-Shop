@@ -1,7 +1,7 @@
 import { Button } from "@mui/material";
 import ImgSpPopular from "./componentsImgSpPopular";
 import SpHotSellerTop from "./SpHotSellerTop";
-import SpT from "/src/components/SpT"; 
+import SpT from "./SpT"; 
 import PropTypes from "prop-types";
 import React, { useState } from 'react';  
 
@@ -22,9 +22,9 @@ const SPpopular = ({ className = "" }) => {
         </div>
       </div>
       <section className="self-stretch flex flex-row flex-wrap items-start justify-center gap-[20px] text-left text-sm text-gray-scale-gray-700 font-heading-05-heading-05-600">
-        <ImgSpPopular image="/Fe-Ecommerce-Shop/src/assets/attracpopular/image@2x.png" greenApple="Táo Xanh" />
-        <ImgSpPopular image="/Fe-Ecommerce-Shop/src/assets/attracpopular/image-1@2x.png" greenApple="Cải Thìa" />
-        <ImgSpPopular image="/Fe-Ecommerce-Shop/src/assets/attracpopular/image-2@2x.png" greenApple="Xà Lách" />
+        <ImgSpPopular image="\src\assets\attracpopular\image@2x.png" greenApple="Táo Xanh" />
+        <ImgSpPopular image="\src\assets\attracpopular\image-1@2x.png" greenApple="Cải Thìa" />
+        <ImgSpPopular image="\src\assets\attracpopular\image-2@2x.png" greenApple="Xà Lách" />
         <div
         className="flex-1 rounded-lg bg-white box-border overflow-hidden flex flex-col items-start justify-start min-w-[243px] max-w-[248px] border-[1px] border-solid border-gray-scale-gray-100"
         onMouseEnter={() => setIsHovered(true)} 
@@ -34,7 +34,7 @@ const SPpopular = ({ className = "" }) => {
             <img
               className="absolute top-[1px] left-[1px] w-full h-full object-cover"
               alt=""
-              src="/Fe-Ecommerce-Shop/src/assets/attracpopular/image-3@2x.png"
+              src="\src\assets\attracpopular\image-3@2x.png"
               />
             {isHovered && ( 
               <div className="absolute h-[34.68%] w-[16.13%] top-[6.45%] right-[6.85%] bottom-[58.87%] left-[77.02%] z-[1]">
@@ -42,13 +42,13 @@ const SPpopular = ({ className = "" }) => {
                   className="absolute h-[46.51%] w-full top-[0%] right-[0%] bottom-[53.49%] left-[0%] max-w-full overflow-hidden max-h-full"
                   loading="lazy"
                   alt=""
-                  src="/Fe-Ecommerce-Shop/src/assets/attracpopular/add-to-wishlist.svg"
+                  src="\src\assets\attracpopular\add-to-wishlist.svg"
                 />
                 <img
                   className="absolute h-[46.51%] w-full top-[53.49%] right-[0%] bottom-[0%] left-[0%] max-w-full overflow-hidden max-h-full"
                   loading="lazy"
                   alt=""
-                  src="/Fe-Ecommerce-Shop/src/assets/attracpopular/quick-view.svg"
+                  src="\src\assets\attracpopular\quick-view.svg"
                 />
               </div>
             )}
@@ -68,34 +68,34 @@ const SPpopular = ({ className = "" }) => {
               <img
                 className="h-3 w-3 relative overflow-hidden shrink-0 min-h-[12px]"
                 alt=""
-                src="/Fe-Ecommerce-Shop/src/assets/attracpopular/star-1.svg"
+                src="\src\assets\attracpopular\star-1.svg"
               />
               <img
                 className="h-3 w-3 relative overflow-hidden shrink-0 min-h-[12px]"
                 alt=""
-                src="/Fe-Ecommerce-Shop/src/assets/attracpopular/star-1.svg"
+                src="\src\assets\attracpopular\star-1.svg"
               />
               <img
                 className="h-3 w-3 relative overflow-hidden shrink-0 min-h-[12px]"
                 alt=""
-                src="/Fe-Ecommerce-Shop/src/assets/attracpopular/star-1.sv"
+                src="\src\assets\attracpopular\star-1.sv"
               />
               <img
                 className="h-3 w-3 relative overflow-hidden shrink-0 min-h-[12px]"
                 alt=""
-                src="/Fe-Ecommerce-Shop/src/assets/attracpopular/star-1.sv"
+                src="\src\assets\attracpopular\star-1.sv"
               />
               <img
                 className="h-3 w-3 relative overflow-hidden shrink-0 min-h-[12px]"
                 alt=""
-                src="/Fe-Ecommerce-Shop/src/assets/attracpopular/star-5.svg"
+                src="\src\assets\attracpopular\star-5.svg"
               />
             </div>
             <img
               className="w-10 h-10 absolute !m-[0] right-[16px] bottom-[25px] z-[1]"
               loading="lazy"
               alt=""
-              src="/Fe-Ecommerce-Shop/src/assets/attracpopular/add-to-cart-3.svg"
+              src="\src\assets\attracpopular\add-to-cart-3.svg"
             />
           </div>
           <div className="w-20 rounded bg-branding-error hidden flex-row items-center justify-center py-[3px] px-2 box-border gap-[4px] text-white">
@@ -107,21 +107,21 @@ const SPpopular = ({ className = "" }) => {
             </div>
           </div>
         </div>
-        <ImgSpPopular image="/Fe-Ecommerce-Shop/src/assets/attracpopular/image-4@2x.png" greenApple="Bắp" />
+        <ImgSpPopular image="\src\assets\attracpopular\image-4@2x.png" greenApple="Bắp" />
       </section>
       <section className="self-stretch flex flex-row items-start justify-center gap-[24px] text-left text-xl text-gray-scale-gray-900 font-heading-05-heading-05-600 mq1050:flex-wrap">
         <div className="flex-1 flex flex-col items-start justify-start gap-[16px] min-w-[287px] max-w-[312px]">
           <h3 className="m-0 relative text-inherit leading-[150%] font-medium font-inherit inline-block min-w-[75px] mq450:text-base mq450:leading-[24px]">
             Giá sốc
           </h3>
-          <SpHotSellerTop image="/Fe-Ecommerce-Shop/src/assets/attracpopular/image-5@2x.png" chaniseCabbage="Táo Xanh" />
+          <SpHotSellerTop image="\src\assets\attracpopular\image-5@2x.png" chaniseCabbage="Táo Xanh" />
           <div className="self-stretch rounded-md bg-white flex flex-row items-start justify-start text-sm text-gray-scale-gray-700 border-[1px] border-solid border-gainsboro mq1050:justify-center">
             <div className="flex flex-row items-start justify-start p-[5px] shrink-0">
               <img  
                 className="h-[102px] w-[102px] relative object-cover"
                 loading="lazy"
                 alt=""
-                src="/Fe-Ecommerce-Shop/src/assets/attracpopular/image-6@2x.png"
+                src="\src\assets\attracpopular\image-6@2x.png"
               />
             </div>
             <div className="w-[312px] flex flex-col items-start justify-start py-6 px-3 box-border border-gainsboro gap-[7px] shrink-0">
@@ -131,41 +131,41 @@ const SPpopular = ({ className = "" }) => {
                   className="h-10 w-10 relative min-h-[40px]"
                   loading="lazy"
                   alt=""
-                  src="/Fe-Ecommerce-Shop/src/assets/attracpopular/add-to-cart-5.svg"
+                  src="\src\assets\attracpopular\add-to-cart-5.svg"
                 />
                 <img
                   className="h-10 w-10 relative min-h-[40px]"
                   loading="lazy"
                   alt=""
-                  src="/Fe-Ecommerce-Shop/src/assets/attracpopular/quick-view.svg"
+                  src="\src\assets\attracpopular\quick-view.svg"
                 />
                 <img
                   className="h-10 w-10 relative min-h-[40px]"
                   loading="lazy"
                   alt=""
-                  src="/Fe-Ecommerce-Shop/src/assets/attracpopular/add-to-wishlist.svg"
+                  src="\src\assets\attracpopular\add-to-wishlist.svg"
                 />
               </div>
             </div>
           </div>
-          <SpHotSellerTop image="/Fe-Ecommerce-Shop/src/assets/attracpopular/image-7@2x.png" chaniseCabbage="Xà Lách" />
+          <SpHotSellerTop image="\src\assets\attracpopular\image-7@2x.png" chaniseCabbage="Xà Lách" />
         </div>
         <div className="flex-1 flex flex-col items-start justify-start gap-[16px] min-w-[287px] max-w-[312px]">
           <h3 className="m-0 relative text-inherit leading-[150%] font-medium font-inherit mq450:text-base mq450:leading-[24px]">
             Sản phẩm bán chạy
           </h3>
-          <SpHotSellerTop image="/Fe-Ecommerce-Shop/src/assets/attracpopular/image-8@2x.png" chaniseCabbage="Cà Tím" />
-          <SpT image="/Fe-Ecommerce-Shop/src/assets/attracpopular/image-9@2x.png" chaniseCabbage="Đậu Bắp" />
-          <SpHotSellerTop image="/Fe-Ecommerce-Shop/src/assets/attracpopular/image-10@2x.png" chaniseCabbage="Cà Chua" />
+          <SpHotSellerTop image="\src\assets\attracpopular\image-8@2x.png" chaniseCabbage="Cà Tím" />
+          <SpT image="\src\assets\attracpopular\image-9@2x.png" chaniseCabbage="Đậu Bắp" />
+          <SpHotSellerTop image="\src\assets\attracpopular\image-10@2x.png" chaniseCabbage="Cà Chua" />
         </div>
         <div className="flex-1 flex flex-col items-start justify-start gap-[16px] min-w-[287px] max-w-[312px]">
           <h3 className="m-0 relative text-inherit leading-[150%] font-medium font-inherit mq450:text-base mq450:leading-[24px]">
             Được đánh giá cao nhất
           </h3>
-          <SpHotSellerTop image="/Fe-Ecommerce-Shop/src/assets/attracpopular/image-11@2x.png" chaniseCabbage="Khoai Tây" />
-          <SpT image="/Fe-Ecommerce-Shop/src/assets/attracpopular/image-12@2x.png" chaniseCabbage="Bắp" />
+          <SpHotSellerTop image="\src\assets\attracpopular\image-11@2x.png" chaniseCabbage="Khoai Tây" />
+          <SpT image="\src\assets\attracpopular\image-12@2x.png" chaniseCabbage="Bắp" />
           <SpHotSellerTop
-            image="/Fe-Ecommerce-Shop/src/assets/attracpopular/image-13@2x.png"
+            image="\src\assets\attracpopular\image-13@2x.png"
             chaniseCabbage="Bông Cải Trắng"
           />
         </div>
@@ -173,7 +173,7 @@ const SPpopular = ({ className = "" }) => {
           <img
             className="h-full w-full absolute !m-[0] top-[0px] right-[0px] bottom-[0px] left-[0px] rounded-lg max-w-full overflow-hidden max-h-full object-cover"
             alt=""
-            src="/Fe-Ecommerce-Shop/src/assets/attracpopular/image-14@2x.png"
+            src="\src\assets\attracpopular\image-14@2x.png"
           />
           <div className="flex-1 flex flex-col items-start justify-start gap-[16px] z-[1]">
             <div className="self-stretch flex flex-col items-start justify-start gap-[8px]">
@@ -187,7 +187,7 @@ const SPpopular = ({ className = "" }) => {
             <div className="self-stretch h-[45px] flex flex-row items-start justify-start py-0 px-[42px] box-border">
               <Button
                 className="self-stretch flex-1 shadow-[0px_0px_12px_rgba(0,_0,_0,_0.12)]"
-                endIcon={<img width="15px" height="12px" src="/Fe-Ecommerce-Shop/src/assets/attracpopular/group.svg" />}
+                endIcon={<img width="15px" height="12px" src="\src\assets\attracpopular\group.svg" />}
                 variant="contained"
                 sx={{
                   textTransform: "none",

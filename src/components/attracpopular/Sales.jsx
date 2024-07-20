@@ -35,7 +35,7 @@ const Sales = ({ className = "" }) => {
                 className="h-[30px] w-[30px] object-contain"
                 loading="lazy"
                 alt=""
-                src="/Fe-Ecommerce-Shop/src/assets/attracpopular/aoorw.svg"
+                src="\src\assets\attracpopular\aoorw.svg"
               />
             </button>
             <button
@@ -45,7 +45,7 @@ const Sales = ({ className = "" }) => {
               <img
                 className="h-[30px] w-[30px]"
                 alt=""
-                src="/Fe-Ecommerce-Shop/src/assets/attracpopular/aoorw-1.svg"
+                src="\src\assets\attracpopular\aoorw-1.svg"
               />
             </button>
           </div>
@@ -58,7 +58,7 @@ const Sales = ({ className = "" }) => {
                   <img
                     className="self-stretch flex-1 relative max-w-full overflow-hidden max-h-full object-cover"
                     alt=""
-                    src="/Fe-Ecommerce-Shop/src/assets/attracpopular/táo xanh.png"
+                    src="\src\assets\attracpopular\táo xanh.png"
                   />
                 </div>
                 <div className="self-stretch flex flex-row items-start justify-start py-0 pr-[21px] pl-5">
@@ -76,13 +76,13 @@ const Sales = ({ className = "" }) => {
                         className="w-12 h-12 relative"
                         loading="lazy"
                         alt=""
-                        src="/Fe-Ecommerce-Shop/src/assets/attracpopular/add-to-wishlist1.svg"
+                        src="\src\assets\attracpopular\add-to-wishlist1.svg"
                       />
                       <img
                         className="w-12 h-12 relative"
                         loading="lazy"
                         alt=""
-                        src="/Fe-Ecommerce-Shop/src/assets/attracpopular/quick-view1.svg"
+                        src="\src\assets\attracpopular\quick-view1.svg"
                       />
                     </div>
                   </div>
@@ -102,7 +102,7 @@ const Sales = ({ className = "" }) => {
                         </div>
                       </div>
                       <div className="w-[50px] h-[50px] !m-[0] absolute right-[4px] bottom-[-15px] rounded-21xl bg-gren-gray-scale-100 flex flex-row items-start justify-start p-[13px] box-border z-[1]">
-                        <img className="m-0 h-6 w-6 relative" src="/public/bag-2.svg" />
+                        <img className="m-0 h-6 w-6 relative" src="\src\assets\attracpopular\bag-2.svg" />
                       </div>
                     </div>
                   </div>
@@ -110,74 +110,74 @@ const Sales = ({ className = "" }) => {
                     <img
                       className="h-[18px] w-[18px] relative overflow-hidden shrink-0 min-h-[18px]"
                       alt=""
-                      src="/Fe-Ecommerce-Shop/src/assets/attracpopular/star-11.svg"
+                      src="\src\assets\attracpopular\star-11.svg"
                     />
                     <img
                       className="h-[18px] w-[18px] relative overflow-hidden shrink-0 min-h-[18px]"
                       alt=""
-                      src="/Fe-Ecommerce-Shop/src/assets/attracpopular/star-11.svg"
+                      src="\src\assets\attracpopular\star-11.svg"
                     />
                     <img
                       className="h-[18px] w-[18px] relative overflow-hidden shrink-0 min-h-[18px]"
                       alt=""
-                      src="/Fe-Ecommerce-Shop/src/assets/attracpopular/star-11.svg"
+                      src="\src\assets\attracpopular\star-11.svg"
                     />
                     <img
                       className="h-[18px] w-[18px] relative overflow-hidden shrink-0 min-h-[18px]"
                       alt=""
-                      src="/Fe-Ecommerce-Shop/src/assets/attracpopular/star-11.svg"
+                      src="\src\assets\attracpopular\star-11.svg"
                     />
                     <img
                       className="h-[18px] w-[18px] relative overflow-hidden shrink-0 min-h-[18px]"
                       alt=""
-                      src="/Fe-Ecommerce-Shop/src/assets/attracpopular/star-51.svg"
+                      src="\src\assets\attracpopular\star-51.svg"
                     />
                   </div>
                 </div>
               </div>
               <SalesSp
-                image="/Fe-Ecommerce-Shop/src/assets/attracpopular/đào.png"
+                image="\src\assets\attracpopular\đào.png"
                 surjapurMango="Đào"
-                bag="/Fe-Ecommerce-Shop/src/assets/attracpopular/bag-2.svg"
-                star5="/Fe-Ecommerce-Shop/src/assets/attracpopular/star-51.svg"
+                bag="\src\assets\attracpopular\bag-2.svg"
+                star5="\src\assets\attracpopular\star-51.svg"
               />
               <SalesSp
-                image="/Fe-Ecommerce-Shop/src/assets/attracpopular/cà chua.png"
+                image="\src\assets\attracpopular\cà chua.png"
                 surjapurMango="Cà Chua"
-                bag="/Fe-Ecommerce-Shop/src/assets/attracpopular/bag-2.svg"
-                star5="/Fe-Ecommerce-Shop/src/assets/attracpopular/star-51.svg"
+                bag="\src\assets\attracpopular\bag-2.svg"
+                star5="\src\assets\attracpopular\star-51.svg"
               />
               <ImgSales
-                image="/Fe-Ecommerce-Shop/src/assets/attracpopular/bông cải.png"
+                image="\src\assets\attracpopular\bông cải.png"
                 freshCauliflower="Bông Cải Trắng"
-                bag="/Fe-Ecommerce-Shop/src/assets/attracpopular/bag-2.svg"
-                star5="/Fe-Ecommerce-Shop/src/assets/attracpopular/star-51.svg"
+                bag="\src\assets\attracpopular\bag-2.svg"
+                star5="\src\assets\attracpopular\star-51.svg"
               />
             </div>
             <div className="self-stretch grid flex-row items-start justify-start grid-cols-[repeat(4,_minmax(248px,_1fr))] max-w-full lg:[grid-row-gap:20px] lg:grid-cols-[repeat(2,_minmax(248px,_430px))] lg:justify-center mq450:grid-cols-[minmax(248px,_1fr)]">
               <SalesSp
-                image="/Fe-Ecommerce-Shop/src/assets/attracpopular/xalasch.png"
+                image="\src\assets\attracpopular\xalasch.png"
                 surjapurMango="Xà Lách"
-                bag="/Fe-Ecommerce-Shop/src/assets/attracpopular/bag-2.svg"
-                star5="/Fe-Ecommerce-Shop/src/assets/attracpopular/star-51.svg"
+                bag="\src\assets\attracpopular\bag-2.svg"
+                star5="\src\assets\attracpopular\star-51.svg"
               />
               <ImgSales
-                image="/Fe-Ecommerce-Shop/src/assets/attracpopular/ớt chuông.png"
+                image="\src\assets\attracpopular\ớt chuông.png"
                 freshCauliflower="Ớt Chuông"
-                bag="/Fe-Ecommerce-Shop/src/assets/attracpopular/bag-2.svg"
-                star5="/Fe-Ecommerce-Shop/src/assets/attracpopular/star-51.svg"
+                bag="\src\assets\attracpopular\bag-2.svg"
+                star5="\src\assets\attracpopular\star-51.svg"
               />
               <SalesSp
-                image="/Fe-Ecommerce-Shop/src/assets/attracpopular/ớt xanh.png"
+                image="\src\assets\attracpopular\ớt xanh.png"
                 surjapurMango="Ớt Xanh"
-                bag="/Fe-Ecommerce-Shop/src/assets/attracpopular/bag-2.svg"
-                star5="/Fe-Ecommerce-Shop/src/assets/attracpopular/star-51.svg"
+                bag="\src\assets\attracpopular\bag-2.svg"
+                star5="\src\assets\attracpopular\star-51.svg"
               />
               <SalesSp
-                image="/Fe-Ecommerce-Shop/src/assets/attracpopular/cả tím.png"
+                image="\src\assets\attracpopular\cả tím.png"
                 surjapurMango="Cà Tím"
-                bag="/Fe-Ecommerce-Shop/src/assets/attracpopular/bag-2.svg"
-                star5="/Fe-Ecommerce-Shop/src/assets/attracpopular/star-51.svg"
+                bag="\src\assets\attracpopular\bag-2.svg"
+                star5="\src\assets\attracpopular\star-51.svg"
               />
             </div>
           </div>

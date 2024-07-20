@@ -10,7 +10,7 @@ const ENG = memo(({ className = "" }) => {
         Eng
       </div>
       <div className="flex flex-col items-start justify-start pt-[6.3px] px-0 pb-0">
-        <img className="w-[7px] h-[3.5px] relative" alt="" src="/Fe-Ecommerce-Shop/src/assets/attracpopular/group.svg" />
+        <img className="w-[7px] h-[3.5px] relative" alt="" src="\src\assets\attracpopular\group.svg" />
       </div>
     </div>
   );
