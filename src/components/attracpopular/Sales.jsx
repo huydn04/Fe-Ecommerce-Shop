@@ -21,7 +21,7 @@ const Sales = ({ className = "" }) => {
     >
       <div className="w-[1321px] flex flex-col items-start justify-start gap-[50px] max-w-full mq825:gap-[25px]">
         <div className="self-stretch flex flex-row items-start justify-center py-0 px-5">
-          <h1 className="m-0 w-[312px] relative text-inherit leading-[120%] font-semibold font-inherit inline-block mq450:text-5xl mq450:leading-[29px] mq825:text-13xl mq825:leading-[38px]">
+          <h1 className="m-0 w-[400px] relative text-inherit leading-[120%] font-semibold font-inherit inline-block mq450:text-5xl mq450:leading-[29px] mq825:text-13xl mq825:leading-[38px]">
             {currentSection}
           </h1>
           </div>
