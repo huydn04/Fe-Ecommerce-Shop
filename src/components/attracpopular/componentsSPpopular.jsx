@@ -1,9 +1,9 @@
 import { Button } from "@mui/material";
 import ImgSpPopular from "./componentsImgSpPopular";
 import SpHotSellerTop from "./SpHotSellerTop";
-import SpT from "/src/components/SpT"; 
+import SpT from "./SpT"; 
 import PropTypes from "prop-types";
-import React, { useState } from 'react';  
+import  { useState } from 'react';  
 
 
 const SPpopular = ({ className = "" }) => {
