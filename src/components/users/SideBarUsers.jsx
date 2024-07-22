@@ -17,17 +17,32 @@ const Sidebar = () => {
     {
       name: "Bảng Điều Khiển",
       icon: MdOutlineDashboard,
-      link: "/setting",
+      link: "/user",
     },
-    { name: "Lịch sử đặt hàng", icon: MdHistory },
-    { name: "Danh sách yêu thích", icon: CiHeart },
-    { name: "Giỏ hàng", icon: MdOutlineShoppingBag },
-    { name: "Settings", icon: IoSettingsOutline },
+    { name: "Lịch sử đặt hàng",
+       icon: MdHistory,
+       link: "/order-history"
+    },
+    { 
+      name: "Danh sách yêu thích",
+      icon: CiHeart,
+      link: "/wish-list"
+    },
+    { 
+      name: "Giỏ hàng",
+      icon: MdOutlineShoppingBag,
+      link: "/cart"
+    },
+    { 
+      name: "Settings",
+      icon: IoSettingsOutline,
+      link: "/setting" 
+    },
     { name: "Đăng xuất", icon: SlLogout },
   ];
 
   return (
-    <div className="w-[300px] mt-10 ml-2 border border-solid rounded-2xl">
+    <div className="w-[300px] h-[400px] ml-2 border border-solid rounded-2xl">
       <p className=" pt-10 ml-9 font-bold text-2xl">Navigation</p>
       <Menu className="flex-grow mt-3 ">
         {UsersPage.map((item, index) => {
