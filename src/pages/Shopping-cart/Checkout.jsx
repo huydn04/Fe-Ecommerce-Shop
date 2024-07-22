@@ -2,7 +2,6 @@
 // eslint-disable-next-line no-unused-vars
 import React, { useState } from 'react'
 import './Checkout'
-import './shopping.css'
 
 const Checkout = () => {
     const [selectedOption, setSelectedOption] = useState('option1');
