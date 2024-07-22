@@ -24,6 +24,7 @@ const UsersPages = () => {
             <div className=" rounded  border-solid border border-gray-300 w-[400px] h-[300px] text-center ">
               <div className="flex items-center justify-center mt-10">
                 <img src={Avatar} className="" />
+                <img src={Avatar} alt="" />
               </div>
               <p className="mt-5 font-semibold">Huy Vip Pro</p>
               <p className="mt-1 font-light">Khách Hàng</p>
