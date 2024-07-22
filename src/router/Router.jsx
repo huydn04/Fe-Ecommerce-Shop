@@ -2,6 +2,7 @@ import { lazy } from "react";
 import { Route, Routes } from "react-router-dom";
 import MainLayout from "../layout/MainLayout";
 import CreateUser from "../pages/users/CreateUser";
+
 import LoginUser from "../pages/users/LoginUser";
 
 const LandingPage = lazy(() => import("../pages/LandingPage"));

@@ -1,30 +1,7 @@
-// import React from "react";
-import  { useState } from "react";
-import { Menu, Table } from "react-daisyui";
-import { CiHeart } from "react-icons/ci";
-import { IoSettingsOutline } from "react-icons/io5";
-import {
-  MdHistory,
-  MdOutlineDashboard,
-  MdOutlineShoppingBag,
-} from "react-icons/md";
-import { SlLogout } from "react-icons/sl";
-import { Link } from "react-router-dom";
+import Sidebar from "../../components/users/SideBarUsers"
+import { Table } from "react-daisyui";
 
 const OrderHistory = () => {
-  const [active, setActive] = useState("Bảng Điều Khiển");
-  const UsersPage = [
-    {
-      name: "Bảng Điều Khiển",
-      icon: MdOutlineDashboard,
-      link: "/setting",
-    },
-    { name: "Lịch sử đặt hàng", icon: MdHistory },
-    { name: "Danh sách yêu thích", icon: CiHeart },
-    { name: "Giỏ hàng", icon: MdOutlineShoppingBag },
-    { name: "Settings", icon: IoSettingsOutline },
-    { name: "Đăng xuất", icon: SlLogout },
-  ];
 
     return (
 
@@ -32,44 +9,12 @@ const OrderHistory = () => {
 
 
         {/* Sidebar */}
-        <div className="w-[300px] h-[400px]  ml-2 border border-solid border-gray-300 rounded">
-          <p className=" pt-10 ml-9 font-bold text-2xl">Navigation</p>
-          <Menu className="flex-grow mt-3 ">
-            {UsersPage.map((item, index) => {
-              const Icon = item.icon;
-              return (
-                <Menu.Item key={index} className="relative ">
-                  <Link
-                    to={item.link}
-                    className={`btn flex  items-center justify-start rounded-none shadow-white hover:bg-gray-100 hover:text-primary hover:border-l-4 hover:border-y-0 hover:border-r-0 hover:border-solid hover:border-[#00B207] hover:font-bold  ${
-                      active === item.name
-                        ? "  font-bold text-primary hover:border-none bg-gray-200"
-                        : "bg-transparent font-light "
-                    } relative pl-4`}
-                    onClick={() => setActive(item.name)}
-                  >
-                    <div
-                      className={`${
-                        active === item.name
-                          ? "absolute left-0 top-0 h-full w-1 bg-primary"
-                          : ""
-                      }`}
-                    />
-                    <Icon className={"ml-2 mr-2 h-5 w-5"} />
-                    {item.name}
-                  </Link>
-                </Menu.Item>
-              );
-            })}
-          </Menu>
-      
-    
-  
+          <Sidebar/>
         {/* start OrderHistory */}
         
             
-        </div>
-        <div className=" w-[833px] " >
+       
+        <div className="ml-4 w-[816px] " >
 
                 <div className=" w-full border-solid border border-gray-400 h-[900px] flex flex-col justify-between">
           
@@ -187,35 +132,6 @@ const OrderHistory = () => {
             </div>
           </div>
                 
-
-                {/* <div className="w-full ">
-                    <div className="border-solid border-gray-400 border-b pl-4 pt-3 h-14 ">
-                    <label className="text-2xl font-bold">Lịch Sử Đặt Hàng</label></div>
-
-                    <table className="w-full ">
-                        <tr className="w-full h-12 bg-[#F2F2F2]">
-                            <th className="w-1/5">ID DƠN HÀNG</th>
-                            <th className="w-1/5">NGÀY</th>
-                            <th className="w-1/5">TỔNG</th>
-                            <th className="w-1/5">TRẠNG THÁI</th>
-                            <th className="w-1/5"></th>
-                        </tr>
-                        <tr className="">
-                            <td className="w-1/5 text-center h-12">#3933</td>
-                            <td className="w-1/5 text-center h-12">4 April, 2021</td>
-                            <td className="w-1/5 text-center h-12">$135.00 (5 Products)</td>
-                            <td className="w-1/5 text-center h-12">Đang thực hiện</td>
-                            <td className="w-1/5 text-center h-12"><a href="" className="text-[#00B207]">Xem Chi Tiết</a></td>
-                        </tr>
-                        <tr>
-                            <td className="w-1/5 text-center h-12">#5028</td>
-                            <td className="w-1/5 text-center h-12">20 Mar, 2021</td>
-                            <td className="w-1/5 text-center h-12">$250.00 (4 Products)</td>
-                            <td className="w-1/5 text-center h-12">Hoàn thành</td>
-                            <td className="w-1/5 text-center h-12"><a href="" className="text-[#00B207]">Xem Chi Tiết</a></td>
-                        </tr>
-                    </table>
-                </div> */}
 
                 {/* button change page */}
                 <div className="w-full h-10 flex flex-row justify-center items-center mb-10" >
