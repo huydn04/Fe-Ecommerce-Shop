@@ -28,34 +28,34 @@ const ImgSpPopular = ({ className = "", image, greenApple }) => {
           <img
             className="h-3 w-3 relative overflow-hidden shrink-0 min-h-[12px]"
             alt=""
-            src="/Fe-Ecommerce-Shop/src/assets/attracpopular/star-1.svg"
+            src="\src\assets\attracpopular\star-1.svg"
           />
           <img
             className="h-3 w-3 relative overflow-hidden shrink-0 min-h-[12px]"
             alt=""
-            src="/Fe-Ecommerce-Shop/src/assets/attracpopular/star-1.svg"
+            src="\src\assets\attracpopular\star-1.svg"
           />
           <img
             className="h-3 w-3 relative overflow-hidden shrink-0 min-h-[12px]"
             alt=""
-            src="/Fe-Ecommerce-Shop/src/assets/attracpopular/star-1.svg"
+            src="\src\assets\attracpopular\star-1.svg"
           />
           <img
             className="h-3 w-3 relative overflow-hidden shrink-0 min-h-[12px]"
             alt=""
-            src="/Fe-Ecommerce-Shop/src/assets/attracpopular/star-1.svg"
+            src="\src\assets\attracpopular\star-1.svg"
           />
           <img
             className="h-3 w-3 relative overflow-hidden shrink-0 min-h-[12px]"
             alt=""
-            src="/Fe-Ecommerce-Shop/src/assets/attracpopular/star-5.svg"
+            src="\src\assets\attracpopular\star-5.svg"
           />
         </div>
         <img
           className="w-10 h-10 absolute !m-[0] right-[16px] bottom-[25px] z-[1]"
           loading="lazy"
           alt=""
-          src="/Fe-Ecommerce-Shop/src/assets/attracpopular/add-to-cart.svg"
+          src="\src\assets\attracpopular\add-to-cart.svg"
         />
       </div>
       <div className="w-20 rounded bg-branding-error hidden flex-row items-center justify-center py-[3px] px-2 box-border gap-[4px] text-white">
