@@ -16,6 +16,7 @@ const UsersPages = lazy(() => import("../pages/users/UsersPages"));
 const Setting = lazy(() => import("../pages/users/SettingUser"));
 const OrderHistory = lazy(() => import("../pages/users/OrderHistory"));
 const WishList = lazy(() => import("../pages/users/WishList"));
+const AttractiveOffers = lazy(() => import("../pages/AttractiveOffers"));
 
 const MenuDetail = lazy(() => import("../pages/product-detail/MenuDetail"));
 
@@ -85,6 +86,9 @@ export default function AppRoutes() {
         <Route element={<MainLayout />}>
           <Route path="/product-detail" element={<MenuDetail />} />
         </Route>
+
+        {/* AttractiveOffers */}
+        <Route path="/Attractive-Offers" element={<AttractiveOffers />} />
 
 </Routes>
     </div>

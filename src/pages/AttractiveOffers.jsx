@@ -1,9 +1,9 @@
-import MainHeader from "../components/MainHeader";
-import BackGroup1 from "../components/FrameComponent";
-import Sales from "../components/Sales";
-import ListComment2 from "../components/ListComment2";
-import FooterDetails2 from "../components/FooterDetails2";
-import FooterBottomContainer from "../components/FooterBottomContainer";
+import MainHeader from "../components/attracpopular/MainHeader";
+import BackGroup1 from "../components/attracpopular/MainHeader";
+import Sales from "../components/attracpopular/Sales";
+import ListComment2 from "../components/attracpopular/ListComment2";
+import FooterDetails2 from "../components/attracpopular/FrameComponent";
+import FooterBottomContainer from "../components/attracpopular/FooterBottomContainer";
 
 const AttractiveOffers = () => {
   return (
