@@ -8,7 +8,7 @@ import { IoMdArrowForward } from "react-icons/io";
 import Sidebar from "../../components/users/SideBarUsers";
 
 
-const UsersPages = () => {
+const UsersPages = () => {  
  
 
   return (
