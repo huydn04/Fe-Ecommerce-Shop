@@ -81,6 +81,7 @@ export default function AppRoutes() {
         <Route path="/create-user" element={<CreateUser />} />
 
 
+
         {/* MainLayout with nested routes */}
         <Route element={<MainLayout />}>
           <Route path="/product-detail" element={<MenuDetail />} />
@@ -88,6 +89,7 @@ export default function AppRoutes() {
 
       </Routes>
     </Suspense>
+
 
 
   );
