@@ -35,22 +35,22 @@ const SalesSp = ({ className = "", image, surjapurMango, bag, star5 }) => {
           <img
             className="h-[18px] w-[18px] relative overflow-hidden shrink-0 min-h-[18px]"
             alt=""
-            src="/Fe-Ecommerce-Shop/src/assets/attracpopular/star-11.svg"
+            src="\src\assets\attracpopular\star-11.svg"
           />
           <img
             className="h-[18px] w-[18px] relative overflow-hidden shrink-0 min-h-[18px]"
             alt=""
-            src="/Fe-Ecommerce-Shop/src/assets/attracpopular/star-11.svg"
+            src="\src\assets\attracpopular\star-11.svg"
           />
           <img
             className="h-[18px] w-[18px] relative overflow-hidden shrink-0 min-h-[18px]"
             alt=""
-            src="/Fe-Ecommerce-Shop/src/assets/attracpopular/star-11.svg"
+            src="\src\assets\attracpopular\star-11.svg"
           />
           <img
             className="h-[18px] w-[18px] relative overflow-hidden shrink-0 min-h-[18px]"
             alt=""
-            src="/Fe-Ecommerce-Shop/src/assets/attracpopular/star-11.svg"
+            src="\src\assets\attracpopular\star-11.svg"
           />
           <img
             className="h-[18px] w-[18px] relative overflow-hidden shrink-0 min-h-[18px]"
