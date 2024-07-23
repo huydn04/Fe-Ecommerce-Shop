@@ -3,17 +3,17 @@ import PropTypes from "prop-types";
 const BackGroup1 = ({ className = "" }) => {
   return (
     <section
-      className={`self-stretch flex flex-row items-start justify-center pt-0 px-5 pb-[79px] box-border max-w-full text-left text-31xl text-gray-scale-gray-900 font-body-small-body-small-400 lg:pb-[51px] lg:box-border mq825:pb-[33px] mq825:box-border ${className}`}
+    className={`self-stretch flex flex-row items-start justify-center pt-0 px-5 pb-[79px] box-border max-w-full text-left text-31xl text-gray-scale-gray-900 font-body-small-body-small-400 lg:pb-[51px] lg:box-border mq825:pb-[33px] mq825:box-border ${className}`}
     >
-      <div className="w-[1520px] flex flex-row items-end justify-start max-w-full">
+     <div className="w-[1520px] flex flex-row items-end justify-start max-w-full">
         <div className="w-[1520px] flex flex-col items-start justify-start pt-0 px-0 pb-[61px] box-border min-h-[865px] max-w-full lg:pb-10 lg:box-border mq450:pb-[26px] mq450:box-border">
           <div className="self-stretch rounded-lg bg-gren-gray-scale-50 flex flex-col items-start justify-start pt-[118px] pb-[104px] pr-[52px] pl-[100px] box-border gap-[71px] max-w-full mq450:gap-[18px] mq450:pt-[50px] mq450:pb-11 mq450:box-border mq825:gap-[35px] mq825:pl-[25px] mq825:pt-[77px] mq825:pb-[68px] mq825:box-border mq1400:pl-[50px] mq1400:pr-[26px] mq1400:box-border">
             <div className="w-[1520px] h-[804px] relative rounded-lg bg-gren-gray-scale-50 hidden max-w-full" />
             <div className="self-stretch flex flex-row items-end justify-between max-w-full gap-[20px] mq1400:flex-wrap">
               <div className="h-[439px] w-[304px] flex flex-col items-start justify-start min-w-[304px] mq1400:flex-1">
                 <div className="self-stretch flex flex-row items-start justify-start relative">
-                  <h1 className="!m-[0] w-[596px] absolute top-[22px] right-[-287px] text-inherit leading-[120%] font-semibold font-inherit inline-block z-[2] mq450:text-11xl mq450:leading-[36px] mq825:text-21xl mq825:leading-[48px]">{`Thực phẩm hữu cơ tươi ngon & tốt cho sức khỏe`}</h1>
-                  <div className="flex-1 flex flex-col items-start justify-start gap-[208px] text-center text-sm text-branding-success mq450:gap-[104px]">
+                <h1 className="!m-[0] w-[596px] absolute top-[22px] right-[-287px] text-inherit leading-[120%] font-semibold font-inherit inline-block z-[2] mq450:text-11xl mq450:leading-[36px] mq825:text-21xl mq825:leading-[48px]">{`Thực phẩm hữu cơ tươi ngon & tốt cho sức khỏe`}</h1>
+                <div className="flex-1 flex flex-col items-start justify-start gap-[208px] text-center text-sm text-branding-success mq450:gap-[104px]">
                     <div className="relative tracking-[0.02em] leading-[100%] uppercase font-medium whitespace-pre-wrap z-[1]">{`Chào mừng đến với  FPT team `}</div>
                     <div className="self-stretch flex flex-col items-start justify-start gap-[32px] text-left text-13xl text-gray-scale-gray-900 mq450:gap-[16px]">
                       <div className="self-stretch flex flex-col items-start justify-start gap-[12px] z-[1]">
@@ -32,7 +32,7 @@ const BackGroup1 = ({ className = "" }) => {
                           <img
                             className="w-[15px] h-3 relative"
                             alt=""
-                            src="/Fe-Ecommerce-Shop/src/assets/attracpopular/group-2.svg"
+                            src="\src\assets\attracpopular\group-2.svg"
                           />
                         </div>
                       </button>
@@ -45,7 +45,7 @@ const BackGroup1 = ({ className = "" }) => {
                   className="h-full w-full z-[1] object-contain absolute left-[0px] top-[9px] [transform:scale(1.09)] mq1400:flex-1"
                   loading="lazy"
                   alt=""
-                  src="/Fe-Ecommerce-Shop/src/assets/attracpopular/giỏ trái cây.png"
+                  src="\src\assets\attracpopular\giỏ trái cây.png"
                 />
               </div>
             </div>
@@ -64,7 +64,7 @@ const BackGroup1 = ({ className = "" }) => {
               className="h-10 w-10 relative overflow-hidden shrink-0"
               loading="lazy"
               alt=""
-              src="/Fe-Ecommerce-Shop/src/assets/attracpopular/deliverytruck-1.svg"
+              src="\src\assets\attracpopular\deliverytruck-1.svg"
             />
             <div className="flex-1 flex flex-col items-start justify-center gap-[5px]">
               <div className="self-stretch relative leading-[120%] font-semibold">
@@ -77,23 +77,23 @@ const BackGroup1 = ({ className = "" }) => {
             <img
               className="h-12 w-12 relative overflow-hidden shrink-0 hidden"
               alt=""
-              src="/Fe-Ecommerce-Shop/src/assets/attracpopular/shipping.svg"
+              src="\src\assets\attracpopular\shipping.svg"
             />
             <img
               className="h-10 w-10 relative overflow-hidden shrink-0 hidden"
               alt=""
-              src="/Fe-Ecommerce-Shop/src/assets/attracpopular/sucure.svg"
+              src="\src\assets\attracpopular\sucure.svg"
             />
             <img
               className="h-10 w-10 relative overflow-hidden shrink-0 hidden"
               alt=""
-              src="/Fe-Ecommerce-Shop/src/assets/attracpopular/box.svg"
+              src="\src\assets\attracpopular\box.svg"
             />
             <img
               className="h-10 w-10 relative overflow-hidden shrink-0"
               loading="lazy"
               alt=""
-              src="/Fe-Ecommerce-Shop/src/assets/attracpopular/headphones-1.svg"
+              src="\src\assets\attracpopular\headphones-1.svg"
             />
             <div className="flex-1 flex flex-col items-start justify-center gap-[5px]">
               <div className="self-stretch relative leading-[120%] font-semibold">
@@ -108,7 +108,7 @@ const BackGroup1 = ({ className = "" }) => {
             <img
               className="h-12 w-12 relative overflow-hidden shrink-0 hidden"
               alt=""
-              src="/Fe-Ecommerce-Shop/src/assets/attracpopular/shipping.svg"
+              src="\src\assets\attracpopular\shipping.svg"
             />
             <img
               className="h-11 w-11 relative overflow-hidden shrink-0 hidden"
@@ -118,13 +118,13 @@ const BackGroup1 = ({ className = "" }) => {
             <img
               className="h-10 w-10 relative overflow-hidden shrink-0 hidden"
               alt=""
-              src="/Fe-Ecommerce-Shop/src/assets/attracpopular/box.svg"
+              src="\src\assets\attracpopular\box.svg"
             />
             <img
               className="h-10 w-10 relative overflow-hidden shrink-0"
               loading="lazy"
               alt=""
-              src="/Fe-Ecommerce-Shop/src/assets/attracpopular/shoppingbag.svg"
+              src="\src\assets\attracpopular\shoppingbag.svg"
             />
             <div className="flex-1 flex flex-col items-start justify-center gap-[5px]">
               <div className="self-stretch relative leading-[120%] font-semibold">
@@ -139,23 +139,23 @@ const BackGroup1 = ({ className = "" }) => {
             <img
               className="h-12 w-12 relative overflow-hidden shrink-0 hidden"
               alt=""
-              src="/Fe-Ecommerce-Shop/src/assets/attracpopular/shipping.svg"
+              src="\src\assets\attracpopular\shipping.svg"
             />
             <img
               className="h-11 w-11 relative overflow-hidden shrink-0 hidden"
               alt=""
-              src="/Fe-Ecommerce-Shop/src/assets/attracpopular/247.svg"
+              src="\src\assets\attracpopular\247.svg"
             />
             <img
               className="h-10 w-10 relative overflow-hidden shrink-0 hidden"
               alt=""
-              src="/Fe-Ecommerce-Shop/src/assets/attracpopular/sucure.svg"
+              src="\src\assets\attracpopular\sucure.svg"
             />
             <img
               className="h-10 w-10 relative overflow-hidden shrink-0"
               loading="lazy"
               alt=""
-              src="/Fe-Ecommerce-Shop/src/assets/attracpopular/package.svg"
+              src="\src\assets\attracpopular\package.svg"
             />
             <div className="flex-1 flex flex-col items-start justify-center gap-[5px]">
               <div className="self-stretch relative leading-[120%] font-semibold">
