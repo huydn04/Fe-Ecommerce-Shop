@@ -8,14 +8,14 @@ import { IoMdArrowForward } from "react-icons/io";
 import Sidebar from "../../components/users/SideBarUsers";
 
 
-const UsersPages = () => {  
- 
+const UsersPages = () => {
+
 
   return (
     <div className="">
       <div className="flex mt-10 gap-4 justify-center ">
         {/* Sidebar */}
-        <Sidebar/>
+        <Sidebar />
 
         {/* Dashboard */}
 

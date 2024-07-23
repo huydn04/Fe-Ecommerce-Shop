@@ -1,4 +1,6 @@
-// import React from 'react'
+import React from 'react'
+import MainHeader from '../../components/attracpopular/MainHeader'
+
 import { CaiThiaC } from '../../assets/img-product'
 import { CaiThia1 } from '../../assets/img-product'
 import { CaiThia2 } from '../../assets/img-product'
@@ -37,7 +39,7 @@ const MenuDetail = () => {
 
 	return (
 		<div className="flex flex-col items-center w-screen">
-
+			<MainHeader></MainHeader>
 			{ /*Banner*/}
 			<div className='w-screen h-[100px] relative'>
 				<img className='w-full' src={Banner} alt="" />
@@ -54,7 +56,7 @@ const MenuDetail = () => {
 
 			<div>
 				{ /*Ảnh + thông tin sp*/}
-				<div className=' flex flex-row gap-8 pt-8'>
+				<div className=' flex flex-row gap-8 pt-8 ml-16 mr-16'>
 					<div className=' basis-1/2 flex flex-row'>
 						<div className='basis-1/4 flex flex-col justify-center items-center gap-3'>
 							<button className='mb-3 bg-gray-50 w-[60px] h-[20px] rounded-sm'> <HiChevronUp className='ml-5' /> </button>
@@ -145,19 +147,19 @@ const MenuDetail = () => {
 						<p>Nếu bạn đang tìm một loại rau dễ ăn, hình dáng đẹp, giá trị dinh dưỡng cao thì hẳn Cải thìa là loại rau đáp ứng đủ các tiêu chí ấy.</p>
 						<p className='mt-2'>Cải thìa được gọi với cái tên khác là cải chíp, cải muỗng. Bởi lẽ từng bẹ lá uốn cong trông như cái muỗng. Cải có màu xanh đẹp mắt ở phần lá, thân mập, hơi lùn nhưng bẹ to, phần gốc bẹ có màu trắng.</p>
 						<div className='flex flex-row gap-1 mt-4'>
-							<HiBadgeCheck className='mt-1 text-green-600'/>
+							<HiBadgeCheck className='mt-1 text-green-600' />
 							<p>Hàng xuất sứ từ Việt Nam</p>
 						</div>
 						<div className='flex flex-row gap-1 mt-2'>
-							<HiBadgeCheck className='mt-1 text-green-600'/>
+							<HiBadgeCheck className='mt-1 text-green-600' />
 							<p>Bảo quản ngăn mát tủ lạnh từ 10-18 độ C</p>
 						</div>
 						<div className='flex flex-row gap-1 mt-2'>
-							<HiBadgeCheck className='mt-1 text-green-600'/>
+							<HiBadgeCheck className='mt-1 text-green-600' />
 							<p>Rau củ mới, tươi ngon</p>
 						</div>
 						<div className='flex flex-row gap-1 mt-2'>
-							<HiBadgeCheck className='mt-1 text-green-600'/>
+							<HiBadgeCheck className='mt-1 text-green-600' />
 							<p>Đúng mô tả của sản phẩm</p>
 						</div>
 						<p className='mt-4'>Cải Thìa là một loại rau dễ ăn, có hình dáng và màu sắc đẹp, giàu dinh dưỡng và xuất hiện trong nhiều công thức nấu ăn.</p>
@@ -209,8 +211,8 @@ const MenuDetail = () => {
 							</div>
 						</div>
 						<div className='group-hover:right-3 transition-all absolute flex -right-10 top-6 flex-col gap-2'>
-							<button className='inline-flex w-[35px] h-[35px] rounded-full border border-solid border-gray-400 bg-white pl-[8px] pt-[9px] hover:bg-green-500 hover:text-white hover:border-none' ><FaRegHeart className='text-lg'/></button>
-							<button className='inline-flex w-[35px] h-[35px] rounded-full border border-solid border-gray-400 bg-white pl-[8.5px] pt-[8.5px] hover:bg-green-500 hover:text-white hover:border-none' ><LuEye className='text-lg'/></button>
+							<button className='inline-flex w-[35px] h-[35px] rounded-full border border-solid border-gray-400 bg-white pl-[8px] pt-[9px] hover:bg-green-500 hover:text-white hover:border-none' ><FaRegHeart className='text-lg' /></button>
+							<button className='inline-flex w-[35px] h-[35px] rounded-full border border-solid border-gray-400 bg-white pl-[8.5px] pt-[8.5px] hover:bg-green-500 hover:text-white hover:border-none' ><LuEye className='text-lg' /></button>
 						</div>
 						<div className='absolute top-4 left-4 w-[90px] rounded-md bg-rose-500 shadow-xl'>
 							<p className='text-center text-white text-sm'>Giảm 50%</p>
@@ -237,8 +239,8 @@ const MenuDetail = () => {
 							</div>
 						</div>
 						<div className='group-hover:right-3 transition-all absolute flex -right-10 top-6 flex-col gap-2'>
-							<button className='inline-flex w-[35px] h-[35px] rounded-full border border-solid border-gray-400 bg-white pl-[8px] pt-[9px] hover:bg-green-500 hover:text-white hover:border-none' ><FaRegHeart className='text-lg'/></button>
-							<button className='inline-flex w-[35px] h-[35px] rounded-full border border-solid border-gray-400 bg-white pl-[8.5px] pt-[8.5px] hover:bg-green-500 hover:text-white hover:border-none' ><LuEye className='text-lg'/></button>
+							<button className='inline-flex w-[35px] h-[35px] rounded-full border border-solid border-gray-400 bg-white pl-[8px] pt-[9px] hover:bg-green-500 hover:text-white hover:border-none' ><FaRegHeart className='text-lg' /></button>
+							<button className='inline-flex w-[35px] h-[35px] rounded-full border border-solid border-gray-400 bg-white pl-[8.5px] pt-[8.5px] hover:bg-green-500 hover:text-white hover:border-none' ><LuEye className='text-lg' /></button>
 						</div>
 					</div>
 					<div className='group relative w-[250px] cursor-pointer flex flex-col gap-1 justify-center border border-solid border-gray-300 rounded-lg hover:border-green-700'>
@@ -262,8 +264,8 @@ const MenuDetail = () => {
 							</div>
 						</div>
 						<div className='group-hover:right-3 transition-all absolute flex -right-10 top-6 flex-col gap-2'>
-							<button className='inline-flex w-[35px] h-[35px] rounded-full border border-solid border-gray-400 bg-white pl-[8px] pt-[9px] hover:bg-green-500 hover:text-white hover:border-none' ><FaRegHeart className='text-lg'/></button>
-							<button className='inline-flex w-[35px] h-[35px] rounded-full border border-solid border-gray-400 bg-white pl-[8.5px] pt-[8.5px] hover:bg-green-500 hover:text-white hover:border-none' ><LuEye className='text-lg'/></button>
+							<button className='inline-flex w-[35px] h-[35px] rounded-full border border-solid border-gray-400 bg-white pl-[8px] pt-[9px] hover:bg-green-500 hover:text-white hover:border-none' ><FaRegHeart className='text-lg' /></button>
+							<button className='inline-flex w-[35px] h-[35px] rounded-full border border-solid border-gray-400 bg-white pl-[8.5px] pt-[8.5px] hover:bg-green-500 hover:text-white hover:border-none' ><LuEye className='text-lg' /></button>
 						</div>
 					</div>
 					<div className='group relative w-[250px] cursor-pointer flex flex-col gap-1 justify-center border border-solid border-gray-300 rounded-lg hover:border-green-700'>
@@ -287,8 +289,8 @@ const MenuDetail = () => {
 							</div>
 						</div>
 						<div className='group-hover:right-3 transition-all absolute flex -right-10 top-6 flex-col gap-2'>
-							<button className='inline-flex w-[35px] h-[35px] rounded-full border border-solid border-gray-400 bg-white pl-[8px] pt-[9px] hover:bg-green-500 hover:text-white hover:border-none' ><FaRegHeart className='text-lg'/></button>
-							<button className='inline-flex w-[35px] h-[35px] rounded-full border border-solid border-gray-400 bg-white pl-[8.5px] pt-[8.5px] hover:bg-green-500 hover:text-white hover:border-none' ><LuEye className='text-lg'/></button>
+							<button className='inline-flex w-[35px] h-[35px] rounded-full border border-solid border-gray-400 bg-white pl-[8px] pt-[9px] hover:bg-green-500 hover:text-white hover:border-none' ><FaRegHeart className='text-lg' /></button>
+							<button className='inline-flex w-[35px] h-[35px] rounded-full border border-solid border-gray-400 bg-white pl-[8.5px] pt-[8.5px] hover:bg-green-500 hover:text-white hover:border-none' ><LuEye className='text-lg' /></button>
 						</div>
 					</div>
 				</div>

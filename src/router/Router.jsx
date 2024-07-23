@@ -1,8 +1,7 @@
 import { lazy, Suspense } from "react";
 import { Route, Routes } from "react-router-dom";
-import MainLayout from "../layout/MainLayout";
+// import MainLayout from "../layout/MainLayout";
 import CreateUser from "../pages/users/CreateUser";
-import CreateAccount from "../pages/users/CreateAccount";
 import LoginUser from "../pages/users/LoginUser";
 
 const LandingPage = lazy(() => import("../pages/LandingPage"));
@@ -66,8 +65,7 @@ export default function AppRoutes() {
         {/* Attractive Offers Page */}
         <Route path="/attractive-offers" element={<AttractiveOffers />} />
 
-        {/* Create Account Page */}
-        <Route path="/create-account" element={<CreateAccount />} />
+
 
         {/* Login User Page */}
         <Route path="/login-user" element={<LoginUser />} />
@@ -82,10 +80,7 @@ export default function AppRoutes() {
 
 
 
-        {/* MainLayout with nested routes */}
-        <Route element={<MainLayout />}>
-          <Route path="/product-detail" element={<MenuDetail />} />
-        </Route>
+       
 
       </Routes>
     </Suspense>
