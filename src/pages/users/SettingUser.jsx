@@ -4,6 +4,12 @@ import Sidebar from "../../components/users/SideBarUsers"
 const SettingUser = () => {
   
 
+function Bar() {
+  return{
+    
+  }
+}
+
   return (
     
     <div className="flex justify-center pt-10">
@@ -12,7 +18,7 @@ const SettingUser = () => {
         {/* Sidebar */}
      
           <Sidebar/>
-     
+       
       
          {/* start setting */}
       <div className=" w-[816px] ml-4 rounded-md	 " >
@@ -62,8 +68,8 @@ const SettingUser = () => {
   
   <div className=" mb-10 w-[300px] mr-16 flex flex-col justify-center items-center">
       <img className="w-60 h-60" src="https://cutitoutvinyl.ca/wp-content/uploads/2022/10/Cut-it-Out-Vinyl-7.png" alt="" />
-      <button  className=" w-40 h-10 rounded-3xl border-2 font-bold border-solid boder-[#00B207] text-[#00B207] ml-4 mt-3 " type="submit">Chọn Ảnh</button>
-      <input className="bg-red-400" type="file" name="" id="" />
+      <label className="w-40 h-10 rounded-3xl border-2 font-bold border-solid boder-[#00B207] text-[#00B207] ml-4 mt-3 cursor-pointer flex justify-center items-center" htmlFor="chon-anh">Chọn Ảnh</label>
+      <input className="hidden" type="file" id="chon-anh" />
     </div>
     </div>
     </div>
@@ -146,7 +152,7 @@ const SettingUser = () => {
       <div className="ml-4  ">     
       <label className="">Zip Code</label> 
       <br/>
-      <input className="w-full mt-1 mr-2 mb-7 border-solid border rounded w-[238px] h-9 pl-2 focus:outline-none focus:border-[#00B207]" type="text"   />
+      <input className=" mt-1 mr-2 mb-7 border-solid border rounded w-[238px] h-9 pl-2 focus:outline-none focus:border-[#00B207]" type="text"   />
       </div>
 
       </div>
