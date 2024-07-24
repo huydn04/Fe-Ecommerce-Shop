@@ -1,18 +1,14 @@
-import Sidebar from "../../components/users/SideBarUsers"
-
+import Sidebar from "../../components/users/SideBarUsers";
 
 const SettingUser = () => {
-  
 
-function Bar() {
-  return{
-    
-  }
-}
+
+
+
 
   return (
-    
     <div className="flex justify-center pt-10">
+
 
 
         {/* Sidebar */}
@@ -47,23 +43,10 @@ function Bar() {
       <label className="">Họ</label> 
       <br/>
       <input className="mt-1 mb-6 border-solid border rounded w-96 h-9 pl-2 focus:outline-none focus:border-[#00B207]" type="text"   />
-      </div>
 
-      <div className="ml-4">
-      <label>Email</label> 
-      <br/>
-      <input className="mt-1 mb-6 border-solid border rounded w-96 h-9 pl-2 focus:outline-none focus:border-[#00B207]" type="text" />
       </div>
-
-      <div className="ml-4">
-      <label>Số Điện Thoại</label> 
-      <br/>
-      <input className="mt-1 mb-6 border-solid border rounded w-96 h-9 pl-2 focus:outline-none focus:border-[#00B207]" type="text"  />
-      </div>
-
-      <input className=" w-40 h-10 rounded-3xl text-white ml-4 mt-6 mb-6 bg-[#00B207] cursor-pointer" value="Lưu Thay Đổi" type="submit"/>
-      </form>
     </div>
+
     
   
   <div className=" mb-10 w-[300px] mr-16 flex flex-col justify-center items-center">
@@ -232,6 +215,7 @@ function Bar() {
      
      </div>
      
+
   );
 };
 

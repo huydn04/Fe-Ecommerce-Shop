@@ -1,5 +1,7 @@
 import PropTypes from "prop-types";
 
+
+
 const SpT = ({ className = "", image, chaniseCabbage }) => {
   return (
     <div
@@ -31,27 +33,27 @@ const SpT = ({ className = "", image, chaniseCabbage }) => {
           <img
             className="h-4 w-4 relative overflow-hidden shrink-0 min-h-[16px]"
             alt=""
-            src="/Fe-Ecommerce-Shop/src/assets/attracpopular/star-1-5.svg"
+            src="\src\assets\attracpopular\star-1-5.svg"
           />
           <img
             className="h-4 w-4 relative overflow-hidden shrink-0 min-h-[16px]"
             alt=""
-            src="/Fe-Ecommerce-Shop/src/assets/attracpopular/star-1-5.svg"
+            src="\src\assets\attracpopular\star-1-5.svg"
           />
           <img
             className="h-4 w-4 relative overflow-hidden shrink-0 min-h-[16px]"
             alt=""
-            src="/Fe-Ecommerce-Shop/src/assets/attracpopular/star-1-5.svg"
+            src="\src\assets\attracpopular\star-1-5.svg"
           />
           <img
             className="h-4 w-4 relative overflow-hidden shrink-0 min-h-[16px]"
             alt=""
-            src="/Fe-Ecommerce-Shop/src/assets/attracpopular/star-1-5.svg"
+            src="\src\assets\attracpopular\star-1-5.svg"
           />
           <img
             className="h-4 w-4 relative overflow-hidden shrink-0 min-h-[16px]"
             alt=""
-            src="/Fe-Ecommerce-Shop/src/assets/attracpopular/star-5-5.svg"
+            src="\src\assets\attracpopular\star-5-5.svg"
           />
         </div>
       </div>

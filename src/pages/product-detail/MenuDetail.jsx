@@ -1,5 +1,7 @@
-// import React from 'react'
-import { CaiThiaC} from '../../assets/img-product'
+import React from 'react'
+import MainHeader from '../../components/attracpopular/MainHeader'
+
+import { CaiThiaC } from '../../assets/img-product'
 import { CaiThia1 } from '../../assets/img-product'
 import { CaiThia2 } from '../../assets/img-product'
 import { CaiThia3 } from '../../assets/img-product'
@@ -7,236 +9,288 @@ import { TaoXanhC } from '../../assets/img-product'
 import { OtChuongXanhC } from '../../assets/img-product'
 import { BongCaiTrangC } from '../../assets/img-product'
 import { DauBapC } from '../../assets/img-product'
-import { Cart } from '../../assets/img-product'
-import { Heart } from '../../assets/img-product'
-import { Fb } from '../../assets/img-product'
-import { Tw } from '../../assets/img-product'
-import { Pin } from '../../assets/img-product'
-import { Ins } from '../../assets/img-product'
 import { FPT } from '../../assets/img-product'
-import { Tick } from '../../assets/img-product'
-import { GioHang } from '../../assets/img-product'
-import { Star1 } from '../../assets/img-product'
-import { Star2 } from '../../assets/img-product'
+import { Banner } from '../../assets/img-product'
+
+
+import { SlArrowUp } from "react-icons/sl";
+import { SlArrowDown } from "react-icons/sl";
+import { FaFacebookF } from "react-icons/fa";
+import { FaTwitter } from "react-icons/fa";
+import { FaPinterestP } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
+import { LuPlus } from "react-icons/lu";
+import { LuMinus } from "react-icons/lu";
+import { BsBasket } from "react-icons/bs";
+import { FaRegHeart } from "react-icons/fa6";
+import { HiMiniChevronRight } from "react-icons/hi2";
+import { LuHome } from "react-icons/lu";
+import { HiChevronUp } from "react-icons/hi";
+import { HiChevronDown } from "react-icons/hi";
+import { FaRegStar } from "react-icons/fa";
+import { FaStar } from "react-icons/fa";
+import { BsDot } from "react-icons/bs";
+import { HiBadgeCheck } from "react-icons/hi";
+import { LuEye } from "react-icons/lu";
+
 
 
 const MenuDetail = () => {
-	const mota = document.querySelector(".mota")
-	const themthongtin = document.querySelector(".themthongtin")
-	if(mota){
-    mota.addEventListener("click", function(){
-        document.querySelector(".mota1").style.display = "block"
-        document.querySelector(".themthongtin1").style.display = "none"
-    })
-	}
-	if(themthongtin){
-    themthongtin.addEventListener("click", function(){
-        document.querySelector(".mota1").style.display = "none"
-        document.querySelector(".themthongtin1").style.display = "block"
-    })
-	}
 
-	
 	return (
-		<div className='products w-[1320px]'> 
-			<div className='ml-40 mr-40 w-[1220px] h-[558px] flex flex-row justify-center items-center gap-7'>
-				<div className='product-imgs basis-1/2 flex flex-row'>
-					<div className='product-imgs-small basis-1/4 flex flex-col gap-1 justify-center'>
-						<div className='product-img-small-c w-[80px] h-[90px] bg-cover bg-no-repeat bg-center'>
-							<img className='hover:border-green-700 hover:border hover:border-solid hover:rounded-lg cursor-pointer' src={CaiThiaC} alt="" />
-						</div>
-						<div className='product-img-small-1 w-[80px] h-[90px] bg-cover bg-no-repeat bg-center'>
-							<img className='hover:border-green-700 hover:border hover:border-solid hover:rounded-lg cursor-pointer' src={CaiThia1} alt="" />
-						</div>
-						<div className='product-img-small-2 w-[80px] h-[90px] bg-cover bg-no-repeat bg-center'>
-							<img className='hover:border-green-700 hover:border hover:border-solid hover:rounded-lg cursor-pointer' src={CaiThia2} alt="" />
-						</div>
-						<div className='product-img-small-3 w-[80px] h-[90px] bg-cover bg-no-repeat bg-center'>
-							<img className='hover:border-green-700 hover:border hover:border-solid hover:rounded-lg cursor-pointer' src={CaiThia3} alt="" />
-						</div>
-					</div>
-					<div className='product-img-big w-[556px] h-[556px] bg-cover bg-no-repeat bg-center bottom-3/4'>
-						<img src={CaiThiaC} alt="" />
-					</div>
-				</div>
-				<div className='product-content basis-1/2 '>
-					<div className='Tittle flex flex-row'>
-						<div className="ten mr-2 font-bold text-3xl">Cải thìa</div>
-						<div className="conhang w-[90px] h-[27px] mt-1.5 text-center rounded-md bg-green-100 text-green-800">Còn hàng</div>
-					</div>
-					<div className="price flex flex-row mt-2">
-						<div className="sales mr-2 mt-2.5 line-through text-gray-400">25.000₫</div>
-						<div className="normal mr-2 mt-2 text-xl text-green-800 font-semibold">20.000₫</div>
-						<div className="sale w-[50px] h-[27px] rounded-xl text-center font-semibold mt-2 text-rose-600 bg-rose-200 border-b border-b-gray-400 border-b-solid">-20%</div>
-					</div>
-					<div className='border-b border-gray-300 border-solid mt-4'></div>
-					<div className='flex flex-row mt-2 mb-2'>
-						<div className="flex flex-row">
-							<div className='mt-7 font-semibold'>Thương hiệu:</div>
-							<img className='w-[56px] h-[56px] ml-3 border border-gray-300 border-solid mt-3 rounded-lg hover:border-green-700 hover:border hover:border-solid hover:rounded-lg cursor-pointer' src={FPT} alt="" />
-						</div>
-						<div className="flex flex-row">
-							<div className='ml-36 mt-7 font-semibold'>Chia sẻ:</div>
-							<button>
-								<img className='w-[20px] h-[20px] mt-3 ml-4 hover:bg-green-500 hover:rounded-full hover:w-[30px] hover:h-[30px] transition-opacity duration-300' src={Fb} alt="" />
-							</button>
-							<button>
-								<img className='w-[20px] h-[20px] mt-3 ml-4 hover:bg-green-500 hover:rounded-full hover:w-[30px] hover:h-[30px] transition-opacity duration-300' src={Tw} alt="" />
-							</button>
-							<button>
-								<img className='w-[25px] h-[25px] mt-3 ml-4 hover:bg-green-500 hover:rounded-full hover:w-[30px] hover:h-[30px] transition-opacity duration-300' src={Pin} alt="" />
-							</button>
-							<button>
-								<img className='w-[25px] h-[25px] mt-3 ml-4 hover:bg-green-500 hover:rounded-full hover:w-[30px] hover:h-[30px] transition-opacity duration-300' src={Ins} alt="" />
-							</button>
-						</div>
-					</div>
-					<div className="content mt-2">
-						Đây là loại rau được cho là thực phẩm dưỡng sinh, ăn vào có thể lợi trường vị, thanh nhiệt, lợi tiểu tiện và ngừa bệnh ngoài da. Cải thìa có tác dụng chống scorbut, tạng khớp và làm tan sưng. <br />
-						Sản phẩm đạt tiêu chuẩn, không chứa các hóa chất, chất kích thích tăng trưởng gây hại, đảm bảo an toàn cho sức khỏe người tiêu dùng.
-					</div>
-					<div className='border-b border-gray-300 border-solid mt-6'></div>
-					<div className="add flex flex-row mt-5">
-						<div className="quantity w-[115px] h-[35px] flex flex-row mr-2 border-solid border-gray-300 border rounded-full">
-							<button className='w-[25px] h-[25px] mt-1 ml-1 flex flex-row justify-center bg-gray-100 rounded-full '>-</button>
-							<input className='w-[40px] h-[25px] mt-1 ml-2 border-2 rounded-2xl text-center' type="number" name="" id="" min={1} />
-							<button className='w-[25px] h-[25px] mt-1 ml-2 flex flex-row justify-center bg-gray-100 rounded-full'>+</button>
-						</div>
-						<div className="add-to-cart w-[370px] h-[35px] flex flex-row justify-center mr-2 bg-green-500 rounded-full hover:bg-green-600 transition-opacity duration-300 cursor-pointer">
-							<div className="text mt-1.5 text-white font-semibold text-center mr-1.5 text-sm">Thêm vào giỏ hàng</div>
-							<div className="icon-cart w-[18px] h-[18px] mt-2.5 ">
-								<img src={Cart} alt="" />
-							</div>
-						</div>
-						<div className='w-[35px] h-[35px] flex flex-row justify-center bg-green-100 rounded-full hover:bg-green-200 transition-opacity duration-300 cursor-pointer'>
-								<img className='w-[20px] h-[20px] mt-2' src={Heart} alt="" />
-						</div>
-					</div>
-					<div className="cagetory font-semibold mt-4">Danh mục:</div>
-					<div className="tag font-semibold mt-3">Thẻ:</div>
+		<div className="flex flex-col items-center w-screen">
+			<MainHeader></MainHeader>
+			{ /*Banner*/}
+			<div className='w-screen h-[100px] relative'>
+				<img className='w-full' src={Banner} alt="" />
+				<div className='absolute bottom-10 left-40 flex flex-row justify-center items-center gap-2 text-gray-300 text-md'>
+					<ul><li><a className='' href=""><LuHome className='mt-[1px] w-[22px] h-[22px] hover:text-green-500' /></a></li></ul>
+					<HiMiniChevronRight className='mt-[5px]' />
+					<ul><li><a className='hover:text-green-500' href="">Danh mục</a></li></ul>
+					<HiMiniChevronRight className='mt-[5px]' />
+					<ul><li><a className='hover:text-green-500' href="">Rau củ quả</a></li></ul>
+					<HiMiniChevronRight className='mt-[5px]' />
+					<ul><li><a className='hover:text-green-500' href="">Cải thìa</a></li></ul>
 				</div>
 			</div>
-			<div className='ml-40 mr-40 w-[1220px] text-lg'>
-				<div className=' flex flex-row justify-center items-center gap-4 font-semibold text-lg text-gray-500'>
-					<div className='mota h-[40px] w-[90px] text-center hover:border-b-2 border-solid border-green-500 cursor-pointer'>Mô tả</div>
-					<div className='themthongtin h-[40px] w-[190px] text-center hover:border-b-2 border-solid border-green-500 cursor-pointer'>Thêm thông tin</div>
-					<div className='danhgia h-[40px] w-[250px] text-center hover:border-b-2 border-solid border-green-500 cursor-pointer'>Đánh giá từ khách hàng</div>
-				</div>
-				<div className='border-b border-gray-300 border-solid mb-6'></div>
-				<div className='mota1'>
-					<div className="text-gray-500">
-					Nếu bạn đang tìm một loại rau dễ ăn, hình dáng đẹp, giá trị dinh dưỡng cao thì hẳn Cải thìa là loại rau đáp ứng đủ các tiêu chí ấy. <br />
-					Cải thìa được gọi với cái tên khác là cải chíp, cải muỗng. Bởi lẽ từng bẹ lá uốn cong trông như cái muỗng. Cải có màu xanh đẹp mắt ở phần lá, thân mập, hơi lùn nhưng bẹ to, phần gốc bẹ có màu trắng.
-					<div className='flex flex-row'>
-						<img className='w-[30px] h-[20px] mt-2.5 mr-1' src={Tick} alt="" />
-						<div className='mt-1.5 text-gray-500'>Hàng xuất sứ từ Việt Nam</div>
-					</div>
-					<div className='flex flex-row'>
-						<img className='w-[30px] h-[20px] mt-2.5 mr-1' src={Tick} alt="" />
-						<div className='mt-1.5 text-gray-500'>Bảo quản ngăn mát tủ lạnh từ 10-18 độ C</div>
-					</div>
-					<div className='flex flex-row'>
-						<img className='w-[30px] h-[20px] mt-2.5 mr-1' src={Tick} alt="" />
-						<div className='mt-1.5 text-gray-500'>Rau củ mới, tươi ngon</div>
-					</div>
-					<div className='flex flex-row mb-1'>
-						<img className='w-[30px] h-[20px] mt-2.5 mr-1' src={Tick} alt="" />
-						<div className='mt-1.5 text-gray-500'>Đúng mô tả của sản phẩm</div><br />
-					</div>
-					<div className='mb-48'>Cải Thìa là một loại rau dễ ăn, có hình dáng và màu sắc đẹp, giàu dinh dưỡng và xuất hiện trong nhiều công thức nấu ăn.</div>
-					</div>
-				</div>
-				<div className='themthongtin1 hidden'>
-					<div className='flex flex-row mb-48'>
-						<div className='mr-16 font-semibold'>
-							<p>Cân nặng:</p>
-							<p>Màu sắc:</p>
-							<p>Loại:</p>
-							<p>Danh mục:</p>
-							<p>Trạng thái:</p>
-							<p>Thẻ:</p>
+
+			<div>
+				{ /*Ảnh + thông tin sp*/}
+				<div className=' flex flex-row gap-8 pt-8 ml-16 mr-16'>
+					<div className=' basis-1/2 flex flex-row'>
+						<div className='basis-1/4 flex flex-col justify-center items-center gap-3'>
+							<button className='mb-3 bg-gray-50 w-[60px] h-[20px] rounded-sm'> <HiChevronUp className='ml-5' /> </button>
+							<img className='w-[60px] h-[60px] border border-solid cursor-pointer border-gray-300 rounded-md hover:border-green-700' src={CaiThiaC} />
+							<img className='w-[60px] h-[60px] border border-solid cursor-pointer border-gray-300 rounded-md hover:border-green-700' src={CaiThia1} />
+							<img className='w-[60px] h-[60px] border border-solid cursor-pointer border-gray-300 rounded-md hover:border-green-700' src={CaiThia2} />
+							<img className='w-[60px] h-[60px] border border-solid cursor-pointer border-gray-300 rounded-md hover:border-green-700' src={CaiThia3} />
+							<button className='mt-3 bg-gray-50 w-[60px] h-[20px] rounded-sm'> <HiChevronDown className='ml-5' /> </button>
 						</div>
-						<div className='text-gray-500 '>
-							<div>1kg</div>
-							<p>Xanh</p>
-							<p>Hữu cơ</p>
-							<p>Rau củ</p>
-							<p>Còn hàng (5,413)</p>
-							<p>Rau củ quả, Lành mạnh, Bắp cải, Cải xanh</p>
+						<div className='basis-3/4'>
+							<img src={CaiThiaC} />
+						</div>
+					</div>
+					<div className='basis-1/2 flex flex-col gap-3'>
+						<div className='flex flex-row gap-3'>
+							<p className='text-3xl font-bold'>Cải thìa</p>
+							<p className='mt-1.5 bg-green-200 text-green-800 w-[90px] h-[25px] text-center rounded-md'>Còn hàng</p>
+						</div>
+						<div className='flex flex-row gap-2'>
+							<div className='flex flex-row gap-1 text-xs mt-1.5 '>
+								<FaStar className='text-orange-500' />
+								<FaStar className='text-orange-500' />
+								<FaStar className='text-orange-500' />
+								<FaStar className='text-orange-500' />
+								<FaStar className='text-orange-500' />
+							</div>
+							<p className='hover:underline cursor-pointer'>4 Đánh giá</p>
+							<BsDot className='mt-0.5 text-xl text-gray-500' />
+							<p><b>SKU: </b> 2,51,594</p>
+						</div>
+						<div className='flex flex-row gap-2'>
+							<p className='text-gray-500 mt-0.5'><s>25.000₫</s></p>
+							<p className='text-xl text-green-800 font-semibold'>20.000₫</p>
+							<p className='bg-rose-100 text-rose-600 w-[50px] h-[21px] mt-1 text-center rounded-full text-sm font-semibold'>-20%</p>
+						</div>
+						<div className='mb-1 border-b border-solid border-gray-300 w-[650px]'></div>
+						<div className='flex flex-row gap-[250px]'>
+							<div className='flex flex-row gap-2'>
+								<p className='font-semibold mt-2'>Thương hiệu:</p>
+								<img className='cursor-pointer w-[45px] h-[45px] border border-solid border-gray-200 rounded-md hover:border hover:border-solid hover:border-green-700' src={FPT} />
+							</div>
+							<div className='flex flex-row gap-4'>
+								<p className='font-semibold mt-2'>Chia sẻ:</p>
+								<span className='cursor-pointer mt-1.5 hover:w-[30px] hover:h-[30px] hover:text-white hover:rounded-full hover:bg-green-500'><FaFacebookF className='mt-1.5 ml-1.5' /></span>
+								<span className='cursor-pointer mt-1.5 hover:w-[30px] hover:h-[30px] hover:text-white hover:rounded-full hover:bg-green-500'><FaTwitter className='mt-2 ml-2' /></span>
+								<span className='cursor-pointer mt-1.5 hover:w-[30px] hover:h-[30px] hover:text-white hover:rounded-full hover:bg-green-500'><FaPinterestP className='mt-[7px] ml-[7px]' /></span>
+								<span className='cursor-pointer mt-1.5 hover:w-[30px] hover:h-[30px] hover:text-white hover:rounded-full hover:bg-green-500'><FaInstagram className='mt-[7px] ml-[7px]' /></span>
+							</div>
+						</div>
+						<div className='text-base text-gray-900'>
+							<p>Đây là loại rau được cho là thực phẩm dưỡng sinh, ăn vào có thể lợi trường vị, thanh nhiệt, <br />
+								lợi tiểu tiện và ngừa bệnh ngoài da. Cải thìa có tác dụng chống scorbut, tạng khớp và làm <br />
+								tan sưng.</p>
+							<p className='mt-2'>Sản phẩm đạt tiêu chuẩn, không chứa các hóa chất, chất kích thích tăng trưởng gây hại, <br />
+								đảm bảo an toàn cho sức khỏe người tiêu dùng. </p>
+						</div>
+						<div className='mt-2 border-b border-solid border-gray-300 w-[650px]'></div>
+						<div className='flex flex-row justify-items-center gap-10 mt-2'>
+							<div className='flex flex-row justify-center gap-1 border border-solid border-gray-300 w-[110px] h-[37px] rounded-full'>
+								<button className='w-[28px] h-[28px] ml-[1px] mt-[3.5px] bg-gray-200 rounded-full hover:bg-gray-300'><p className='mb-[4px]'>-</p></button>
+								<input className='w-[35px] h-[25px] mt-[3.5px] pl-[1.5px] text-center' type="text" />
+								<button className='w-[28px] h-[28px] mr-[1px] mt-[3.5px] bg-gray-200 rounded-full hover:bg-gray-300'><p className='mb-[4px]'>+</p></button>
+							</div>
+							<div className='flex flex-row gap-2 text-white font-semibold bg-green-500 w-[400px] h-[37px] rounded-full justify-center hover:bg-green-600 cursor-pointer'>
+								<button>Thêm vào giỏ hàng</button>
+								<BsBasket className='mt-[9px]' />
+							</div>
+							<div>
+								<button className='w-[37px] h-[37px] rounded-full bg-green-100 hover:bg-green-200'><FaRegHeart className='mt-[2px] ml-[11px] text-green-800 ' /></button>
+							</div>
+						</div>
+						<div className='mt-1 border-b border-solid border-gray-300 w-[650px]'></div>
+						<div>
+							<p className='font-semibold'>Danh mục:</p>
+							<p className='font-semibold mt-2'>Thẻ:</p>
+						</div>
+					</div>
+				</div>
+
+				{ /*Chi tiết sp*/}
+				<div>
+					<div className=' flex flex-row gap-5 text-lg mt-10 mb-3 border-b border-solid border-gray-300 justify-center items-center text-gray-600 '>
+						<p className='w-[100px] h-[35px] text-center cursor-pointer hover:border-b-2 hover:border-solid hover:border-green-700 hover:font-semibold hover:text-black'>Mô tả</p>
+						<p className='w-[170px] h-[35px] text-center cursor-pointer hover:border-b-2 hover:border-solid hover:border-green-700 hover:font-semibold hover:text-black'>Thêm thông tin</p>
+						<p className='w-[250px] h-[35px] text-center cursor-pointer hover:border-b-2 hover:border-solid hover:border-green-700 hover:font-semibold hover:text-black'>Đánh giá từ khách hàng</p>
+					</div>
+					<div className='ml-[250px] mr-[250px] text-gray-700'>
+						<p>Nếu bạn đang tìm một loại rau dễ ăn, hình dáng đẹp, giá trị dinh dưỡng cao thì hẳn Cải thìa là loại rau đáp ứng đủ các tiêu chí ấy.</p>
+						<p className='mt-2'>Cải thìa được gọi với cái tên khác là cải chíp, cải muỗng. Bởi lẽ từng bẹ lá uốn cong trông như cái muỗng. Cải có màu xanh đẹp mắt ở phần lá, thân mập, hơi lùn nhưng bẹ to, phần gốc bẹ có màu trắng.</p>
+						<div className='flex flex-row gap-1 mt-4'>
+							<HiBadgeCheck className='mt-1 text-green-600' />
+							<p>Hàng xuất sứ từ Việt Nam</p>
+						</div>
+						<div className='flex flex-row gap-1 mt-2'>
+							<HiBadgeCheck className='mt-1 text-green-600' />
+							<p>Bảo quản ngăn mát tủ lạnh từ 10-18 độ C</p>
+						</div>
+						<div className='flex flex-row gap-1 mt-2'>
+							<HiBadgeCheck className='mt-1 text-green-600' />
+							<p>Rau củ mới, tươi ngon</p>
+						</div>
+						<div className='flex flex-row gap-1 mt-2'>
+							<HiBadgeCheck className='mt-1 text-green-600' />
+							<p>Đúng mô tả của sản phẩm</p>
+						</div>
+						<p className='mt-4'>Cải Thìa là một loại rau dễ ăn, có hình dáng và màu sắc đẹp, giàu dinh dưỡng và xuất hiện trong nhiều công thức nấu ăn.</p>
+					</div>
+
+					<div className='hidden flex flex-row gap-12 ml-[250px] text-gray-700'>
+						<div>
+							<p className='font-semibold'>Cân nặng: </p>
+							<p className='font-semibold'>Màu sắc: </p>
+							<p className='font-semibold'>Loại: </p>
+							<p className='font-semibold'>Danh mục: </p>
+							<p className='font-semibold'>Trạng thái: </p>
+							<p className='font-semibold'>Thẻ: </p>
+						</div>
+						<div>
+							<p>1kg </p>
+							<p>Xanh </p>
+							<p>Hữu cơ </p>
+							<p>Rau củ </p>
+							<p>Còn hàng (5,413) </p>
+							<p>Rau củ quả, Lành mạnh, Bắp cải </p>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div className='ml-40 mr-40 w-[1220px] text-lg mb-10'>
-				<div className='font-bold text-3xl text-center'>Các sản phẩm liên quan</div>
-				<div className='flex flex-row gap-3 mt-10'>
-					<div className="w-[300px] h-[385px] border-2 border-solid border-gray-300 rounded-xl hover:border-green-700 cursor-pointer">
-						<img className='w-[270px] h-[270px] ml-3 mt-3' src={TaoXanhC} alt="" />
-						<div className="font-normal text-gray-500 ml-5 mt-2 hover:text-green-700 cursor-pointer">Táo xanh</div>
-						<div className="flex flex-row ml-5">
-							<div className='font-semibold mr-2 '>25.000₫</div>
-							<div className='line-through text-gray-500'>50.000₫</div>
-							<div className='w-[35px] h-[35px] ml-20 flex flex-row justify-center bg-gray-200 rounded-full hover:bg-green-500 cursor-pointer'>
-								<img className='w-[20px] h-[20px] mt-2' src={GioHang} alt="" />
+			{ /*Các sản phẩm liên quan*/}
+			<div className='mt-28'>
+				<h1 className='font-bold text-3xl text-center mb-5'>Các sản phẩm liên quan</h1>
+				<div className='flex flex-row gap-3 mb-5'>
+					<div className='group relative cursor-pointer w-[250px] flex flex-col gap-1 justify-center border border-solid border-gray-300 rounded-lg hover:border-green-700'>
+						<img className="w-[302]" src={TaoXanhC} />
+						<div className='flex flex-row gap-14 justify-center items-center'>
+							<div>
+								<p className='mt-1 ml-3 text-base hover:text-green-700 cursor-pointer'>Táo xanh</p>
+								<div className='flex flex-row gap-2'>
+									<p className='ml-3 text-base font-semibold'>25.000₫</p>
+									<p className='text-base text-gray-500'><s>50.000₫</s></p>
+								</div>
+								<div className='flex flex-row text-xs mt-1 ml-3 mb-5'>
+									<FaStar className='text-orange-400' />
+									<FaStar className='text-orange-400' />
+									<FaStar className='text-orange-400' />
+									<FaStar className='text-orange-400' />
+									<FaRegStar className='text-orange-400' />
+								</div>
+							</div>
+							<div className=''>
+								<button className='bg-gray-200 w-[40px] h-[40px] rounded-full hover:bg-green-500 hover:text-white'><BsBasket className='ml-[12px] mb-[1px]' /></button>
 							</div>
 						</div>
-						<div className='flex flex-row ml-5'>
-							<img className='w-[13px] h-[13px] mr-1' src={Star1} alt="" />
-							<img className='w-[13px] h-[13px] mr-1' src={Star1} alt="" />
-							<img className='w-[13px] h-[13px] mr-1' src={Star1} alt="" />
-							<img className='w-[13px] h-[13px] mr-1' src={Star1} alt="" />
-							<img className='w-[13px] h-[13px] mr-1' src={Star2} alt="" />
+						<div className='group-hover:right-3 transition-all absolute flex -right-10 top-6 flex-col gap-2'>
+							<button className='inline-flex w-[35px] h-[35px] rounded-full border border-solid border-gray-400 bg-white pl-[8px] pt-[9px] hover:bg-green-500 hover:text-white hover:border-none' ><FaRegHeart className='text-lg' /></button>
+							<button className='inline-flex w-[35px] h-[35px] rounded-full border border-solid border-gray-400 bg-white pl-[8.5px] pt-[8.5px] hover:bg-green-500 hover:text-white hover:border-none' ><LuEye className='text-lg' /></button>
+						</div>
+						<div className='absolute top-4 left-4 w-[90px] rounded-md bg-rose-500 shadow-xl'>
+							<p className='text-center text-white text-sm'>Giảm 50%</p>
 						</div>
 					</div>
-					<div className="w-[300px] h-[385px] border-2 border-solid border-gray-300 rounded-xl hover:border-green-700 cursor-pointer">
-						<img className='w-[270px] h-[270px] ml-3 mt-3' src={BongCaiTrangC} alt="" />
-						<div className="font-normal text-gray-500 ml-5 mt-2 hover:text-green-700 cursor-pointer">Bông cải trắng</div>
-						<div className="flex flex-row ml-5 gap-40">
-							<div className='font-semibold'>22.500₫</div>
-							<div className='w-[35px] h-[35px] flex flex-row justify-center bg-gray-200 rounded-full hover:bg-green-500 cursor-pointer'>
-								<img className='w-[20px] h-[20px] mt-2' src={GioHang} alt="" />
+					<div className='group relative w-[250px] cursor-pointer     flex flex-col gap-1 justify-center border border-solid border-gray-300 rounded-lg hover:border-green-700'>
+						<img className="w-[302]" src={BongCaiTrangC} />
+						<div className='flex flex-row gap-14 justify-center items-center'>
+							<div>
+								<p className='mt-1  text-base hover:text-green-700 cursor-pointer'>Bông cải trắng</p>
+								<div className='flex flex-row gap-2'>
+									<p className=' text-base font-semibold'>22.500₫</p>
+								</div>
+								<div className='flex flex-row text-xs mt-1 mb-5'>
+									<FaStar className='text-orange-400' />
+									<FaStar className='text-orange-400' />
+									<FaStar className='text-orange-400' />
+									<FaStar className='text-orange-400' />
+									<FaRegStar className='text-orange-400' />
+								</div>
+							</div>
+							<div className=''>
+								<button className='bg-gray-200 w-[40px] h-[40px] ml-3 rounded-full hover:bg-green-500 hover:text-white'><BsBasket className='ml-[12px] mb-[1px]' /></button>
 							</div>
 						</div>
-						<div className='flex flex-row ml-5'>
-							<img className='w-[13px] h-[13px] mr-1' src={Star1} alt="" />
-							<img className='w-[13px] h-[13px] mr-1' src={Star1} alt="" />
-							<img className='w-[13px] h-[13px] mr-1' src={Star1} alt="" />
-							<img className='w-[13px] h-[13px] mr-1' src={Star1} alt="" />
-							<img className='w-[13px] h-[13px] mr-1' src={Star2} alt="" />
+						<div className='group-hover:right-3 transition-all absolute flex -right-10 top-6 flex-col gap-2'>
+							<button className='inline-flex w-[35px] h-[35px] rounded-full border border-solid border-gray-400 bg-white pl-[8px] pt-[9px] hover:bg-green-500 hover:text-white hover:border-none' ><FaRegHeart className='text-lg' /></button>
+							<button className='inline-flex w-[35px] h-[35px] rounded-full border border-solid border-gray-400 bg-white pl-[8.5px] pt-[8.5px] hover:bg-green-500 hover:text-white hover:border-none' ><LuEye className='text-lg' /></button>
 						</div>
 					</div>
-					<div className="w-[300px] h-[385px] border-2 border-solid border-gray-300 rounded-xl hover:border-green-700 cursor-pointer">
-						<img className='w-[270px] h-[270px] ml-3 mt-3' src={OtChuongXanhC} alt="" />
-						<div className="font-normal text-gray-500 ml-5 mt-2 hover:text-green-700 cursor-pointer">Ớt chuông xanh</div>
-						<div className="flex flex-row ml-5 gap-40">
-							<div className='font-semibold'>11.000₫</div>
-							<div className='w-[35px] h-[35px] flex flex-row justify-center bg-gray-200 rounded-full hover:bg-green-500 cursor-pointer'>
-								<img className='w-[20px] h-[20px] mt-2' src={GioHang} alt="" />
+					<div className='group relative w-[250px] cursor-pointer flex flex-col gap-1 justify-center border border-solid border-gray-300 rounded-lg hover:border-green-700'>
+						<img className="w-[302]" src={OtChuongXanhC} />
+						<div className='flex flex-row gap-14 justify-center items-center'>
+							<div>
+								<p className='mt-1 text-base hover:text-green-700 cursor-pointer'>Ớt chuông xanh</p>
+								<div className='flex flex-row gap-2'>
+									<p className='text-base font-semibold'>11.000₫</p>
+								</div>
+								<div className='flex flex-row text-xs mt-1 mb-5'>
+									<FaStar className='text-orange-400' />
+									<FaStar className='text-orange-400' />
+									<FaStar className='text-orange-400' />
+									<FaStar className='text-orange-400' />
+									<FaRegStar className='text-orange-400' />
+								</div>
+							</div>
+							<div className=''>
+								<button className='bg-gray-200 w-[40px] h-[40px] rounded-full hover:bg-green-500 hover:text-white'><BsBasket className='ml-[12px] mb-[1px]' /></button>
 							</div>
 						</div>
-						<div className='flex flex-row ml-5'>
-							<img className='w-[13px] h-[13px] mr-1' src={Star1} alt="" />
-							<img className='w-[13px] h-[13px] mr-1' src={Star1} alt="" />
-							<img className='w-[13px] h-[13px] mr-1' src={Star1} alt="" />
-							<img className='w-[13px] h-[13px] mr-1' src={Star1} alt="" />
-							<img className='w-[13px] h-[13px] mr-1' src={Star2} alt="" />
+						<div className='group-hover:right-3 transition-all absolute flex -right-10 top-6 flex-col gap-2'>
+							<button className='inline-flex w-[35px] h-[35px] rounded-full border border-solid border-gray-400 bg-white pl-[8px] pt-[9px] hover:bg-green-500 hover:text-white hover:border-none' ><FaRegHeart className='text-lg' /></button>
+							<button className='inline-flex w-[35px] h-[35px] rounded-full border border-solid border-gray-400 bg-white pl-[8.5px] pt-[8.5px] hover:bg-green-500 hover:text-white hover:border-none' ><LuEye className='text-lg' /></button>
 						</div>
 					</div>
-					<div className="w-[300px] h-[385px] border-2 border-solid border-gray-300 rounded-xl hover:border-green-700 cursor-pointer">
-						<img className='w-[270px] h-[270px] ml-3 mt-3' src={DauBapC} alt="" />
-						<div className="font-normal text-gray-500 ml-5 mt-1 hover:text-green-700 cursor-pointer">Đậu bắp</div>
-						<div className="flex flex-row ml-5 gap-40">
-							<div className='font-semibold '>11.300₫</div>
-							<div className='w-[35px] h-[35px] flex flex-row justify-center bg-gray-200 rounded-full hover:bg-green-500 cursor-pointer'>
-								<img className='w-[20px] h-[20px] mt-2' src={GioHang} alt="" />
+					<div className='group relative w-[250px] cursor-pointer flex flex-col gap-1 justify-center border border-solid border-gray-300 rounded-lg hover:border-green-700'>
+						<img className="w-[302]" src={DauBapC} />
+						<div className='flex flex-row gap-16 justify-center items-center'>
+							<div>
+								<p className='mt-1 text-base hover:text-green-700 cursor-pointer'>Đậu bắp</p>
+								<div className='flex flex-row gap-2'>
+									<p className='text-base font-semibold'>11.300₫</p>
+								</div>
+								<div className='flex flex-row text-xs mt-1 mr-10 mb-5'>
+									<FaStar className='text-orange-400' />
+									<FaStar className='text-orange-400' />
+									<FaStar className='text-orange-400' />
+									<FaStar className='text-orange-400' />
+									<FaRegStar className='text-orange-400' />
+								</div>
+							</div>
+							<div className=''>
+								<button className='bg-gray-200 w-[40px] h-[40px] ml-2 rounded-full hover:bg-green-500 hover:text-white'><BsBasket className='ml-[12px] mb-[1px]' /></button>
 							</div>
 						</div>
-						<div className='flex flex-row ml-5'>
-							<img className='w-[13px] h-[13px] mr-1' src={Star1} alt="" />
-							<img className='w-[13px] h-[13px] mr-1' src={Star1} alt="" />
-							<img className='w-[13px] h-[13px] mr-1' src={Star1} alt="" />
-							<img className='w-[13px] h-[13px] mr-1' src={Star1} alt="" />
-							<img className='w-[13px] h-[13px] mr-1' src={Star2} alt="" />
+						<div className='group-hover:right-3 transition-all absolute flex -right-10 top-6 flex-col gap-2'>
+							<button className='inline-flex w-[35px] h-[35px] rounded-full border border-solid border-gray-400 bg-white pl-[8px] pt-[9px] hover:bg-green-500 hover:text-white hover:border-none' ><FaRegHeart className='text-lg' /></button>
+							<button className='inline-flex w-[35px] h-[35px] rounded-full border border-solid border-gray-400 bg-white pl-[8.5px] pt-[8.5px] hover:bg-green-500 hover:text-white hover:border-none' ><LuEye className='text-lg' /></button>
 						</div>
 					</div>
 				</div>
