@@ -5,12 +5,13 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
+/* body {
   @apply leading-[normal] m-0;
-}
+} */
 
-*,
-::before,
-::after {
-  border-width: 0;
+/* cấm xóa */
+*{
+  border: 0;
+  padding: 0;
+  margin: 0;
 }

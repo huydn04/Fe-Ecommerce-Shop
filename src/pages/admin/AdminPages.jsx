@@ -15,7 +15,9 @@ import BarChartNoPadding from "../../components/admin/chart/BarChartNoPadding";
 import SameDataComposedChart from "../../components/admin/chart/SameDataComposedChart";
 import AreaChartFillByValue from "../../components/admin/chart/AreaChartFillByValue";
 
+
 const AdminPages = () => {
+  
   const [value, setValue] = useState("default");
   return (
     <div className=" h-full   ">
