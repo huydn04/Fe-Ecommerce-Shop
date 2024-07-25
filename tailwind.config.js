@@ -1,13 +1,15 @@
 /** @type {import('tailwindcss').Config} */
-module.exports = {
+
+export default {
   content: [
     "./index.html",
-    "./src/**/*.{js,jsx,ts,tsx}",
+    "./src/**/*.{js,ts,jsx,tsx}",
     "node_modules/daisyui/dist/**/*.js",
     "node_modules/react-daisyui/dist/**/*.js",
   ],
   theme: {
     extend: {
+<<<<<<< HEAD
   //     colors: {
   //       "gray-scale-white": "#fff",
   //       "gray-scale-gray-900": "#1a1a1a",
@@ -120,5 +122,42 @@ module.exports = {
   //   prefix: "",
   //   logs: true,
   //   themeRoot: ":root",
+=======
+      colors: {
+        customColor: '2C742F',
+      },
+
+      container: {
+        center: true,
+        padding: "1.5rem",
+      },
+
+      boxShadow: {
+        custom: "0px 0px 21px rgb(0 0 0 / 20%)",
+      }
+
+    },
+  },
+  plugins: [
+    require("daisyui"),
+    require("tailwind-scrollbar"),
+    require("tailwind-scrollbar-hide"),
+  ],
+
+  daisyui: {
+    themes: [
+      {
+        mytheme: {
+          primary: "#00B207",
+        },
+      },
+    ],
+    base: true,
+    styled: true,
+    utils: true,
+    prefix: "",
+    logs: true,
+    themeRoot: ":root",
+>>>>>>> 7fc5cbf080dde194f36a4fde07ffb5d213e3fe78
   },
 };
