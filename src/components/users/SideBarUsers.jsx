@@ -53,7 +53,7 @@ const Sidebar = () => {
                 to={item.link}
                 className={`btn flex  items-center justify-start font-semibold  rounded-none shadow-white hover:bg-gray-100 hover:text-primary hover:border-l-4 hover:border-y-0 hover:border-r-0 hover:border-solid hover:border-[#00B207] hover:font-bold  ${
                   active === item.name
-                    ? "  font-bold text-primary hover:border-none bg-gray-200"
+                    ? "font-bold text-primary hover:border-none bg-gray-200"
                     : "bg-transparent font-light "
                 } relative pl-4`}
                 onClick={() => setActive(item.name)}

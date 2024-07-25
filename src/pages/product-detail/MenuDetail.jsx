@@ -1,5 +1,4 @@
 import React from 'react'
-import MainHeader from '../../components/attracpopular/MainHeader'
 
 import { CaiThiaC } from '../../assets/img-product'
 import { CaiThia1 } from '../../assets/img-product'
@@ -33,13 +32,13 @@ import { BsDot } from "react-icons/bs";
 import { HiBadgeCheck } from "react-icons/hi";
 import { LuEye } from "react-icons/lu";
 
-
+import {Link} from "react-router-dom"
 
 const MenuDetail = () => {
+	
 
 	return (
 		<div className="flex flex-col items-center w-screen">
-			<MainHeader></MainHeader>
 			{ /*Banner*/}
 			<div className='w-screen h-[100px] relative'>
 				<img className='w-full' src={Banner} alt="" />
