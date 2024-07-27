@@ -1,19 +1,12 @@
 // import { emphasize } from '@mui/material';
 import React, { useState } from 'react'
-import { IoIosMail } from "react-icons/io";
-import { FaKey } from "react-icons/fa";
-import { FaEye } from "react-icons/fa";
-import { IoMdEyeOff } from "react-icons/io";
-import { LuMapPin } from "react-icons/lu";
-import { HiChevronDown } from "react-icons/hi2";
-import { FaRegHeart } from "react-icons/fa";
-import { PiBasket } from "react-icons/pi";
-import { IoIosSearch } from "react-icons/io";
-import { FiPhoneCall } from "react-icons/fi";
-import { IoHomeOutline } from "react-icons/io5";
+import { Link } from 'react-router-dom'
+
+import { AiFillEyeInvisible } from "react-icons/ai";
+import { AiFillEye } from "react-icons/ai";
 
 
-
+// Lưu form
 const initFormValue = {
     email: "",
     password: "",
@@ -31,6 +24,8 @@ const isEmailValid = (email) => {
 const CreateUser = () => {
 
     const [formValue, setFormValue] = useState(initFormValue);
+
+    //Báo lỗi
     const [formError, setFormError] = useState({});
 
     const validateForm = () => {
@@ -79,14 +74,19 @@ const CreateUser = () => {
     console.log(formError);
 
     //Hide password
+    const [open, setOpen] = useState(false)
+
+    const toggle = () => {
+        setOpen(!open)
+    }
 
     //Giao diện
 
     return (
-        <div className="re-page flex flex-col items-center w-screen h-[100vh]">
+        <div className="re-page flex justify-center items-center w-screen h-[100vh]">
 
             {/*Giao diện*/}
-            <div className='w-[600px] border border-solid border-gray-300 shadow-custom bg-white pt-5 mt-10 mb-5'>
+            <div className='w-[600px] border border-solid border-gray-300 shadow-custom bg-white pt-5 mt-10 mb-5 rounded-xl'>
                 <h1 className='text-center font-bold text-2xl mt-3'>Tạo tài khoản</h1>
                 <form onSubmit={handleSubmit} className='flex flex-col items-center mb-5'>
                     <div className=''>
@@ -107,14 +107,20 @@ const CreateUser = () => {
                         <div className='relative flex items-center gap-2'>
                             <input
                                 className='w-[350px] h-[35px] pl-4 mt-3 border border-solid border-gray-300 rounded-md hover:border-green-700 '
-                                type="password"
+                                type={(open === false) ? "password" : "text"}
                                 name="password"
                                 id="password"
                                 placeholder='Mật khẩu'
                                 value={formValue.password}
                                 onChange={handleChange}
                             />
-                            <FaEye className='w-[15px] h-[15px] absolute ml-80 mt-3' />
+                            <div className='absolute ml-80 mt-3 cursor-pointer'>
+                                {
+                                    (open === false) ?
+                                        <AiFillEye onClick={toggle} /> :
+                                        <AiFillEyeInvisible onClick={toggle} />
+                                }
+                            </div>
                         </div>
                         {formError.password && (
                             <div className='text-red-500 text-xs ml-1 mt-1'>{formError.password}</div>
@@ -124,31 +130,40 @@ const CreateUser = () => {
                         <div className='relative flex items-center gap-2'>
                             <input
                                 className='w-[350px] h-[35px] pl-4 mt-3 border border-solid border-gray-300 rounded-md hover:border-green-700 '
-                                type="password"
+                                type={(open === false) ? "password" : "text"}
                                 name="confirmPassword"
                                 id="confirm-Password"
                                 placeholder='Xác nhận mật khẩu'
                                 value={formValue.confirmPassword}
                                 onChange={handleChange}
                             />
-                            <FaEye className='w-[15px] h-[15px] absolute ml-80 mt-3' />
+                            <div className='absolute ml-80 mt-3 cursor-pointer'>
+                                {
+                                    (open === false) ?
+                                        <AiFillEye onClick={toggle} /> :
+                                        <AiFillEyeInvisible onClick={toggle} />
+                                }
+                            </div>
                         </div>
                         {formError.confirmPassword && (
                             <div className='text-red-500 text-xs ml-1 mt-1'>{formError.confirmPassword}</div>
                         )}
                     </div>
-                    <input
-                        className='mt-3 mr-[338px]'
-                        type="checkbox"
-                        name=""
-                        id=""
-                    />
+                    <div className='flex flex-row gap-2'>
+                        <input
+                            className='mt-3'
+                            type="checkbox"
+                            name=""
+                            id=""
+                        />
+                        <p className='mt-[10px] text-gray-700'>Lưu mật khẩu</p>
+                    </div>
                     <button type="submit" className='w-[350px] h-[30px] mt-3 font-semibold border border-solid border-gray-300 rounded-full bg-green-500 text-white hover:bg-green-600 hover:duration-300'>
                         Đăng ký
                     </button>
                     <div className='flex flex-row gap-1 mt-2 text-sm text-gray-800'>
                         <p>Bạn đã có tài khoản?</p>
-                        <p className='font-semibold hover:text-green-700 hover:font-bold cursor-pointer'>Đăng nhập</p>
+                        <Link to="/login-user" className='font-semibold hover:text-green-700 hover:font-bold cursor-pointer'>Đăng nhập</Link>
                     </div>
                 </form>
             </div>

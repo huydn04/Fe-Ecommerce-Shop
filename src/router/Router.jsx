@@ -3,6 +3,7 @@ import { Route, Routes } from "react-router-dom";
 // import MainLayout from "../layout/MainLayout";
 import CreateUser from "../pages/users/CreateUser";
 import LoginUser from "../pages/users/LoginUser";
+import ResetPassword from "../pages/users/ResetPassword";
 
 const LandingPage = lazy(() => import("../pages/LandingPage"));
 const AdminPages = lazy(() => import("../pages/admin/AdminPages"));
@@ -73,10 +74,11 @@ export default function AppRoutes() {
         {/* CartPop */}
         <Route path="/cart-pop" element={<CartPop />} />
 
-       
-
         {/* Create User Page */}
         <Route path="/create-user" element={<CreateUser />} />
+
+        {/* Reset Password Page */}
+        <Route path="/reset-pass" element={<ResetPassword />} />
 
 
 
