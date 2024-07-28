@@ -126,7 +126,7 @@ const LoginUser = () => {
                             />
                             <p>Lưu mật khẩu</p>
                         </div>
-                        <Link to="/reset-pass" >Quên mật khẩu?</Link>
+                        <Link to="/reset-pass" className='hover:text-green-700' >Quên mật khẩu?</Link>
                     </div>
                     <button type="submit" className='w-[350px] h-[30px] mt-3 font-semibold border border-solid border-gray-300 rounded-full bg-green-500 text-white hover:bg-green-600 hover:duration-300'>
                         Đăng nhập
