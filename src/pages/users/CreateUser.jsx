@@ -5,6 +5,12 @@ import { FaKey } from "react-icons/fa";
 import { FaEye } from "react-icons/fa";
 import { IoMdEyeOff } from "react-icons/io";
 import { LuMapPin } from "react-icons/lu";
+import { HiChevronDown } from "react-icons/hi2";
+import { FaRegHeart } from "react-icons/fa";
+import { PiBasket } from "react-icons/pi";
+import { IoIosSearch } from "react-icons/io";
+import { FiPhoneCall } from "react-icons/fi";
+import { IoHomeOutline } from "react-icons/io5";
 
 
 
@@ -77,18 +83,10 @@ const CreateUser = () => {
     //Giao diện
 
     return (
-        <div className="re-page flex flex-col items-center w-auto h-[100vh]">
-            <div className='flex flex-row h-[30px] gap-1'>
-                <div className='flex flex-row gap-1'>
-                    <LuMapPin className='mt-1' />
-                    <p>FPT TEAM Supermarket: TP Biên Hòa - Đồng Nai</p>
-                </div>
-                <div>
-                    
-                </div>
-            </div>
+        <div className="re-page flex flex-col items-center w-screen h-[100vh]">
 
-            <div className='w-[600px] border border-solid border-gray-300 shadow-custom bg-white pt-5 mt-5 mb-5'>
+            {/*Giao diện*/}
+            <div className='w-[600px] border border-solid border-gray-300 shadow-custom bg-white pt-5 mt-10 mb-5'>
                 <h1 className='text-center font-bold text-2xl mt-3'>Tạo tài khoản</h1>
                 <form onSubmit={handleSubmit} className='flex flex-col items-center mb-5'>
                     <div className=''>

@@ -28,28 +28,42 @@ const ImgSpPopular = ({ className = "", image, greenApple }) => {
           <img
             className="h-3 w-3 relative overflow-hidden shrink-0 min-h-[12px]"
             alt=""
-            src="/src/assets/attracpopular/star-1.svg"
+            src="\src\assets\attracpopular\star-1.svg"
           />
           <img
             className="h-3 w-3 relative overflow-hidden shrink-0 min-h-[12px]"
             alt=""
-            src="/src/assets/attracpopular/star-1.svg"
+            src="\src\assets\attracpopular\star-1.svg"
           />
           <img
             className="h-3 w-3 relative overflow-hidden shrink-0 min-h-[12px]"
             alt=""
-            src="/src/assets/attracpopular/star-1.svg"
+            src="\src\assets\attracpopular\star-1.svg"
           />
           <img
             className="h-3 w-3 relative overflow-hidden shrink-0 min-h-[12px]"
             alt=""
-            src="/src/assets/attracpopular/star-1.svg"
+            src="\src\assets\attracpopular\star-1.svg"
           />
           <img
             className="h-3 w-3 relative overflow-hidden shrink-0 min-h-[12px]"
             alt=""
-            src="/src/assets/attracpopular/star-1.svg"
+            src="\src\assets\attracpopular\star-5.svg"
           />
+        </div>
+        <img
+          className="w-10 h-10 absolute !m-[0] right-[16px] bottom-[25px] z-[1]"
+          loading="lazy"
+          alt=""
+          src="\src\assets\attracpopular\add-to-cart.svg"
+        />
+      </div>
+      <div className="w-20 rounded bg-branding-error hidden flex-row items-center justify-center py-[3px] px-2 box-border gap-[4px] text-white">
+        <div className="h-[21px] flex-1 relative leading-[150%] inline-block">
+          Sale
+        </div>
+        <div className="h-[21px] flex-1 relative leading-[150%] font-medium inline-block">
+          50%
         </div>
       </div>
     </div>
@@ -58,8 +72,8 @@ const ImgSpPopular = ({ className = "", image, greenApple }) => {
 
 ImgSpPopular.propTypes = {
   className: PropTypes.string,
-  image: PropTypes.string.isRequired,
-  greenApple: PropTypes.string.isRequired,
+  image: PropTypes.string,
+  greenApple: PropTypes.string,
 };
 
 export default ImgSpPopular;

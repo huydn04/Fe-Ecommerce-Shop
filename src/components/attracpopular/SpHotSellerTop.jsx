@@ -1,4 +1,4 @@
-  import PropTypes from "prop-types";
+import PropTypes from "prop-types";
   
 const SpHotSellerTop = ({ className = "", image, chaniseCabbage }) => {
   return (
@@ -29,31 +29,31 @@ const SpHotSellerTop = ({ className = "", image, chaniseCabbage }) => {
             className="h-4 w-4 relative overflow-hidden shrink-0 min-h-[16px]"
             loading="lazy"
             alt=""
-            src="./src/assets/attracpopular/star-1-5.svg"
+            src="\src\assets\attracpopular\star-1-5.svg"
           />
           <img
             className="h-4 w-4 relative overflow-hidden shrink-0 min-h-[16px]"
             loading="lazy"
             alt=""
-            src="./src/assets/attracpopular/star-1-5.svg"
+            src="\src\assets\attracpopular\star-1-5.svg"
           />
           <img
             className="h-4 w-4 relative overflow-hidden shrink-0 min-h-[16px]"
             loading="lazy"
             alt=""
-            src="./src/assets/attracpopular/star-1-5.svg"
+            src="\src\assets\attracpopular\star-1-5.svg"
           />
           <img
             className="h-4 w-4 relative overflow-hidden shrink-0 min-h-[16px]"
             loading="lazy"
             alt=""
-            src="./src/assets/attracpopular/star-1-5.svg"
+            src="\src\assets\attracpopular\star-1-5.svg"
           />
           <img
             className="h-4 w-4 relative overflow-hidden shrink-0 min-h-[16px]"
             loading="lazy"
             alt=""
-            src="./src/assets/attracpopular/star-5-5.svg"
+            src="\src\assets\attracpopular\star-5-5.svg"
           />
         </div>
       </div>

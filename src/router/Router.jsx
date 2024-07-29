@@ -1,10 +1,9 @@
 import { lazy, Suspense } from "react";
 import { Route, Routes } from "react-router-dom";
-import MainLayout from "../layout/MainLayout";
+// import MainLayout from "../layout/MainLayout";
 import CreateUser from "../pages/users/CreateUser";
-import CreateAccount from "../pages/users/CreateAccount";
 import LoginUser from "../pages/users/LoginUser";
-
+import { ShopContextProvider } from "../context/shop-context";
 const LandingPage = lazy(() => import("../pages/LandingPage"));
 const AdminPages = lazy(() => import("../pages/admin/AdminPages"));
 const Pages404 = lazy(() => import("../pages/404/Page404"));
@@ -17,26 +16,20 @@ const OrderHistory = lazy(() => import("../pages/users/OrderHistory"));
 const WishList = lazy(() => import("../pages/users/WishList"));
 const MenuDetail = lazy(() => import("../pages/product-detail/MenuDetail"));
 
-const AttractiveOffers = lazy(() => import("../pages/AttractiveOffers"));
+const AttractiveOffers = lazy(() => import("../pages/popular/AttractiveOffers"));
 const CartPop = lazy(() => import("../pages/users/cartPop"));
-<<<<<<< HEAD
+const Shop = lazy(()=> import("../pages/Shopping-cart/shop"))
 
 
-<<<<<<< HEAD
-=======
-const CartPop = lazy(() => import("../pages/users/cartPop"));
 
->>>>>>> 93b2c39a6918cd7e4818f4ac6e20b82c3a196aca
-=======
-=======
-
-
->>>>>>> 34c831751e2aeec217880a710e449d6a70834d62
 
 export default function AppRoutes() {
   return (
+    <ShopContextProvider>
     <Suspense fallback={<div>Loading...</div>}>
+      
       <Routes>
+    
         {/* Landing Page */}
         <Route index path="/" element={<LandingPage />} />
 
@@ -64,47 +57,17 @@ export default function AppRoutes() {
         {/* Order History Page */}
         <Route path="/order-history" element={<OrderHistory />} />
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 
         {/* Wish List Page */}
         <Route path="/wish-list" element={<WishList />} />
 
         {/* Menu Detail Page */}
         <Route path="/menu-detail" element={<MenuDetail />} />
-=======
-        {/* Wish List page  */}
-
-              
-          <Route path="/wish-list" element={<WishList />} />
-
-        {/*Menu Detail Page*/}
-
-          <Route path="/menu-detail" element={<MenuDetail />} />
-
-        {/* CartPop */}
-         
-        <Route path="/cart-pop" element={<CartPop/>}/>
-
-        
-        {/* Create Account page */}
-         
-        <Route path="/create-user" element={<CreateUser />} />
->>>>>>> 93b2c39a6918cd7e4818f4ac6e20b82c3a196aca
-=======
-
-        {/* Wish List Page */}
-        <Route path="/wish-list" element={<WishList />} />
-
-        {/* Menu Detail Page */}
-        <Route path="/menu-detail" element={<MenuDetail />} />
->>>>>>> 34c831751e2aeec217880a710e449d6a70834d62
 
         {/* Attractive Offers Page */}
         <Route path="/attractive-offers" element={<AttractiveOffers />} />
 
-        {/* Create Account Page */}
-        <Route path="/create-account" element={<CreateAccount />} />
+
 
         {/* Login User Page */}
         <Route path="/login-user" element={<LoginUser />} />
@@ -117,25 +80,16 @@ export default function AppRoutes() {
         {/* Create User Page */}
         <Route path="/create-user" element={<CreateUser />} />
 
-        {/* MainLayout with nested routes */}
-        <Route element={<MainLayout />}>
-          <Route path="/product-detail" element={<MenuDetail />} />
-        </Route>
+        {/* Create shoptest */}
+        <Route path="/shoptest" element={<Shop />} />
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 34c831751e2aeec217880a710e449d6a70834d62
+      
+       
+
       </Routes>
     </Suspense>
+    </ShopContextProvider>
 
 
-<<<<<<< HEAD
-=======
-</Routes>
-    </div>
->>>>>>> 93b2c39a6918cd7e4818f4ac6e20b82c3a196aca
-=======
->>>>>>> 34c831751e2aeec217880a710e449d6a70834d62
   );
 }
