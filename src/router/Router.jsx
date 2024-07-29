@@ -1,29 +1,25 @@
-import { lazy, Suspense } from "react";
-import { Route, Routes } from "react-router-dom";
+import { lazy, Suspense } from 'react'
+import { Route, Routes } from 'react-router-dom'
 // import MainLayout from "../layout/MainLayout";
-import CreateUser from "../pages/users/CreateUser";
-import LoginUser from "../pages/users/LoginUser";
-import ResetPassword from "../pages/users/ResetPassword";
+import CreateUser from '../pages/users/CreateUser'
+import LoginUser from '../pages/users/LoginUser'
+import ResetPassword from '../pages/users/ResetPassword'
 
-const LandingPage = lazy(() => import("../pages/LandingPage"));
-const AdminPages = lazy(() => import("../pages/admin/AdminPages"));
-const Pages404 = lazy(() => import("../pages/404/Page404"));
-const Homepages = lazy(() => import("../pages/main/home"));
-const Cart = lazy(() => import("../pages/Shopping-cart/Cart"));
-const Checkout = lazy(() => import("../pages/Shopping-cart/Checkout"));
-const UsersPages = lazy(() => import("../pages/users/UsersPages"));
-const Setting = lazy(() => import("../pages/users/SettingUser"));
-const OrderHistory = lazy(() => import("../pages/users/OrderHistory"));
-const WishList = lazy(() => import("../pages/users/WishList"));
-const MenuDetail = lazy(() => import("../pages/product-detail/MenuDetail"));
+const LandingPage = lazy(() => import('../pages/LandingPage'))
+const AdminPages = lazy(() => import('../pages/admin/AdminPages'))
+const Pages404 = lazy(() => import('../pages/404/Page404'))
+const Homepages = lazy(() => import('../pages/main/home'))
+const MenuPage = lazy(() => import('../pages/main/menuPage'))
+const Cart = lazy(() => import('../pages/Shopping-cart/Cart'))
+const Checkout = lazy(() => import('../pages/Shopping-cart/Checkout'))
+const UsersPages = lazy(() => import('../pages/users/UsersPages'))
+const Setting = lazy(() => import('../pages/users/SettingUser'))
+const OrderHistory = lazy(() => import('../pages/users/OrderHistory'))
+const WishList = lazy(() => import('../pages/users/WishList'))
+const MenuDetail = lazy(() => import('../pages/product-detail/MenuDetail'))
 
-const AttractiveOffers = lazy(() => import("../pages/popular/AttractiveOffers"));
-const CartPop = lazy(() => import("../pages/users/cartPop"));
-
-
-
-
-
+const AttractiveOffers = lazy(() => import('../pages/popular/AttractiveOffers'))
+const CartPop = lazy(() => import('../pages/users/cartPop'))
 
 export default function AppRoutes() {
   return (
@@ -43,6 +39,7 @@ export default function AppRoutes() {
 
         {/* Home */}
         <Route path="/home-pages" element={<Homepages />} />
+        <Route path="/menu-pages" element={<MenuPage />} />
 
         {/* Cart */}
         <Route path="/cart" element={<Cart />} />
@@ -56,7 +53,6 @@ export default function AppRoutes() {
         {/* Order History Page */}
         <Route path="/order-history" element={<OrderHistory />} />
 
-
         {/* Wish List Page */}
         <Route path="/wish-list" element={<WishList />} />
 
@@ -65,8 +61,6 @@ export default function AppRoutes() {
 
         {/* Attractive Offers Page */}
         <Route path="/attractive-offers" element={<AttractiveOffers />} />
-
-
 
         {/* Login User Page */}
         <Route path="/login-user" element={<LoginUser />} />
@@ -79,15 +73,7 @@ export default function AppRoutes() {
 
         {/* Reset Password Page */}
         <Route path="/reset-pass" element={<ResetPassword />} />
-
-
-
-       
-
       </Routes>
     </Suspense>
-
-
-
-  );
+  )
 }
