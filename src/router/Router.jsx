@@ -1,9 +1,11 @@
 import { lazy, Suspense } from "react";
 import { Route, Routes } from "react-router-dom";
-// import MainLayout from "../layout/MainLayout";
+import MainLayout from "../layout/MainLayout";
 import CreateUser from "../pages/users/CreateUser";
 import LoginUser from "../pages/users/LoginUser";
 import { ShopContextProvider } from "../context/shop-context";
+import ResetPassword from "../pages/users/ResetPassword";
+
 const LandingPage = lazy(() => import("../pages/LandingPage"));
 const AdminPages = lazy(() => import("../pages/admin/AdminPages"));
 const Pages404 = lazy(() => import("../pages/404/Page404"));
@@ -18,78 +20,89 @@ const MenuDetail = lazy(() => import("../pages/product-detail/MenuDetail"));
 
 const AttractiveOffers = lazy(() => import("../pages/popular/AttractiveOffers"));
 const CartPop = lazy(() => import("../pages/users/cartPop"));
-const Shop = lazy(()=> import("../pages/Shopping-cart/shop"))
-
-
+const Shop = lazy(() => import("../pages/Shopping-cart/shop"))
 
 
 export default function AppRoutes() {
   return (
     <ShopContextProvider>
-    <Suspense fallback={<div>Loading...</div>}>
-      
-      <Routes>
-    
-        {/* Landing Page */}
-        <Route index path="/" element={<LandingPage />} />
+      <Suspense fallback={<div>Loading...</div>}>
+          <Routes>
+            {/* Landing Page */}
+            <Route index path="/" element={<LandingPage />} />
 
-        {/* Admin Page */}
-        <Route path="/admin" element={<AdminPages />} />
+            {/* Admin Page */}
+            <Route path="/admin" element={<AdminPages />} />
 
-        {/* User Pages */}
-        <Route path="/user" element={<UsersPages />} />
+            {/* User Pages */}
+            <Route path="/user" element={<UsersPages />} />
 
-        {/* Page 404 */}
-        <Route path="*" element={<Pages404 />} />
+            {/* Page 404 */}
+            <Route path="*" element={<Pages404 />} />
 
-        {/* Home */}
-        <Route path="/home-pages" element={<Homepages />} />
+            {/* Home */}
+            <Route path="/home-pages" element={<Homepages />} />
 
-        {/* Cart */}
-        <Route path="/cart" element={<Cart />} />
+            {/* Cart */}
+            <Route path="/cart" element={<Cart />} />
 
-        {/* Checkout */}
-        <Route path="/checkout" element={<Checkout />} />
+            {/* Checkout */}
+            <Route path="/checkout" element={<Checkout />} />
 
-        {/* Setting Page */}
-        <Route path="/setting" element={<Setting />} />
+            {/* Setting Page */}
+            <Route path="/setting" element={<Setting />} />
 
-        {/* Order History Page */}
-        <Route path="/order-history" element={<OrderHistory />} />
+            {/* Order History Page */}
+            <Route path="/order-history" element={<OrderHistory />} />
 
 
-        {/* Wish List Page */}
-        <Route path="/wish-list" element={<WishList />} />
+            {/* Wish List Page */}
+            <Route path="/wish-list" element={<WishList />} />
 
-        {/* Menu Detail Page */}
-        <Route path="/menu-detail" element={<MenuDetail />} />
+            {/* Menu Detail Page */}
+            <Route path="/menu-detail" element={<MenuDetail />} />
 
-        {/* Attractive Offers Page */}
-        <Route path="/attractive-offers" element={<AttractiveOffers />} />
+            {/* Attractive Offers Page */}
+            <Route path="/attractive-offers" element={<AttractiveOffers />} />
 
 
 
-        {/* Login User Page */}
-        <Route path="/login-user" element={<LoginUser />} />
+            {/* Login User Page */}
+            <Route path="/login-user" element={<LoginUser />} />
 
-        {/* CartPop */}
-        <Route path="/cart-pop" element={<CartPop />} />
+            {/* Attractive Offers Page */}
+            <Route path="/attractive-offers" element={<AttractiveOffers />} />
 
-       
 
-        {/* Create User Page */}
-        <Route path="/create-user" element={<CreateUser />} />
 
-        {/* Create shoptest */}
-        <Route path="/shoptest" element={<Shop />} />
+            {/* Login User Page */}
+            <Route path="/login-user" element={<LoginUser />} />
 
-      
-       
+            {/* CartPop */}
+            <Route path="/cart-pop" element={<CartPop />} />
 
-      </Routes>
-    </Suspense>
+
+
+            {/* Create User Page */}
+            <Route path="/create-user" element={<CreateUser />} />
+
+            {/* Create shoptest */}
+            <Route path="/shoptest" element={<Shop />} />
+
+            {/* Create User Page */}
+            <Route path="/create-user" element={<CreateUser />} />
+
+            {/* Login User page */}
+
+            <Route path="/login-user" element={<LoginUser />} />
+
+            {/*Menu Detail Page*/}
+            <Route element={<MainLayout />}>
+
+              <Route path="/product-detail" element={<MenuDetail />} />
+            </Route>
+          </Routes>
+      </Suspense>
     </ShopContextProvider>
-
-
   );
 }
