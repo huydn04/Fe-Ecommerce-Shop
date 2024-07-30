@@ -1,9 +1,10 @@
 import PropTypes from "prop-types";
+
   
 const SpHotSellerTop = ({ className = "", image, chaniseCabbage }) => {
   return (
     <div
-      className={`self-stretch rounded-md bg-white flex flex-row items-start justify-start py-0 px-0 text-left text-sm text-gray-scale-gray-700 font-heading-05-heading-05-600 border-[1px] border-solid border-gray-scale-gray-100 mq1050:justify-center ${className}`}
+      className={`self-stretch rounded-md bg-white flex flex-row items-start justify-start py-0 px-0 text-left text-[14px] text-gray-950 font-heading-05-heading-05-600 border-[1px] border-solid border-gray-300 mq1050:justify-center ${className}`}
     >
       <div className="flex flex-row items-start justify-start p-[5px]">
         <img
@@ -18,7 +19,7 @@ const SpHotSellerTop = ({ className = "", image, chaniseCabbage }) => {
           <div className="self-stretch relative leading-[150%]">
             {chaniseCabbage}
           </div>
-          <div className="flex flex-row items-start justify-start py-0 pr-5 pl-0 text-base text-gray-scale-gray-900">
+          <div className="flex flex-row items-start justify-start py-0 pr-5 pl-0 text-base text-gray-900">
             <div className="relative leading-[150%] font-medium inline-block min-w-[51px] whitespace-nowrap">
               $14.99
             </div>
