@@ -17,10 +17,9 @@ const Setting = lazy(() => import('../pages/users/SettingUser'))
 const OrderHistory = lazy(() => import('../pages/users/OrderHistory'))
 const WishList = lazy(() => import('../pages/users/WishList'))
 const MenuDetail = lazy(() => import('../pages/product-detail/MenuDetail'))
-
 const AttractiveOffers = lazy(() => import('../pages/popular/AttractiveOffers'))
 const CartPop = lazy(() => import('../pages/users/cartPop'))
-
+const Shop = lazy(()=> import('../pages/Shopping-cart/shop'))
 export default function AppRoutes() {
   return (
     <ShopContextProvider>
@@ -74,6 +73,8 @@ export default function AppRoutes() {
 
         {/* Reset Password Page */}
         <Route path="/reset-pass" element={<ResetPassword />} />
+
+        <Route path="/shoptest" element={<Shop />} />
       </Routes>
     </Suspense>
     </ShopContextProvider>
