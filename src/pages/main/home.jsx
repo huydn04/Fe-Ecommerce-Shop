@@ -80,13 +80,13 @@ import { DaiDien1 } from '../../assets/Home'
 
 const Homepages = () => {
   return (
-    <div className="w-full h-full m-auto">
+    <div className="w-full h-full">
       <link
         rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
       />
       {/* header_1 */}
-      <nav className="flex items-center justify-between px-4 border-b border-gray-300 text-gray-600 text-xs">
+      <div className="flex items-center justify-between px-4 border border-solid border-gray-300 text-gray-600 text-xs">
         <div className="flex items-center ml-32">
           <FiMapPin size={20} style={{ color: '#666666' }} />
           <p className="ml-2">FPT TEAM supermarket: Đồng Nai - TP. Biên Hòa</p>
@@ -111,9 +111,9 @@ const Homepages = () => {
             Đăng ký
           </a>
         </div>
-      </nav>
+      </div>
 
-      <nav className="order-1 flex flex-grow-0">
+      <div className="order-1 flex flex-grow-0">
         {/* header_2 */}
         {/* LogoFPT */}
         <div className="ml-[150px] w-[100px] bg-cover bg-center">
@@ -122,7 +122,7 @@ const Homepages = () => {
         <div className="ml-[255px] flex items-center justify-center mt-0">
           <input
             type="text"
-            className="border border-gray-300 focus:outline-none focus:border-gray-300 rounded px-5 py-2 w-96 h-12 flex flex-row items-center p-3 gap-2 w-400 h-45"
+            className="border border-gray-300 border-solid  focus:outline-none focus:border-gray-300 rounded px-5 py-2 w-96 h-12 flex flex-row items-center p-3 gap-2 w-400 h-45"
             placeholder="Search..."
           />
           <button
@@ -134,7 +134,7 @@ const Homepages = () => {
 
           {/* yêu thích | giỏ hàng */}
         </div>
-        <nav className="flex flex-row items-center gap-2 absolute w-160 h-34 left-[1220px] mt-[35px]">
+        <div className="flex flex-row items-center gap-2 absolute w-160 h-34 left-[1220px] mt-[35px]">
           <div className=" left-6.76 right-6.76 top-13.35 bottom-12.28">
             <BsHeart style={{ color: '#1A1A1A' }} size={25} />
           </div>
@@ -145,11 +145,11 @@ const Homepages = () => {
           <div className="flex items-center gap-12 w-96 h-34">
             <PiHandbagLight size={25} />
           </div>
-        </nav>
-      </nav>
+        </div>
+      </div>
 
       {/* menu */}
-      <nav className="flex items-center justify-around h-16 bg-neutral-900 mt-0">
+      <div className="flex items-center justify-around h-16 bg-neutral-900 mt-0">
         <ul className="ml-1 flex items-center space-x-4 p-4 font-size-14">
           <li className="flex flex-row items-center p-0 gap-1 w-17 h-5 order-3 flex-none flex-grow-0">
             <a
@@ -199,7 +199,7 @@ const Homepages = () => {
             <span>(219) 555-0114</span>
           </p>
         </div>
-      </nav>
+      </div>
 
       {/* img */}
       <div className="w-full mt-2 flex flex-row">
@@ -222,7 +222,7 @@ const Homepages = () => {
       </div>
 
       {/*  */}
-      <nav
+      <div
         className="ml-[140px] shadow-lg flex flex-row justify-between items-center p-10 gap-[61px] absolute rounded-lg
 			border border-black-600 mt-4"
       >
@@ -266,15 +266,15 @@ const Homepages = () => {
           </a>
           <p className="text-sm">Đảm bảo hoàn tiền trong 30 ngày</p>
         </div>
-      </nav>
+      </div>
       {/* các loại phổ biến */}
 
-      <nav className="ml-[140px] w-[1265px] h-[530px] mt-[230px]">
+      <div className="ml-[140px] w-[1265px] h-[530px] mt-[230px]">
         <p className="flex justify-center text-[32px] font-poppins font-bold">
           Các loại phổ biến
         </p>
         <div className="mt-6 flex flex-rows gap-4 h-[220px]">
-          <div className="w-[200px] h-[213px] border border-gray-200 rounded-lg hover:border-green-800 shadow hover:shadow-green-800">
+          <div className="w-[200px] h-[213px] border border-solid border-solid border-gray-200 rounded-lg hover:border-green-800 shadow hover:shadow-green-800 cursor-pointer">
             <img src={SanPham1} alt="" />
             <a
               href=""
@@ -283,31 +283,31 @@ const Homepages = () => {
               Trái cây
             </a>
           </div>
-          <div className="w-[200px] h-[213px] border border-gray-200 rounded-lg hover:border-green-800 shadow hover:shadow-green-800">
+          <div className="w-[200px] h-[213px] border border-solid border-gray-200 rounded-lg hover:border-green-800 shadow hover:shadow-green-800 cursor-pointer">
             <img src={SanPham2} alt="" />
             <a href="" className=" flex justify-center text-[18px] mt-[30px]">
               Rau củ quả
             </a>
           </div>
-          <div className="w-[200px] h-[213px] border border-gray-200 rounded-lg hover:border-green-800 shadow hover:shadow-green-800">
+          <div className="w-[200px] h-[213px] border border-solid border-gray-200 rounded-lg hover:border-green-800 shadow hover:shadow-green-800 cursor-pointer">
             <img src={SanPham3} alt="" />
             <a href="" className=" flex justify-center text-[18px] mt-[30px]">
               Thịt & Cá
             </a>
           </div>
-          <div className="w-[200px] h-[213px] border border-gray-200 rounded-lg hover:border-green-800 shadow hover:shadow-green-800">
+          <div className="w-[200px] h-[213px] border border-solid border-gray-200 rounded-lg hover:border-green-800 shadow hover:shadow-green-800 cursor-pointer">
             <img src={SanPham4} alt="" />
             <a href="" className=" flex justify-center text-[18px] mt-[30px]">
               Các loại bánh
             </a>
           </div>
-          <div className="w-[200px] h-[213px] border border-gray-200 rounded-lg hover:border-green-800 shadow hover:shadow-green-800">
+          <div className="w-[200px] h-[213px] border border-solid border-gray-200 rounded-lg hover:border-green-800 shadow hover:shadow-green-800 cursor-pointer">
             <img src={SanPham5} alt="" />
             <a href="" className=" flex justify-center text-[18px] mt-[30px]">
               Nước uống
             </a>
           </div>
-          <div className="w-[200px] h-[213px] border border-gray-200 rounded-lg hover:border-green-800 shadow hover:shadow-green-800">
+          <div className="w-[200px] h-[213px] borde border-solidr border-gray-200 rounded-lg hover:border-green-800 shadow hover:shadow-green-800 cursor-pointer">
             <img src={SanPham6} alt="" />
             <a href="" className=" flex justify-center text-[18px] mt-[30px]">
               Mỹ Phẩm
@@ -316,47 +316,47 @@ const Homepages = () => {
         </div>
         {/*  */}
         <div className="mt-4 flex flex-rows gap-4">
-          <div className="w-[200px] h-[213px] border border-gray-200 rounded-lg hover:border-green-800 shadow hover:shadow-green-800">
+          <div className="w-[200px] h-[213px] border border-solid border-gray-200 rounded-lg hover:border-green-800 shadow hover:shadow-green-800 cursor-pointer">
             <img src={SanPham7} alt="" />
             <a href="" className=" flex justify-center text-[18px] mt-[30px]">
               Bánh mì & Bakery
             </a>
           </div>
-          <div className="w-[200px] h-[213px] border border-gray-200 rounded-lg hover:border-green-800 shadow hover:shadow-green-800">
+          <div className="w-[200px] h-[213px] border border-solid border-gray-200 rounded-lg hover:border-green-800 shadow hover:shadow-green-800 cursor-pointer">
             <img src={SanPham8} alt="" />
             <a href="" className=" flex justify-center text-[18px] mt-[30px]">
               Bột làm bánh
             </a>
           </div>
-          <div className="w-[200px] h-[213px] border border-gray-200 rounded-lg hover:border-green-800 shadow hover:shadow-green-800">
+          <div className="w-[200px] h-[213px] border border-solid border-gray-200 rounded-lg hover:border-green-800 shadow hover:shadow-green-800 cursor-pointer">
             <img src={SanPham9} alt="" />
             <a href="" className=" flex justify-center text-[18px] mt-[30px]">
               Cooking
             </a>
           </div>
-          <div className="w-[200px] h-[213px] border border-gray-200 rounded-lg hover:border-green-800 shadow hover:shadow-green-800">
+          <div className="w-[200px] h-[213px] border border-solid border-gray-200 rounded-lg hover:border-green-800 shadow hover:shadow-green-800 cursor-pointer">
             <img src={SanPham10} alt="" />
             <a href="" className=" flex justify-center text-[18px] mt-[30px]">
               Thực phẩm ít đường
             </a>
           </div>
-          <div className="w-[200px] h-[213px] border border-gray-200 rounded-lg hover:border-green-800 shadow hover:shadow-green-800">
+          <div className="w-[200px] h-[213px] border border-solid border-gray-200 rounded-lg hover:border-green-800 shadow hover:shadow-green-800 cursor-pointer">
             <img src={SanPham11} alt="" />
             <a href="" className=" flex justify-center text-[18px] mt-[30px]">
               Chất tẩy rửa
             </a>
           </div>
-          <div className="w-[200px] h-[213px] border border-gray-200 rounded-lg hover:border-green-800 shadow hover:shadow-green-800">
+          <div className="w-[200px] h-[213px] border border-solid border-gray-200 rounded-lg hover:border-green-800 shadow hover:shadow-green-800 cursor-pointer">
             <img src={SanPham12} alt="" />
             <a href="" className=" flex justify-center text-[18px] mt-[30px]">
               Dầu ăn
             </a>
           </div>
         </div>
-      </nav>
+      </div>
 
       {/* Sản phẩm phổ biến */}
-      <nav className="ml-[140px] w-[1265px] h-[750px] mt-[40px]">
+      <div className="ml-[140px] w-[1265px] h-[750px] mt-[40px]">
         <div className="flex items-center">
           <p className="text-[32px] font-poppins font-bold">
             Sản phẩm phổ biến
@@ -369,7 +369,7 @@ const Homepages = () => {
           </div>
         </div>
         <div className="flex mt-[20px]">
-          <div className="group relative w-[264px] h-[327px] border border-[#E6E6E6] hover:border-green-800 shadow hover:shadow-green-800 mx-auto">
+          <div className="group relative w-[264px] h-[327px] border border-solid border-solid border-[#E6E6E6] hover:border-green-800 shadow hover:shadow-green-800 mx-auto">
             <div className="relative overflow-hidden">
               <img className="w-full object-cover" src={Product1} alt="" />
               <div className="absolute -bottom-10 flex h-full w-full items-center justify-center  opacity-0 transition-all duration-300 group-hover:bottom-0 group-hover:opacity-100">
@@ -398,7 +398,7 @@ const Homepages = () => {
               </div>
             </div>
           </div>
-          <div className="group relative w-[264px] h-[327px] border border-[#E6E6E6] hover:border-green-800 shadow hover:shadow-green-800 mx-auto">
+          <div className="group relative w-[264px] h-[327px] border border-solid border-solid border-[#E6E6E6] hover:border-green-800 shadow hover:shadow-green-800 mx-auto">
             <div className="relative overflow-hidden">
               <img className="w-full object-cover" src={Product2} alt="" />
               <div className="absolute -bottom-10 flex h-full w-full items-center justify-center  opacity-0 transition-all duration-300 group-hover:bottom-0 group-hover:opacity-100">
@@ -427,7 +427,7 @@ const Homepages = () => {
               </div>
             </div>
           </div>
-          <div className="group relative w-[264px] h-[327px] border border-[#E6E6E6] hover:border-green-800 shadow hover:shadow-green-800 mx-auto">
+          <div className="group relative w-[264px] h-[327px] border border-solid border-solid border-[#E6E6E6] hover:border-green-800 shadow hover:shadow-green-800 mx-auto">
             <div className="relative overflow-hidden">
               <img className="w-full object-cover" src={Product3} alt="" />
               <div className="absolute -bottom-10 flex h-full w-full items-center justify-center  opacity-0 transition-all duration-300 group-hover:bottom-0 group-hover:opacity-100">
@@ -456,7 +456,7 @@ const Homepages = () => {
               </div>
             </div>
           </div>
-          <div className="group relative w-[264px] h-[327px] border border-[#E6E6E6] hover:border-green-800 shadow hover:shadow-green-800 mx-auto">
+          <div className="group relative w-[264px] h-[327px] border border-solid border-solid border-[#E6E6E6] hover:border-green-800 shadow hover:shadow-green-800 mx-auto">
             <div className="relative overflow-hidden">
               <img className="w-full object-cover" src={Product4} alt="" />
               <div className="absolute -bottom-10 flex h-full w-full items-center justify-center  opacity-0 transition-all duration-300 group-hover:bottom-0 group-hover:opacity-100">
@@ -485,7 +485,7 @@ const Homepages = () => {
               </div>
             </div>
           </div>
-          <div className="group relative w-[264px] h-[327px] border border-[#E6E6E6] hover:border-green-800 shadow hover:shadow-green-800 mx-auto">
+          <div className="group relative w-[264px] h-[327px] border border-solid border-solid border-[#E6E6E6] hover:border-green-800 shadow hover:shadow-green-800 mx-auto">
             <div className="relative overflow-hidden">
               <img className="w-full object-cover" src={Product5} alt="" />
               <div className="absolute -bottom-10 flex h-full w-full items-center justify-center  opacity-0 transition-all duration-300 group-hover:bottom-0 group-hover:opacity-100">
@@ -516,7 +516,7 @@ const Homepages = () => {
           </div>
         </div>
         <div className="flex">
-          <div className="group relative w-[264px] h-[327px] border border-[#E6E6E6] hover:border-green-800 shadow hover:shadow-green-800 mx-auto">
+          <div className="group relative w-[264px] h-[327px] border border-solid border-solid border-[#E6E6E6] hover:border-green-800 shadow hover:shadow-green-800 mx-auto">
             <div className="relative overflow-hidden">
               <img className="w-full object-cover" src={Product6} alt="" />
               <div className="absolute -bottom-10 flex h-full w-full items-center justify-center  opacity-0 transition-all duration-300 group-hover:bottom-0 group-hover:opacity-100">
@@ -545,7 +545,7 @@ const Homepages = () => {
               </div>
             </div>
           </div>
-          <div className="group relative w-[264px] h-[327px] border border-[#E6E6E6] hover:border-green-800 shadow hover:shadow-green-800 mx-auto">
+          <div className="group relative w-[264px] h-[327px] border border-solid border-solid border-[#E6E6E6] hover:border-green-800 shadow hover:shadow-green-800 mx-auto">
             <div className="relative overflow-hidden">
               <img className="w-full object-cover" src={Product7} alt="" />
               <div className="absolute -bottom-10 flex h-full w-full items-center justify-center  opacity-0 transition-all duration-300 group-hover:bottom-0 group-hover:opacity-100">
@@ -574,7 +574,7 @@ const Homepages = () => {
               </div>
             </div>
           </div>
-          <div className="group relative w-[264px] h-[327px] border border-[#E6E6E6] hover:border-green-800 shadow hover:shadow-green-800 mx-auto">
+          <div className="group relative w-[264px] h-[327px] border border-solid border-solid border-[#E6E6E6] hover:border-green-800 shadow hover:shadow-green-800 mx-auto">
             <div className="relative overflow-hidden">
               <img className="w-full object-cover" src={Product8} alt="" />
               <div className="absolute -bottom-10 flex h-full w-full items-center justify-center  opacity-0 transition-all duration-300 group-hover:bottom-0 group-hover:opacity-100">
@@ -603,7 +603,7 @@ const Homepages = () => {
               </div>
             </div>
           </div>
-          <div className="group relative w-[264px] h-[327px] border border-[#E6E6E6] hover:border-green-800 shadow hover:shadow-green-800 mx-auto">
+          <div className="group relative w-[264px] h-[327px] border border-solid border-[#E6E6E6] hover:border-green-800 shadow hover:shadow-green-800 mx-auto">
             <div className="relative overflow-hidden">
               <img className="w-full object-cover" src={Product9} alt="" />
               <div className="absolute -bottom-10 flex h-full w-full items-center justify-center  opacity-0 transition-all duration-300 group-hover:bottom-0 group-hover:opacity-100">
@@ -632,7 +632,7 @@ const Homepages = () => {
               </div>
             </div>
           </div>
-          <div className="group relative w-[264px] h-[327px] border border-[#E6E6E6] hover:border-green-800 shadow hover:shadow-green-800 mx-auto">
+          <div className="group relative w-[264px] h-[327px] border border-solid border-[#E6E6E6] hover:border-green-800 shadow hover:shadow-green-800 mx-auto">
             <div className="relative overflow-hidden">
               <img className="w-full object-cover" src={Product10} alt="" />
               <div className="absolute -bottom-10 flex h-full w-full items-center justify-center  opacity-0 transition-all duration-300 group-hover:bottom-0 group-hover:opacity-100">
@@ -662,7 +662,7 @@ const Homepages = () => {
             </div>
           </div>
         </div>
-      </nav>
+      </div>
 
       {/* Quản cáo */}
       <div className="ml-[140px] w-[1265px] h-[540px] mt-[50px] flex gap-6">
@@ -672,12 +672,12 @@ const Homepages = () => {
       </div>
 
       {/* Ưu đãi hấp dẫn */}
-      <nav className="w-full h-[1070px] mt-[40px] bg-gray-100">
+      <div className="w-full h-[1070px] mt-[40px] bg-gray-100">
         <p className="text-[32px] font-poppins font-bold ml-[100px]">
           Ưu đãi hấp dẫn
         </p>
         <div className="flex ml-[110px]">
-          <div className="w-[264px] h-[327px] left-0 top-[60px] bg-white border border-[#E6E6E6] hover:border-green-800 shadow hover:shadow-green-800">
+          <div className="w-[264px] h-[327px] left-0 top-[60px] bg-white border border-solid border-[#E6E6E6] hover:border-green-800 shadow hover:shadow-green-800">
             <img src={Product1} alt="" />
             <p className="ml-2 text-customGray">Táo xanh</p>
             <div className="flex">
@@ -689,7 +689,7 @@ const Homepages = () => {
               </div>
             </div>
           </div>
-          <div className="w-[264px] h-[327px] left-0 top-[60px] bg-white border border-[#E6E6E6] hover:border-green-800 shadow hover:shadow-green-800">
+          <div className="w-[264px] h-[327px] left-0 top-[60px] bg-white border border-solid border-[#E6E6E6] hover:border-green-800 shadow hover:shadow-green-800">
             <img src={Product1} alt="" />
             <p className="ml-2 text-customGray">Táo xanh</p>
             <div className="flex">
@@ -701,7 +701,7 @@ const Homepages = () => {
               {/* <StarRating totalStars={5} /> */}
             </div>
           </div>
-          <div className="w-[264px] h-[327px] left-0 top-[60px] bg-white border border-[#E6E6E6] hover:border-green-800 shadow hover:shadow-green-800">
+          <div className="w-[264px] h-[327px] left-0 top-[60px] bg-white border border-solid border-[#E6E6E6] hover:border-green-800 shadow hover:shadow-green-800">
             <img src={Product1} alt="" />
             <p className="ml-2 text-customGray">Táo xanh</p>
             <div className="flex">
@@ -713,7 +713,7 @@ const Homepages = () => {
               {/* <StarRating totalStars={5} /> */}
             </div>
           </div>
-          <div className="w-[264px] h-[327px] left-0 top-[60px] bg-white border border-[#E6E6E6] hover:border-green-800 shadow hover:shadow-green-800">
+          <div className="w-[264px] h-[327px] left-0 top-[60px] bg-white border border-solid border-[#E6E6E6] hover:border-green-800 shadow hover:shadow-green-800">
             <img src={Product1} alt="" />
             <p className="ml-2 text-customGray">Táo xanh</p>
             <div className="flex">
@@ -725,70 +725,7 @@ const Homepages = () => {
               {/* <StarRating totalStars={5} /> */}
             </div>
           </div>
-          <div className="w-[264px] h-[327px] left-0 top-[60px] bg-white border border-[#E6E6E6] hover:border-green-800 shadow hover:shadow-green-800">
-            <img src={Product1} alt="" />
-            <p className="ml-2 text-customGray">Táo xanh</p>
-            <div className="flex">
-              <p>$14.99</p>
-              <p className="line-through">$20.99</p>
-              <div className="ml-[100px]">
-                <PiHandbagLight size={25} />
-              </div>
-              {/* <StarRating totalStars={5} /> */}
-            </div>
-          </div>
-        </div>
-        {/*  */}
-        <div className="flex ml-[110px]">
-          <div className="w-[264px] h-[327px] left-0 top-[60px] bg-white border border-[#E6E6E6] hover:border-green-800 shadow hover:shadow-green-800">
-            <img src={Product1} alt="" />
-            <p className="ml-2 text-customGray">Táo xanh</p>
-            <div className="flex">
-              <p>$14.99</p>
-              <p className="line-through">$20.99</p>
-              <div className="ml-[100px]">
-                <PiHandbagLight size={25} />
-              </div>
-              {/* <StarRating totalStars={5} /> */}
-            </div>
-          </div>
-          <div className="w-[264px] h-[327px] left-0 top-[60px] bg-white border border-[#E6E6E6] hover:border-green-800 shadow hover:shadow-green-800">
-            <img src={Product1} alt="" />
-            <p className="ml-2 text-customGray">Táo xanh</p>
-            <div className="flex">
-              <p>$14.99</p>
-              <p className="line-through">$20.99</p>
-              <div className="ml-[100px]">
-                <PiHandbagLight size={25} />
-              </div>
-              {/* <StarRating totalStars={5} /> */}
-            </div>
-          </div>
-          <div className="w-[264px] h-[327px] left-0 top-[60px] bg-white border border-[#E6E6E6] hover:border-green-800 shadow hover:shadow-green-800">
-            <img src={Product1} alt="" />
-            <p className="ml-2 text-customGray">Táo xanh</p>
-            <div className="flex">
-              <p>$14.99</p>
-              <p className="line-through">$20.99</p>
-              <div className="ml-[100px]">
-                <PiHandbagLight size={25} />
-              </div>
-              {/* <StarRating totalStars={5} /> */}
-            </div>
-          </div>
-          <div className="w-[264px] h-[327px] left-0 top-[60px] bg-white border border-[#E6E6E6] hover:border-green-800 shadow hover:shadow-green-800">
-            <img src={Product1} alt="" />
-            <p className="ml-2 text-customGray">Táo xanh</p>
-            <div className="flex">
-              <p>$14.99</p>
-              <p className="line-through">$20.99</p>
-              <div className="ml-[100px]">
-                <PiHandbagLight size={25} />
-              </div>
-              {/* <StarRating totalStars={5} /> */}
-            </div>
-          </div>
-          <div className="w-[264px] h-[327px] left-0 top-[60px] bg-white border border-[#E6E6E6] hover:border-green-800 shadow hover:shadow-green-800">
+          <div className="w-[264px] h-[327px] left-0 top-[60px] bg-white border border-solid border-[#E6E6E6] hover:border-green-800 shadow hover:shadow-green-800">
             <img src={Product1} alt="" />
             <p className="ml-2 text-customGray">Táo xanh</p>
             <div className="flex">
@@ -803,7 +740,7 @@ const Homepages = () => {
         </div>
         {/*  */}
         <div className="flex ml-[110px]">
-          <div className="w-[264px] h-[327px] left-0 top-[60px] bg-white border border-[#E6E6E6] hover:border-green-800 shadow hover:shadow-green-800">
+          <div className="w-[264px] h-[327px] left-0 top-[60px] bg-white border border-solid border-[#E6E6E6] hover:border-green-800 shadow hover:shadow-green-800">
             <img src={Product1} alt="" />
             <p className="ml-2 text-customGray">Táo xanh</p>
             <div className="flex">
@@ -815,7 +752,7 @@ const Homepages = () => {
               {/* <StarRating totalStars={5} /> */}
             </div>
           </div>
-          <div className="w-[264px] h-[327px] left-0 top-[60px] bg-white border border-[#E6E6E6] hover:border-green-800 shadow hover:shadow-green-800">
+          <div className="w-[264px] h-[327px] left-0 top-[60px] bg-white border border-solid border-[#E6E6E6] hover:border-green-800 shadow hover:shadow-green-800">
             <img src={Product1} alt="" />
             <p className="ml-2 text-customGray">Táo xanh</p>
             <div className="flex">
@@ -827,7 +764,7 @@ const Homepages = () => {
               {/* <StarRating totalStars={5} /> */}
             </div>
           </div>
-          <div className="w-[264px] h-[327px] left-0 top-[60px] bg-white border border-[#E6E6E6] hover:border-green-800 shadow hover:shadow-green-800">
+          <div className="w-[264px] h-[327px] left-0 top-[60px] bg-white border border-solid border-[#E6E6E6] hover:border-green-800 shadow hover:shadow-green-800">
             <img src={Product1} alt="" />
             <p className="ml-2 text-customGray">Táo xanh</p>
             <div className="flex">
@@ -839,7 +776,7 @@ const Homepages = () => {
               {/* <StarRating totalStars={5} /> */}
             </div>
           </div>
-          <div className="w-[264px] h-[327px] left-0 top-[60px] bg-white border border-[#E6E6E6] hover:border-green-800 shadow hover:shadow-green-800">
+          <div className="w-[264px] h-[327px] left-0 top-[60px] bg-white border border-solid border-[#E6E6E6] hover:border-green-800 shadow hover:shadow-green-800">
             <img src={Product1} alt="" />
             <p className="ml-2 text-customGray">Táo xanh</p>
             <div className="flex">
@@ -851,7 +788,7 @@ const Homepages = () => {
               {/* <StarRating totalStars={5} /> */}
             </div>
           </div>
-          <div className="w-[264px] h-[327px] left-0 top-[60px] bg-white border border-[#E6E6E6] hover:border-green-800 shadow hover:shadow-green-800">
+          <div className="w-[264px] h-[327px] left-0 top-[60px] bg-white border border-solid border-[#E6E6E6] hover:border-green-800 shadow hover:shadow-green-800">
             <img src={Product1} alt="" />
             <p className="ml-2 text-customGray">Táo xanh</p>
             <div className="flex">
@@ -864,24 +801,87 @@ const Homepages = () => {
             </div>
           </div>
         </div>
-      </nav>
+        {/*  */}
+        <div className="flex ml-[110px]">
+          <div className="w-[264px] h-[327px] left-0 top-[60px] bg-white border border-solid border-[#E6E6E6] hover:border-green-800 shadow hover:shadow-green-800">
+            <img src={Product1} alt="" />
+            <p className="ml-2 text-customGray">Táo xanh</p>
+            <div className="flex">
+              <p>$14.99</p>
+              <p className="line-through">$20.99</p>
+              <div className="ml-[100px]">
+                <PiHandbagLight size={25} />
+              </div>
+              {/* <StarRating totalStars={5} /> */}
+            </div>
+          </div>
+          <div className="w-[264px] h-[327px] left-0 top-[60px] bg-white border border-solid border-[#E6E6E6] hover:border-green-800 shadow hover:shadow-green-800">
+            <img src={Product1} alt="" />
+            <p className="ml-2 text-customGray">Táo xanh</p>
+            <div className="flex">
+              <p>$14.99</p>
+              <p className="line-through">$20.99</p>
+              <div className="ml-[100px]">
+                <PiHandbagLight size={25} />
+              </div>
+              {/* <StarRating totalStars={5} /> */}
+            </div>
+          </div>
+          <div className="w-[264px] h-[327px] left-0 top-[60px] bg-white border border-solid border-[#E6E6E6] hover:border-green-800 shadow hover:shadow-green-800">
+            <img src={Product1} alt="" />
+            <p className="ml-2 text-customGray">Táo xanh</p>
+            <div className="flex">
+              <p>$14.99</p>
+              <p className="line-through">$20.99</p>
+              <div className="ml-[100px]">
+                <PiHandbagLight size={25} />
+              </div>
+              {/* <StarRating totalStars={5} /> */}
+            </div>
+          </div>
+          <div className="w-[264px] h-[327px] left-0 top-[60px] bg-white border border-solid border-[#E6E6E6] hover:border-green-800 shadow hover:shadow-green-800">
+            <img src={Product1} alt="" />
+            <p className="ml-2 text-customGray">Táo xanh</p>
+            <div className="flex">
+              <p>$14.99</p>
+              <p className="line-through">$20.99</p>
+              <div className="ml-[100px]">
+                <PiHandbagLight size={25} />
+              </div>
+              {/* <StarRating totalStars={5} /> */}
+            </div>
+          </div>
+          <div className="w-[264px] h-[327px] left-0 top-[60px] bg-white border border-solid border-[#E6E6E6] hover:border-green-800 shadow hover:shadow-green-800">
+            <img src={Product1} alt="" />
+            <p className="ml-2 text-customGray">Táo xanh</p>
+            <div className="flex">
+              <p>$14.99</p>
+              <p className="line-through">$20.99</p>
+              <div className="ml-[100px]">
+                <PiHandbagLight size={25} />
+              </div>
+              {/* <StarRating totalStars={5} /> */}
+            </div>
+          </div>
+        </div>
+      </div>
 
       {/* Quảng cáo */}
       <div className="mt-[50px] ml-[110px]">
         <img src={QuangCaoTo} alt="" />
       </div>
-      <nav className="">
+      <div className="">
         <div></div>
-      </nav>
+      </div>
       {/* Tin Tức  */}
-      <nav className="ml-[30px] mt-[40px]">
+      <div className="ml-[30px] mt-[40px]">
         <p className="ml-[650px] text-[32px] font-poppins font-bold">
           Tin mới nhất
         </p>
         <div className="flex mt-[20px] gap-[100px]">
           <div className="w-[424] h-[494px] relative">
             <img src={TinTuc1} alt="" />
-            <div className="w-[424px] h-[170px] border border-gray-300 rounded-b-[10px]">
+            <div className="w-[424px] h-[170px] border border-solid border-gray-300 rounded-b-[10px]">
               {/*  */}
               <div className="flex gap-[30px] mt-[20px] ml-[20px]">
                 <div className="flex items-center gap-1">
@@ -918,7 +918,7 @@ const Homepages = () => {
           {/*  */}
           <div className="w-[424] h-[494px] relative">
             <img src={TinTuc2} alt="" />
-            <div className="w-[424px] h-[170px] border border-gray-300 rounded-b-[10px]">
+            <div className="w-[424px] h-[170px] border border-solid border-gray-300 rounded-b-[10px]">
               {/*  */}
               <div className="flex gap-[30px] mt-[20px] ml-[20px]">
                 <div className="flex items-center gap-1">
@@ -954,7 +954,7 @@ const Homepages = () => {
           </div>
           <div className="w-[424] h-[494px] relative">
             <img src={TinTuc3} alt="" />
-            <div className="w-[424px] h-[170px] border border-gray-300 rounded-b-[10px]">
+            <div className="w-[424px] h-[170px] border border-solid border-gray-300 rounded-b-[10px]">
               {/*  */}
               <div className="flex gap-[30px] mt-[20px] ml-[20px]">
                 <div className="flex items-center gap-1">
@@ -989,10 +989,10 @@ const Homepages = () => {
             </div>
           </div>
         </div>
-      </nav>
+      </div>
 
       {/* comment */}
-      <nav className="w-[1920px] h-[454px] mt-[50px] bg-gray-100">
+      <div className="w-[1920px] h-[454px] mt-[50px] bg-gray-100">
         <div className="flex">
           <p className="text-[32px] font-poppins font-bold ml-[108px] mt-[40px]">
             Đánh giá của khách hàng
@@ -1096,9 +1096,9 @@ const Homepages = () => {
             </div>
           </div>
         </div>
-      </nav>
+      </div>
       {/* Theo dỏi */}
-      <nav className="w-[1320px] h-[270px]">
+      <div className="w-[1320px] h-[270px]">
         <p className="text-[32px] font-poppins font-bold ml-[550px]">
           Theo dõi chúng tôi trên Instagram
         </p>
@@ -1110,15 +1110,15 @@ const Homepages = () => {
           <img src={Instagram5} alt="" />
           <img src={Instagram6} alt="" />
         </div>
-      </nav>
+      </div>
 
       {/* Company Logo */}
-      <nav className="flex justify-center">
+      <div className="flex justify-center">
         <img src={CompannyLogo} alt="" />
-      </nav>
+      </div>
 
       {/* footer */}
-      <nav className="w-[1920px] h-[527px]">
+      <div className="w-[1920px] h-[527px]">
         {/*  */}
         <div className="w-[100%] h-[162px] flex items-center bg-gray-100">
           <div className="w-[448px] h-[82px] ml-[100px]">
@@ -1300,7 +1300,7 @@ const Homepages = () => {
             </div>
           </div>
         </div>
-      </nav>
+      </div>
     </div>
   )
 }
