@@ -1,6 +1,4 @@
-
-// eslint-disable-next-line no-unused-vars
-import React, { useState } from 'react'
+import  { useState } from 'react'
 import './Checkout'
 
 const Checkout = () => {
@@ -87,6 +85,8 @@ const Checkout = () => {
                 <div className='absolute right-[10px] top-[0px]  w-[350px] h-[500px] p-5 border rounded-xl'>
                     <div>
                         <h2 className='text-[20px]'>Tóm Tắt Đơn Hàng</h2>
+                        <div className='w-[850px]'>
+                        </div>
                         <div className='flex justify-between items-center py-2'>
                             <div className='flex items-center'>
                                 <img src="https://product.hstatic.net/1000282430/product/ot-chuong-xanh.jpg" alt="" width='50px' height='50px' />
@@ -137,7 +137,7 @@ const Checkout = () => {
                                 <h4 className='ml-[10px]'>MoMo</h4>
                             </label>
                     </div>
-                    <div className='mt-10 w-[300px] h-[40px] outline flex justify-center items-center m-auto rounded-[25px] bg-[#00B207] text-white cursor-pointer'>
+                    <div className='mt-5 w-[300px] h-[40px] outline flex justify-center items-center m-auto rounded-[25px] bg-[#00B207] text-white cursor-pointer'>
                         <button>Đặt Hàng</button>
                     </div>
                 </div>
