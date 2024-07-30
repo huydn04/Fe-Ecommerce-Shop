@@ -4,7 +4,7 @@ import { Route, Routes } from 'react-router-dom'
 import CreateUser from '../pages/users/CreateUser'
 import LoginUser from '../pages/users/LoginUser'
 import ResetPassword from '../pages/users/ResetPassword'
-
+import { ShopContextProvider } from "../context/shop-context";
 const LandingPage = lazy(() => import('../pages/LandingPage'))
 const AdminPages = lazy(() => import('../pages/admin/AdminPages'))
 const Pages404 = lazy(() => import('../pages/404/Page404'))
@@ -17,50 +17,50 @@ const Setting = lazy(() => import('../pages/users/SettingUser'))
 const OrderHistory = lazy(() => import('../pages/users/OrderHistory'))
 const WishList = lazy(() => import('../pages/users/WishList'))
 const MenuDetail = lazy(() => import('../pages/product-detail/MenuDetail'))
-
 const AttractiveOffers = lazy(() => import('../pages/popular/AttractiveOffers'))
 const CartPop = lazy(() => import('../pages/users/cartPop'))
-
+const Shop = lazy(()=> import('../pages/Shopping-cart/shop'))
 export default function AppRoutes() {
   return (
-    <Suspense fallback={<div>Loading...</div>}>
-      <Routes>
-        {/* Landing Page */}
-        <Route index path="/" element={<LandingPage />} />
+    <ShopContextProvider>
+      <Suspense fallback={<div>Loading...</div>}>
+          <Routes>
+            {/* Landing Page */}
+            <Route index path="/" element={<LandingPage />} />
 
-        {/* Admin Page */}
-        <Route path="/admin" element={<AdminPages />} />
+            {/* Admin Page */}
+            <Route path="/admin" element={<AdminPages />} />
 
-        {/* User Pages */}
-        <Route path="/user" element={<UsersPages />} />
+            {/* User Pages */}
+            <Route path="/user" element={<UsersPages />} />
 
-        {/* Page 404 */}
-        <Route path="*" element={<Pages404 />} />
+            {/* Page 404 */}
+            <Route path="*" element={<Pages404 />} />
 
         {/* Home */}
         <Route path="/home-pages" element={<Homepages />} />
         <Route path="/menu-pages" element={<MenuPage />} />
 
-        {/* Cart */}
-        <Route path="/cart" element={<Cart />} />
+            {/* Cart */}
+            <Route path="/cart" element={<Cart />} />
 
-        {/* Checkout */}
-        <Route path="/checkout" element={<Checkout />} />
+            {/* Checkout */}
+            <Route path="/checkout" element={<Checkout />} />
 
-        {/* Setting Page */}
-        <Route path="/setting" element={<Setting />} />
+            {/* Setting Page */}
+            <Route path="/setting" element={<Setting />} />
 
-        {/* Order History Page */}
-        <Route path="/order-history" element={<OrderHistory />} />
+            {/* Order History Page */}
+            <Route path="/order-history" element={<OrderHistory />} />
 
         {/* Wish List Page */}
         <Route path="/wish-list" element={<WishList />} />
 
-        {/* Menu Detail Page */}
-        <Route path="/menu-detail" element={<MenuDetail />} />
+            {/* Menu Detail Page */}
+            <Route path="/menu-detail" element={<MenuDetail />} />
 
-        {/* Attractive Offers Page */}
-        <Route path="/attractive-offers" element={<AttractiveOffers />} />
+            {/* Attractive Offers Page */}
+            <Route path="/attractive-offers" element={<AttractiveOffers />} />
 
         {/* Login User Page */}
         <Route path="/login-user" element={<LoginUser />} />
@@ -73,7 +73,10 @@ export default function AppRoutes() {
 
         {/* Reset Password Page */}
         <Route path="/reset-pass" element={<ResetPassword />} />
+
+        <Route path="/shoptest" element={<Shop />} />
       </Routes>
     </Suspense>
+    </ShopContextProvider>
   )
 }

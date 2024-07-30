@@ -3,14 +3,16 @@ import ImgSpPopular from "./componentsImgSpPopular";
 import SpHotSellerTop from "./SpHotSellerTop";
 import SpT from "./SpT"; 
 import PropTypes from "prop-types";
-import  { useState } from 'react';  
+import React, { useState } from 'react';  
+
+
 
 
 const SPpopular = ({ className = "" }) => {
   const [isHovered, setIsHovered] = useState(false);
   return (
     <div
-      className={`w-[1320px] max-w-full flex flex-col items-start justify-start gap-[50px] leading-[normal] tracking-[normal] text-left text-21xl text-gray-scale-gray-900 font-heading-05-heading-05-600 mq725:gap-[25px] ${className}`}
+      className={`w-[1320px] max-w-full flex flex-col items-start justify-start gap-[50px] leading-[normal] tracking-[normal] text-left text-[40px] text-gray-900 font-heading-05-heading-05-600 gap-[25px] ${className}`}
     >
       <div className="self-stretch flex flex-row items-start justify-center py-0 px-5 box-border max-w-full">
         <div className="w-[383px] flex flex-col items-start justify-start gap-[16px] max-w-full">
@@ -21,12 +23,12 @@ const SPpopular = ({ className = "" }) => {
           </div>
         </div>
       </div>
-      <section className="self-stretch flex flex-row flex-wrap items-start justify-center gap-[20px] text-left text-sm text-gray-scale-gray-700 font-heading-05-heading-05-600">
+      <section className="self-stretch flex flex-row flex-wrap items-start justify-center gap-[20px] text-left text-[14px] text-gray-950 font-heading-05-heading-05-600">
         <ImgSpPopular image="\src\assets\attracpopular\image@2x.png" greenApple="Táo Xanh" />
         <ImgSpPopular image="\src\assets\attracpopular\image-1@2x.png" greenApple="Cải Thìa" />
         <ImgSpPopular image="\src\assets\attracpopular\image-2@2x.png" greenApple="Xà Lách" />
         <div
-        className="flex-1 rounded-lg bg-white box-border overflow-hidden flex flex-col items-start justify-start min-w-[243px] max-w-[248px] border-[1px] border-solid border-gray-scale-gray-100"
+        className="flex-1 rounded-[18px] bg-white box-border overflow-hidden flex flex-col items-start justify-start min-w-[243px] max-w-[248px] border-[1px] border-solid border-gray-300"
         onMouseEnter={() => setIsHovered(true)} 
         onMouseLeave={() => setIsHovered(false)} 
       >
@@ -58,7 +60,7 @@ const SPpopular = ({ className = "" }) => {
               <div className="self-stretch relative leading-[150%]">
                 Ớt Chuông
               </div>
-              <div className="flex flex-row items-start justify-start py-0 pr-5 pl-0 text-base text-gray-scale-gray-900">
+              <div className="flex flex-row items-start justify-start py-0 pr-5 pl-0 text-base text-gray-900">
                 <div className="relative leading-[150%] font-medium inline-block min-w-[51px] whitespace-nowrap">
                   $14.99
                 </div>
@@ -78,12 +80,12 @@ const SPpopular = ({ className = "" }) => {
               <img
                 className="h-3 w-3 relative overflow-hidden shrink-0 min-h-[12px]"
                 alt=""
-                src="\src\assets\attracpopular\star-1.sv"
+                src="\src\assets\attracpopular\star-1.svg"
               />
               <img
                 className="h-3 w-3 relative overflow-hidden shrink-0 min-h-[12px]"
                 alt=""
-                src="\src\assets\attracpopular\star-1.sv"
+                src="\src\assets\attracpopular\star-1.svg"
               />
               <img
                 className="h-3 w-3 relative overflow-hidden shrink-0 min-h-[12px]"
@@ -98,7 +100,7 @@ const SPpopular = ({ className = "" }) => {
               src="\src\assets\attracpopular\add-to-cart-3.svg"
             />
           </div>
-          <div className="w-20 rounded bg-branding-error hidden flex-row items-center justify-center py-[3px] px-2 box-border gap-[4px] text-white">
+          <div className="w-20 rounded bg-red-500 hidden flex-row items-center justify-center py-[3px] px-2 box-border gap-[4px] text-white">
             <div className="h-[21px] flex-1 relative leading-[150%] inline-block">
               Sale
             </div>
@@ -108,14 +110,16 @@ const SPpopular = ({ className = "" }) => {
           </div>
         </div>
         <ImgSpPopular image="\src\assets\attracpopular\image-4@2x.png" greenApple="Bắp" />
+        
+        
       </section>
-      <section className="self-stretch flex flex-row items-start justify-center gap-[24px] text-left text-xl text-gray-scale-gray-900 font-heading-05-heading-05-600 mq1050:flex-wrap">
+      <section className="self-stretch flex flex-row items-start justify-center gap-[24px] text-left text-[20px] text-gray-900 font-heading-05-heading-05-600 mq1050:flex-wrap">
         <div className="flex-1 flex flex-col items-start justify-start gap-[16px] min-w-[287px] max-w-[312px]">
           <h3 className="m-0 relative text-inherit leading-[150%] font-medium font-inherit inline-block min-w-[75px] mq450:text-base mq450:leading-[24px]">
             Giá sốc
           </h3>
           <SpHotSellerTop image="\src\assets\attracpopular\image-5@2x.png" chaniseCabbage="Táo Xanh" />
-          <div className="self-stretch rounded-md bg-white flex flex-row items-start justify-start text-sm text-gray-scale-gray-700 border-[1px] border-solid border-gainsboro mq1050:justify-center">
+          <div className="self-stretch rounded-md bg-white flex flex-row items-start justify-start text-[14px] text-gray-950 border-[1px] border-solid border-gainsboro mq1050:justify-center">
             <div className="flex flex-row items-start justify-start p-[5px] shrink-0">
               <img  
                 className="h-[102px] w-[102px] relative object-cover"
@@ -169,9 +173,9 @@ const SPpopular = ({ className = "" }) => {
             chaniseCabbage="Bông Cải Trắng"
           />
         </div>
-        <div className="flex-[0.7949] flex flex-row items-start justify-start pt-[46.7px] px-8 pb-[47px] box-border relative min-w-[287px] max-w-[312px] min-h-[426px] text-center text-xs mq450:flex-1">
+        <div className="flex-[0.7949] flex flex-row items-start justify-start pt-[46.7px] px-8 pb-[47px] box-border relative min-w-[287px] max-w-[312px] min-h-[426px] text-center text-[12px] mq450:flex-1">
           <img
-            className="h-full w-full absolute !m-[0] top-[0px] right-[0px] bottom-[0px] left-[0px] rounded-lg max-w-full overflow-hidden max-h-full object-cover"
+            className="h-full w-full absolute !m-[0] top-[0px] right-[0px] bottom-[0px] left-[0px] rounded-[18px] max-w-full overflow-hidden max-h-full object-cover"
             alt=""
             src="\src\assets\attracpopular\image-14@2x.png"
           />
@@ -180,7 +184,7 @@ const SPpopular = ({ className = "" }) => {
               <div className="self-stretch relative tracking-[0.03em] leading-[100%] uppercase font-medium">
                 Ưu đãi mùa hè cực sốc
               </div>
-              <h1 className="m-0 self-stretch relative text-13xl leading-[120%] font-semibold font-inherit text-limegreen-100 mq450:text-[19px] mq450:leading-[23px] mq1000:text-[26px] mq1000:leading-[31px]">
+              <h1 className="m-0 self-stretch relative text-[32px] leading-[120%] font-semibold font-inherit text-green-500 mq450:text-[19px] mq450:leading-[23px] mq1000:text-[26px] mq1000:leading-[31px]">
                 Giảm đến 70%
               </h1>
             </div>
