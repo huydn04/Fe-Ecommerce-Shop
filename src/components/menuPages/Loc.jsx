@@ -2,8 +2,8 @@ import { Select } from 'react-daisyui'
 
 const LocSanPham = () => {
   return (
-    <div className="flex w-[200px] component-preview p-4 items-center justify-center gap-2 font-sans">
-      <div className="form-control w-[200px] max-w-xs border rounded-xl border-black">
+    <div className="flex component-preview p-4 items-center justify-center gap-2 font-sans">
+      <div className="form-control w-[200px] max-w-xs border border-solid rounded-xl border-black">
         <Select
           defaultValue={'default'}
           onChange={(e) => console.log(e.target.value)}
