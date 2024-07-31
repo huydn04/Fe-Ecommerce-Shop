@@ -15,7 +15,11 @@ const SanPhamGiamGia = () => {
             open={open}
             className="text-[20px] text-[#1A1A1A]"
           >
-            <Menu.Item></Menu.Item>
+            <Menu.Item>
+              <div className="w-[250px] h-[112px] border border-solid rounded-xl border-[#E6E6E6] mt-[10px]"></div>
+              <div className="w-[250px] h-[112px] border border-solid rounded-xl border-[#E6E6E6] mt-[10px]"></div>
+              <div className="w-[250px] h-[112px] border border-solid rounded-xl border-[#E6E6E6] mt-[10px]"></div>
+            </Menu.Item>
           </Menu.Dropdown>
         </Menu.Item>
       </Menu>

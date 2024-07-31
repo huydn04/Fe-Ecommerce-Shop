@@ -10,7 +10,10 @@ export default {
   theme: {
     extend: {
       colors: {
+
         customColor: '2C742F',
+
+
       },
 
       container: {
