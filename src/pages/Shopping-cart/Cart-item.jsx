@@ -9,7 +9,7 @@ export const CartItem = (props) => {
             <div className='flex items-center  mr-[100px]'>
                 <img src={productImage} alt="" width='100px' height='100px' />
                 <h4 className='text-[14px] m-4' >{productName}</h4>
-                
+
             </div>
             <div className='flex items-center text-[14px]' >
                 {price}VND
@@ -17,14 +17,12 @@ export const CartItem = (props) => {
                     <button onClick={() => removeFromCart(id)} className='w-6 h-6 bg-[#E6E6E6] rounded-full'>-</button>
                     <input value={cartItems[id]} onChange={(e) => updaterCartItemsCount(Number(e.target.value))} className='w-6 h-6  rounded-full pl-2' />
                     <button onClick={() => addToCart(id)} className='w-6 h-6 bg-[#E6E6E6] rounded-full'>+</button>
-                 
                 </div>
-             
             </div>
             <div className='flex items-center'>
-                <span className='mx-6 text-[14px]'></span> {price*cartItems[id]}VND
-            </div> 
-           
+                <span className='mx-6 text-[14px]'></span> {price * cartItems[id]}VND
+            </div>
+
         </div>
     )
 }
