@@ -4,7 +4,6 @@ import SalesSp from "./SalesSp";
 import ImgSales from "./ImgSales";
 import SPpopular from "./componentsSPpopular";
 
-
 const Sales = ({ className = "" }) => {
   const [currentSection, setCurrentSection] = useState("Ưu Đãi Hấp Dẫn");
 
@@ -103,7 +102,10 @@ const Sales = ({ className = "" }) => {
                         </div>
                       </div>
                       <div className="w-[50px] h-[50px] !m-[0] absolute right-[4px] bottom-[-15px] rounded-[40px] bg-lime-50 flex flex-row items-start justify-start p-[13px] box-border z-[1]">
-                        <img className="m-0 h-6 w-6 relative" src="\src\assets\attracpopular\bag-2.svg" />
+                        <img
+                          className="m-0 h-6 w-6 relative"
+                          src="\src\assets\attracpopular\bag-2.svg"
+                        />
                       </div>
                     </div>
                   </div>
@@ -184,9 +186,7 @@ const Sales = ({ className = "" }) => {
             </div>
           </div>
         )}
-        {currentSection === "Sản Phẩm Phổ Biến" && (
-          <SPpopular />
-        )}
+        {currentSection === "Sản Phẩm Phổ Biến" && <SPpopular />}
       </div>
     </section>
   );
