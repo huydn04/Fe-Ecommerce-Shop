@@ -42,6 +42,9 @@ const SPpopular = ({ className = "" }) => {
               alt=""
               src="\src\assets\attracpopular\image-3@2x.png"
             />
+
+
+            
             {isHovered && (
               <div className="absolute h-[34.68%] w-[16.13%] top-[6.45%] right-[6.85%] bottom-[58.87%] left-[77.02%] z-[1]">
                 <img
@@ -137,41 +140,40 @@ const SPpopular = ({ className = "" }) => {
               />
             </div>
             <div className="w-[467px] flex flex-col items-start justify-center pt-6 px-10 pb-[25px] box-border gap-[5px] shrink-0">
-  <div className="self-stretch relative leading-[150%]">Cam</div>
-  <div className="flex flex-row items-start justify-start py-0 pr-5 pl-0 gap-[12px]">
-    <div className="relative leading-[150%] font-medium inline-block min-w-[51px] whitespace-nowrap">
-      $20.99
-    </div>
-  </div>
-  <div className="flex flex-row items-start justify-start gap-[2px]">
-    <img
-      className="h-[18px] w-[18px] relative overflow-hidden shrink-0 min-h-[18px]"
-      alt="Star"
-      src="/src/assets/attracpopular/star-11.svg"
-    />
-    <img
-      className="h-[18px] w-[18px] relative overflow-hidden shrink-0 min-h-[18px]"
-      alt="Star"
-      src="/src/assets/attracpopular/star-11.svg"
-    />
-    <img
-      className="h-[18px] w-[18px] relative overflow-hidden shrink-0 min-h-[18px]"
-      alt="Star"
-      src="/src/assets/attracpopular/star-11.svg"
-    />
-    <img
-      className="h-[18px] w-[18px] relative overflow-hidden shrink-0 min-h-[18px]"
-      alt="Star"
-      src="/src/assets/attracpopular/star-11.svg"
-    />
-    <img
-      className="h-[18px] w-[18px] relative overflow-hidden shrink-0 min-h-[18px]"
-      alt="Star"
-      src="/src/assets/attracpopular/star-11.svg"
-    />
-  </div>
-</div>
-
+              <div className="self-stretch relative leading-[150%]">Cam</div>
+              <div className="flex flex-row items-start justify-start py-0 pr-5 pl-0 gap-[12px]">
+                <div className="relative leading-[150%] font-medium inline-block min-w-[51px] whitespace-nowrap">
+                  $20.99
+                </div>
+              </div>
+              <div className="flex flex-row items-start justify-start gap-[2px]">
+                <img
+                  className="h-[18px] w-[18px] relative overflow-hidden shrink-0 min-h-[18px]"
+                  alt="Star"
+                  src="/src/assets/attracpopular/star-11.svg"
+                />
+                <img
+                  className="h-[18px] w-[18px] relative overflow-hidden shrink-0 min-h-[18px]"
+                  alt="Star"
+                  src="/src/assets/attracpopular/star-11.svg"
+                />
+                <img
+                  className="h-[18px] w-[18px] relative overflow-hidden shrink-0 min-h-[18px]"
+                  alt="Star"
+                  src="/src/assets/attracpopular/star-11.svg"
+                />
+                <img
+                  className="h-[18px] w-[18px] relative overflow-hidden shrink-0 min-h-[18px]"
+                  alt="Star"
+                  src="/src/assets/attracpopular/star-11.svg"
+                />
+                <img
+                  className="h-[18px] w-[18px] relative overflow-hidden shrink-0 min-h-[18px]"
+                  alt="Star"
+                  src="/src/assets/attracpopular/star-11.svg"
+                />
+              </div>
+            </div>
           </div>
           <SpHotSellerTop
             image="\src\assets\attracpopular\image-7@2x.png"
