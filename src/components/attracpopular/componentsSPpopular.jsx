@@ -28,7 +28,7 @@ const SPpopular = ({ className = "" }) => {
         <ImgSpPopular image="\src\assets\attracpopular\image-1@2x.png" greenApple="Cải Thìa" />
         <ImgSpPopular image="\src\assets\attracpopular\image-2@2x.png" greenApple="Xà Lách" />
         <div
-        className="flex-1 rounded-[18px] bg-white box-border overflow-hidden flex flex-col items-start justify-start min-w-[243px] max-w-[248px] border-[1px] border-solid border-gray-300"
+        className="flex-1 rounded-[18px] bg-white box-border overflow-hidden flex flex-col items-start justify-start min-w-[243px] max-w-[248px] border-[1px] border-solid border-gray-100"
         onMouseEnter={() => setIsHovered(true)} 
         onMouseLeave={() => setIsHovered(false)} 
       >
@@ -109,7 +109,7 @@ const SPpopular = ({ className = "" }) => {
             </div>
           </div>
         </div>
-        <ImgSpPopular image="\src\assets\attracpopular\image-4@2x.png" greenApple="Bắp" />
+        <ImgSpPopular image="\src\assets\attracpopular\bắp.png" greenApple="Bắp" />
         
         
       </section>
@@ -155,7 +155,7 @@ const SPpopular = ({ className = "" }) => {
           <SpHotSellerTop image="\src\assets\attracpopular\image-7@2x.png" chaniseCabbage="Xà Lách" />
         </div>
         <div className="flex-1 flex flex-col items-start justify-start gap-[16px] min-w-[287px] max-w-[312px]">
-          <h3 className="m-0 relative text-inherit leading-[150%] font-medium font-inherit mq450:text-base mq450:leading-[24px]">
+          <h3 className="m-0 relative text-inherit leading-[150%] font-medium font-inherit mq450:text-base mq450:leading-[2px]">
             Sản phẩm bán chạy
           </h3>
           <SpHotSellerTop image="\src\assets\attracpopular\image-8@2x.png" chaniseCabbage="Cà Tím" />
