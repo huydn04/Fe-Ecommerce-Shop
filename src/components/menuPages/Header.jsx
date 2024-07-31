@@ -28,11 +28,11 @@ const Header = () => {
           </div>
           <div className="flex items-center gap-2 mr-[50px]">
             <a href="#" className="ml-2">
-              Eng
+              VN
             </a>
             <IoIosArrowDown size={10} style={{ color: '#666666' }} />
             <a href="#" className="ml-2">
-              USD
+              VND
             </a>
             <IoIosArrowDown size={10} style={{ color: '#666666' }} />
             <p className="mx-2 text-gray-300">|</p>
@@ -84,7 +84,7 @@ const Header = () => {
           <ul className="flex space-x-4">
             <li className="flex items-center">
               <a href="#home" className="text-[#00B207] hover:text-gray-400">
-                Home
+                Trang Chủ
               </a>
               <IoIosArrowDown size={20} style={{ color: '#666666' }} />
             </li>
