@@ -19,6 +19,7 @@ import { useNavigate } from 'react-router-dom';
         ))}
       </div>
         <button className='absolute top-0 right-[200px] outline w-[200px] h-[200px] cursor-pointer' onClick={() => navigate("/cart")}>Cart</button>
+        <button className='absolute top-0 right-[0px] outline w-[200px] h-[200px] cursor-pointer' onClick={() => navigate("/checkout")}>checkout</button>
     </div>
   )
 }

@@ -11,6 +11,9 @@ export default {
     extend: {
       colors: {
 
+        customColor: '2C742F',
+
+
       },
 
       container: {

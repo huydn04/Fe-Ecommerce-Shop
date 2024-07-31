@@ -54,7 +54,7 @@ const Sales = ({ className = "" }) => {
         {currentSection === "Ưu Đãi Hấp Dẫn" && (
           <div className="self-stretch flex flex-col items-end justify-start max-w-full text-left text-base text-green-800">
             <div className="self-stretch grid flex-row items-start justify-start gap-[0.3px] grid-cols-[repeat(4,_minmax(248px,_1fr))] max-w-full [1200px]:grid-cols-[repeat(2,_minmax(248px,_430px))] [1200px]:justify-center mq450:grid-cols-[minmax(248px,_1fr)]">
-              <div className="group bg-white box-border flex flex-col items-start justify-start pt-[18px] px-0 pb-0 relative gap-[188px] max-w-full text-[14px] text-white border-[1px] border-solid border-green-gray-scale-100 mq450:gap-[94px]">
+              <div className="group bg-white box-border flex flex-col items-start justify-start pt-[18px] px-0 pb-0 relative gap-[188px] max-w-full text-[14px] text-white border-[1px] border-solid border-gray-300 mq450:gap-[94px]">
                 <div className="w-full h-[310px] !m-[0] absolute top-[0px] right-[0px] left-[0px] flex flex-col items-start justify-start p-[5px] box-border">
                   <img
                     className="self-stretch flex-1 relative max-w-full overflow-hidden max-h-full object-cover"

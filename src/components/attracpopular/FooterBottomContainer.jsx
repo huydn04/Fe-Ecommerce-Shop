@@ -12,7 +12,7 @@ const FooterBottomContainer = ({ className = "" }) => {
             className="h-10 w-10 relative min-h-[40px]"
             loading="lazy"
             alt=""
-            src="\src\assets\attracpopular\social-media.svg"
+            src="../../assets/attracpopular/social-media.svg"
           />
           <img
             className="h-10 w-10 relative rounded-[500px] min-h-[40px]"

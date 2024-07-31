@@ -20,6 +20,10 @@ const MenuDetail = lazy(() => import('../pages/product-detail/MenuDetail'))
 const AttractiveOffers = lazy(() => import('../pages/popular/AttractiveOffers'))
 const CartPop = lazy(() => import('../pages/users/cartPop'))
 const Shop = lazy(()=> import('../pages/Shopping-cart/shop'))
+const UpdateProduct = lazy(()=> import('../pages/product-detail/UpdateProduct'))
+const AddProduct = lazy(()=> import('../components/Products/AddProduct'))
+
+
 export default function AppRoutes() {
   return (
     <ShopContextProvider>
@@ -75,6 +79,10 @@ export default function AppRoutes() {
         <Route path="/reset-pass" element={<ResetPassword />} />
 
         <Route path="/shoptest" element={<Shop />} />
+
+        <Route path="/update" element={<UpdateProduct />} />
+        <Route path="/update/add" element={<AddProduct />} />
+
       </Routes>
     </Suspense>
     </ShopContextProvider>
