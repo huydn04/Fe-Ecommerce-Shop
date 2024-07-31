@@ -1,9 +1,9 @@
 import React from 'react'
 import { Button, Table } from 'react-daisyui'
 import { RelativeList } from './RelativeList'
-import AddProduct from './AddProduct'
 import { HiOutlinePencilSquare } from "react-icons/hi2";
 import { FaRegTrashAlt } from "react-icons/fa";
+import { Link } from 'react-router-dom';
 
 
 
@@ -12,7 +12,15 @@ const TableUpdate = () => {
     return (
         <div className=''>
             <div>
-                <AddProduct />
+                <div className='flex justify-end gap-5'>
+                    {/* <Button className='border border-solid border-green-500 text-green-500 bg-white hover:bg-green-500 hover:text-white'>
+                    + Danh mục
+                    </Button> */}
+                    <Link to='/update/add' className='w-[115px] h-[30px] text-center pt-[2px] rounded-lg font-semibold border border-solid border-cyan-500 text-cyan-500 bg-white hover:bg-cyan-500 hover:text-white'>
+                        + Sản phẩm
+                    </Link>
+
+                </div>
                 <div className='bg-white mt-5 rounded-xl'>
                     <Table className="rounded-box">
                         <Table.Head className='border-b border-solid border-gray-300 text-sm'>
@@ -42,8 +50,8 @@ const TableUpdate = () => {
                                                     Chi tiết
                                                 </Button>
                                                 <div className='flex gap-5'>
-                                                    <button className='bg-cyan-500 w-[30px] h-[30px] pl-[8.5px] text-white rounded-lg hover:bg-cyan-600'><HiOutlinePencilSquare className=''/></button>
-                                                    <button className='bg-rose-500 w-[30px] h-[30px] pl-[8.5px] text-white rounded-lg hover:bg-rose-600'><FaRegTrashAlt/></button>
+                                                    <button className='bg-cyan-500 w-[30px] h-[30px] pl-[8.5px] text-white rounded-lg hover:bg-cyan-600'><HiOutlinePencilSquare className='' /></button>
+                                                    <button className='bg-rose-500 w-[30px] h-[30px] pl-[8.5px] text-white rounded-lg hover:bg-rose-600'><FaRegTrashAlt /></button>
                                                 </div>
                                             </Table.Row>
                                         </Table.Body>
