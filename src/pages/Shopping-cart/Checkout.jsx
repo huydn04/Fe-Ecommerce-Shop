@@ -128,8 +128,8 @@ const Checkout = () => {
                             <h4 className='ml-[10px]'>MoMo</h4>
                         </label>
                     </div>
-                    <div className='mt-5 w-[300px] h-[40px]  flex justify-center items-center m-auto rounded-[25px] bg-[#00B207] text-white cursor-pointer'>
-                        <button className='text-white cursor-pointer bg-[#00B207]'>Đặt Hàng</button>
+                    <div className=' group mt-5 w-[300px] h-[40px]  flex justify-center items-center m-auto rounded-[25px] bg-[#00B207] hover:bg-[green]  text-white cursor-pointer'>
+                        <button className='group-hover:text-white cursor-pointer bg-[#00B207] group-hover:bg-[green]'>Đặt Hàng</button>
                     </div>
                 </div>
             </div>

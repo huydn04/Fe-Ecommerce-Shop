@@ -6,17 +6,17 @@ export const CartItem = (props) => {
 
     return (
         <div className='grid grid-cols-3 justify-items-center w-full border-solid  border-t-2 border-[#E6E6E6]'>
-            <div className='flex items-center  mr-[100px]'>
-                <img src={productImage} alt="" width='100px' height='100px' />
+            <div className='flex items-center '>
+                <img src={productImage} alt="" width='80px' height='80px' />
                 <h4 className='text-[14px] m-4' >{productName}</h4>
 
             </div>
             <div className='flex items-center text-[14px]' >
                 {price}VND
                 <div className='ml-[50px] w-[90px] h-[40px] rounded-[20px] border-solid  border border-[#E6E6E6] flex items-center justify-around'>
-                    <button onClick={() => removeFromCart(id)} className='w-6 h-6 bg-[#E6E6E6] rounded-full'>-</button>
+                    <button onClick={() => removeFromCart(id)} className='w-6 h-6 bg-[#E6E6E6] rounded-full cursor-pointer'>-</button>
                     <input value={cartItems[id]} onChange={(e) => updaterCartItemsCount(Number(e.target.value))} className='w-6 h-6  rounded-full pl-2' />
-                    <button onClick={() => addToCart(id)} className='w-6 h-6 bg-[#E6E6E6] rounded-full'>+</button>
+                    <button onClick={() => addToCart(id)} className='w-6 h-6 bg-[#E6E6E6] rounded-full cursor-pointer'>+</button>
                 </div>
             </div>
             <div className='flex items-center'>
