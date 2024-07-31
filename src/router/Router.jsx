@@ -75,6 +75,7 @@ export default function AppRoutes() {
         <Route path="/reset-pass" element={<ResetPassword />} />
 
         <Route path="/shoptest" element={<Shop />} />
+
       </Routes>
     </Suspense>
     </ShopContextProvider>
