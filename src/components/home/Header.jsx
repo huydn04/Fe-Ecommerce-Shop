@@ -4,6 +4,8 @@ import { BsHeart } from 'react-icons/bs'
 import { PiHandbagLight } from 'react-icons/pi'
 import { PiPhoneCallLight } from 'react-icons/pi'
 import { Logo } from '../../assets/Home'
+import cartPop from '../../pages/users/cartPop'
+
 
 const Header = () => {
   const navigateTo = (url) => {
