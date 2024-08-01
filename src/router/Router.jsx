@@ -84,6 +84,7 @@ export default function AppRoutes() {
         <Route path="/update/add" element={<AddProduct />} />
 
       </Routes>
+      
     </Suspense>
     </ShopContextProvider>
   )
