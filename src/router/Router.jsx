@@ -20,6 +20,8 @@ const MenuDetail = lazy(() => import('../pages/product-detail/MenuDetail'))
 const AttractiveOffers = lazy(() => import('../pages/popular/AttractiveOffers'))
 const CartPop = lazy(() => import('../pages/users/cartPop'))
 const Shop = lazy(()=> import('../pages/Shopping-cart/shop'))
+const AdminUsers = lazy(()=> import('../pages/admin/AdminUsers.jsx'))
+const AddAdminUsers = lazy(()=> import('../pages/admin/AddAdminUsers.jsx'))
 const UpdateProduct = lazy(()=> import('../pages/product-detail/UpdateProduct'))
 const AddProduct = lazy(()=> import('../components/Products/AddProduct'))
 
@@ -80,6 +82,9 @@ export default function AppRoutes() {
 
         <Route path="/shoptest" element={<Shop />} />
 
+        <Route path="/AdminUsers" element={<AdminUsers/>}  />
+
+        <Route path="/AddAdminUsers" element={<AddAdminUsers/>}  />
         <Route path="/update" element={<UpdateProduct />} />
         <Route path="/update/add" element={<AddProduct />} />
 

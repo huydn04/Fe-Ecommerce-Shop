@@ -14,10 +14,10 @@ import BarCharts from "../../components/admin/chart/BarChartWithMultiXAxis";
 import BarChartNoPadding from "../../components/admin/chart/BarChartNoPadding";
 import SameDataComposedChart from "../../components/admin/chart/SameDataComposedChart";
 import AreaChartFillByValue from "../../components/admin/chart/AreaChartFillByValue";
-
+import { useNavigate } from "react-router-dom";
 
 const AdminPages = () => {
-  
+  const navigate = useNavigate();
   const [value, setValue] = useState("default");
   return (
     <div className=" h-full   ">
@@ -96,9 +96,9 @@ const AdminPages = () => {
                 </div>
               </div>
             </div>
-            <div className="bg-white   flex items-center justify-center rounded-xl shadow-md shadow-gray-300 gap-3">
+            <div className="bg-white   flex items-center justify-center rounded-xl shadow-md shadow-gray-300 gap-3 cursor-pointer" onClick={() => navigate('/AdminUsers')}>
               <FaUsers className="text-6xl text-primary border rounded-xl  p-1 bg-gray-100 hover:bg-gray-300" />
-              <div className="">
+              <div className="" >
                 <p>300</p>
                 <p>Tổng số Tài Khoản</p>
                 <div className="flex items-center gap-2  ">
