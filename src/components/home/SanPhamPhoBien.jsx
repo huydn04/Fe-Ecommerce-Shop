@@ -23,7 +23,7 @@ const SanPhamPhoBien = () => {
         </div>
       </div>
       <div className="flex mt-[20px]">
-        <div className="group relative w-[264px] h-[327px] border border-solid border-solid border-[#E6E6E6] hover:border-green-800 shadow hover:shadow-green-800 mx-auto">
+        <div className="group relative w-[264px] h-[327px] border border-solid border-solid border-[#E6E6E6] hover:border-green-800 shadow hover:shadow-green-800 mx-auto cursor-pointer">
           <div className="relative overflow-hidden">
             <img className="w-full object-cover" src={Product1} alt="" />
             <div className="absolute -bottom-10 flex h-full w-full items-center justify-center  opacity-0 transition-all duration-300 group-hover:bottom-0 group-hover:opacity-100">
@@ -52,7 +52,7 @@ const SanPhamPhoBien = () => {
             </div>
           </div>
         </div>
-        <div className="group relative w-[264px] h-[327px] border border-solid border-solid border-[#E6E6E6] hover:border-green-800 shadow hover:shadow-green-800 mx-auto">
+        <div className="group relative w-[264px] h-[327px] border border-solid border-solid border-[#E6E6E6] hover:border-green-800 shadow hover:shadow-green-800 mx-auto cursor-pointer">
           <div className="relative overflow-hidden">
             <img className="w-full object-cover" src={Product2} alt="" />
             <div className="absolute -bottom-10 flex h-full w-full items-center justify-center  opacity-0 transition-all duration-300 group-hover:bottom-0 group-hover:opacity-100">
@@ -81,7 +81,7 @@ const SanPhamPhoBien = () => {
             </div>
           </div>
         </div>
-        <div className="group relative w-[264px] h-[327px] border border-solid border-solid border-[#E6E6E6] hover:border-green-800 shadow hover:shadow-green-800 mx-auto">
+        <div className="group relative w-[264px] h-[327px] border border-solid border-solid border-[#E6E6E6] hover:border-green-800 shadow hover:shadow-green-800 mx-auto cursor-pointer">
           <div className="relative overflow-hidden">
             <img className="w-full object-cover" src={Product3} alt="" />
             <div className="absolute -bottom-10 flex h-full w-full items-center justify-center  opacity-0 transition-all duration-300 group-hover:bottom-0 group-hover:opacity-100">
@@ -110,7 +110,7 @@ const SanPhamPhoBien = () => {
             </div>
           </div>
         </div>
-        <div className="group relative w-[264px] h-[327px] border border-solid border-solid border-[#E6E6E6] hover:border-green-800 shadow hover:shadow-green-800 mx-auto">
+        <div className="group relative w-[264px] h-[327px] border border-solid border-solid border-[#E6E6E6] hover:border-green-800 shadow hover:shadow-green-800 mx-auto cursor-pointer">
           <div className="relative overflow-hidden">
             <img className="w-full object-cover" src={Product4} alt="" />
             <div className="absolute -bottom-10 flex h-full w-full items-center justify-center  opacity-0 transition-all duration-300 group-hover:bottom-0 group-hover:opacity-100">
@@ -139,7 +139,7 @@ const SanPhamPhoBien = () => {
             </div>
           </div>
         </div>
-        <div className="group relative w-[264px] h-[327px] border border-solid border-solid border-[#E6E6E6] hover:border-green-800 shadow hover:shadow-green-800 mx-auto">
+        <div className="group relative w-[264px] h-[327px] border border-solid border-solid border-[#E6E6E6] hover:border-green-800 shadow hover:shadow-green-800 mx-auto cursor-pointer">
           <div className="relative overflow-hidden">
             <img className="w-full object-cover" src={Product5} alt="" />
             <div className="absolute -bottom-10 flex h-full w-full items-center justify-center  opacity-0 transition-all duration-300 group-hover:bottom-0 group-hover:opacity-100">
@@ -170,7 +170,7 @@ const SanPhamPhoBien = () => {
         </div>
       </div>
       <div className="flex">
-        <div className="group relative w-[264px] h-[327px] border border-solid border-solid border-[#E6E6E6] hover:border-green-800 shadow hover:shadow-green-800 mx-auto">
+        <div className="group relative w-[264px] h-[327px] border border-solid border-solid border-[#E6E6E6] hover:border-green-800 shadow hover:shadow-green-800 mx-auto cursor-pointer">
           <div className="relative overflow-hidden">
             <img className="w-full object-cover" src={Product6} alt="" />
             <div className="absolute -bottom-10 flex h-full w-full items-center justify-center  opacity-0 transition-all duration-300 group-hover:bottom-0 group-hover:opacity-100">
@@ -199,7 +199,7 @@ const SanPhamPhoBien = () => {
             </div>
           </div>
         </div>
-        <div className="group relative w-[264px] h-[327px] border border-solid border-solid border-[#E6E6E6] hover:border-green-800 shadow hover:shadow-green-800 mx-auto">
+        <div className="group relative w-[264px] h-[327px] border border-solid border-solid border-[#E6E6E6] hover:border-green-800 shadow hover:shadow-green-800 mx-auto cursor-pointer">
           <div className="relative overflow-hidden">
             <img className="w-full object-cover" src={Product7} alt="" />
             <div className="absolute -bottom-10 flex h-full w-full items-center justify-center  opacity-0 transition-all duration-300 group-hover:bottom-0 group-hover:opacity-100">
@@ -228,7 +228,7 @@ const SanPhamPhoBien = () => {
             </div>
           </div>
         </div>
-        <div className="group relative w-[264px] h-[327px] border border-solid border-solid border-[#E6E6E6] hover:border-green-800 shadow hover:shadow-green-800 mx-auto">
+        <div className="group relative w-[264px] h-[327px] border border-solid border-solid border-[#E6E6E6] hover:border-green-800 shadow hover:shadow-green-800 mx-auto cursor-pointer">
           <div className="relative overflow-hidden">
             <img className="w-full object-cover" src={Product8} alt="" />
             <div className="absolute -bottom-10 flex h-full w-full items-center justify-center  opacity-0 transition-all duration-300 group-hover:bottom-0 group-hover:opacity-100">
@@ -257,7 +257,7 @@ const SanPhamPhoBien = () => {
             </div>
           </div>
         </div>
-        <div className="group relative w-[264px] h-[327px] border border-solid border-[#E6E6E6] hover:border-green-800 shadow hover:shadow-green-800 mx-auto">
+        <div className="group relative w-[264px] h-[327px] border border-solid border-[#E6E6E6] hover:border-green-800 shadow hover:shadow-green-800 mx-auto cursor-pointer">
           <div className="relative overflow-hidden">
             <img className="w-full object-cover" src={Product9} alt="" />
             <div className="absolute -bottom-10 flex h-full w-full items-center justify-center  opacity-0 transition-all duration-300 group-hover:bottom-0 group-hover:opacity-100">
@@ -286,7 +286,7 @@ const SanPhamPhoBien = () => {
             </div>
           </div>
         </div>
-        <div className="group relative w-[264px] h-[327px] border border-solid border-[#E6E6E6] hover:border-green-800 shadow hover:shadow-green-800 mx-auto">
+        <div className="group relative w-[264px] h-[327px] border border-solid border-[#E6E6E6] hover:border-green-800 shadow hover:shadow-green-800 mx-auto cursor-pointer">
           <div className="relative overflow-hidden">
             <img className="w-full object-cover" src={Product10} alt="" />
             <div className="absolute -bottom-10 flex h-full w-full items-center justify-center  opacity-0 transition-all duration-300 group-hover:bottom-0 group-hover:opacity-100">
