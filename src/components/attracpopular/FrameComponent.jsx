@@ -1,7 +1,6 @@
 import PropTypes from "prop-types";
 import { Button } from "@mui/material";
 
-
 const BackGroup1 = ({ className = "" }) => {
   return (
     <section
@@ -30,7 +29,15 @@ const BackGroup1 = ({ className = "" }) => {
                       <div className="self-stretch h-[45px] flex flex-row items-start justify-start py-0 px-[30px] box-border">
                         <Button
                           className="self-stretch flex-1 shadow-[0px_0px_12px_rgba(0,_0,_0,_0.12)]"
-                          endIcon={<img width="15px" height="12px" src="\src\assets\attracpopular/group-2.svg" />}
+
+                          endIcon={
+                            <img
+                              width="15px"
+                              height="12px"
+                              src="\src\assets\attracpopular/group-2.svg"
+                            />
+                          }
+
                           variant="contained"
                           sx={{
                             textTransform: "none",

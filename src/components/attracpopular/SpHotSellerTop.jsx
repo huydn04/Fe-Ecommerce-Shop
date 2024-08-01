@@ -1,7 +1,12 @@
 import { useState } from "react";
 import PropTypes from "prop-types";
 
-const SalesSp = ({ className = "", image, productName, bag, star5 }) => {
+const SpHotSellerTop = ({
+  className = "",
+  image,
+  productName,
+  chaniseCabbage,
+}) => {
   const [wishlistActive, setWishlistActive] = useState(false);
 
   const toggleWishlist = () => {
@@ -10,11 +15,11 @@ const SalesSp = ({ className = "", image, productName, bag, star5 }) => {
 
   return (
     <div
-      className={`h-[429px] bg-white box-border flex flex-col items-start justify-start max-w-full text-left text-base text-green-800 font-body-small-body-small-400 border-[1px] border-solid border-gray-300 group ${className}`}
+      className={`self-stretch rounded-md bg-white flex flex-row items-start justify-start text-[14px] text-gray-950 border-[1px] border-solid border-gray-300 mq1050:justify-center ${className}`}
     >
-      <div className="self-stretch flex-1 flex flex-col items-start justify-start p-[55px] relative">
+      <div className="flex flex-row items-start justify-start p-[5px] shrink-0">
         <img
-          className="self-stretch flex-1 relative max-w-full overflow-hidden max-h-full object-cover"
+          className="h-[102px] w-[102px] relative object-cover"
           alt=""
           src={image}
         />
@@ -25,36 +30,31 @@ const SalesSp = ({ className = "", image, productName, bag, star5 }) => {
             }`}
             onClick={toggleWishlist}
           >
-            <img
+            {/* <img
               className="w-10 h-10"
               loading="lazy"
               alt="Add to Wishlist"
               src="\src\assets\attracpopular\add-to-wishlist1.svg"
-            />
+            /> */}
           </div>
-          <img
+          {/* <img
             className="w-12 h-12 relative"
             loading="lazy"
             alt="Quick View"
             src="\src\assets\attracpopular\quick-view1.svg"
-          />
+          /> */}
         </div>
       </div>
-      <div className="self-stretch flex flex-col items-start justify-start pt-4 px-5 pb-5 gap-[11px]">
-        <div className="self-stretch flex flex-col items-start justify-start relative gap-[2px]">
+      <div className="w-[467px] flex flex-col items-start justify-center pt-6 px-10 pb-[25px] box-border gap-[5px] shrink-0">
+        <div className="self-stretch flex flex-col items-start justify-start">
           <div className="self-stretch relative leading-[150%]">
             {productName}
+            {chaniseCabbage}
           </div>
-          <div className="flex flex-row items-start justify-start gap-[2px] text-[18px] text-lime-900">
-            <div className="relative leading-[150%] font-medium inline-block min-w-[57px] whitespace-nowrap">
-              $14.99
-            </div>
-            <div className="h-6 w-[53px] relative text-base [text-decoration:line-through] leading-[150%] text-lime-800 hidden whitespace-nowrap">
+          <div className="flex flex-row items-start justify-start py-0 pr-5 pl-0 gap-[2px] text-base text-gray-900">
+            <div className="relative leading-[150%] font-medium inline-block min-w-[51px] whitespace-nowrap">
               $20.99
             </div>
-          </div>
-          <div className="w-[50px] h-[50px] !m-[0] absolute right-[4px] bottom-[-15px] rounded-[40px] bg-lime-50 flex flex-row items-start justify-start p-[13px] box-border z-[1]">
-            <img className="h-6 w-6 relative" alt="Shopping Bag" src={bag} />
           </div>
         </div>
         <div className="flex flex-row items-start justify-start gap-[2px]">
@@ -81,7 +81,7 @@ const SalesSp = ({ className = "", image, productName, bag, star5 }) => {
           <img
             className="h-[18px] w-[18px] relative overflow-hidden shrink-0 min-h-[18px]"
             alt="Star"
-            src={star5}
+            src="\src\assets\attracpopular\star-11.svg"
           />
         </div>
       </div>
@@ -89,7 +89,7 @@ const SalesSp = ({ className = "", image, productName, bag, star5 }) => {
   );
 };
 
-SalesSp.propTypes = {
+SpHotSellerTop.propTypes = {
   className: PropTypes.string,
   image: PropTypes.string,
   productName: PropTypes.string,
@@ -97,4 +97,4 @@ SalesSp.propTypes = {
   star5: PropTypes.string,
 };
 
-export default SalesSp;
+export default SpHotSellerTop;

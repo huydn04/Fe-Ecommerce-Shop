@@ -68,7 +68,7 @@ const ImgSales = ({ className = "", image, productName, bag, star5 }) => {
             className={`w-12 h-12 relative cursor-pointer flex items-center justify-center rounded-full bg-white`}
           >
             <img
-              className="w-6 h-6"
+              className="w-10 h-10"
               loading="lazy"
               alt="Quick View"
               src="\src\assets\attracpopular\quick-view1.svg"
