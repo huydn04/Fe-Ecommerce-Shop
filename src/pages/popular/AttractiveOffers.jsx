@@ -1,4 +1,3 @@
-
 import { Button } from "@mui/material";
 import MainHeader from "../../components/attracpopular/MainHeader";
 import BackGroup1 from "../../components/attracpopular/FrameComponent";
@@ -7,18 +6,10 @@ import ListComment2 from "../../components/attracpopular/ListComment2";
 import FooterDetails2 from "../../components/attracpopular/FooterDetails2";
 import FooterBottomContainer from "../../components/attracpopular/FooterBottomContainer";
 
-
-
-
-
-
-
 const AttractiveOffers = () => {
-
-  
   return (
     <div className="w-full relative bg-white overflow-hidden flex flex-col items-start justify-start gap-[43px] tracking-[normal] leading-[normal]">
-      <MainHeader />
+  /
       <BackGroup1 />
       <Sales />
       <section className="self-stretch flex flex-row items-start justify-center pt-0 px-5 pb-[76px] box-border max-w-full text-center text-[40px] text-lime-900 font-body-small-body-small-400 [1200px]:pb-[49px] [1200px]:box-border mq825:pb-8 mq825:box-border">
@@ -30,27 +21,27 @@ const AttractiveOffers = () => {
               </h1>
             </div>
             <div className="self-stretch flex flex-row flex-wrap items-start justify-center [row-gap:20px] text-left text-[14px] text-gray-950">
-              <div className="h-[328px] flex-1 bg-white box-border flex flex-col items-start justify-start pt-0 px-0 pb-[87px] gap-[0.5px] min-w-[260px] max-w-[265px] text-white border-[1px] border-solid border-gray-scale-gray-100 mq450:pb-[57px] mq450:box-border">
+              <div className="h-[328px] flex-1 bg-white box-border flex flex-col items-start justify-start pt-0 px-0 pb-[87px] gap-[0.5px] min-w-[260px] max-w-[265px] text-white border-[1px] border-solid border-gray-300 mq450:pb-[57px] mq450:box-border">
                 <div className="self-stretch h-60 relative shrink-0">
-                <div className="group self-stretch h-60 flex flex-col items-start justify-start p-[5px] box-border relative gap-[10px] shrink-0">
-  <img
-    className="self-stretch flex-1 relative max-w-full overflow-hidden max-h-full object-cover"
-    alt=""
-    src="\src\assets\attracpopular\táo xanh.png"
-  />
-  <div className="!m-[0] absolute top-[16px] right-[16px] flex flex-col items-start justify-start gap-[6px] opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-    <img
-      className="w-10 h-10 relative z-[1]"
-      alt=""
-      src="\src\assets\attracpopular\add-to-wishlist.svg"
-    />
-    <img
-      className="w-10 h-10 relative z-[1]"
-      alt=""
-      src="\src\assets\attracpopular\quick-view.svg"
-    />
-  </div>
-</div>
+                  <div className="group self-stretch h-60 flex flex-col items-start justify-start p-[5px] box-border relative gap-[10px] shrink-0">
+                    <img
+                      className="self-stretch flex-1 relative max-w-full overflow-hidden max-h-full object-cover"
+                      alt=""
+                      src="\src\assets\attracpopular\táo xanh.png"
+                    />
+                    <div className="!m-[0] absolute top-[16px] right-[16px] flex flex-col items-start justify-start gap-[6px] opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                      <img
+                        className="w-10 h-10 relative z-[1]"
+                        alt=""
+                        src="\src\assets\attracpopular\add-to-wishlist.svg"
+                      />
+                      <img
+                        className="w-10 h-10 relative z-[1]"
+                        alt=""
+                        src="\src\assets\attracpopular\quick-view.svg"
+                      />
+                    </div>
+                  </div>
                   <div className="absolute top-[16px] left-[16px] rounded bg-red-500 flex flex-row items-start justify-start py-[3px] px-2 gap-[4px] z-[1]">
                     <div className="relative leading-[150%] inline-block min-w-[37px]">
                       Giảm
@@ -110,25 +101,25 @@ const AttractiveOffers = () => {
                 </div>
               </div>
               <div className="h-[328px] flex-1 bg-white box-border flex flex-col items-start justify-start pt-0 px-0 pb-[87px] gap-[0.5px] min-w-[260px] max-w-[265px] border-[1px] border-solid border-gray-300 mq450:pb-[57px] mq450:box-border">
-              <div className="group self-stretch h-60 flex flex-col items-start justify-start p-[5px] box-border relative gap-[10px] shrink-0">
-  <img
-    className="self-stretch flex-1 relative max-w-full overflow-hidden max-h-full object-cover"
-    alt=""
-    src="\src\assets\attracpopular\cam.png"
-  />
-  <div className="!m-[0] absolute top-[16px] right-[16px] flex flex-col items-start justify-start gap-[6px] opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-    <img
-      className="w-10 h-10 relative z-[1]"
-      alt=""
-      src="\src\assets\attracpopular\add-to-wishlist.svg"
-    />
-    <img
-      className="w-10 h-10 relative z-[1]"
-      alt=""
-      src="\src\assets\attracpopular\quick-view.svg"
-    />
-  </div>
-</div>
+                <div className="group self-stretch h-60 flex flex-col items-start justify-start p-[5px] box-border relative gap-[10px] shrink-0">
+                  <img
+                    className="self-stretch flex-1 relative max-w-full overflow-hidden max-h-full object-cover"
+                    alt=""
+                    src="\src\assets\attracpopular\cam.png"
+                  />
+                  <div className="!m-[0] absolute top-[16px] right-[16px] flex flex-col items-start justify-start gap-[6px] opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <img
+                      className="w-10 h-10 relative z-[1]"
+                      alt=""
+                      src="\src\assets\attracpopular\add-to-wishlist.svg"
+                    />
+                    <img
+                      className="w-10 h-10 relative z-[1]"
+                      alt=""
+                      src="\src\assets\attracpopular\quick-view.svg"
+                    />
+                  </div>
+                </div>
                 <div className="self-stretch flex flex-col items-start justify-center p-3 relative gap-[6px] shrink-0">
                   <div className="self-stretch flex flex-col items-start justify-start">
                     <div className="self-stretch relative leading-[150%]">
@@ -175,25 +166,25 @@ const AttractiveOffers = () => {
                 </div>
               </div>
               <div className="h-[328px] flex-1 bg-white box-border flex flex-col items-start justify-start pt-0 px-0 pb-[87px] gap-[0.5px] min-w-[260px] max-w-[265px] z-[2]  border-[1px] border-solid border-gray-300 mq450:pb-[57px] mq450:box-border">
-              <div className="group self-stretch h-60 flex flex-col items-start justify-start p-[5px] box-border relative gap-[10px] shrink-0">
-  <img
-    className="self-stretch flex-1 relative max-w-full overflow-hidden max-h-full object-cover"
-    alt=""
-    src="\src\assets\attracpopular\cải .png"
-  />
-  <div className="!m-[0] absolute top-[16px] right-[16px] flex flex-col items-start justify-start gap-[6px] opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-    <img
-      className="w-10 h-10 relative z-[1]"
-      alt=""
-      src="\src\assets\attracpopular\add-to-wishlist.svg"
-    />
-    <img
-      className="w-10 h-10 relative z-[1]"
-      alt=""
-      src="\src\assets\attracpopular\quick-view.svg"
-    />
-  </div>
-</div>
+                <div className="group self-stretch h-60 flex flex-col items-start justify-start p-[5px] box-border relative gap-[10px] shrink-0">
+                  <img
+                    className="self-stretch flex-1 relative max-w-full overflow-hidden max-h-full object-cover"
+                    alt=""
+                    src="\src\assets\attracpopular\cải .png"
+                  />
+                  <div className="!m-[0] absolute top-[16px] right-[16px] flex flex-col items-start justify-start gap-[6px] opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <img
+                      className="w-10 h-10 relative z-[1]"
+                      alt=""
+                      src="\src\assets\attracpopular\add-to-wishlist.svg"
+                    />
+                    <img
+                      className="w-10 h-10 relative z-[1]"
+                      alt=""
+                      src="\src\assets\attracpopular\quick-view.svg"
+                    />
+                  </div>
+                </div>
 
                 <div className="self-stretch flex flex-col items-start justify-center p-3 relative gap-[6px] shrink-0">
                   <div className="self-stretch flex flex-col items-start justify-start">
@@ -236,30 +227,30 @@ const AttractiveOffers = () => {
                   <img
                     className="w-10 h-10 absolute !m-[0] top-[23px] right-[16px] z-[1]"
                     alt=""
-                    src="\src\assets\attracpopular\add-to-cart-8.svg"
+                    src="\src\assets\attracpopular\add-to-cart-7.svg"
                   />
                 </div>
               </div>
               <div className="h-[328px] flex-1 bg-white box-border flex flex-col items-start justify-start pt-0 px-0 pb-[87px] gap-[0.5px] min-w-[260px] max-w-[265px] border-[1px] border-solid border-gray-300 mq450:pb-[57px] mq450:box-border">
-              <div className="group self-stretch h-60 flex flex-col items-start justify-start p-[5px] box-border relative gap-[10px] shrink-0">
-  <img
-    className="self-stretch flex-1 relative max-w-full overflow-hidden max-h-full object-cover"
-    alt=""
-    src="\src\assets\attracpopular/xalasch.png"
-  />
-  <div className="!m-[0] absolute top-[16px] right-[16px] flex flex-col items-start justify-start gap-[6px] opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-    <img
-      className="w-10 h-10 relative z-[1]"
-      alt=""
-      src="\src\assets\attracpopular\add-to-wishlist.svg"
-    />
-    <img
-      className="w-10 h-10 relative z-[1]"
-      alt=""
-      src="\src\assets\attracpopular\quick-view.svg"
-    />
-  </div>
-</div>
+                <div className="group self-stretch h-60 flex flex-col items-start justify-start p-[5px] box-border relative gap-[10px] shrink-0">
+                  <img
+                    className="self-stretch flex-1 relative max-w-full overflow-hidden max-h-full object-cover"
+                    alt=""
+                    src="\src\assets\attracpopular/xalasch.png"
+                  />
+                  <div className="!m-[0] absolute top-[16px] right-[16px] flex flex-col items-start justify-start gap-[6px] opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <img
+                      className="w-10 h-10 relative z-[1]"
+                      alt=""
+                      src="\src\assets\attracpopular\add-to-wishlist.svg"
+                    />
+                    <img
+                      className="w-10 h-10 relative z-[1]"
+                      alt=""
+                      src="\src\assets\attracpopular\quick-view.svg"
+                    />
+                  </div>
+                </div>
                 <div className="self-stretch flex flex-col items-start justify-center p-3 relative gap-[6px] shrink-0">
                   <div className="self-stretch flex flex-col items-start justify-start">
                     <div className="self-stretch relative leading-[150%]">
@@ -306,25 +297,25 @@ const AttractiveOffers = () => {
                 </div>
               </div>
               <div className="h-[328px] flex-1 bg-white box-border flex flex-col items-start justify-start pt-0 px-0 pb-[87px] gap-[0.5px] min-w-[260px] max-w-[265px] z-[2] border-[1px] border-solid border-gray-300 mq450:pb-[57px] mq450:box-border">
-              <div className="group self-stretch h-60 flex flex-col items-start justify-start p-[5px] box-border relative gap-[10px] shrink-0">
-  <img
-    className="self-stretch flex-1 relative max-w-full overflow-hidden max-h-full object-cover"
-    alt=""
-    src="\src\assets\attracpopular\cà tím.png"
-  />
-  <div className="!m-[0] absolute top-[16px] right-[16px] flex flex-col items-start justify-start gap-[6px] opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-    <img
-      className="w-10 h-10 relative z-[1]"
-      alt=""
-      src="\src\assets\attracpopular\add-to-wishlist.svg"
-    />
-    <img
-      className="w-10 h-10 relative z-[1]"
-      alt=""
-      src="\src\assets\attracpopular\quick-view.svg"
-    />
-  </div>
-</div>
+                <div className="group self-stretch h-60 flex flex-col items-start justify-start p-[5px] box-border relative gap-[10px] shrink-0">
+                  <img
+                    className="self-stretch flex-1 relative max-w-full overflow-hidden max-h-full object-cover"
+                    alt=""
+                    src="\src\assets\attracpopular\cà tím.png"
+                  />
+                  <div className="!m-[0] absolute top-[16px] right-[16px] flex flex-col items-start justify-start gap-[6px] opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <img
+                      className="w-10 h-10 relative z-[1]"
+                      alt=""
+                      src="\src\assets\attracpopular\add-to-wishlist.svg"
+                    />
+                    <img
+                      className="w-10 h-10 relative z-[1]"
+                      alt=""
+                      src="\src\assets\attracpopular\quick-view.svg"
+                    />
+                  </div>
+                </div>
                 <div className="self-stretch flex flex-col items-start justify-center p-3 relative gap-[6px] shrink-0">
                   <div className="self-stretch flex flex-col items-start justify-start">
                     <div className="self-stretch relative leading-[150%]">
@@ -441,22 +432,28 @@ const AttractiveOffers = () => {
                 </div>
               </div>
               <div className="self-stretch h-[45px] flex flex-row items-start justify-start py-0 px-[120px] box-border">
-              <Button
-                className="self-stretch flex-1 shadow-[0px_0px_12px_rgba(0,_0,_0,_0.12)]"
-                endIcon={<img width="15px" height="12px" src="\src\assets\attracpopular\group.svg" />}
-                variant="contained"
-                sx={{
-                  textTransform: "none",
-                  color: "#00b307",
-                  fontSize: "14",
-                  background: "#fff",
-                  borderRadius: "43px",
-                  "&:hover": { background: "#fff" },
-                }}
-              >
-                Mua Ngay
-              </Button>
-            </div>
+                <Button
+                  className="self-stretch flex-1 shadow-[0px_0px_12px_rgba(0,_0,_0,_0.12)]"
+                  endIcon={
+                    <img
+                      width="15px"
+                      height="12px"
+                      src="\src\assets\attracpopular\group.svg"
+                    />
+                  }
+                  variant="contained"
+                  sx={{
+                    textTransform: "none",
+                    color: "#00b307",
+                    fontSize: "14",
+                    background: "#fff",
+                    borderRadius: "43px",
+                    "&:hover": { background: "#fff" },
+                  }}
+                >
+                  Mua Ngay
+                </Button>
+              </div>
             </div>
             <div className="flex flex-col items-start justify-start pt-[35px] px-0 pb-[307px] box-border relative gap-[28.5px] max-w-full mq825:pt-[23px] mq825:pb-[200px] mq825:box-border">
               <img
@@ -487,22 +484,28 @@ const AttractiveOffers = () => {
                 </div>
               </div>
               <div className="self-stretch h-[45px] flex flex-row items-start justify-start py-0 px-[120px] box-border">
-              <Button
-                className="self-stretch flex-1 shadow-[0px_0px_12px_rgba(0,_0,_0,_0.12)]"
-                endIcon={<img width="15px" height="12px" src="\src\assets\attracpopular\group.svg" />}
-                variant="contained"
-                sx={{
-                  textTransform: "none",
-                  color: "#00b307",
-                  fontSize: "14",
-                  background: "#fff",
-                  borderRadius: "43px",
-                  "&:hover": { background: "#fff" },
-                }}
-              >
-                Mua Ngay
-              </Button>
-            </div>
+                <Button
+                  className="self-stretch flex-1 shadow-[0px_0px_12px_rgba(0,_0,_0,_0.12)]"
+                  endIcon={
+                    <img
+                      width="15px"
+                      height="12px"
+                      src="\src\assets\attracpopular\group.svg"
+                    />
+                  }
+                  variant="contained"
+                  sx={{
+                    textTransform: "none",
+                    color: "#00b307",
+                    fontSize: "14",
+                    background: "#fff",
+                    borderRadius: "43px",
+                    "&:hover": { background: "#fff" },
+                  }}
+                >
+                  Mua Ngay
+                </Button>
+              </div>
             </div>
             <div className="flex flex-col items-start justify-start pt-[28.5px] px-0 pb-[307px] box-border relative gap-[28.5px] max-w-full text-[12px] text-gray-900 pt-[25px] mq825:pb-[200px] mq825:box-border">
               <img
@@ -535,22 +538,28 @@ const AttractiveOffers = () => {
                 </div>
               </div>
               <div className="self-stretch h-[45px] flex flex-row items-start justify-start py-0 px-[120px] box-border">
-              <Button
-                className="self-stretch flex-1 shadow-[0px_0px_12px_rgba(0,_0,_0,_0.12)]"
-                endIcon={<img width="15px" height="12px" src="\src\assets\attracpopular\group.svg" />}
-                variant="contained"
-                sx={{
-                  textTransform: "none",
-                  color: "#00b307",
-                  fontSize: "14",
-                  background: "#fff",
-                  borderRadius: "43px",
-                  "&:hover": { background: "#fff" },
-                }}
-              >
-                Mua Ngay
-              </Button>
-            </div>
+                <Button
+                  className="self-stretch flex-1 shadow-[0px_0px_12px_rgba(0,_0,_0,_0.12)]"
+                  endIcon={
+                    <img
+                      width="15px"
+                      height="12px"
+                      src="\src\assets\attracpopular\group.svg"
+                    />
+                  }
+                  variant="contained"
+                  sx={{
+                    textTransform: "none",
+                    color: "#00b307",
+                    fontSize: "14",
+                    background: "#fff",
+                    borderRadius: "43px",
+                    "&:hover": { background: "#fff" },
+                  }}
+                >
+                  Mua Ngay
+                </Button>
+              </div>
             </div>
           </div>
         </div>
@@ -602,26 +611,26 @@ const AttractiveOffers = () => {
             <h2 className="m-0 relative text-inherit leading-[150%] font-medium font-inherit inline-block max-w-full mq450:text-[19px] mq450:leading-[29px]">
               Đăng ký nhận thêm thông tin
             </h2>
-            <div className="self-stretch relative text-[14px] leading-[150%] text-gray-400"> 
+            <div className="self-stretch relative text-[14px] leading-[150%] text-gray-400">
               Pellentesque eu nibh eget mauris congue mattis matti.
             </div>
           </div>
           <div className="w-[535px] flex flex-col items-start justify-start pt-[4.5px] px-0 pb-0 box-border max-w-full text-[16px] text-gray-500">
-  <div className="self-stretch flex flex-row items-start justify-start max-w-full z-[1]">
-    <div className="flex-1 rounded-[46px] bg-white box-border flex flex-row items-start justify-start py-3 px-6 whitespace-nowrap max-w-full border-[1px] border-solid border-gray-100">
-      <input
-        type="email"
-        placeholder="Your email address"
-        className="w-full bg-transparent border-none outline-none text-gray-500 placeholder-gray-400 leading-[150%] text-[16px] font-body-small-body-small-400"
-      />
-    </div>
-    <button className="cursor-pointer [border:none] py-4 px-10 bg-green-500 rounded-[43px] flex flex-row items-start justify-start z-[1] ml-[-118px] hover:bg-lime-500">
-      <div className="relative text-[16px] leading-[20px] font-semibold font-body-small-body-small-400 text-white text-left inline-block min-w-[82px]">
-        Subscribe
-      </div>
-    </button>
-  </div>
-</div>
+            <div className="self-stretch flex flex-row items-start justify-start max-w-full z-[1]">
+              <div className="flex-1 rounded-[46px] bg-white box-border flex flex-row items-start justify-start py-3 px-6 whitespace-nowrap max-w-full border-[1px] border-solid border-gray-100">
+                <input
+                  type="email"
+                  placeholder="Your email address"
+                  className="w-full bg-transparent border-none outline-none text-gray-500 placeholder-gray-400 leading-[150%] text-[16px] font-body-small-body-small-400"
+                />
+              </div>
+              <button className="cursor-pointer [border:none] py-4 px-10 bg-green-500 rounded-[43px] flex flex-row items-start justify-start z-[1] ml-[-118px] hover:bg-lime-500">
+                <div className="relative text-[16px] leading-[20px] font-semibold font-body-small-body-small-400 text-white text-left inline-block min-w-[82px]">
+                  Subscribe
+                </div>
+              </button>
+            </div>
+          </div>
 
           <img
             className="h-[233px] w-[326px] absolute !m-[0] bottom-[-45px] left-[100px] object-cover z-[2]"

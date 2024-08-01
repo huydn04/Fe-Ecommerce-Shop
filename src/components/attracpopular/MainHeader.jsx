@@ -2,10 +2,10 @@ import ENG from "./ENG";
 import TagBar1 from "./Midle";
 import PropTypes from "prop-types";
 
-const MainHeader = ({ className = "" }) => {
+const MainHeader = () => {
   return (
     <header
-      className={`self-stretch h-[195px] relative max-w-full text-left text-[12px] text-gray-600 font-body-small-body-small-400 mq1400:h-auto mq1400:min-h-[195] ${className}`}
+      className={`self-stretch h-[195px] relative max-w-full text-left text-[12px] text-gray-600 font-body-small-body-small-400 mq1400:h-auto mq1400:min-h-[195] }`}
     >
       <div className="absolute top-[0px] left-[0px] bg-white w-full flex flex-col items-start justify-start max-w-full h-full">
         <div className="self-stretch shadow-[0px_1px_0px_#e6e6e6] bg-white flex flex-row items-start justify-center py-3 px-5 gap-[788px] mq450:gap-[98px] mq825:gap-[197px] mq1400:flex-wrap mq1400:gap-[394px]">

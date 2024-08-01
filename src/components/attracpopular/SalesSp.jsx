@@ -10,7 +10,7 @@ const SalesSp = ({ className = "", image, productName, bag, star5 }) => {
 
   return (
     <div
-      className={`h-[429px] bg-white box-border flex flex-col items-start justify-start max-w-full text-left text-base text-green-800 font-body-small-body-small-400 border-[1px] border-solid border-green-gray-scale-100 group ${className}`}
+      className={`h-[429px] bg-white box-border flex flex-col items-start justify-start max-w-full text-left text-base text-green-800 font-body-small-body-small-400 border-[1px] border-solid border-gray-300 group ${className}`}
     >
       <div className="self-stretch flex-1 flex flex-col items-start justify-start p-[5px] relative">
         <img

@@ -28,6 +28,10 @@ const SidebarAdminPages = () => {
        name: " Quản lí người dùng"
        , icon: LuUserCog,
       link: "/AdminUsers" },
+    { name: "Cập nhật sản phẩm",
+      icon: MdSystemUpdateAlt,
+      link: "/update" },
+    { name: " Quản lí người dùng", icon: LuUserCog },
     { name: " Chỉnh sửa người dùng", icon: FaUserEdit },
     { name: "Nhập - Xuất Hàng", icon: FaBoxesPacking },
     { name: " Đánh giá", icon: BiCommentDetail },

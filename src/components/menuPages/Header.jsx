@@ -9,6 +9,7 @@ const Header = () => {
   const navigateTo = (url) => {
     window.location.href = url
   }
+
   return (
     <div className="w-full bg-white shadow-sm">
       <div className="container mx-auto px-0">
@@ -79,49 +80,46 @@ const Header = () => {
         </div>
 
         {/* Third Row */}
-        <div className="flex justify-between justify-around items-center py-2 bg-[#1A1A1A] px-4 w-full h-16 border-t border-solid border-gray-300 ">
+        <div className="flex justify-between justify-around items-center py-2 bg-gray-100 px-4 w-full h-16 border-t border-solid border-gray-300 ">
           <ul className="flex space-x-4">
             <li className="flex items-center">
-              <a href="#home" className="text-[#999999] hover:text-[#00B207]">
+              <a href="#home" className="text-[#00B207] hover:text-gray-400">
                 Trang Chủ
               </a>
               <IoIosArrowDown size={20} style={{ color: '#666666' }} />
             </li>
             <li className="flex items-center">
-              <a href="#shop" className="text-[#999999] hover:text-[#00B207]">
+              <a href="#shop" className="text-gray-600 hover:text-[#00B207]">
                 Shop
               </a>
               <IoIosArrowDown size={20} style={{ color: '#666666' }} />
             </li>
             <li className="flex items-center">
-              <a href="#pages" className="text-[#999999] hover:text-[#00B207]">
+              <a href="#pages" className="text-gray-600 hover:text-[#00B207]">
                 Pages
               </a>
               <IoIosArrowDown size={20} style={{ color: '#666666' }} />
             </li>
             <li className="flex items-center">
-              <a href="#news" className="text-[#999999] hover:text-[#00B207]">
+              <a href="#news" className="text-gray-600 hover:text-[#00B207]">
                 Tin tức
               </a>
               <IoIosArrowDown size={20} style={{ color: '#666666' }} />
             </li>
             <li className="flex items-center">
-              <a href="#about" className="text-[#999999] hover:text-[#00B207]">
+              <a href="#about" className="text-gray-600 hover:text-[#00B207]">
                 Giới thiệu
               </a>
             </li>
             <li className="flex items-center">
-              <a
-                href="#contact"
-                className="text-[#999999] hover:text-[#00B207]"
-              >
+              <a href="#contact" className="text-gray-600 hover:text-[#00B207]">
                 Liên hệ hotline
               </a>
             </li>
           </ul>
           <div className="flex items-center">
-            <PiPhoneCallLight size={20} className="text-[#FFFFFF] mr-2" />
-            <span className="text-[#FFFFFF]">(219) 555-0114</span>
+            <PiPhoneCallLight size={20} className="text-[#1A1A1A] mr-2" />
+            <span>(219) 555-0114</span>
           </div>
         </div>
       </div>
