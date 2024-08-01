@@ -3,8 +3,6 @@ import SidebarAdminPages from '../../components/admin/sidebar/SidebarAdmin'
 import JSONDATA from '../../../MOCK_DATA1';
 import { IoIosArrowBack } from "react-icons/io";
 import { IoIosArrowForward } from "react-icons/io";
-
-import './abc.css'
 const AdminUsers = () => {
     const [searchItem, setsearchItem] = useState("");
     const [curretPage, setcurretPage] = useState(1);
