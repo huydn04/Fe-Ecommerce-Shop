@@ -21,7 +21,7 @@ const Description = () => {
                                 <div key={index} >
                                     <div
                                     onClick={() => handleClick(index)}>
-                                    <p className={`w-[220px] h-[37px] text-center font-semibold text-gray-500 mt-3 hover:border-b-2 border-solid border-green-700 hover:text-black duration-100 cursor-pointer ${ Tab === index? 'border-b-2' : '1'} `}>{item.title}</p>
+                                    <p className={`w-[220px] h-[37px] text-center font-semibold text-gray-500 mt-3 hover:border-b-2 border-solid border-green-700 hover:text-black duration-100 cursor-pointer ${ Tab === index? 'border-b-2' : ''} `}>{item.title}</p>
                                     </div>
                                 </div>
                             )

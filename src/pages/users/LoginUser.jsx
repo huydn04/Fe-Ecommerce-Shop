@@ -4,6 +4,8 @@ import {Link} from 'react-router-dom'
 import { AiFillEyeInvisible } from "react-icons/ai";
 import { AiFillEye } from "react-icons/ai";
 
+import Header from '../../components/home/Header'
+import Footer from '../../components/home/Footer'
 
 const LoginUser = () => {
 
@@ -73,8 +75,12 @@ const LoginUser = () => {
     }
 
     return (
-        <div className='re-page flex justify-center items-center w-auto h-[100vh]'>
-            <div className="w-[600px] rounded-xl border border-solid border-gray-300 shadow-custom bg-white pt-5 mt-5 mb-5 rounded-md">
+        <>
+        <Header />
+        
+        <div className='re-page flex justify-center items-center w-auto h-[70vh]'>
+
+            <div className="w-[600px] rounded-xl border border-solid border-gray-300 shadow-custom bg-white pt-5 mt-2 mb-5">
                 <h1 className='text-center font-bold text-2xl mt-3'>Đăng nhập</h1>
 
                 <form onSubmit={handleSubmit} className='flex flex-col items-center mb-5'>
@@ -138,6 +144,9 @@ const LoginUser = () => {
                 </form>
             </div>
         </div>
+
+        <Footer />
+        </>
     )
 }
 
