@@ -20,6 +20,7 @@ const MenuDetail = lazy(() => import('../pages/product-detail/MenuDetail'))
 const AttractiveOffers = lazy(() => import('../pages/popular/AttractiveOffers'))
 const CartPop = lazy(() => import('../pages/users/cartPop'))
 const Shop = lazy(()=> import('../pages/Shopping-cart/shop'))
+const ProductManager = lazy(()=> import('../pages/admin/ProductManager'))
 export default function AppRoutes() {
   return (
     <ShopContextProvider>
@@ -30,6 +31,8 @@ export default function AppRoutes() {
 
             {/* Admin Page */}
             <Route path="/admin" element={<AdminPages />} />
+
+            <Route path='/product-manager' element={<ProductManager/>} />
 
             {/* User Pages */}
             <Route path="/user" element={<UsersPages />} />

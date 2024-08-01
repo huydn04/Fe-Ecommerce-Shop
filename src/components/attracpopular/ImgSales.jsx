@@ -3,6 +3,8 @@ import { useState } from "react";
 
 
 
+
+
 const ImgSales = ({ className = "", image, productName, bag, star5 }) => {
   const [wishlistActive, setWishlistActive] = useState(false);
   
@@ -15,7 +17,7 @@ const ImgSales = ({ className = "", image, productName, bag, star5 }) => {
 
   return (
     <div
-      className={`h-[429px] bg-white box-border flex flex-col items-start justify-start max-w-full text-left text-base text-green-800 font-body-small-body-small-400 border-[1px] border-solid border-green-gray-scale-100 ${className}`}
+      className={`h-[429px] bg-white box-border flex flex-col items-start justify-start max-w-full text-left text-base text-green-800 font-body-small-body-small-400 border-[1px] border-solid border-gray-300 group ${className}`}
     >
       <div className="self-stretch flex-1 flex flex-col items-start justify-start p-[5px] relative">
         <img
@@ -23,6 +25,31 @@ const ImgSales = ({ className = "", image, productName, bag, star5 }) => {
           alt={productName}
           src={image}
         />
+        <div className="flex flex-col items-start justify-start gap-[6px] z-[1] opacity-0 group-hover:opacity-100 transition-opacity duration-300 absolute top-2 right-2">
+          <div
+            className={`w-12 h-12 relative cursor-pointer flex items-center justify-center rounded-full ${
+              wishlistActive ? "bg-green-500" : "bg-white"
+            }`}
+            onClick={toggleWishlist}
+          >
+            <img
+              className="w-10 h-10"
+              loading="lazy"
+              alt="Add to Wishlist"
+              src="/src/assets/attracpopular/add-to-wishlist1.svg"
+            />
+          </div>
+          <div
+            className="w-12 h-12 relative cursor-pointer flex items-center justify-center rounded-full bg-white"
+          >
+            <img
+              className="w-10 h-10"
+              loading="lazy"
+              alt="Quick View"
+              src="/src/assets/attracpopular/quick-view1.svg"
+            />
+          </div>
+        </div>
         <div className="flex flex-col items-start justify-start gap-[6px] z-[1] opacity-0 group-hover:opacity-100 transition-opacity duration-300 absolute top-2 right-2">
           <div
             className={`w-12 h-12 relative cursor-pointer flex items-center justify-center rounded-full ${
@@ -103,7 +130,7 @@ ImgSales.propTypes = {
   image: PropTypes.string.isRequired,
   productName: PropTypes.string.isRequired,
   bag: PropTypes.string,
-  star5: PropTypes.string,
+  star5: PropTypes.string
 };
 
 export default ImgSales;

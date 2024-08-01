@@ -9,7 +9,7 @@ const BackGroup1 = ({ className = "" }) => {
     >
      <div className="w-[1520px] flex flex-row items-end justify-start max-w-full">
         <div className="w-[1520px] flex flex-col items-start justify-start pt-0 px-0 pb-[61px] box-border min-h-[865px] max-w-full [1200px]:pb-10 [1200px]:box-border mq450:pb-[26px] mq450:box-border">
-          <div className="self-stretch rounded-[18px] bg-gray-500 flex flex-col items-start justify-start pt-[118px] pb-[104px] pr-[52px] pl-[100px] box-border gap-[71px] max-w-full mq450:gap-[18px] mq450:pt-[50px] mq450:pb-11 mq450:box-border mq825:gap-[35px] mq825:pl-[25px] mq825:pt-[77px] mq825:pb-[68px] mq825:box-border mq1400:pl-[50px] mq1400:pr-[26px] mq1400:box-border">
+          <div className="self-stretch rounded-[18px] bg-gray-200 flex flex-col items-start justify-start pt-[118px] pb-[104px] pr-[52px] pl-[100px] box-border gap-[71px] max-w-full mq450:gap-[18px] mq450:pt-[50px] mq450:pb-11 mq450:box-border mq825:gap-[35px] mq825:pl-[25px] mq825:pt-[77px] mq825:pb-[68px] mq825:box-border mq1400:pl-[50px] mq1400:pr-[26px] mq1400:box-border">
             <div className="w-[1520px] h-[804px] relative rounded-[18px] bg-gray-500 hidden max-w-full" />
             <div className="self-stretch flex flex-row items-end justify-between max-w-full gap-[20px] mq1400:flex-wrap">
               <div className="h-[439px] w-[304px] flex flex-col items-start justify-start min-w-[304px] mq1400:flex-1">
@@ -121,7 +121,7 @@ const BackGroup1 = ({ className = "" }) => {
             <img
               className="h-11 w-11 relative overflow-hidden shrink-0 hidden"
               alt=""
-              src="/247.svg"
+              src="\src\assets\attracpopular\247.svg"
             />
             <img
               className="h-10 w-10 relative overflow-hidden shrink-0 hidden"
