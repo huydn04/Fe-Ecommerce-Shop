@@ -13,8 +13,8 @@ const BinhLuan = () => {
           Đánh giá của khách hàng
         </p>
         <div className="mt-[50px] ml-[850px] flex gap-4">
-          <FaCircleArrowLeft size={30} />
-          <FaCircleArrowRight size={30} />
+          <FaCircleArrowLeft size={30} className="cursor-pointer" />
+          <FaCircleArrowRight size={30} className="cursor-pointer" />
         </div>
       </div>
       <div className="w-[1320px] h-[254px] ml-[108px] mt-[50px] flex justify-center gap-3">

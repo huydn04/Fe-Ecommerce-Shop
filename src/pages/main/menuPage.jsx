@@ -13,6 +13,7 @@ import { QuangCaoPhoBien } from '../../assets/MenuPage'
 import SanPhamGiamGia from '../../components/menuPages/SanPhamGiamgia'
 import SanPhamPhoBien from '../../components/menuPages/SanPhamPhoBien'
 import LocSanPham from '../../components/menuPages/Loc'
+import ChuyenTrang from '../../components/menuPages/chuyenTrang'
 const MenuPage = () => {
   return (
     <div className="flex justify-center items-center w-full">
@@ -81,6 +82,9 @@ const MenuPage = () => {
                 <LocSanPham />
               </div>
               <SanPhamPhoBien />
+              <div>
+                <ChuyenTrang />
+              </div>
             </div>
           </div>
         </div>

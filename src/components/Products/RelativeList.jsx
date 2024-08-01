@@ -11,6 +11,8 @@ export const RelativeList = [
         price_new: "50.000 ₫",
         img: TaoXanhC,
         sale: "Giảm 50%",
+        status: "Còn hàng",
+        category: "Rau củ quả",
     },
     {
         id: 2,
@@ -19,6 +21,8 @@ export const RelativeList = [
         price_new: '',
         img: BongCaiTrangC,
         sale: "",
+        status: "Còn hàng",
+        category: "Rau củ quả",
     },
     {
         id: 3,
@@ -27,13 +31,17 @@ export const RelativeList = [
         price_new: '',
         img: OtChuongXanhC,
         sale: "",
+        status: "Còn hàng",
+        category: "Rau củ quả",
     },
     {
-        id: 1,
+        id: 4,
         name: "Đậu bắp",
         price_old: "11.300 ₫",
         price_new: '',
         img: DauBapC,
         sale: "",
+        status: "Hết hàng",
+        category: "Rau củ quả",
     },
 ]

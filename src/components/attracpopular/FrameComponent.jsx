@@ -10,7 +10,7 @@ const BackGroup1 = ({ className = "" }) => {
         <div className="w-[1520px] flex flex-col items-start justify-start pt-0 px-0 pb-[61px] box-border min-h-[865px] max-w-full [1200px]:pb-10 [1200px]:box-border mq450:pb-[26px] mq450:box-border">
           <div className="self-stretch rounded-[18px] bg-gray-200 flex flex-col items-start justify-start pt-[118px] pb-[104px] pr-[52px] pl-[100px] box-border gap-[71px] max-w-full mq450:gap-[18px] mq450:pt-[50px] mq450:pb-11 mq450:box-border mq825:gap-[35px] mq825:pl-[25px] mq825:pt-[77px] mq825:pb-[68px] mq825:box-border mq1400:pl-[50px] mq1400:pr-[26px] mq1400:box-border">
             <div className="w-[1520px] h-[804px] relative rounded-[18px] bg-gray-500 hidden max-w-full" />
-            <div className="self-stretch flex flex-row items-end justify-between max-w-full gap-[20px] mq1400:flex-wrap">
+            <div className="self-stretch bg-gray-200 flex flex-row items-end justify-between max-w-full gap-[20px] mq1400:flex-wrap">
               <div className="h-[439px] w-[304px] flex flex-col items-start justify-start min-w-[304px] mq1400:flex-1">
                 <div className="self-stretch flex flex-row items-start justify-start relative">
                   <h1 className="!m-[0] w-[596px] absolute top-[22px] right-[-287px] text-inherit leading-[120%] font-semibold font-inherit inline-block z-[2] mq450:text-[30px] mq450:leading-[36px] mq825:text-[40px] mq825:leading-[48px]">{`Thực phẩm hữu cơ tươi ngon & tốt cho sức khỏe`}</h1>
@@ -29,6 +29,7 @@ const BackGroup1 = ({ className = "" }) => {
                       <div className="self-stretch h-[45px] flex flex-row items-start justify-start py-0 px-[30px] box-border">
                         <Button
                           className="self-stretch flex-1 shadow-[0px_0px_12px_rgba(0,_0,_0,_0.12)]"
+
                           endIcon={
                             <img
                               width="15px"
@@ -36,6 +37,7 @@ const BackGroup1 = ({ className = "" }) => {
                               src="\src\assets\attracpopular/group-2.svg"
                             />
                           }
+
                           variant="contained"
                           sx={{
                             textTransform: "none",
