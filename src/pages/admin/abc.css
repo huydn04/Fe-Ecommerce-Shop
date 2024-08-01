@@ -1,0 +1,56 @@
+/* Styles for the pagination container */
+.pagination-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 24px 0; /* Adjust the margin as needed */
+  }
+  
+  /* Styles for the pagination list */
+  .pagination {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Styles for each pagination button */
+  .pagination li {
+    margin: 0 4px;
+  }
+  
+  /* Styles for pagination links */
+  .pagination a {
+    display: inline-block;
+    text-decoration: none;
+    color: #007bff; /* Blue color for the links */
+    background-color: #f8f9fa; /* Light background for the links */
+    padding: 8px 12px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  /* Styles for active pagination link */
+  .pagination .active a {
+    background-color: #007bff; /* Darker blue for the active page */
+    color: white;
+  }
+  
+  /* Styles for pagination link on hover */
+  .pagination a:hover {
+    background-color: #e9ecef; /* Light grey for hover effect */
+  }
+  
+  /* Styles for disabled pagination links */
+  .pagination a.disabled {
+    background-color: #e0e0e0; /* Grey color for disabled links */
+    color: #a0a0a0;
+    cursor: not-allowed;
+  }
+  
+  /* Styles for arrow icons */
+  .pagination a svg {
+    vertical-align: middle;
+  }
+  
