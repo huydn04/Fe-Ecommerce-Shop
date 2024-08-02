@@ -5,6 +5,10 @@ import CreateUser from '../pages/users/CreateUser'
 import LoginUser from '../pages/users/LoginUser'
 import ResetPassword from '../pages/users/ResetPassword'
 import { ShopContextProvider } from "../context/shop-context";
+import OrderList from '../pages/order-management/OrderList';
+
+
+
 const LandingPage = lazy(() => import('../pages/LandingPage'))
 const AdminPages = lazy(() => import('../pages/admin/AdminPages'))
 const Pages404 = lazy(() => import('../pages/404/Page404'))
@@ -93,6 +97,8 @@ export default function AppRoutes() {
         <Route path="/AddAdminUsers" element={<AddAdminUsers/>}  />
         <Route path="/update" element={<UpdateProduct />} />
         <Route path="/update/add" element={<AddProduct />} />
+
+        <Route path="/order_list" element={<OrderList />} />
 
       </Routes>
       
