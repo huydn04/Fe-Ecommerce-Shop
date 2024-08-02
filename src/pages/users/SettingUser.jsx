@@ -1,4 +1,6 @@
 import Sidebar from "../../components/users/SideBarUsers";
+import Header from "../../components/home/Header"
+
 
 const SettingUser = () => {
 
@@ -7,10 +9,13 @@ const SettingUser = () => {
 
 
   return (
-    <div className="flex justify-center pt-10">
+    <div className="flex flex-col justify-center pt-10">
+       
+        <div>
+          <Header/>
+        </div>
 
-
-
+        <div className="flex justify-center mt-12">
         {/* Sidebar */}
      
           <Sidebar/>
@@ -226,7 +231,7 @@ const SettingUser = () => {
 
 
   </div>
-     
+  </div>
      </div>
      
 

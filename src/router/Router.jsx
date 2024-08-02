@@ -20,10 +20,14 @@ const MenuDetail = lazy(() => import('../pages/product-detail/MenuDetail'))
 const AttractiveOffers = lazy(() => import('../pages/popular/AttractiveOffers'))
 const CartPop = lazy(() => import('../pages/users/cartPop'))
 const Shop = lazy(()=> import('../pages/Shopping-cart/shop'))
+
+const ProductManager = lazy(()=> import('../pages/admin/ProductManager'))
+
 const AdminUsers = lazy(()=> import('../pages/admin/AdminUsers.jsx'))
 const AddAdminUsers = lazy(()=> import('../pages/admin/AddAdminUsers.jsx'))
 const UpdateProduct = lazy(()=> import('../pages/product-detail/UpdateProduct'))
 const AddProduct = lazy(()=> import('../components/Products/AddProduct'))
+
 
 
 export default function AppRoutes() {
@@ -36,6 +40,8 @@ export default function AppRoutes() {
 
             {/* Admin Page */}
             <Route path="/admin" element={<AdminPages />} />
+
+            <Route path='/product-manager' element={<ProductManager/>} />
 
             {/* User Pages */}
             <Route path="/user" element={<UsersPages />} />
