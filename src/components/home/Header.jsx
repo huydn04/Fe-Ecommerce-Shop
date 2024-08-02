@@ -4,6 +4,8 @@ import { BsHeart } from 'react-icons/bs'
 import { PiHandbagLight } from 'react-icons/pi'
 import { PiPhoneCallLight } from 'react-icons/pi'
 import { Logo } from '../../assets/Home'
+import cartPop from '../../pages/users/cartPop'
+
 
 const Header = () => {
   const navigateTo = (url) => {
@@ -83,19 +85,21 @@ const Header = () => {
           <ul className="flex space-x-4">
             <li className="flex items-center">
               <a href="#home" className="text-[#999999] hover:text-[#00B207]">
-                Trang Chủ
+
+                Trang chủ
+
               </a>
-              <IoIosArrowDown size={20} style={{ color: '#666666' }} />
+    
             </li>
             <li className="flex items-center">
               <a href="#shop" className="text-[#999999] hover:text-[#00B207]">
-                Shop
+                Cửa hàng
               </a>
-              <IoIosArrowDown size={20} style={{ color: '#666666' }} />
+ 
             </li>
             <li className="flex items-center">
               <a href="#pages" className="text-[#999999] hover:text-[#00B207]">
-                Pages
+                Trang khác
               </a>
               <IoIosArrowDown size={20} style={{ color: '#666666' }} />
             </li>
@@ -103,7 +107,7 @@ const Header = () => {
               <a href="#news" className="text-[#999999] hover:text-[#00B207]">
                 Tin tức
               </a>
-              <IoIosArrowDown size={20} style={{ color: '#666666' }} />
+           
             </li>
             <li className="flex items-center">
               <a href="#about" className="text-[#999999] hover:text-[#00B207]">
@@ -115,7 +119,7 @@ const Header = () => {
                 href="#contact"
                 className="text-[#999999] hover:text-[#00B207]"
               >
-                Liên hệ hotline
+                Liên hệ
               </a>
             </li>
           </ul>

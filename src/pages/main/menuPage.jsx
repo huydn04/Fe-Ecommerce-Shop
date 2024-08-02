@@ -14,6 +14,7 @@ import SanPhamGiamGia from '../../components/menuPages/SanPhamGiamgia'
 import SanPhamPhoBien from '../../components/menuPages/SanPhamPhoBien'
 import LocSanPham from '../../components/menuPages/Loc'
 import ChuyenTrang from '../../components/menuPages/chuyenTrang'
+import { Breadcrumbs } from 'react-daisyui'
 const MenuPage = () => {
   return (
     <div className="flex justify-center items-center w-full">
@@ -26,15 +27,22 @@ const MenuPage = () => {
           <div className="flex justify-center ">
             <img src={Header1} alt="" />
           </div>
-          <div className="absolute top-[40px] text-white ml-[235px]">
+          <div className="absolute top-[30px] text-white ml-[235px]">
             <div className="flex items-center gap-2">
               <a href="#">
                 <CgHome style={{ color: '#808080' }} size={16} />
               </a>
               <IoIosArrowForward style={{ color: '#808080' }} />
-              <a href="#" className="text-[#808080] hover:text-[#00B207]">
+              <Breadcrumbs>
+                <Breadcrumbs.Item href="#">
+                  <a className="text-[#808080] hover:text-[#00B207] text-[16px]">
+                    Danh Mục
+                  </a>
+                </Breadcrumbs.Item>
+              </Breadcrumbs>
+              {/* <a href="#" className="text-[#808080] hover:text-[#00B207]">
                 Danh Mục
-              </a>
+              </a> */}
               {/* <IoIosArrowForward style={{ color: '#808080' }} />
             <a href="#" className="text-[#00B207]">
               Nhu Yếu Phẩm

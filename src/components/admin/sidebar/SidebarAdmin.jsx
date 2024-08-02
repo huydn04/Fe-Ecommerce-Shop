@@ -18,8 +18,15 @@ const SidebarAdminPages = () => {
     {
       name: "Trang chủ",
       icon: IoHomeOutline,
-      link: "/setting",
+      link: "/admin",
+
     },
+    { name: "Tất cả sản phẩm",
+      icon: VscListFlat,
+      link: "/product-manager"
+
+    },
+
     { name: "Tất cả sản phẩm", icon: VscListFlat },
 
 
@@ -27,8 +34,8 @@ const SidebarAdminPages = () => {
       link: "/order_list"
      },
 
+
     { name: "Thống kê doanh thu", icon: FaChartBar },
-    { name: "Cập nhật sản phẩm", icon: MdSystemUpdateAlt },
     {
        name: " Quản lí người dùng"
        , icon: LuUserCog,
@@ -36,7 +43,6 @@ const SidebarAdminPages = () => {
     { name: "Cập nhật sản phẩm",
       icon: MdSystemUpdateAlt,
       link: "/update" },
-    { name: " Quản lí người dùng", icon: LuUserCog },
     { name: " Chỉnh sửa người dùng", icon: FaUserEdit },
     { name: "Nhập - Xuất Hàng", icon: FaBoxesPacking },
     { name: " Đánh giá", icon: BiCommentDetail },

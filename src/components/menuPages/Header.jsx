@@ -27,15 +27,21 @@ const Header = () => {
             </p>
           </div>
           <div className="flex items-center gap-2 mr-[50px]">
-            <a href="#" className="ml-2">
-              VN
-            </a>
-            <IoIosArrowDown size={10} style={{ color: '#666666' }} />
-            <a href="#" className="ml-2">
-              VND
-            </a>
-            <IoIosArrowDown size={10} style={{ color: '#666666' }} />
+            <div className="flex items-center gap-2">
+              <a href="#" className="ml-2">
+                VN
+              </a>
+              <IoIosArrowDown size={10} style={{ color: '#666666' }} />
+              <a href="#" className="ml-2">
+                VND
+              </a>
+              <IoIosArrowDown size={10} style={{ color: '#666666' }} />
+            </div>
+
+            {/*  */}
             <p className="mx-2 text-gray-300">|</p>
+
+            {/*  */}
             <a href="#" className="ml-2">
               Đăng nhập
             </a>
