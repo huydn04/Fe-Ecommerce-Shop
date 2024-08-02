@@ -19,8 +19,13 @@ const SidebarAdminPages = () => {
       name: "Trang chủ",
       icon: IoHomeOutline,
       link: "/admin",
+
     },
-    { name: "Tất cả sản phẩm", icon: VscListFlat },
+    { name: "Tất cả sản phẩm",
+      icon: VscListFlat,
+      link: "/product-manager"
+
+    },
     { name: "Quản lí đơn hàng", icon: RiBillLine },
     { name: "Thống kê doanh thu", icon: FaChartBar },
     {
