@@ -9,11 +9,12 @@
   @apply leading-[normal] m-0;
 } */
 
-
 /* cấm xóa */
-*{
-
+* {
   border: 0;
   padding: 0;
   margin: 0;
 }
+
+  
+

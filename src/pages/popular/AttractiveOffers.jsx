@@ -9,7 +9,7 @@ import FooterBottomContainer from "../../components/attracpopular/FooterBottomCo
 const AttractiveOffers = () => {
   return (
     <div className="w-full relative bg-white overflow-hidden flex flex-col items-start justify-start gap-[43px] tracking-[normal] leading-[normal]">
-  /
+  
       <BackGroup1 />
       <Sales />
       <section className="self-stretch flex flex-row items-start justify-center pt-0 px-5 pb-[76px] box-border max-w-full text-center text-[40px] text-lime-900 font-body-small-body-small-400 [1200px]:pb-[49px] [1200px]:box-border mq825:pb-8 mq825:box-border">
@@ -21,7 +21,7 @@ const AttractiveOffers = () => {
               </h1>
             </div>
             <div className="self-stretch flex flex-row flex-wrap items-start justify-center [row-gap:20px] text-left text-[14px] text-gray-950">
-              <div className="h-[328px] flex-1 bg-white box-border flex flex-col items-start justify-start pt-0 px-0 pb-[87px] gap-[0.5px] min-w-[260px] max-w-[265px] text-white border-[1px] border-solid border-gray-scale-gray-100 mq450:pb-[57px] mq450:box-border">
+              <div className="h-[328px] flex-1 bg-white box-border flex flex-col items-start justify-start pt-0 px-0 pb-[87px] gap-[0.5px] min-w-[260px] max-w-[265px] text-white border-[1px] border-solid border-gray-300 mq450:pb-[57px] mq450:box-border">
                 <div className="self-stretch h-60 relative shrink-0">
                   <div className="group self-stretch h-60 flex flex-col items-start justify-start p-[5px] box-border relative gap-[10px] shrink-0">
                     <img

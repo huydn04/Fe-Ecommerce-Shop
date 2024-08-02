@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom'
 import SelectImage from './SelectImage';
 
 const Modal = ({ isVisible, onClose }) => {
-    if( !isVisible ) return null;
+    if( !isVisible ) return null;   
 
     const [value, setValue] = useState('default');
     return (

@@ -14,7 +14,7 @@ const Checkout = () => {
     return (
         <div>
             {/* Body */}
-            <div className='w-[1060px]  m-auto relative'>
+            <div className='w-[1160px]  m-auto relative  '>
                 <div className='mr-[360px]'>
                     <div className='w-[700px]  m-auto p-2'>
                         <h2 className='text-[20px] p-2'>Thông tin đơn hàng</h2>
@@ -81,7 +81,7 @@ const Checkout = () => {
                         <input className='w-full h-[80px]  border border-solid border-gray-300 px-2 rounded-[4px] pb-[50px]' placeholder='Ghi chú về đơn đặt hàng của bạn, ví dụ: ghi chú đặc biệt khi giao hàng' type="text" />
                     </div>
                 </div>
-                <div className='absolute right-[-60px] top-[0px]  w-[350px] h-[500px] p-5 border rounded-xl'>
+                <div className='absolute right-[0px] top-[0px]  w-[400px] h-[500px] p-5 border rounded-xl '>
                     <div>
                         <h2 className='text-[20px]'>Tóm Tắt Đơn Hàng</h2>
                         <div className='w-[850px]'>
