@@ -10,7 +10,6 @@ import { IoEllipsisVertical } from "react-icons/io5";
 import { SlArrowLeft } from "react-icons/sl";
 import { SlOptions } from "react-icons/sl";
 import { SlArrowRight } from "react-icons/sl";
-
 import { FaRegEdit } from "react-icons/fa";
 import { RiDeleteBin6Line } from "react-icons/ri";
 import { PRODUCTS } from '../../../products'
@@ -18,16 +17,28 @@ import { PRODUCTS } from '../../../products'
 
 const ProductManager = () => {
 
-    // const [handlePop, setOpenPopup] = useState(false)
+    const [handlePop, setOpenPopup] = useState(false)
 
-    // const Popup = () => {
-    //     return(
-    //         <div className='h-[50px] rounded-md flex justify-around absolute ml-6'>
-    //                 <button className='w-[100px]  bg-[#d0cccd] text-xl flex justify-center rounded-md items-center hover:bg-[#fbb827] mr-2'><FaRegEdit className='mr-3' />Sửa</button>
-    //                 <button className='w-[100px]  bg-[#d0cccd] text-xl flex justify-center rounded-md items-center hover:bg-[#f74a5d]'><RiDeleteBin6Line className='mr-3'/> Xoá</button>
-    //         </div>
-    //     )
-    // }
+    const [visibleIndex, setVisibleIndex] = useState(null)
+
+    const handleClickIndex = (index) =>{
+        if(visibleIndex === index) {
+            setVisibleIndex(null)
+            setOpenPopup(false)
+        }else{
+            setVisibleIndex(index)
+            setOpenPopup(true)
+        }
+    }
+
+    const Popup = () => {
+        return(
+            <div className='h-[50px] rounded-md flex justify-around absolute ml-8 bottom-0 '>
+                    <button className='w-[100px]  bg-[#d0cccd] text-xl flex justify-center rounded-md items-center hover:bg-[#fbb827] mr-2'><FaRegEdit className='mr-3' />Sửa</button>
+                    <button className='w-[100px]  bg-[#d0cccd] text-xl flex justify-center rounded-md items-center hover:bg-[#f74a5d]'><RiDeleteBin6Line className='mr-3'/> Xoá</button>
+            </div>
+        )
+    }
 
 
   return (
@@ -89,29 +100,9 @@ const ProductManager = () => {
                             
                         </Table.Head>
                         <Table.Body>
-                            <Table.Row className=''>
-                                
-                            <span className='flex items-center ml-4 relative'>               
-                            <img className='w-[100px] h-[80px] ' src="https://nutritionadvance.com/wp-content/uploads/2017/12/red-and-green-apples.jpg"  alt="" />      
-                            <p className='ml-28 absolute font-normal'>Táo Mĩ </p>                        
-                            </span>  
-                        
-                            
-                            <span className=''>Trái cây</span>
-                            <span>20.000 vnđ</span>
-                            <span><p className='w-[150px] h-[35px] font-semibold rounded-lg text-[#36c94a] bg-[#f3fbf7] flex items-center justify-center'>Còn Hàng</p></span>
-                            <span><button className='text-[#36c94a] '>Xem Chi Tiết</button></span>
-                            <span className='flex '>
+                            {/* This is product */}
 
-                            <div className='h-[50px] rounded-md flex justify-around'>
-                                <button className='w-[100px]  bg-[#d0cccd] text-xl flex justify-center rounded-md items-center hover:bg-[#fbb827] mr-2'><FaRegEdit className='mr-3' />Sửa</button>
-                                <button className='w-[100px]  bg-[#d0cccd] text-xl flex justify-center rounded-md items-center hover:bg-[#f74a5d]'><RiDeleteBin6Line className='mr-3'/> Xoá</button>
-                             </div>
-                           
-                              </span>
-                            </Table.Row>
-
-                            
+                            {/* <span><p className='w-[150px] h-[35px] font-semibold rounded-lg text-[#36c94a] bg-[#f3fbf7] flex items-center justify-center'>Còn Hàng</p></span> */}
                                 {
                                     PRODUCTS.map((value, index) => (
                                         <Table.Row key={value.id}>
@@ -126,25 +117,32 @@ const ProductManager = () => {
                                         <span><p className='w-[150px] h-[35px] font-semibold rounded-lg text-[#ff3a5b] bg-[#f3fbf7] flex items-center justify-center'>Hết Hàng</p></span>
                                         <span><button className='text-[#36c94a] '>Xem Chi Tiết</button></span>
                                         <span className='flex'>
-        
-                                        <div className='h-[50px] rounded-md flex justify-around'>
-                                            <button className='w-[100px]  bg-[#d0cccd] text-xl flex justify-center rounded-md items-center hover:bg-[#fbb827] mr-2'><FaRegEdit className='mr-3' />Sửa</button>
-                                            <button className='w-[100px]  bg-[#d0cccd] text-xl flex justify-center rounded-md items-center hover:bg-[#f74a5d]'><RiDeleteBin6Line className='mr-3'/> Xoá</button>
-                                         </div>
+
+                                        <div className='relative  '>
+                                        <button onClick={() => handleClickIndex(index)}><IoEllipsisVertical/></button>
+                                        {
+                                            visibleIndex === index && (
+                                            <div>
+                                            {
+                                                handlePop && <Popup/>
+                                            }
+                                            </div>
+                                            )
+                                            
+                                        }
+
+                                        </div> 
                                       </span>
                                       </Table.Row>
                                     ))
                                 }
-                               
-                              
 
-                         
                                 {/* Footer */}
                                 <Table.Row>
                                 <span/>
                                 <span/>
                                 <span/>
-                                <span className='relative'>
+                                <span className='relative '>
                                 
                                 <div className='w-[600px] mt-24 flex justify-center items-center absolute' >
                                     <button className='w-[95px] h-[45px] rounded-md bg-[#e6e3e3] flex items-center justify-center mr-4'><SlArrowLeft className='mr-2'/>Trước</button>
