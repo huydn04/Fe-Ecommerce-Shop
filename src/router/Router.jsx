@@ -27,9 +27,9 @@ const AdminUsers = lazy(()=> import('../pages/admin/AdminUsers.jsx'))
 const AddAdminUsers = lazy(()=> import('../pages/admin/AddAdminUsers.jsx'))
 const UpdateProduct = lazy(()=> import('../pages/product-detail/UpdateProduct'))
 const AddProduct = lazy(()=> import('../components/Products/AddProduct'))
-
-
-
+const EditAdminUsers = lazy(()=> import('../pages/admin/EditAdminUsers.jsx'))
+const Login = lazy(()=> import('../pages/Shopping-cart/test/login.jsx'))
+const Register = lazy(()=> import('../pages/Shopping-cart/test/register.jsx'))
 export default function AppRoutes() {
   return (
     <ShopContextProvider>
@@ -91,9 +91,12 @@ export default function AppRoutes() {
         <Route path="/AdminUsers" element={<AdminUsers/>}  />
 
         <Route path="/AddAdminUsers" element={<AddAdminUsers/>}  />
+        <Route path="/EditAdminUsers/:id" element={<EditAdminUsers/>}  />
         <Route path="/update" element={<UpdateProduct />} />
         <Route path="/update/add" element={<AddProduct />} />
-
+        <Route path="/Login" element={<Login />} />
+        <Route path="/Register" element={<Register />} />
+      
       </Routes>
       
     </Suspense>

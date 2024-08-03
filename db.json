@@ -1,0 +1,37 @@
+{
+  "users": [
+    {
+      "id": "2f43",
+      "fullname": "nghiaab",
+      "email": "nghia123@gmail.com",
+      "password": "12345678922",
+      "birthday": "2024-08-20",
+      "Gender": "Nam",
+      "PhoneNumber": "12521526212",
+      "address": "nha11",
+      "DateRegister": "2024-08-03"
+    },
+    {
+      "id": "f9db",
+      "email": "13232@2222222",
+      "fullname": "nghĩa22222222",
+      "password": "12222223124125125",
+      "address": "123122521",
+      "birthday": "2024-08-18",
+      "PhoneNumber": "55555555521512123",
+      "Gender": "Nam",
+      "DateRegister": "2024-08-03"
+    },
+    {
+      "id": "c947",
+      "email": "a@gmail.com",
+      "fullname": "nghĩa",
+      "password": "123456",
+      "address": "123123",
+      "birthday": "2024-08-04",
+      "PhoneNumber": "2222222",
+      "Gender": "Nam",
+      "DateRegister": "2024-08-03"
+    }
+  ]
+}
