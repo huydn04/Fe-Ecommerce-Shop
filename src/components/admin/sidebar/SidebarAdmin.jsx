@@ -27,7 +27,6 @@ const SidebarAdminPages = () => {
 
     },
 
-    { name: "Tất cả sản phẩm", icon: VscListFlat },
 
 
     { name: "Quản lí đơn hàng", icon: RiBillLine,
