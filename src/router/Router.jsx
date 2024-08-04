@@ -5,6 +5,10 @@ import CreateUser from '../pages/users/CreateUser'
 import LoginUser from '../pages/users/LoginUser'
 import ResetPassword from '../pages/users/ResetPassword'
 import { ShopContextProvider } from "../context/shop-context";
+import OrderList from '../pages/order-management/OrderList';
+
+
+
 const LandingPage = lazy(() => import('../pages/LandingPage'))
 const AdminPages = lazy(() => import('../pages/admin/AdminPages'))
 const Pages404 = lazy(() => import('../pages/404/Page404'))
@@ -26,10 +30,13 @@ const ProductManager = lazy(()=> import('../pages/admin/ProductManager'))
 const AdminUsers = lazy(()=> import('../pages/admin/AdminUsers.jsx'))
 const AddAdminUsers = lazy(()=> import('../pages/admin/AddAdminUsers.jsx'))
 const UpdateProduct = lazy(()=> import('../pages/product-detail/UpdateProduct'))
-const AddProduct = lazy(()=> import('../components/Products/AddProduct'))
+// const AddProduct = lazy(()=> import('../components/Products/AddProduct'))
 const EditAdminUsers = lazy(()=> import('../pages/admin/EditAdminUsers.jsx'))
 const Login = lazy(()=> import('../pages/Shopping-cart/test/login.jsx'))
 const Register = lazy(()=> import('../pages/Shopping-cart/test/register.jsx'))
+
+
+
 export default function AppRoutes() {
   return (
     <ShopContextProvider>
@@ -93,10 +100,13 @@ export default function AppRoutes() {
         <Route path="/AddAdminUsers" element={<AddAdminUsers/>}  />
         <Route path="/EditAdminUsers/:id" element={<EditAdminUsers/>}  />
         <Route path="/update" element={<UpdateProduct />} />
-        <Route path="/update/add" element={<AddProduct />} />
+        {/* <Route path="/update/add" element={<AddProduct />} /> */}
         <Route path="/Login" element={<Login />} />
         <Route path="/Register" element={<Register />} />
       
+
+        <Route path="/order_list" element={<OrderList />} />
+
       </Routes>
       
     </Suspense>

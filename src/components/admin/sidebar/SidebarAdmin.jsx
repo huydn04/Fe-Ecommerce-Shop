@@ -26,7 +26,15 @@ const SidebarAdminPages = () => {
       link: "/product-manager"
 
     },
-    { name: "Quản lí đơn hàng", icon: RiBillLine },
+
+    { name: "Tất cả sản phẩm", icon: VscListFlat },
+
+
+    { name: "Quản lí đơn hàng", icon: RiBillLine,
+      link: "/order_list"
+     },
+
+
     { name: "Thống kê doanh thu", icon: FaChartBar },
     {
        name: " Quản lí người dùng"

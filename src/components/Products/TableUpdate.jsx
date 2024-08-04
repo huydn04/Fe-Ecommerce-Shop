@@ -1,14 +1,14 @@
-import React from 'react'
+import { useState } from 'react'
 import { Button, Table } from 'react-daisyui'
 import { RelativeList } from './RelativeList'
 import { HiOutlinePencilSquare } from "react-icons/hi2";
 import { FaRegTrashAlt } from "react-icons/fa";
-import { Link } from 'react-router-dom';
+import Modal from './Modal';
 
 
 
 const TableUpdate = () => {
-
+    const [show, setShow] = useState(false)
     return (
         <div className=''>
             <div>
@@ -16,9 +16,11 @@ const TableUpdate = () => {
                     {/* <Button className='border border-solid border-green-500 text-green-500 bg-white hover:bg-green-500 hover:text-white'>
                     + Danh mục
                     </Button> */}
-                    <Link to='/update/add' className='w-[115px] h-[30px] text-center pt-[2px] rounded-lg font-semibold border border-solid border-cyan-500 text-cyan-500 bg-white hover:bg-cyan-500 hover:text-white'>
+                    <Button 
+                    className='w-[115px] h-[30px] text-center pt-[2px] rounded-lg font-semibold border border-solid border-cyan-500 text-cyan-500 bg-white hover:bg-cyan-500 hover:text-white'
+                    onClick={() => setShow(true)}>
                         + Sản phẩm
-                    </Link>
+                    </Button>
 
                 </div>
                 <div className='bg-white mt-5 rounded-xl'>
@@ -63,7 +65,7 @@ const TableUpdate = () => {
                     </Table>
                 </div>
             </div>
-
+            <Modal isVisible={show} onClose={() => setShow(false)}/>
 
         </div>
     )
