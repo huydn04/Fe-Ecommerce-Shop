@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import { Table } from 'react-daisyui'
 import SidebarAdminPages from '../../components/admin/sidebar/SidebarAdmin'
 import { IoIosNotifications } from "react-icons/io";

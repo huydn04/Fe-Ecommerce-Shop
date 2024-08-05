@@ -4,11 +4,12 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
+   "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "start": "json-server --watch db.json --port 3000"
+    "dev": "concurrently \"yarn server1\" \"yarn server2\" \"vite\"",
+    "server1": "json-server --watch db.json --port 3000",
+    "server2": "json-server --watch products.json --port 4000"
   },
   "dependencies": {
     "@emotion/react": "^11.11.4",
@@ -33,6 +34,7 @@
     "@types/react-dom": "^18.3.0",
     "@vitejs/plugin-react": "^4.3.1",
     "autoprefixer": "^10.4.19",
+    "concurrently": "^8.2.2",
     "daisyui": "^4.12.10",
     "eslint": "^8.57.0",
     "eslint-plugin-react": "^7.34.2",

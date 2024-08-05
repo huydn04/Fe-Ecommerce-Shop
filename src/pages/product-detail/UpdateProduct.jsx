@@ -1,4 +1,4 @@
-import React from 'react'
+
 
 import SidebarAdminPages from '../../components/admin/sidebar/SidebarAdmin'
 import NavBarAdmin from '../../components/Products/NavBarAdmin'
