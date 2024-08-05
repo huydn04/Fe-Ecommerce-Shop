@@ -1,15 +1,7 @@
 {
   "users": [
     {
-      "id": "2f43",
-      "fullname": "nghiaab",
-      "email": "nghia123@gmail.com",
-      "password": "12345678922",
-      "birthday": "2024-08-20",
-      "Gender": "Nam",
-      "PhoneNumber": "12521526212",
-      "address": "nha11",
-      "DateRegister": "2024-08-03"
+      "id": "2f43"
     },
     {
       "id": "f9db",
