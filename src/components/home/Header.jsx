@@ -4,7 +4,7 @@ import { BsHeart } from 'react-icons/bs'
 import { PiHandbagLight } from 'react-icons/pi'
 import { PiPhoneCallLight } from 'react-icons/pi'
 import { Logo } from '../../assets/Home'
-import cartPop from '../../pages/users/cartPop'
+// import cartPop from '../../pages/users/cartPop'
 
 
 const Header = () => {
@@ -89,13 +89,13 @@ const Header = () => {
                 Trang chủ
 
               </a>
-    
+
             </li>
             <li className="flex items-center">
               <a href="#shop" className="text-[#999999] hover:text-[#00B207]">
                 Cửa hàng
               </a>
- 
+
             </li>
             <li className="flex items-center">
               <a href="#pages" className="text-[#999999] hover:text-[#00B207]">
@@ -107,7 +107,7 @@ const Header = () => {
               <a href="#news" className="text-[#999999] hover:text-[#00B207]">
                 Tin tức
               </a>
-           
+
             </li>
             <li className="flex items-center">
               <a href="#about" className="text-[#999999] hover:text-[#00B207]">
