@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Table } from "react-daisyui";
-import SidebarAdminPages from "../../components/admin/sidebar/SidebarAdmin";
+
 import { IoIosNotifications } from "react-icons/io";
 import { FaPlus } from "react-icons/fa6";
 import { CiSearch } from "react-icons/ci";
@@ -32,10 +32,8 @@ const ProductManager = () => {
   };
 
   return (
-    <div className="h-full bg-[#F5F5F5] flex">
-      <div className="w-[310px] ">
-        <SidebarAdminPages />
-      </div>
+    <div className="h-full w-full bg-[#F5F5F5] flex">
+     
       {/* border border-solid border-red-400 */}
 
       <div className="flex flex-col mt-8 w-full ">

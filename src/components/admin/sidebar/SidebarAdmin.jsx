@@ -23,13 +23,13 @@ const SidebarAdminPages = () => {
     },
     { name: "Tất cả sản phẩm",
       icon: VscListFlat,
-      link: "/product-manager"
+      link: "/admin/product-manager"
 
     },
 
 
     { name: "Quản lí đơn hàng", icon: RiBillLine,
-      link: "/order_list"
+      link: "/admin/order-list"
      },
 
 
@@ -37,17 +37,17 @@ const SidebarAdminPages = () => {
     {
        name: " Quản lí người dùng"
        , icon: LuUserCog,
-      link: "/AdminUsers" },
+      link: "/admin/admin-users" },
     { name: "Cập nhật sản phẩm",
       icon: MdSystemUpdateAlt,
-      link: "/update" },
+      link: "/admin/update" },
     { name: " Chỉnh sửa người dùng", icon: FaUserEdit },
     { name: "Nhập - Xuất Hàng", icon: FaBoxesPacking },
     { name: " Đánh giá", icon: BiCommentDetail },
   ];
 
   return (
-    <div className=" fixed top-0 left-0  ">
+    <div className=" fixed top-0 left-0 bottom-0 ">
       {/* Side Bar */}
       <div className=" ">
         <div className="w-[260px]  bg-white  h-screen box ">
