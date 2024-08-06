@@ -1,6 +1,11 @@
+import Homepages from "./main/home";
+
 const LandingPage = () => {
-  return <div>landingPage</div>
+  return (
+    <div>
+      <Homepages />
+    </div>
+  );
+};
 
-}
-
-export default LandingPage
+export default LandingPage;
