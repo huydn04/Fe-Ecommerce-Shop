@@ -1,0 +1,60 @@
+import { createContext, useState, useEffect } from 'react';
+import axios from 'axios';
+export const ShopContext = createContext(null);
+
+
+
+
+export const ShopContextProvider = (props) => {
+    const [products, setProducts] = useState([]);
+    useEffect(() => {
+        axios.get('http://localhost:4000/products')
+            .then(res => {
+            
+              setProducts(res.data)
+            })
+    }, [])
+    const getDefaultCart = () => {
+        let cart = {};
+        for (let i = 1; i < products.length + 1; i++) {
+            cart[i] = 0;
+        }
+        return cart;
+        
+    };
+    console.log(getDefaultCart())
+    console.log(products)
+    const getTotalCartAmount = () => {
+        let totalAmount = 0;
+        
+        for (const item in cartItems) {
+            if (cartItems[item] > 0) {
+                let itemInfo = products.find((product) => product.id === item);      
+                 totalAmount += cartItems[item] * itemInfo.price;    
+               
+            }
+
+        }
+        
+        return totalAmount;
+    };
+    
+    const [cartItems, setCartItems] = useState(getDefaultCart());
+    const addToCart = (itemId) => {
+        setCartItems((prev) => ({ ...prev, [itemId]: prev[itemId] + 1 }));
+      
+    };
+   
+    const removeFromCart = (id) => {
+        setCartItems((prev) => ({ ...prev, [id]: prev[id] - 1 }));
+    };
+    const updaterCartItemsCount = (newAmount, itemId) => {
+        setCartItems((prev) => ({ ...prev, [itemId]: newAmount }))
+    };
+    const contextValue = { cartItems, addToCart, removeFromCart, updaterCartItemsCount,getTotalCartAmount};
+    return (
+        <ShopContext.Provider value={contextValue}>
+            {props.children}
+        </ShopContext.Provider>
+    );
+}
