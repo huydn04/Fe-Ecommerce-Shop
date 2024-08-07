@@ -11,10 +11,10 @@ const Description = () => {
     }
 
     return (
-        <div className="flex flex-col items-center w-screen">
+        <div className="flex flex-col items-center w-full">
             <div className=' flex flex-col justify-center mb-10'>
                 {/* Tittle*/}
-                <div className='flex flex-row justify-center w-screen h-12 gap-10 mt-10 border-b border-solid border-gray-300'>
+                <div className='flex flex-row justify-center w-full h-12 gap-10 mt-10 border-b border-solid border-gray-300'>
                     {
                         DesList.map((item, index) => {
                             return(
