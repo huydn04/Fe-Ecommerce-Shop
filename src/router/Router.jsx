@@ -12,6 +12,7 @@ const AdminPages = lazy(() => import("../pages/admin/AdminPages"));
 const Pages404 = lazy(() => import("../pages/404/Page404"));
 const Homepages = lazy(() => import("../pages/main/home"));
 const MenuPage = lazy(() => import("../pages/main/menuPage"));
+const AboutPage = lazy(() => import("../pages/product-detail/aboutPage.jsx"));
 const Cart = lazy(() => import("../pages/Shopping-cart/Cart"));
 const Checkout = lazy(() => import("../pages/Shopping-cart/Checkout"));
 const UsersPages = lazy(() => import("../pages/users/UsersPages"));
@@ -30,8 +31,7 @@ const AdminDashBoard = lazy(() => import("../pages/admin/AdminDashBoard.jsx"));
 const AdminUsers = lazy(() => import("../pages/admin/AdminUsers.jsx"));
 const AddAdminUsers = lazy(() => import("../pages/admin/AddAdminUsers.jsx"));
 const UpdateProduct = lazy(() => import("../pages/product-detail/UpdateProduct"));
-const Testget = lazy(() => import("../pages/admin/test_get.jsx"));
-const Add = lazy(() => import("../pages/admin/add.jsx"));
+
 export default function AppRoutes() {
   return (
     <Suspense fallback={<div>Loading...</div>}>
@@ -93,11 +93,9 @@ export default function AppRoutes() {
         {/* Reset Password Page */}
         <Route path="/reset-pass" element={<ResetPassword />} />
 
-        <Route path="/shoptest" element={<Shop />} />
+        <Route path="/about-page" element={<AboutPage />} />
 
-        <Route path="/testget" element={<Testget />} />
-        <Route path="/Add" element={<Add />} />
-     
+
       </Routes>
     </Suspense>
   );

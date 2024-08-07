@@ -1,0 +1,7 @@
+export {default as bigContent} from './bigContent.png'
+export {default as Content} from './content.png'
+export {default as Blueberry} from './blueberry.png'
+export {default as Strawberry} from './strawberry.png'
+export {default as Maize} from './maize.png'
+export {default as Apple} from './apple.png'
+export {default as Symbol} from './Symbol.png'
