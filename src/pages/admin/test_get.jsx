@@ -9,7 +9,7 @@ console.log(products)
     <div>
        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
        <div className="col-sm-2">
-                <a className="btn btn-add btn-sm bg-green-400 hover:bg-green-600" href="/Addproduct" title="Thêm">
+                <a className="btn btn-add btn-sm bg-green-400 hover:bg-green-600" href="/Add  " title="Thêm">
                     <i className="fa-solid fa-plus"></i>  Tạo mới người dùng</a>
             </div>
       <table className="table w-[1200px] mt-[20px] border-collapse border-solid border border-gray-300">
