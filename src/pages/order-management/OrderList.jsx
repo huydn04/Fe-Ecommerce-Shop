@@ -94,11 +94,7 @@ const OrderList = () => {
 
   return (
     <div className="flex h-screen">
-      <div className="w-[260px] flex-shrink-0">
-        <SidebarAdminPages />
-      </div>
-
-      <div className="flex-1 p-4 overflow-y-auto">
+      <div className="flex-1 p-4 overflow-y-auto bg-gray-100">
         <div className="mb-4">
           <div className="relative max-w-md mx-auto">
             <input
@@ -185,6 +181,7 @@ const OrderList = () => {
           </table>
         </div>
       </div>
+      
     </div>
   );
 };

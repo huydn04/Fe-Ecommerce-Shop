@@ -18,7 +18,7 @@ import { Breadcrumbs } from 'react-daisyui'
 const MenuPage = () => {
   return (
     <div className="flex justify-center items-center w-full">
-      <div className="w-full justify-center w-full">
+      <div className="w-full justify-center">
         <div>
           <Header />
         </div>

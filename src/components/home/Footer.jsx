@@ -1,7 +1,7 @@
 import { FaFacebook } from 'react-icons/fa'
 import { FaTwitter } from 'react-icons/fa'
 import { FaInstagram } from 'react-icons/fa'
-import { FPTLogo } from '../../assets/Home'
+import { Logo } from '../../assets/Home'
 import { ChuKy } from '../../assets/Home'
 import { FaCcApplePay } from 'react-icons/fa'
 import { FaCcVisa } from 'react-icons/fa'
@@ -10,13 +10,13 @@ import { FaCcMastercard } from 'react-icons/fa'
 import { MdOutlinePayment } from 'react-icons/md'
 const Footer = () => {
   return (
-    <div>
+    <div className="w-full flex justify-center">
       {/* footer */}
-      <nav className="w-[1920px] h-[527px]">
+      <nav className=" h-[527px]">
         {/*  */}
-        <div className="w-[100%] h-[162px] flex items-center bg-gray-100">
-          <div className="w-[448px] h-[82px] ml-[100px]">
-            <p className="text-[24px] font-poppins font-medium">
+        <div className=" h-[162px] flex justify-center items-center gap-20 bg-gray-100">
+          <div className="w-[320px] h-[82px]">
+            <p className="text-[24px] font-poppins">
               Đăng ký nhận thêm thông tin
             </p>
             <p className="text-[14px] text-gray-500">
@@ -24,20 +24,20 @@ const Footer = () => {
               Phasellus imperdiet elit eu magna.
             </p>
           </div>
-          <div className="ml-[100px] flex items-center justify-center mt-0 relative">
+          <div className="flex  relative">
             <input
               type="text"
-              className="border border-gray-300 focus:outline-none focus:border-gray-300 rounded px-5 py-2 w-96 h-12 p-3 gap-2 w-400 h-45 rounded-3xl "
+              className=" relative border border-gray-300 focus:outline-none focus:border-gray-300 px-5 py-2 h-11 p-3 gap-2 w-[420px] rounded-3xl "
               placeholder="Địa chỉ email của bạn"
             />
             <button
-              className="bg-green-600 hover:bg-green-700 text-white font-bold w-36 h-12 py-2 px-4 rounded focus:outline-none focus:shadow-outline rounded-3xl absolute right-0"
+              className="bg-green-600 hover:bg-green-700 text-white font-bold w-[130px] h-11 focus:outline-none focus:shadow-outline rounded-full absolute right-0"
               type="button"
             >
               Đăng Ký
             </button>
           </div>
-          <div className="flex items-center ml-[200px] gap-4">
+          <div className="flex items-center gap-4">
             <FaFacebook size={40} style={{ color: '#00B207' }} />
             <FaTwitter size={20} style={{ color: '#4D4D4D' }} />
             <img src={ChuKy} alt="" />
@@ -47,14 +47,14 @@ const Footer = () => {
         {/*  */}
         <div className="w-[100%] h-[365px] bg-neutral-900">
           {/*  */}
-          <div className="w-[1252.5px] h-[250px] ml-[150px] flex justify-center gap-10">
-            <div className="w-[337px] h-[250px]">
-              <img src={FPTLogo} width="100" height="20" alt="" />
-              <p style={{ color: '#808080' }}>
+          <div className=" h-[250px] flex justify-center items-center gap-20">
+            <div className="w-[310px] h-[250px]">
+              <img src={Logo} className='w-[200px] top-8 relative' alt="" />
+              <p className='absolute w-[350px]' style={{ color: '#808080' }}>
                 Morbi cursus porttitor enim lobortis molestie. Duis gravida
                 turpis dui, eget bibendum magna congue nec.
               </p>
-              <div className="flex gap-3 mt-[20px]">
+              <div className="flex gap-3 mt-20">
                 <div className="border-b-2 border-green-500 text-white">
                   <p>(219) 555-0114</p>
                 </div>
@@ -65,29 +65,29 @@ const Footer = () => {
               </div>
             </div>
             {/*  */}
-            <div className="flex justify-center mt-[31px] gap-5">
+            <div className="flex justify-center items-center mt-[85px] gap-16">
               {/* Tai Khoan cua toi */}
-              <div className="pl-8">
-                <h2 className="mb-6 text-sm font-semibold text-white uppercase dark:text-white">
+              <div className="flex flex-col gap-4">
+                <h2 className=" text-sm font-semibold text-white uppercase dark:text-white">
                   Tài khoản của tôi
                 </h2>
-                <ul className="text-gray-500 dark:text-gray-400 font-medium">
-                  <li className="mb-4">
+                <ul className="text-gray-500 dark:text-gray-400 flex flex-col gap-4">
+                  <li className="">
                     <a href="#" className=" hover:text-white">
                       Tài khoản của tôi
                     </a>
                   </li>
-                  <li className="mb-4">
+                  <li className="">
                     <a href="#" className="hover:text-white">
                       Lịch sử đặt hàng
                     </a>
                   </li>
-                  <li className="mb-4">
+                  <li className="">
                     <a href="#" className="hover:text-white">
                       Giỏ hàng
                     </a>
                   </li>
-                  <li className="mb-4">
+                  <li className="">
                     <a href="#" className="hover:text-white">
                       Yêu thích
                     </a>
@@ -95,27 +95,27 @@ const Footer = () => {
                 </ul>
               </div>
               {/* Trợ Giúp */}
-              <div className="pl-8">
-                <h2 className="mb-6 text-sm font-semibold text-white uppercase dark:text-white">
+              <div className="flex flex-col gap-4">
+                <h2 className=" text-sm font-semibold text-white uppercase dark:text-white">
                   Trợ giúp
                 </h2>
-                <ul className="text-gray-500 dark:text-gray-400 font-medium">
-                  <li className="mb-4">
+                <ul className="text-gray-500 dark:text-gray-400 flex flex-col gap-4">
+                  <li className="">
                     <a href="#" className=" hover:text-white">
-                      Contact
+                      Liên hệ
                     </a>
                   </li>
-                  <li className="mb-4">
+                  <li className="">
                     <a href="#" className="hover:text-white">
                       Hỏi đáp
                     </a>
                   </li>
-                  <li className="mb-4">
+                  <li className="">
                     <a href="#" className="hover:text-white">
                       Điều khoản & Điều kiện
                     </a>
                   </li>
-                  <li className="mb-4">
+                  <li className="">
                     <a href="#" className="hover:text-white">
                       Chính sách bảo mật
                     </a>
@@ -123,27 +123,27 @@ const Footer = () => {
                 </ul>
               </div>
               {/*  */}
-              <div className="pl-8">
-                <h2 className="mb-6 text-sm font-semibold text-white uppercase dark:text-white">
+              <div className="flex flex-col gap-4">
+                <h2 className=" text-sm font-semibold text-white uppercase dark:text-white">
                   Proxy
                 </h2>
-                <ul className="text-gray-500 dark:text-gray-400 font-medium">
-                  <li className="mb-4">
+                <ul className="text-gray-500 dark:text-gray-400  flex flex-col gap-4">
+                  <li className="">
                     <a href="#" className=" hover:text-white">
                       About
                     </a>
                   </li>
-                  <li className="mb-4">
+                  <li className="">
                     <a href="#" className="hover:text-white">
                       Shop
                     </a>
                   </li>
-                  <li className="mb-4">
+                  <li className="">
                     <a href="#" className="hover:text-white">
                       Sản phẩm
                     </a>
                   </li>
-                  <li className="mb-4">
+                  <li className="">
                     <a href="#" className="hover:text-white">
                       Đơn hàng
                     </a>
@@ -151,27 +151,27 @@ const Footer = () => {
                 </ul>
               </div>
               {/*  */}
-              <div className="pl-8">
-                <h2 className="mb-6 text-sm font-semibold text-white uppercase dark:text-white">
-                  Danh mục
+              <div className="flex flex-col gap-4">
+                <h2 className=" text-sm font-semibold text-white uppercase dark:text-white">
+                  Loại
                 </h2>
-                <ul className="text-gray-500 dark:text-gray-400 font-medium">
-                  <li className="mb-4">
+                <ul className="text-gray-500 dark:text-gray-400 flex flex-col gap-4">
+                  <li className="">
                     <a href="#" className=" hover:text-white">
-                      Rau củ quả
+                      Trái cây & Rau quả
                     </a>
                   </li>
-                  <li className="mb-4">
+                  <li className="">
                     <a href="#" className="hover:text-white">
                       Thịt & Cá
                     </a>
                   </li>
-                  <li className="mb-4">
+                  <li className="">
                     <a href="#" className="hover:text-white">
                       Bánh mì & Bakery
                     </a>
                   </li>
-                  <li className="mb-4">
+                  <li className="">
                     <a href="#" className="hover:text-white">
                       Sắc đẹp & Sức khỏe
                     </a>
@@ -181,11 +181,11 @@ const Footer = () => {
             </div>
             {/*  */}
           </div>
-          <div className="w-[1220px] h-[80px] ml-[230px] flex items-center border-t border-gray-500">
+          <div className=" h-[60px] mt-9 pt-5 pl-24 pr-24 flex items-center justify-center gap-[450px] border-t border-solid border-gray-700">
             <p className="text-[14px]" style={{ color: '#808080' }}>
               Ecobazar eCommerce © 2021. All Rights Reserved
             </p>
-            <div className="flex justify-center gap-2 ml-auto">
+            <div className="flex justify-center gap-3">
               <FaCcApplePay style={{ color: 'white' }} size={50} />
               <FaCcVisa style={{ color: 'white' }} size={50} />
               <FaCcDiscover style={{ color: 'white' }} size={50} />
