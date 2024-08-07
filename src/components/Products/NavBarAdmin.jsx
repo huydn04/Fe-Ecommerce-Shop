@@ -8,7 +8,7 @@ const NavBarAdmin = () => {
     const [value, setValue] = useState("default");
 
     return (
-        <div>
+        <div className=''>
             <Navbar className="flex justify-between items-center">
                 <div className="">
                     <div className="">

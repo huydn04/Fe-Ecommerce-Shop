@@ -37,7 +37,7 @@ const SidebarAdminPages = () => {
     {
        name: " Quản lí người dùng"
        , icon: LuUserCog,
-      link: "/admin/admin-users" },
+      link: "/admin/AdminUsers" },
     { name: "Cập nhật sản phẩm",
       icon: MdSystemUpdateAlt,
       link: "/admin/update" },

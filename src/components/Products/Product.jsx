@@ -10,7 +10,7 @@ const Product = () => {
 
 
     return (
-        <div className='w-screen mt-10'>
+        <div className='w-full mt-10'>
             <div className='flex flex-row justify-center items-center basis-1/2 gap-12'>
                 <div className='flex flex-row '>
                     {/*List IMG */}
@@ -21,7 +21,7 @@ const Product = () => {
                                     <div key={index}>
                                         <div >
                                             <img src={item.img} alt="listIMG"
-                                                className={`w-[90px] border border-solid border-gray-300 rounded-md cursor-pointer hover:border hover:border-green-700 duration-300 ${changeImg === item? 'border border-green-700':''}`}
+                                                className={`w-[85px] border border-solid border-gray-300 rounded-md cursor-pointer hover:border hover:border-green-700 duration-300 ${changeImg === item? 'border border-green-700':''}`}
                                                 onClick={() => setChangeImg(item)} />
                                         </div>
                                     </div>
@@ -31,7 +31,7 @@ const Product = () => {
                     </div>
 
                     {/*Main IMG */}
-                    <div className='w-[600px] basis-3/4'>
+                    <div className='w-[500px] basis-3/4'>
                         {
                             changeImg ?
                                 <img src={changeImg.img} alt="img" />

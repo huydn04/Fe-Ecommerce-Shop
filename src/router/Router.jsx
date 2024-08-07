@@ -29,9 +29,7 @@ const ProductManager = lazy(() => import("../pages/admin/ProductManager"));
 const AdminDashBoard = lazy(() => import("../pages/admin/AdminDashBoard.jsx"));
 const AdminUsers = lazy(() => import("../pages/admin/AdminUsers.jsx"));
 const AddAdminUsers = lazy(() => import("../pages/admin/AddAdminUsers.jsx"));
-const UpdateProduct = lazy(() =>
-  import("../pages/product-detail/UpdateProduct")
-);
+const UpdateProduct = lazy(() => import("../pages/product-detail/UpdateProduct"));
 
 export default function AppRoutes() {
   return (
@@ -46,10 +44,13 @@ export default function AppRoutes() {
           <Route path="product-manager" element={<ProductManager />} />
           <Route path="update" element={<UpdateProduct />} />
           <Route path="order-list" element={<OrderList />} />
-          <Route path="admin-users" element={<AddAdminUsers />} />
+          <Route path="AdminUsers" element={<AdminUsers />} />
         </Route>
         {/* User Pages */}
         <Route path="/user" element={<UsersPages />} />
+
+        <Route path="/admin-users" element={<AddAdminUsers />} />
+
 
         {/* Page 404 */}
         <Route path="*" element={<Pages404 />} />
@@ -92,11 +93,6 @@ export default function AppRoutes() {
         <Route path="/reset-pass" element={<ResetPassword />} />
 
         <Route path="/shoptest" element={<Shop />} />
-
-        <Route path="/AdminUsers" element={<AdminUsers />} />
-
-        
-
         
       </Routes>
     </Suspense>

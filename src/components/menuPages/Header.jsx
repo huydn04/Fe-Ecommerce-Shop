@@ -3,7 +3,9 @@ import { IoIosArrowDown } from 'react-icons/io'
 import { BsHeart } from 'react-icons/bs'
 import { PiHandbagLight } from 'react-icons/pi'
 import { PiPhoneCallLight } from 'react-icons/pi'
+import { IoSearch } from "react-icons/io5";
 import { Logo } from '../../assets/Home'
+import { Link } from 'react-router-dom'
 
 const Header = () => {
   const navigateTo = (url) => {
@@ -42,40 +44,38 @@ const Header = () => {
             <p className="mx-2 text-gray-300">|</p>
 
             {/*  */}
-            <a href="#" className="ml-2">
+            <Link to='/login-user' className="ml-2">
               Đăng nhập
-            </a>
+            </Link>
             <p className="mx-1">/</p>
-            <a href="#" className="ml-2">
+            <Link to='/create-user' className="ml-2">
               Đăng ký
-            </a>
+            </Link>
           </div>
         </div>
 
         {/* Second Row */}
-        <div className="flex items-center justify-between py-2">
-          <div className="flex items-center justify-between">
-            {/* Logo */}
-            <div className="w-[100px] ml-[140px]">
-              <img src={Logo} alt="Logo" className="w-full h-auto" />
-            </div>
-            {/* Search */}
-
-            <div className="ml-[290px] flex items-center justify-center mt-0 relative">
-              <input
-                type="text"
-                className="border border-solid border-gray-300 focus:outline-none focus:border-gray-300 rounded px-5 py-2 w-96 h-12 p-3 gap-2 w-[500px] h-45 rounded-l "
-                placeholder="Search"
-              />
-              <button
-                className="bg-[#00B207] hover:bg-green-700 text-white font-bold w-36 h-12 py-2 px-4 rounded focus:outline-none focus:shadow-outline rounded-l absolute right-0"
-                type="button"
-              >
-                Tìm kiếm
-              </button>
-            </div>
+        <div className="flex items-center justify-center gap-64 h-24">
+          {/* Logo */}
+          <div className="">
+            <img src={Logo} alt="Logo" className="w-[150px] h-auto" />
           </div>
-          <div className="flex items-center gap-4 mr-[120px]">
+          {/* Search */}
+
+          <div className="relative">
+            <input
+              type="text"
+              className="border border-solid border-gray-300 pl-10 focus:outline-none focus:border-gray-300 px-5 py-2 h-11 p-3 gap-2 w-[550px] h-45 rounded-lg "
+              placeholder="Tìm kiếm sản phẩm..."
+            />
+            <IoSearch className='absolute left-3 top-3 text-xl text-gray-500' />
+            <button
+              className="bg-[#00b206df] hover:bg-green-600 text-white font-semibold w-36 h-11 py-2 px-4 rounded-r-lg focus:outline-none focus:shadow-outline absolute right-0">
+              Tìm kiếm
+            </button>
+          </div>
+
+          <div className="flex items-center gap-4 ">
             <a href="#" className="text-gray-600 hover:text-[#00B207]">
               <BsHeart size={25} />
             </a>
@@ -86,31 +86,30 @@ const Header = () => {
         </div>
 
         {/* Third Row */}
-        <div className="flex justify-between justify-around items-center py-2 bg-gray-100 px-4 w-full h-16 border-t border-solid border-gray-300 ">
-          <ul className="flex space-x-4">
+        <div className="flex justify-around gap-32 items-center py-2 bg-gray-50 px-4 w-full h-16 border-t border-solid border-gray-300 ">
+          <ul className="flex gap-8">
             <li className="flex items-center">
-              <a href="#home" className="text-[#00B207] hover:text-gray-400">
-                Trang Chủ
-              </a>
-              <IoIosArrowDown size={20} style={{ color: '#666666' }} />
+              <Link to='/home-pages' className="text-gray-600 hover:text-[#00B207]">
+                Trang chủ
+              </Link>
             </li>
             <li className="flex items-center">
-              <a href="#shop" className="text-gray-600 hover:text-[#00B207]">
-                Shop
-              </a>
-              <IoIosArrowDown size={20} style={{ color: '#666666' }} />
+              <Link to='/menu-pages' className="text-gray-600 hover:text-[#00B207]">
+                Cửa hàng
+              </Link>
+
             </li>
             <li className="flex items-center">
               <a href="#pages" className="text-gray-600 hover:text-[#00B207]">
-                Pages
+                Trang khác
               </a>
-              <IoIosArrowDown size={20} style={{ color: '#666666' }} />
+              <IoIosArrowDown className='w-[16px] ml-1 mt-0.5 text-gray-500' />
             </li>
             <li className="flex items-center">
               <a href="#news" className="text-gray-600 hover:text-[#00B207]">
                 Tin tức
               </a>
-              <IoIosArrowDown size={20} style={{ color: '#666666' }} />
+
             </li>
             <li className="flex items-center">
               <a href="#about" className="text-gray-600 hover:text-[#00B207]">
@@ -118,13 +117,16 @@ const Header = () => {
               </a>
             </li>
             <li className="flex items-center">
-              <a href="#contact" className="text-gray-600 hover:text-[#00B207]">
-                Liên hệ hotline
+              <a
+                href="#contact"
+                className="text-gray-600 hover:text-[#00B207]"
+              >
+                Liên hệ
               </a>
             </li>
           </ul>
-          <div className="flex items-center">
-            <PiPhoneCallLight size={20} className="text-[#1A1A1A] mr-2" />
+          <div className="flex items-center gap-2">
+            <PiPhoneCallLight size={20} className="text-[#1A1A1A]" />
             <span>(219) 555-0114</span>
           </div>
         </div>
