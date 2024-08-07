@@ -1,9 +1,13 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import SidebarAdminPages from '../../components/admin/sidebar/SidebarAdmin'
-import JSONDATA from '../../../MOCK_DATA1';
+import axios from 'axios';
 import { IoIosArrowBack } from "react-icons/io";
 import { IoIosArrowForward } from "react-icons/io";
+import { useNavigate } from "react-router-dom";
 const AdminUsers = () => {
+    const navigate = useNavigate();
+    const [columns, setColumns] = useState([]);
+    const [users, setUsets] = useState([]);
     const [searchItem, setsearchItem] = useState("");
     const [curretPage, setcurretPage] = useState(1);
     const [recordsPerPage, setrecordsPerPage] = useState(10);
@@ -11,9 +15,17 @@ const AdminUsers = () => {
     const [checkmom, setcheckmom] = useState(0);
     const lastIndex = curretPage * recordsPerPage;
     const firstIndex = lastIndex - recordsPerPage;
-    const records = JSONDATA.slice(firstIndex, lastIndex);
-    const npage = Math.ceil(JSONDATA.length / recordsPerPage);
+    const records = users.slice(firstIndex, lastIndex);
+    const npage = Math.ceil(users.length / recordsPerPage);
     const numbers = [...Array(npage + 1).keys()].slice(1);
+    useEffect(() => {
+        axios.get('http://localhost:3000/users')
+            .then(res => {
+                setColumns(Object.keys(res.data[0]))
+                setUsets(res.data)
+            })
+    }, [])
+    console.log(users)
     const handleOptionChange = (e) => {
         let isSelect = e.target.checked;
         let value = parseInt(e.target.value);
@@ -34,7 +46,7 @@ const AdminUsers = () => {
             setCheckbox([])
         }
         else {
-            const postIds = JSONDATA.map((users) => {
+            const postIds = users.map((users) => {
                 return users.id
             })
             setCheckbox(postIds)
@@ -51,6 +63,16 @@ const AdminUsers = () => {
     function nextPage() {
         if (curretPage !== lastIndex) {
             setcurretPage(curretPage + 1);
+        }
+    }
+    function handleSubmit(id) {
+        const conf = window.confirm("Do you want to delete");
+        if (conf) {
+            axios.delete('http://localhost:3000/users/' + id)
+                .then(() => {
+                    alert('record has delete');
+                    navigate('/AdminUsers')
+                })
         }
     }
     return (
@@ -95,15 +117,10 @@ const AdminUsers = () => {
                                     <thead className='w-[1200px]'>
                                         <tr className='bg-gray-500 border border-solid'>
                                             <th className='border-solid border border-gray-300 text-cente' width="10"><input className='cursor-pointer' type="checkbox" onChange={handleCheckboxChange} /></th>
-                                            <th className='border-solid border border-gray-300 text-center text-white' width="10">ID</th>
-                                            <th className='border-solid border border-gray-300 text-center text-white' width="100">Họ và tên</th>
-                                            <th className='border-solid border border-gray-300 text-center text-white' width="180">Địa chỉ</th>
-                                            <th className='border-solid border border-gray-300 text-center text-white' width="50">Email</th>
-                                            <th className='border-solid border border-gray-300 text-center text-white' width="100">Ngày sinh</th>
-                                            <th className='border-solid border border-gray-300 text-center text-white' width="100">Giới tính</th>
-                                            <th className='border-solid border border-gray-300 text-center text-white' width="140">SĐT</th>
-                                            <th className='border-solid border border-gray-300 text-center text-white' width="100">Ngày Tạo</th>
-                                            <th className='border-solid border border-gray-300 text-center text-white' width="30">online gần nhất</th>
+
+                                            {columns.map((c, i) => (
+                                                <th className='border-solid border border-gray-300 text-center' key={i}>{c}</th>
+                                            ))}
                                             <th className='border-solid border border-gray-300 text-center text-white' width="100">Tính năng</th>
                                         </tr>
                                     </thead>
@@ -115,26 +132,28 @@ const AdminUsers = () => {
                                             else if (users.fullname.toLowerCase().includes(searchItem.toLowerCase())) {
                                                 return users
                                             }
-                                        }).map((users) => {
+                                        }).map((u, i) => {
                                             return (
-                                                <tr className='border-collapse' key={users.id}>
-                                                    <td className='border-solid border border-gray-300 text-center'><input className='cursor-pointer' checked={Check.includes(users.id)} value={users.id} onChange={handleOptionChange} type="checkbox" name="check1" /></td>
-                                                    <td className='border-solid border border-gray-300 text-center'>{users.id}</td>
-                                                    <td className='border-solid border border-gray-300 text-center'>{users.fullname}</td>
-                                                    <td className='border-solid border border-gray-300 text-center' width="50">{users.address}</td>
-                                                    <td className='border-solid border border-gray-300 '>{users.email}</td>
-                                                    <td className='border-solid border border-gray-300 text-center'>{users.birthday}</td>
-                                                    <td className='border-solid border border-gray-300 text-center'>{users.Gender}</td>
-                                                    <td className='border-solid border border-gray-300 text-center'>{users.PhoneNumber}</td>
-                                                    <td className='border-solid border border-gray-300 text-center'>{users.DateRegister}</td>
-                                                    <td className='border-solid border border-gray-300 text-center'  >{users.DateLastActive}</td>
-                                                    <td className="table-td-center border-solid border border-gray-300 relative">
-                                                        <button className="absolute top-[20px] left-[10px] group btn btn-primary btn-sm bg-[#dc3545] hover:bg-[#efa2a9]" type="button" title="Xóa"
-                                                        > <i className="fa-regular fa-trash-can"></i>
-                                                        </button>
-                                                        <button className="absolute top-[20px] right-[10px] btn btn-primary btn-sm ml-2 bg-[#ffc107] hover:bg-[#fd7e14]" type="button" title="Sửa" id="show-emp"
-                                                            data-toggle="modal" data-target="#ModalUP"><i className="fas fa-edit"></i>
-                                                        </button>
+                                                <tr className='border-collapse' key={i}>
+                                                    <td className='border-solid border border-gray-300 text-center'><input className='cursor-pointer' checked={Check.includes(u.id)} value={u.id} onChange={handleOptionChange} type="checkbox" name="check1" /></td>
+                                                    <td className='border-solid border border-gray-300 text-center'>{u.id}</td>
+                                                    <td className='border-solid border border-gray-300 text-center'>{u.fullname}</td>
+                                                    <td className='border-solid border border-gray-300 text-center'  >{u.email}</td>
+                                                    <td className='border-solid border border-gray-300 text-center'>{u.password}</td>
+                                                    <td className='border-solid border border-gray-300 '>{u.birthday}</td>
+                                                    <td className='border-solid border border-gray-300 text-center'>{u.Gender}</td>
+                                                    <td className='border-solid border border-gray-300 text-center'>{u.PhoneNumber}</td>
+                                                    <td className='border-solid border border-gray-300 text-center'>{u.address}</td>
+                                                    <td className='border-solid border border-gray-300 text-center'>{u.DateRegister}</td>
+                                                    <td className="table-td-center border-solid border border-gray-300 ">
+                                                        <div className='flex'>
+                                                            <button onClick={() => handleSubmit(u.id)} className=" group btn btn-primary btn-sm bg-[#dc3545] hover:bg-[#efa2a9]" type="button" title="Xóa"
+                                                            > <i className="fa-regular fa-trash-can"></i>
+                                                            </button>
+                                                            <button onClick={() => navigate(`/EditAdminUsers/${u.id}`)} className=" btn btn-primary btn-sm ml-2 bg-[#ffc107] hover:bg-[#fd7e14]" type="button" title="Sửa" id="show-emp"
+                                                                data-toggle="modal" data-target="#ModalUP"><i className="fas fa-edit"></i>
+                                                            </button>
+                                                        </div>
                                                     </td>
                                                 </tr>
                                             );
@@ -145,8 +164,8 @@ const AdminUsers = () => {
                                     <p></p>
                                     <ul className='flex list-none p-0 m-0'>
                                         <li className='mx-1'>
-                                            <a  href="#" onClick={prePage} className='flex items-center justify-center px-4 py-2 text-gray-600 bg-gray-200 border border-gray-300 rounded hover:bg-gray-300 transition-colors duration-300' >
-                                                 <IoIosArrowBack /> </a>
+                                            <a href="#" onClick={prePage} className='flex items-center justify-center px-4 py-2 text-gray-600 bg-gray-200 border border-gray-300 rounded hover:bg-gray-300 transition-colors duration-300' >
+                                                <IoIosArrowBack /> </a>
                                         </li>
                                         {numbers.map((n, i) => (
                                             <li className='mx-1' key={i}>
@@ -166,5 +185,6 @@ const AdminUsers = () => {
             </main>
         </div>
     );
+ 
 }
 export default AdminUsers;

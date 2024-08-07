@@ -32,7 +32,6 @@ const AdminUsers = lazy(() => import("../pages/admin/AdminUsers.jsx"));
 const AddAdminUsers = lazy(() => import("../pages/admin/AddAdminUsers.jsx"));
 const UpdateProduct = lazy(() => import("../pages/product-detail/UpdateProduct"));
 
-
 export default function AppRoutes() {
   return (
     <Suspense fallback={<div>Loading...</div>}>

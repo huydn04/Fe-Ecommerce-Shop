@@ -1,4 +1,4 @@
-import React from 'react'
+
 import NavBarAdmin from '../../components/Products/NavBarAdmin'
 import TableUpdate from '../../components/Products/TableUpdate'
 import { Outlet } from 'react-router-dom'

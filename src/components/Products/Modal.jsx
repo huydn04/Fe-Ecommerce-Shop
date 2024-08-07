@@ -1,15 +1,28 @@
-import React, { useState } from 'react'
-
+import  { useState } from 'react'
 import { IoIosClose } from "react-icons/io";
 import { Select } from 'react-daisyui'
-import { Link } from 'react-router-dom'
-
 import SelectImage from './SelectImage';
-
+import axios from "axios"
+import { useNavigate } from "react-router-dom";
 const Modal = ({ isVisible, onClose }) => {
-    if( !isVisible ) return null;   
+    const navigate = useNavigate();
+    const [inputData, setinputData] = useState({
+        name: '',
+        img: '',
+        price: '',
+        status: '',
+        category: ''
+      })
+    function handleSubmit(event) {
+        event.preventDefault()
 
-    const [value, setValue] = useState('default');
+        axios.post('http://localhost:4000/products', inputData)
+            .then(() => {
+                alert("Data Added Sucessfully!");
+                navigate('/update#')
+            }).catch(err => console.log(err));
+    }
+    if( !isVisible ) return null;   
     return (
         <div>
             <div
@@ -19,14 +32,16 @@ const Modal = ({ isVisible, onClose }) => {
                     className='text-xl'
                     onClick={() => onClose()}
                     > <IoIosClose className='' /></button>
-                    <div>
+                  <form onSubmit={handleSubmit}>
+                  <div>
                         <div className='bg-white rounded-lg'>
                         <h1 className='font-bold bx-font-family text-lg text-center'>THÊM SẢN PHẨM</h1>
                             <div className='flex flex-row justify-center items-center gap-44'>
                                 <div className=''>
                                     <div>
                                         <p className='pl-20 text-sm pt-4 font-semibold'>Tên sản phẩm</p>
-                                        <input type="text"
+                                     
+                                      <input type="text"  name="name" onChange={e => setinputData({ ...inputData, name: e.target.value })}
                                             className='ml-20 pl-3 mt-1 w-[350px] h-[32px] border border-solid border-gray-300 rounded-lg' />
                                     </div>
                                     <div>
@@ -35,40 +50,35 @@ const Modal = ({ isVisible, onClose }) => {
                                             className='ml-20 pl-3 mt-1 pt-3 pr-3 w-[350px] h-[70px] border border-solid border-gray-300 rounded-lg' />
                                     </div>
                                     <div>
-                                        <p className='pl-20 text-sm pt-5 font-semibold'>Giá gốc</p>
-                                        <input type="text"
+                                        <p className='pl-20 text-sm pt-5 font-semibold'>Giá tiền</p>
+                                        <input type="text"  name="price" onChange={e => setinputData({ ...inputData, price: e.target.value })}
                                             className='ml-20 pl-3 mt-1 w-[150px] h-[32px] border border-solid border-gray-300 rounded-lg' />
                                     </div>
-                                    <div>
-                                        <p className='pl-20 text-sm pt-5 font-semibold'>Giá khuyến mãi</p>
-                                        <input type="text"
-                                            className='ml-20 pl-3 mt-1 w-[150px] h-[32px] border border-solid border-gray-300 rounded-lg' />
-                                    </div>
-                                    <div>
+                                      <div>
                                         <p className='pl-20 text-sm pt-5 font-semibold'>Danh mục</p>
                                         <Select
                                             className='ml-20 mt-1 border border-solid border-gray-300 rounded-lg'
-                                            value={value} onChange={event => setValue(event.target.value)}>
+                                            value={inputData.category }onChange={e => setinputData({ ...inputData, category: e.target.value })} >
                                             <option value={'default'} disabled>
                                                 Chọn danh mục
                                             </option>
-                                            <option value={'Category1'}>Danh mục 1</option>
-                                            <option value={'Category2'}>Danh mục 2</option>
-                                            <option value={'Category3'}>Danh mục 3</option>
-                                            <option value={'Category4'}>Danh mục 4</option>
-                                            <option value={'Category5'}>Danh mục 5</option>
+                                            <option >Danh mục 1</option>
+                                            <option >Danh mục 2</option>
+                                            <option >Danh mục 3</option>
+                                            <option >Danh mục 4</option>
+                                            <option >Danh mục 5</option>
                                         </Select>
                                     </div>
                                     <div>
                                         <p className='pl-20 text-sm pt-6 font-semibold'>Tình trạng</p>
                                         <Select
                                             className='ml-20 mt-1 mb-5 border border-solid border-gray-300 rounded-lg'
-                                            value={value} onChange={event => setValue(event.target.value)}>
-                                            <option value={'default'} disabled>
+                                            value={inputData.status} onChange={e => setinputData({ ...inputData, status: e.target.value })} >
+                                            <option value={''} disabled>
                                                 Tình trạng
                                             </option>
-                                            <option value={'Status1'}>Còn hàng</option>
-                                            <option value={'Status2'}>Hết hàng</option>
+                                            <option >Còn hàng</option>
+                                            <option >Hết hàng</option>
                                         </Select>
                                     </div>
                                 </div>
@@ -81,6 +91,7 @@ const Modal = ({ isVisible, onClose }) => {
                             </div>
                         </div>
                     </div>
+                  </form>
                 </div>
             </div>
 

@@ -1,0 +1,31 @@
+{
+  
+  "products": [
+    {
+      "id": 1,
+      "name": "asdasdasdasdasdasd",
+      "img": "123",
+      "price": "321312",
+      "status": "Hết hàng",
+      "category": "Danh mục 3",
+      "description": "asdasd"
+    },
+    { 
+      "id": 2424,
+      "name": "avbc",
+      "img": "123",
+      "price": "2222",
+      "status": "Hết hàng",
+      "category": "Danh mục 3",
+      "description": "asdasd"
+    },  { 
+      "id": 2421,
+      "name": "avbc",
+      "img": "123",
+      "price": "2222",
+      "status": "Hết hàng",
+      "category": "Danh mục 3",
+      "description": "asdasd"
+    }
+  ]
+}

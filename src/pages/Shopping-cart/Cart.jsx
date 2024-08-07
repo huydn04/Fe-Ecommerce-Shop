@@ -1,16 +1,22 @@
 /* eslint-disable react/jsx-key */
-import { useContext } from 'react'
-import { PRODUCTS } from '../../../products'
+import { useContext,useEffect,useState } from 'react'
 import { ShopContext } from '../../context/shop-context';
 import { CartItem } from '../Shopping-cart/Cart-item';
 import { useNavigate } from 'react-router-dom';
-
+import axios from 'axios';
 import Sidebar from '../../components/users/SideBarUsers';
 const Cart = () => {
     const { cartItems, getTotalCartAmount } = useContext(ShopContext);
     const navigate = useNavigate();
     const totalAmount = getTotalCartAmount();
-
+    const [products, setProducts] = useState([]);
+    useEffect(() => {
+        axios.get('http://localhost:4000/products')
+            .then(res => {
+              
+                setProducts(res.data)
+            })
+    }, [])
     return (
         <div>
           
@@ -37,11 +43,12 @@ const Cart = () => {
                             </div>
                             {/* pro1 */}
                             <div className=' w-[750px]  '>
-                                {PRODUCTS.map((product) => {
+                                {products.map((product) => {
                                     if (cartItems[product.id] !== 0) {
                                         return <CartItem key={product.id} data={product} />;
                                     }
                                 })}
+                            
                             </div>
                             <div className='flex justify-between items-center  w-[720px] h-[80px] border-solid border-t-[1px] mt-[30px] px-4'>
 
