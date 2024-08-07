@@ -12,6 +12,7 @@ const AdminPages = lazy(() => import("../pages/admin/AdminPages"));
 const Pages404 = lazy(() => import("../pages/404/Page404"));
 const Homepages = lazy(() => import("../pages/main/home"));
 const MenuPage = lazy(() => import("../pages/main/menuPage"));
+const AboutPage = lazy(() => import("../pages/product-detail/aboutPage.jsx"));
 const Cart = lazy(() => import("../pages/Shopping-cart/Cart"));
 const Checkout = lazy(() => import("../pages/Shopping-cart/Checkout"));
 const UsersPages = lazy(() => import("../pages/users/UsersPages"));
@@ -30,6 +31,7 @@ const AdminDashBoard = lazy(() => import("../pages/admin/AdminDashBoard.jsx"));
 const AdminUsers = lazy(() => import("../pages/admin/AdminUsers.jsx"));
 const AddAdminUsers = lazy(() => import("../pages/admin/AddAdminUsers.jsx"));
 const UpdateProduct = lazy(() => import("../pages/product-detail/UpdateProduct"));
+
 
 export default function AppRoutes() {
   return (
@@ -92,8 +94,9 @@ export default function AppRoutes() {
         {/* Reset Password Page */}
         <Route path="/reset-pass" element={<ResetPassword />} />
 
-        <Route path="/shoptest" element={<Shop />} />
-        
+        <Route path="/about-page" element={<AboutPage />} />
+
+
       </Routes>
     </Suspense>
   );
