@@ -38,7 +38,10 @@ const Register = lazy(()=> import('../pages/Shopping-cart/test/register.jsx'))
 const ModalEdit = lazy(()=> import('../../src/components/Products/Modal_Edit.jsx'))
 const Carta = lazy(()=> import('../pages/Shopping-cart/test/cart.jsx'))
 const ProductLista = lazy(()=> import('../pages/Shopping-cart/test/productlist.jsx'))
-  
+const Testget = lazy(()=>import('../../src/pages/admin/test_get.jsx'))
+// const ProductPage = lazy(()=>import('../../src/pages/admin/testmain.jsx'))
+const Addproduct = lazy(()=>import('../../src/pages/admin/add.jsx'))
+// const UpdateProductPage = lazy(()=>import('../../src/pages/admin/testedit.jsx'))
 export default function AppRoutes() {
   return (
     <ShopContextProvider>
@@ -46,7 +49,7 @@ export default function AppRoutes() {
           <Routes>
             {/* Landing Page */}
             <Route index path="/" element={<LandingPage />} />
-
+    
             {/* Admin Page */}
             <Route path="/admin" element={<AdminPages />} />
 
@@ -113,6 +116,10 @@ export default function AppRoutes() {
         <Route path="/ModalEdit/:id" element={<ModalEdit />} />
         <Route path="/Carta" element={<Carta />} />
         <Route path="/ProductLista" element={<ProductLista />} />
+        <Route path="/Testget" element={<Testget />} />
+        {/* <Route path="/pro" element={<ProductPage />} /> */}
+        <Route path="/Addproduct" element={<Addproduct />} />
+        {/* <Route path="/Update-product/:id" element={<UpdateProductPage />} /> */}
       </Routes>
       
     </Suspense>

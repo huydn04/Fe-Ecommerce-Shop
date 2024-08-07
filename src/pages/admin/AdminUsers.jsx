@@ -25,6 +25,7 @@ const AdminUsers = () => {
                 setUsets(res.data)
             })
     }, [])
+    console.log(users)
     const handleOptionChange = (e) => {
         let isSelect = e.target.checked;
         let value = parseInt(e.target.value);
