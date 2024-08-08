@@ -31,8 +31,13 @@ const AdminDashBoard = lazy(() => import("../pages/admin/AdminDashBoard.jsx"));
 const AdminUsers = lazy(() => import("../pages/admin/AdminUsers.jsx"));
 const AddAdminUsers = lazy(() => import("../pages/admin/AddAdminUsers.jsx"));
 const UpdateProduct = lazy(() => import("../pages/product-detail/UpdateProduct"));
+<<<<<<< HEAD
 
 
+=======
+const Testget = lazy(() => import("../pages/admin/test_get.jsx"));
+const Add = lazy(() => import("../pages/admin/add.jsx"));
+>>>>>>> 1739ecdbf08d13f78856f3e652525b3e43eb4400
 export default function AppRoutes() {
   return (
     <Suspense fallback={<div>Loading...</div>}>
@@ -94,9 +99,17 @@ export default function AppRoutes() {
         {/* Reset Password Page */}
         <Route path="/reset-pass" element={<ResetPassword />} />
 
+<<<<<<< HEAD
         <Route path="/about-page" element={<AboutPage />} />
 
 
+=======
+        <Route path="/shoptest" element={<Shop />} />
+
+        <Route path="/testget" element={<Testget />} />
+        <Route path="/Add" element={<Add />} />
+     
+>>>>>>> 1739ecdbf08d13f78856f3e652525b3e43eb4400
       </Routes>
     </Suspense>
   );
