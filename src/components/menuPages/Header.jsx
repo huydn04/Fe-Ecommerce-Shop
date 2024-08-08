@@ -112,9 +112,9 @@ const Header = () => {
 
             </li>
             <li className="flex items-center">
-              <a href="#about" className="text-gray-600 hover:text-[#00B207]">
+              <Link to='/about-page' className="text-gray-600 hover:text-[#00B207]">
                 Giới thiệu
-              </a>
+              </Link>
             </li>
             <li className="flex items-center">
               <a
