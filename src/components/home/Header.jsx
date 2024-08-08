@@ -14,8 +14,8 @@ const Header = () => {
     window.location.href = url
   }
   return (
-    <div className="w-full bg-white shadow-sm flex justify-center">
-      <div className="w-fit px-0 ">
+    <div className=" bg-white shadow-sm">
+      <div className="">
         {/* First Row */}
         <div className="flex justify-between items-center py-2 border-b border-solid border-gray-300 text-gray-600 text-xs">
           <div className="flex items-center ml-[100px] gap-2">
