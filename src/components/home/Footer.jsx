@@ -10,7 +10,7 @@ import { FaCcMastercard } from 'react-icons/fa'
 import { MdOutlinePayment } from 'react-icons/md'
 const Footer = () => {
   return (
-    <div className="">
+    <div className="w-full">
       {/* footer */}
       <nav className=" h-[527px]">
         {/*  */}
@@ -49,8 +49,8 @@ const Footer = () => {
           {/*  */}
           <div className=" h-[250px] flex justify-center items-center gap-20">
             <div className="w-[310px] h-[250px]">
-              <img src={Logo} className='w-[200px] top-8 relative' alt="" />
-              <p className='absolute w-[350px]' style={{ color: '#808080' }}>
+              <img src={Logo} className="w-[200px] top-8 relative" alt="" />
+              <p className="absolute w-[350px]" style={{ color: '#808080' }}>
                 Morbi cursus porttitor enim lobortis molestie. Duis gravida
                 turpis dui, eget bibendum magna congue nec.
               </p>
