@@ -3,18 +3,17 @@ import { IoIosArrowDown } from 'react-icons/io'
 import { BsHeart } from 'react-icons/bs'
 import { PiHandbagLight } from 'react-icons/pi'
 import { PiPhoneCallLight } from 'react-icons/pi'
-import { IoSearch } from "react-icons/io5";
+import { IoSearch } from 'react-icons/io5'
 import { Logo } from '../../assets/Home'
 import { Link } from 'react-router-dom'
 // import cartPop from '../../pages/users/cartPop'
-
 
 const Header = () => {
   const navigateTo = (url) => {
     window.location.href = url
   }
   return (
-    <div className=" bg-white shadow-sm">
+    <div className="w-full bg-white shadow-sm">
       <div className="">
         {/* First Row */}
         <div className="flex justify-between items-center py-2 border-b border-solid border-gray-300 text-gray-600 text-xs">
@@ -39,11 +38,11 @@ const Header = () => {
             </a>
             <IoIosArrowDown size={10} style={{ color: '#666666' }} />
             <p className="mx-2 text-gray-300">|</p>
-            <Link to='/login-user' className="ml-2">
+            <Link to="/login-user" className="ml-2">
               Đăng nhập
             </Link>
             <p className="mx-1">/</p>
-            <Link to ='/create-user' className="ml-2">
+            <Link to="/create-user" className="ml-2">
               Đăng ký
             </Link>
           </div>
@@ -63,9 +62,8 @@ const Header = () => {
               className="border border-solid border-gray-300 pl-10 focus:outline-none focus:border-gray-300 px-5 py-2 h-11 p-3 gap-2 w-[550px] h-45 rounded-lg "
               placeholder="Tìm kiếm sản phẩm..."
             />
-            <IoSearch className='absolute left-3 top-3 text-xl text-gray-500' />
-            <button
-              className="bg-[#00b206df] hover:bg-green-600 text-white font-semibold w-36 h-11 py-2 px-4 rounded-r-lg focus:outline-none focus:shadow-outline absolute right-0">
+            <IoSearch className="absolute left-3 top-3 text-xl text-gray-500" />
+            <button className="bg-[#00b206df] hover:bg-green-600 text-white font-semibold w-36 h-11 py-2 px-4 rounded-r-lg focus:outline-none focus:shadow-outline absolute right-0">
               Tìm kiếm
             </button>
           </div>
@@ -84,31 +82,37 @@ const Header = () => {
         <div className="flex justify-around items-center py-2 bg-[#1A1A1A] px-4 w-full h-16">
           <ul className="flex space-x-4">
             <li className="flex items-center">
-              <Link to='/home-pages' className="text-[#999999] hover:text-[#00B207]">
+              <Link
+                to="/home-pages"
+                className="text-[#999999] hover:text-[#00B207]"
+              >
                 Trang chủ
               </Link>
-
             </li>
             <li className="flex items-center">
-              <Link to='/menu-pages' className="text-[#999999] hover:text-[#00B207]">
+              <Link
+                to="/menu-pages"
+                className="text-[#999999] hover:text-[#00B207]"
+              >
                 Cửa hàng
               </Link>
-
             </li>
             <li className="flex items-center">
               <a href="#pages" className="text-[#999999] hover:text-[#00B207]">
                 Trang khác
               </a>
-              <IoIosArrowDown className='w-[16px] ml-1 mt-0.5 text-gray-500' />
+              <IoIosArrowDown className="w-[16px] ml-1 mt-0.5 text-gray-500" />
             </li>
             <li className="flex items-center">
               <a href="#news" className="text-[#999999] hover:text-[#00B207]">
                 Tin tức
               </a>
-
             </li>
             <li className="flex items-center">
-              <Link to='/about-page' className="text-[#999999] hover:text-[#00B207]">
+              <Link
+                to="/about-page"
+                className="text-[#999999] hover:text-[#00B207]"
+              >
                 Giới thiệu
               </Link>
             </li>
