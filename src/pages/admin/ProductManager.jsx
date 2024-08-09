@@ -11,8 +11,9 @@ import { SlArrowLeft } from "react-icons/sl";
 import { SlOptions } from "react-icons/sl";
 import { SlArrowRight } from "react-icons/sl";
 import Popup from "../../components/admin/showproduct/Productmanager-button";
-import { PRODUCTS } from "../../../products";
+import { RelativeList } from "../../components/Products/RelativeList";
 import useProduct from "../../hooks/HookRouter/useProduct";
+
 
 const ProductManager = () => {
   const [product] = useProduct();
@@ -97,24 +98,27 @@ const ProductManager = () => {
                 {/* This is product */}
 
                 {/* <span><p className='w-[150px] h-[35px] font-semibold rounded-lg text-[#36c94a] bg-[#f3fbf7] flex items-center justify-center'>Còn Hàng</p></span> */}
-                {PRODUCTS.map((value, index) => (
+                {/* text-[#ff3a5b] */}
+                
+                {RelativeList.map((value, index) => (
                   <Table.Row key={value.id}>
                     <span className="flex items-center ml-4 relative">
                       <img
                         className="w-[100px] h-[80px] "
-                        src={value.productImage}
+                        src={value.img}
                         alt=""
                       />
                       <p className="ml-28 absolute font-normal">
-                        {value.productName}{" "}
+                        {value.Name}{" "}
                       </p>
                     </span>
 
-                    <span className="">Trái cây</span>
-                    <span>{value.price}</span>
+                    <span className="">{value.category}</span>
+
+                    <span>{value.price_old}</span>
                     <span>
-                      <p className="w-[150px] h-[35px] font-semibold rounded-lg text-[#ff3a5b] bg-[#f3fbf7] flex items-center justify-center">
-                        Hết Hàng
+                      <p className="w-[150px] h-[35px] font-semibold rounded-lg text-[#36c94a] bg-[#f3fbf7] flex items-center justify-center">
+                        {value.status}
                       </p>
                     </span>
                     <span>
