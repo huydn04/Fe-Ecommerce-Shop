@@ -7,13 +7,13 @@ const ModalUpdate = ({ isVisible, onClose }) => {
     return (
         <div>
             <div className="fixed inset-0 bg-black bg-opacity-25 backdrop-blur-sm flex justify-center items-center z-10 ">
-                <div className="w-1/2 h-2/3 rounded-md bg-white relative ">
+                <div className="w-3/5 h-3/4 rounded-md bg-white relative ">
                     <div className="mb-4 font-medium bx-font-family text-2xl mt-2 text-center">Cập Nhật Sản Phẩm</div>
                     <div className="flex flex-row-reverse right-1 top-1 absolute">
                         <button onClick={() => onClose()}><IoIosCloseCircleOutline className="w-8 h-8" /></button>
                     </div>
                     <form action="">
-                        <div className="flex ml-2 w-full h-1/2">
+                        <div className="flex ml-9 w-full h-1/2">
                             <div className="w-full h-full">
                                 <p>Tên sản phẩm</p>
                                 <input type="text"
@@ -21,30 +21,32 @@ const ModalUpdate = ({ isVisible, onClose }) => {
                                 />
                             </div>
 
-                            <div className="absolute top-24 right-10">
-                                <label className="flex flex-col justify-center items-center" htmlFor="img">
-                                    Ảnh sản phẩm
-                                    <img className="w-1/2 h-1/2" src={Photo} alt="" />
+                            <div className="absolute top-24 right-24 w-1/4 h-2/5 text-center">
+                            Ảnh sản phẩm
+                                <label className="flex flex-col justify-center items-center w-full h-full" htmlFor="img">
+                                   
+                                    <img className="w-full h-full" src={Photo} alt="" />
                                     </label>
+
                                 <input type="file"
                                     className="hidden"
                                     id="img"
                                 />
                             </div>
                         </div>
-                        <div className="ml-2">
+                        <div className="ml-9">
                             <p>Mô tả</p>
                             <textarea type="text"
                                 className="pl-2 mt-1 w-2/5 h-24 border border-solid border-gray-300 rounded-lg"
                             />
                         </div>
-                        <div className="ml-2">
+                        <div className="ml-9">
                             <p>Giá</p>
                             <input type="number"
                                 className="pl-2 mt-1 w-1/4 h-3/4 border border-solid border-gray-300 rounded-lg"
                             />
                         </div>
-                        <div className="ml-2">
+                        <div className="ml-9">
                             <p className=' text-sm pt-5 font-semibold'>Danh mục</p>
                             <Select
                                 className='mt-1 border border-solid border-gray-300 rounded-lg'
@@ -59,7 +61,7 @@ const ModalUpdate = ({ isVisible, onClose }) => {
                                 <option >Danh mục 5</option>
                             </Select>
                         </div>
-                        <div className="ml-2">
+                        <div className="ml-9">
                             <p className=' text-sm pt-6 font-semibold'>Tình trạng</p>
                             <Select
                                 className='mt-1 mb-5 border border-solid border-gray-300 rounded-lg'
@@ -72,8 +74,8 @@ const ModalUpdate = ({ isVisible, onClose }) => {
                             </Select>
                         </div>
 
-                        <div className='flex justify-end mt-3'>
-                                    <button className='btn font-semibold bg-cyan-400 mb-5 mr-3 text-white w-1/6 h-1/2 rounded-lg hover:bg-cyan-500'>Cập nhật sản phẩm</button>
+                        <div className='flex justify-end '>
+                                    <button className='btn font-semibold bg-cyan-400 mb-5 mr-3 text-white w-1/7 h-1/2 rounded-lg hover:bg-cyan-500'>Cập nhật sản phẩm</button>
                                 </div>
                     </form>
                 </div>
